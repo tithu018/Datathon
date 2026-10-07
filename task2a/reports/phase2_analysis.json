@@ -1,0 +1,767 @@
+{
+  "weekday_multiplier": {
+    "Fresh": {
+      "Mon": 0.9491,
+      "Tue": 0.9201,
+      "Wed": 0.9291,
+      "Thu": 1.0225,
+      "Fri": 1.0694,
+      "Sat": 1.1134
+    },
+    "Style": {
+      "Mon": 1.2793,
+      "Tue": 0.0,
+      "Wed": 1.0033,
+      "Thu": 2.2386,
+      "Fri": 0.9501,
+      "Sat": 0.3538
+    },
+    "Tech": {
+      "Mon": 0.245,
+      "Tue": 0.7956,
+      "Wed": 1.4465,
+      "Thu": 0.7594,
+      "Fri": 1.8001,
+      "Sat": 0.8422
+    }
+  },
+  "fresh_sat_vs_wed": 0.1983,
+  "payday_profile": {
+    "Fresh": {
+      "-2": 0.997,
+      "-1": 0.992,
+      "+0": 1.122,
+      "+1": 1.121,
+      "+2": 1.12,
+      "+3": 0.989
+    },
+    "Style": {
+      "-2": 0.969,
+      "-1": 0.954,
+      "+0": 1.077,
+      "+1": 1.009,
+      "+2": 1.092,
+      "+3": 0.969
+    },
+    "Tech": {
+      "-2": 1.13,
+      "-1": 1.032,
+      "+0": 1.325,
+      "+1": 1.171,
+      "+2": 1.211,
+      "+3": 0.967
+    }
+  },
+  "payday": {
+    "rule": "25th and last day of month; Sunday -> preceding Saturday",
+    "n_paydays": 59,
+    "moved_to_saturday": [
+      "2024-02-24",
+      "2024-03-30",
+      "2024-06-29",
+      "2024-08-24",
+      "2025-05-24",
+      "2025-08-30",
+      "2025-11-29",
+      "2026-01-24",
+      "2026-05-30"
+    ],
+    "on_non_operating_days": [
+      "2024-12-25",
+      "2025-12-25"
+    ],
+    "effect": {
+      "Fresh": {
+        "payday_ratio": 1.1223,
+        "day_after_ratio": 1.1209,
+        "n_payday_rows": 96
+      },
+      "Style": {
+        "payday_ratio": 1.0773,
+        "day_after_ratio": 1.0089,
+        "n_payday_rows": 96
+      },
+      "Tech": {
+        "payday_ratio": 1.3253,
+        "day_after_ratio": 1.1711,
+        "n_payday_rows": 96
+      }
+    },
+    "dates": [
+      "2024-01-25",
+      "2024-01-31",
+      "2024-02-24",
+      "2024-02-29",
+      "2024-03-25",
+      "2024-03-30",
+      "2024-04-25",
+      "2024-04-30",
+      "2024-05-25",
+      "2024-05-31",
+      "2024-06-25",
+      "2024-06-29",
+      "2024-07-25",
+      "2024-07-31",
+      "2024-08-24",
+      "2024-08-31",
+      "2024-09-25",
+      "2024-09-30",
+      "2024-10-25",
+      "2024-10-31",
+      "2024-11-25",
+      "2024-11-30",
+      "2024-12-25",
+      "2024-12-31",
+      "2025-01-25",
+      "2025-01-31",
+      "2025-02-25",
+      "2025-02-28",
+      "2025-03-25",
+      "2025-03-31",
+      "2025-04-25",
+      "2025-04-30",
+      "2025-05-24",
+      "2025-05-31",
+      "2025-06-25",
+      "2025-06-30",
+      "2025-07-25",
+      "2025-07-31",
+      "2025-08-25",
+      "2025-08-30",
+      "2025-09-25",
+      "2025-09-30",
+      "2025-10-25",
+      "2025-10-31",
+      "2025-11-25",
+      "2025-11-29",
+      "2025-12-25",
+      "2025-12-31",
+      "2026-01-24",
+      "2026-01-31",
+      "2026-02-25",
+      "2026-02-28",
+      "2026-03-25",
+      "2026-03-31",
+      "2026-04-25",
+      "2026-04-30",
+      "2026-05-25",
+      "2026-05-30",
+      "2026-06-25"
+    ]
+  },
+  "ramp_multiplier": {
+    "Fresh": {
+      "0.0": 1.0,
+      "0.1": 1.0187,
+      "0.2": 1.0635,
+      "0.3": 1.0999,
+      "0.4": 1.1277,
+      "0.5": 1.1922,
+      "0.6": 1.2072,
+      "0.7": 1.2386,
+      "0.8": 1.3117,
+      "0.9": 1.3241,
+      "1.0": 1.2434
+    },
+    "Style": {
+      "0.0": 1.0,
+      "0.1": 1.177,
+      "0.2": 1.0747,
+      "0.3": 1.171,
+      "0.4": 1.0911,
+      "0.5": 1.2193,
+      "0.6": 1.2247,
+      "0.7": 1.2887,
+      "0.8": 1.4388,
+      "0.9": 1.4678,
+      "1.0": 1.3323
+    },
+    "Tech": {
+      "0.0": 1.0,
+      "0.1": 1.051,
+      "0.2": 1.1493,
+      "0.3": 1.1499,
+      "0.4": 1.2619,
+      "0.5": 1.0893,
+      "0.6": 1.019,
+      "0.7": 1.4209,
+      "0.8": 0.939,
+      "0.9": 1.1852,
+      "1.0": 1.3678
+    }
+  },
+  "festival_dates": {
+    "thai_pongal": {
+      "2024": "01-15 Mon W3",
+      "2025": "01-14 Tue W3",
+      "2026": "01-15 Thu W3"
+    },
+    "new_year": {
+      "2024": "04-13 Sat W15 closed",
+      "2025": "04-14 Mon W16 closed",
+      "2026": "04-13 Mon W16 closed"
+    },
+    "vesak": {
+      "2024": "05-23 Thu W21",
+      "2025": "05-12 Mon W20",
+      "2026": "05-01 Fri W18 closed"
+    },
+    "poson": {
+      "2024": "06-21 Fri W25",
+      "2025": "06-10 Tue W24",
+      "2026": "05-30 Sat W22"
+    },
+    "esala": {
+      "2024": "08-19 Mon W34",
+      "2025": "08-08 Fri W32",
+      "2026": "-"
+    },
+    "deepavali": {
+      "2024": "10-31 Thu W44",
+      "2025": "10-20 Mon W43",
+      "2026": "-"
+    },
+    "christmas": {
+      "2024": "12-25 Wed W52 closed",
+      "2025": "12-25 Thu W52 closed",
+      "2026": "-"
+    }
+  },
+  "other_closures": [
+    "2024-05-01",
+    "2025-04-15",
+    "2025-05-01",
+    "2026-04-14"
+  ],
+  "festival_aligned_fresh": [
+    {
+      "festival": "thai_pongal",
+      "year": 2024,
+      "festival_day_operating": 1,
+      "peak_ratio_-10..-1": 1.36,
+      "mean_ratio_-3..-1": 1.31,
+      "ratio_day0": 1.258,
+      "mean_ratio_+1..+3": 1.002
+    },
+    {
+      "festival": "new_year",
+      "year": 2024,
+      "festival_day_operating": 0,
+      "peak_ratio_-10..-1": 1.818,
+      "mean_ratio_-3..-1": 1.63,
+      "ratio_day0": 0.0,
+      "mean_ratio_+1..+3": 0.913
+    },
+    {
+      "festival": "vesak",
+      "year": 2024,
+      "festival_day_operating": 1,
+      "peak_ratio_-10..-1": 1.212,
+      "mean_ratio_-3..-1": 1.149,
+      "ratio_day0": 1.283,
+      "mean_ratio_+1..+3": 1.095
+    },
+    {
+      "festival": "poson",
+      "year": 2024,
+      "festival_day_operating": 1,
+      "peak_ratio_-10..-1": 1.161,
+      "mean_ratio_-3..-1": 1.075,
+      "ratio_day0": 1.222,
+      "mean_ratio_+1..+3": 0.985
+    },
+    {
+      "festival": "esala",
+      "year": 2024,
+      "festival_day_operating": 1,
+      "peak_ratio_-10..-1": 1.215,
+      "mean_ratio_-3..-1": 1.192,
+      "ratio_day0": 1.122,
+      "mean_ratio_+1..+3": 0.923
+    },
+    {
+      "festival": "deepavali",
+      "year": 2024,
+      "festival_day_operating": 1,
+      "peak_ratio_-10..-1": 1.554,
+      "mean_ratio_-3..-1": 1.225,
+      "ratio_day0": 1.665,
+      "mean_ratio_+1..+3": 1.226
+    },
+    {
+      "festival": "christmas",
+      "year": 2024,
+      "festival_day_operating": 0,
+      "peak_ratio_-10..-1": 1.524,
+      "mean_ratio_-3..-1": 1.428,
+      "ratio_day0": 0.0,
+      "mean_ratio_+1..+3": 1.159
+    },
+    {
+      "festival": "thai_pongal",
+      "year": 2025,
+      "festival_day_operating": 1,
+      "peak_ratio_-10..-1": 1.077,
+      "mean_ratio_-3..-1": 1.019,
+      "ratio_day0": 0.944,
+      "mean_ratio_+1..+3": 0.83
+    },
+    {
+      "festival": "new_year",
+      "year": 2025,
+      "festival_day_operating": 0,
+      "peak_ratio_-10..-1": 1.76,
+      "mean_ratio_-3..-1": 1.671,
+      "ratio_day0": 0.0,
+      "mean_ratio_+1..+3": 0.92
+    },
+    {
+      "festival": "vesak",
+      "year": 2025,
+      "festival_day_operating": 1,
+      "peak_ratio_-10..-1": 1.333,
+      "mean_ratio_-3..-1": 1.288,
+      "ratio_day0": 1.269,
+      "mean_ratio_+1..+3": 0.944
+    },
+    {
+      "festival": "poson",
+      "year": 2025,
+      "festival_day_operating": 1,
+      "peak_ratio_-10..-1": 1.279,
+      "mean_ratio_-3..-1": 1.155,
+      "ratio_day0": 1.141,
+      "mean_ratio_+1..+3": 0.985
+    },
+    {
+      "festival": "esala",
+      "year": 2025,
+      "festival_day_operating": 1,
+      "peak_ratio_-10..-1": 1.363,
+      "mean_ratio_-3..-1": 1.139,
+      "ratio_day0": 1.262,
+      "mean_ratio_+1..+3": 1.024
+    },
+    {
+      "festival": "deepavali",
+      "year": 2025,
+      "festival_day_operating": 1,
+      "peak_ratio_-10..-1": 1.454,
+      "mean_ratio_-3..-1": 1.391,
+      "ratio_day0": 1.331,
+      "mean_ratio_+1..+3": 0.924
+    },
+    {
+      "festival": "christmas",
+      "year": 2025,
+      "festival_day_operating": 0,
+      "peak_ratio_-10..-1": 1.456,
+      "mean_ratio_-3..-1": 1.349,
+      "ratio_day0": 0.0,
+      "mean_ratio_+1..+3": 1.226
+    },
+    {
+      "festival": "thai_pongal",
+      "year": 2026,
+      "festival_day_operating": 1,
+      "peak_ratio_-10..-1": 0.994,
+      "mean_ratio_-3..-1": 0.892,
+      "ratio_day0": 1.008,
+      "mean_ratio_+1..+3": 0.874
+    }
+  ],
+  "after_one_day_closure": [
+    {
+      "brand": "Fresh",
+      "n_series_days": 8,
+      "mean_ratio": 1.116
+    },
+    {
+      "brand": "Style",
+      "n_series_days": 6,
+      "mean_ratio": 1.066
+    },
+    {
+      "brand": "Tech",
+      "n_series_days": 6,
+      "mean_ratio": 1.064
+    }
+  ],
+  "catch_up": [
+    {
+      "brand": "Fresh",
+      "n_series_days": 4,
+      "mean_ratio": 0.957,
+      "median_ratio": 0.954
+    },
+    {
+      "brand": "Style",
+      "n_series_days": 4,
+      "mean_ratio": 0.989,
+      "median_ratio": 1.083
+    },
+    {
+      "brand": "Tech",
+      "n_series_days": 4,
+      "mean_ratio": 0.492,
+      "median_ratio": 0.446
+    }
+  ],
+  "chilled_share_by_month": {
+    "2024": {
+      "1": 0.3606,
+      "2": 0.3669,
+      "3": 0.3706,
+      "4": 0.3735,
+      "5": 0.3791,
+      "6": 0.3815,
+      "7": 0.3743,
+      "8": 0.3689,
+      "9": 0.3606,
+      "10": 0.3599,
+      "11": 0.3553,
+      "12": 0.3573
+    },
+    "2025": {
+      "1": 0.3567,
+      "2": 0.3646,
+      "3": 0.3703,
+      "4": 0.3758,
+      "5": 0.3769,
+      "6": 0.3787,
+      "7": 0.3776,
+      "8": 0.368,
+      "9": 0.3665,
+      "10": 0.3581,
+      "11": 0.3592,
+      "12": 0.3542
+    },
+    "2026": {
+      "1": 0.3586,
+      "2": 0.3623,
+      "3": 0.364
+    }
+  },
+  "chilled_share_by_depot": {
+    "Kandy": 0.3634,
+    "Peliyagoda": 0.3683
+  },
+  "style": {
+    "festival_week_ratio": 1.2008,
+    "pre_festival_2wk_ratio": 1.0773,
+    "by_festival": {
+      "thai_pongal": {
+        "fest_week_ratio": 0.9212,
+        "prev_2_weeks_ratio": 0.9567
+      },
+      "new_year": {
+        "fest_week_ratio": 1.6439,
+        "prev_2_weeks_ratio": 1.2368
+      },
+      "vesak": {
+        "fest_week_ratio": 1.0436,
+        "prev_2_weeks_ratio": 0.9545
+      },
+      "poson": {
+        "fest_week_ratio": 0.9625,
+        "prev_2_weeks_ratio": 1.0249
+      },
+      "esala": {
+        "fest_week_ratio": 1.3616,
+        "prev_2_weeks_ratio": 1.1508
+      },
+      "deepavali": {
+        "fest_week_ratio": 1.3804,
+        "prev_2_weeks_ratio": 1.0987
+      },
+      "christmas": {
+        "fest_week_ratio": 1.232,
+        "prev_2_weeks_ratio": 1.1788
+      }
+    },
+    "spike_weeks": [
+      {
+        "depot": "Kandy",
+        "week": "2024-W10",
+        "week_start": "2024-03-04",
+        "ratio": 1.38,
+        "festival_in_week": "",
+        "next_festival": "new_year",
+        "weeks_to_next_festival": 5
+      },
+      {
+        "depot": "Kandy",
+        "week": "2024-W15",
+        "week_start": "2024-04-08",
+        "ratio": 1.82,
+        "festival_in_week": "new_year",
+        "next_festival": "new_year",
+        "weeks_to_next_festival": 0
+      },
+      {
+        "depot": "Kandy",
+        "week": "2024-W32",
+        "week_start": "2024-08-05",
+        "ratio": 1.39,
+        "festival_in_week": "",
+        "next_festival": "esala",
+        "weeks_to_next_festival": 2
+      },
+      {
+        "depot": "Kandy",
+        "week": "2024-W44",
+        "week_start": "2024-10-28",
+        "ratio": 1.62,
+        "festival_in_week": "deepavali",
+        "next_festival": "deepavali",
+        "weeks_to_next_festival": 0
+      },
+      {
+        "depot": "Kandy",
+        "week": "2024-W51",
+        "week_start": "2024-12-16",
+        "ratio": 1.37,
+        "festival_in_week": "",
+        "next_festival": "christmas",
+        "weeks_to_next_festival": 1
+      },
+      {
+        "depot": "Kandy",
+        "week": "2025-W10",
+        "week_start": "2025-03-03",
+        "ratio": 1.38,
+        "festival_in_week": "",
+        "next_festival": "new_year",
+        "weeks_to_next_festival": 6
+      },
+      {
+        "depot": "Kandy",
+        "week": "2025-W15",
+        "week_start": "2025-04-07",
+        "ratio": 1.77,
+        "festival_in_week": "",
+        "next_festival": "new_year",
+        "weeks_to_next_festival": 1
+      },
+      {
+        "depot": "Kandy",
+        "week": "2025-W32",
+        "week_start": "2025-08-04",
+        "ratio": 1.71,
+        "festival_in_week": "esala",
+        "next_festival": "esala",
+        "weeks_to_next_festival": 0
+      },
+      {
+        "depot": "Kandy",
+        "week": "2025-W42",
+        "week_start": "2025-10-13",
+        "ratio": 1.27,
+        "festival_in_week": "",
+        "next_festival": "deepavali",
+        "weeks_to_next_festival": 1
+      },
+      {
+        "depot": "Kandy",
+        "week": "2025-W43",
+        "week_start": "2025-10-20",
+        "ratio": 1.33,
+        "festival_in_week": "deepavali",
+        "next_festival": "deepavali",
+        "weeks_to_next_festival": 0
+      },
+      {
+        "depot": "Kandy",
+        "week": "2026-W10",
+        "week_start": "2026-03-02",
+        "ratio": 1.61,
+        "festival_in_week": "",
+        "next_festival": "new_year",
+        "weeks_to_next_festival": 6
+      },
+      {
+        "depot": "Peliyagoda",
+        "week": "2024-W10",
+        "week_start": "2024-03-04",
+        "ratio": 1.4,
+        "festival_in_week": "",
+        "next_festival": "new_year",
+        "weeks_to_next_festival": 5
+      },
+      {
+        "depot": "Peliyagoda",
+        "week": "2024-W15",
+        "week_start": "2024-04-08",
+        "ratio": 2.31,
+        "festival_in_week": "new_year",
+        "next_festival": "new_year",
+        "weeks_to_next_festival": 0
+      },
+      {
+        "depot": "Peliyagoda",
+        "week": "2024-W32",
+        "week_start": "2024-08-05",
+        "ratio": 1.55,
+        "festival_in_week": "",
+        "next_festival": "esala",
+        "weeks_to_next_festival": 2
+      },
+      {
+        "depot": "Peliyagoda",
+        "week": "2024-W44",
+        "week_start": "2024-10-28",
+        "ratio": 1.44,
+        "festival_in_week": "deepavali",
+        "next_festival": "deepavali",
+        "weeks_to_next_festival": 0
+      },
+      {
+        "depot": "Peliyagoda",
+        "week": "2024-W51",
+        "week_start": "2024-12-16",
+        "ratio": 1.35,
+        "festival_in_week": "",
+        "next_festival": "christmas",
+        "weeks_to_next_festival": 1
+      },
+      {
+        "depot": "Peliyagoda",
+        "week": "2025-W10",
+        "week_start": "2025-03-03",
+        "ratio": 1.45,
+        "festival_in_week": "",
+        "next_festival": "new_year",
+        "weeks_to_next_festival": 6
+      },
+      {
+        "depot": "Peliyagoda",
+        "week": "2025-W15",
+        "week_start": "2025-04-07",
+        "ratio": 1.64,
+        "festival_in_week": "",
+        "next_festival": "new_year",
+        "weeks_to_next_festival": 1
+      },
+      {
+        "depot": "Peliyagoda",
+        "week": "2025-W16",
+        "week_start": "2025-04-14",
+        "ratio": 1.28,
+        "festival_in_week": "new_year",
+        "next_festival": "new_year",
+        "weeks_to_next_festival": 0
+      },
+      {
+        "depot": "Peliyagoda",
+        "week": "2025-W32",
+        "week_start": "2025-08-04",
+        "ratio": 1.56,
+        "festival_in_week": "esala",
+        "next_festival": "esala",
+        "weeks_to_next_festival": 0
+      },
+      {
+        "depot": "Peliyagoda",
+        "week": "2025-W42",
+        "week_start": "2025-10-13",
+        "ratio": 1.45,
+        "festival_in_week": "",
+        "next_festival": "deepavali",
+        "weeks_to_next_festival": 1
+      },
+      {
+        "depot": "Peliyagoda",
+        "week": "2025-W51",
+        "week_start": "2025-12-15",
+        "ratio": 1.27,
+        "festival_in_week": "",
+        "next_festival": "christmas",
+        "weeks_to_next_festival": 1
+      },
+      {
+        "depot": "Peliyagoda",
+        "week": "2026-W10",
+        "week_start": "2026-03-02",
+        "ratio": 1.41,
+        "festival_in_week": "",
+        "next_festival": "new_year",
+        "weeks_to_next_festival": 6
+      }
+    ],
+    "month_index": {
+      "2024": {
+        "1": 0.9637,
+        "2": 1.0263,
+        "3": 0.9883,
+        "4": 1.1369,
+        "5": 0.9988,
+        "6": 0.8912,
+        "7": 0.9204,
+        "8": 1.0967,
+        "9": 0.9432,
+        "10": 1.0716,
+        "11": 0.9068,
+        "12": 1.0562
+      },
+      "2025": {
+        "1": 1.0128,
+        "2": 0.9657,
+        "3": 0.9969,
+        "4": 1.067,
+        "5": 0.9535,
+        "6": 0.9371,
+        "7": 0.9741,
+        "8": 1.1083,
+        "9": 0.9193,
+        "10": 1.113,
+        "11": 0.9126,
+        "12": 1.0397
+      },
+      "2026": {
+        "1": 1.0073,
+        "2": 0.947,
+        "3": 1.0457
+      }
+    },
+    "weekday_mean_volume": {
+      "Mon": 21.256,
+      "Tue": 0.0,
+      "Wed": 19.447,
+      "Thu": 43.334,
+      "Fri": 23.816,
+      "Sat": 4.745
+    },
+    "weekday_mean_volume_by_depot": {
+      "Kandy": {
+        "Mon": 26.383,
+        "Tue": 0.0,
+        "Wed": 12.347,
+        "Thu": 33.813,
+        "Fri": 0.0,
+        "Sat": 9.489
+      },
+      "Peliyagoda": {
+        "Mon": 16.129,
+        "Tue": 0.0,
+        "Wed": 26.548,
+        "Thu": 52.856,
+        "Fri": 47.632,
+        "Sat": 0.0
+      }
+    }
+  },
+  "yoy_growth_jan_mar": {
+    "Fresh": {
+      "2025_vs_2024": 0.0509,
+      "2026_vs_2025": 0.062
+    },
+    "Style": {
+      "2025_vs_2024": 0.0132,
+      "2026_vs_2025": 0.017
+    },
+    "Tech": {
+      "2025_vs_2024": -0.0912,
+      "2026_vs_2025": 0.2758
+    }
+  }
+}

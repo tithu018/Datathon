@@ -1,0 +1,165 @@
+D:\Competitions\Root code\Datathon repo\Datathon\task2a\analysis.py:220: RuntimeWarning: invalid value encountered in scalar divide
+  r1 = [row["norm"] / normal[(normal["dow"] == row["dow"]) & (normal["depot"] == row["depot"])]["norm"].mean()
+D:\Competitions\Root code\Datathon repo\Datathon\task2a\analysis.py:220: RuntimeWarning: invalid value encountered in scalar divide
+  r1 = [row["norm"] / normal[(normal["dow"] == row["dow"]) & (normal["depot"] == row["depot"])]["norm"].mean()
+D:\Competitions\Root code\Datathon repo\Datathon\task2a\analysis.py:220: RuntimeWarning: invalid value encountered in scalar divide
+  r1 = [row["norm"] / normal[(normal["dow"] == row["dow"]) & (normal["depot"] == row["depot"])]["norm"].mean()
+D:\Competitions\Root code\Datathon repo\Datathon\task2a\analysis.py:220: RuntimeWarning: invalid value encountered in scalar divide
+  r1 = [row["norm"] / normal[(normal["dow"] == row["dow"]) & (normal["depot"] == row["depot"])]["norm"].mean()
+1. Weekday multipliers (clean days, volume / local level)
+         Mon    Tue    Wed    Thu    Fri    Sat
+brand                                          
+Fresh  0.949  0.920  0.929  1.022  1.069  1.113
+Style  1.279  0.000  1.003  2.239  0.950  0.354
+Tech   0.245  0.796  1.446  0.759  1.800  0.842
+  Fresh Saturday vs Wednesday: +19.8%
+
+2. Paydays
+  59 paydays 2024-01-25..2026-06-25. Rule: the 25th and the last day of each month; a Sunday payday moves back to Saturday (9 moved).
+  Moved paydays: 2024-02-24 (Sat), 2024-03-30 (Sat), 2024-06-29 (Sat), 2024-08-24 (Sat), 2025-05-24 (Sat), 2025-08-30 (Sat), 2025-11-29 (Sat), 2026-01-24 (Sat), 2026-05-30 (Sat)
+  Paydays on non-operating days: 2024-12-25, 2025-12-25
+  Fresh: payday x1.122, day after x1.121 (96 payday series-days)
+  Style: payday x1.077, day after x1.009 (96 payday series-days)
+  Tech : payday x1.325, day after x1.171 (96 payday series-days)
+  Multiplier by day relative to payday (0 = payday; vs all non-payday days):
+            -2     -1     +0     +1     +2     +3
+  brand                                          
+  Fresh  0.997  0.992  1.122  1.121  1.120  0.989
+  Style  0.969  0.954  1.077  1.009  1.092  0.969
+  Tech   1.130  1.032  1.325  1.171  1.211  0.967
+
+3. Festival ramp multipliers (operating days, weekday-adjusted, payday excluded)
+ramp_bin  0.0    0.1    0.2    0.3    0.4    0.5    0.6    0.7    0.8    0.9    1.0
+brand                                                                              
+Fresh     1.0  1.019  1.064  1.100  1.128  1.192  1.207  1.239  1.312  1.324  1.243
+Style     1.0  1.177  1.075  1.171  1.091  1.219  1.225  1.289  1.439  1.468  1.332
+Tech      1.0  1.051  1.149  1.150  1.262  1.089  1.019  1.421  0.939  1.185  1.368
+
+4. Festival dates by year
+year                         2024                  2025                  2026
+festival                                                                     
+thai_pongal          01-15 Mon W3          01-14 Tue W3          01-15 Thu W3
+new_year     04-13 Sat W15 closed  04-14 Mon W16 closed  04-13 Mon W16 closed
+vesak               05-23 Thu W21         05-12 Mon W20  05-01 Fri W18 closed
+poson               06-21 Fri W25         06-10 Tue W24         05-30 Sat W22
+esala               08-19 Mon W34         08-08 Fri W32                     -
+deepavali           10-31 Thu W44         10-20 Mon W43                     -
+christmas    12-25 Wed W52 closed  12-25 Thu W52 closed                     -
+  Other non-Sunday closures: 2024-05-01 (Wed), 2025-04-15 (Tue), 2025-05-01 (Thu), 2026-04-14 (Tue)
+
+5. Daily Fresh volume aligned on festival dates (both depots, volume / local level)
+   festival  year  festival_day_operating  peak_ratio_-10..-1  mean_ratio_-3..-1  ratio_day0  mean_ratio_+1..+3
+thai_pongal  2024                       1               1.360              1.310       1.258              1.002
+   new_year  2024                       0               1.818              1.630       0.000              0.913
+      vesak  2024                       1               1.212              1.149       1.283              1.095
+      poson  2024                       1               1.161              1.075       1.222              0.985
+      esala  2024                       1               1.215              1.192       1.122              0.923
+  deepavali  2024                       1               1.554              1.225       1.665              1.226
+  christmas  2024                       0               1.524              1.428       0.000              1.159
+thai_pongal  2025                       1               1.077              1.019       0.944              0.830
+   new_year  2025                       0               1.760              1.671       0.000              0.920
+      vesak  2025                       1               1.333              1.288       1.269              0.944
+      poson  2025                       1               1.279              1.155       1.141              0.985
+      esala  2025                       1               1.363              1.139       1.262              1.024
+  deepavali  2025                       1               1.454              1.391       1.331              0.924
+  christmas  2025                       0               1.456              1.349       0.000              1.226
+thai_pongal  2026                       1               0.994              0.892       1.008              0.874
+
+6. Catch-up: first operating day after a 2+ day closure vs normal days of the same weekday
+  Fresh events: 2024-04-15 Mon x0.96, 2025-04-16 Wed x0.954
+brand  n_series_days  mean_ratio  median_ratio
+Fresh              4       0.957         0.954
+Style              4       0.989         1.083
+ Tech              4       0.492         0.446
+  Day after a 1-day mid-week closure, Fresh dates: 2024-05-02, 2024-12-26, 2025-05-02, 2025-12-26
+  Day after a 1-day mid-week closure vs same weekday:
+  brand  n_series_days  mean_ratio
+  Fresh              8       1.116
+  Style              6       1.066
+   Tech              6       1.064
+
+8. Fresh chilled share (chilled / total)
+year    2024   2025   2026
+month                     
+1      0.361  0.357  0.359
+2      0.367  0.365  0.362
+3      0.371  0.370  0.364
+4      0.374  0.376    NaN
+5      0.379  0.377    NaN
+6      0.382  0.379    NaN
+7      0.374  0.378    NaN
+8      0.369  0.368    NaN
+9      0.361  0.366    NaN
+10     0.360  0.358    NaN
+11     0.355  0.359    NaN
+12     0.357  0.354    NaN
+  Overall by depot: {'Kandy': 0.3634, 'Peliyagoda': 0.3683}
+
+9. Style: festival weeks and month-by-month
+  Style by festival (festival week and 2 weeks before, vs weeks +-3..4 away):
+               fest_week_ratio  prev_2_weeks_ratio
+  festival                                        
+  thai_pongal            0.921               0.957
+  new_year               1.644               1.237
+  vesak                  1.044               0.954
+  poson                  0.962               1.025
+  esala                  1.362               1.151
+  deepavali              1.380               1.099
+  christmas              1.232               1.179
+  Volume per operating day vs weeks +-3..4 away: festival week x1.201, 2 weeks before x1.077 (mean over 30 depot-festivals)
+  Style spike weeks (per-operating-day volume > 1.25 x centered 9-week median):
+       depot     week week_start  ratio festival_in_week next_festival  weeks_to_next_festival
+       Kandy 2024-W10 2024-03-04   1.38                       new_year                       5
+       Kandy 2024-W15 2024-04-08   1.82         new_year      new_year                       0
+       Kandy 2024-W32 2024-08-05   1.39                          esala                       2
+       Kandy 2024-W44 2024-10-28   1.62        deepavali     deepavali                       0
+       Kandy 2024-W51 2024-12-16   1.37                      christmas                       1
+       Kandy 2025-W10 2025-03-03   1.38                       new_year                       6
+       Kandy 2025-W15 2025-04-07   1.77                       new_year                       1
+       Kandy 2025-W32 2025-08-04   1.71            esala         esala                       0
+       Kandy 2025-W42 2025-10-13   1.27                      deepavali                       1
+       Kandy 2025-W43 2025-10-20   1.33        deepavali     deepavali                       0
+       Kandy 2026-W10 2026-03-02   1.61                       new_year                       6
+  Peliyagoda 2024-W10 2024-03-04   1.40                       new_year                       5
+  Peliyagoda 2024-W15 2024-04-08   2.31         new_year      new_year                       0
+  Peliyagoda 2024-W32 2024-08-05   1.55                          esala                       2
+  Peliyagoda 2024-W44 2024-10-28   1.44        deepavali     deepavali                       0
+  Peliyagoda 2024-W51 2024-12-16   1.35                      christmas                       1
+  Peliyagoda 2025-W10 2025-03-03   1.45                       new_year                       6
+  Peliyagoda 2025-W15 2025-04-07   1.64                       new_year                       1
+  Peliyagoda 2025-W16 2025-04-14   1.28         new_year      new_year                       0
+  Peliyagoda 2025-W32 2025-08-04   1.56            esala         esala                       0
+  Peliyagoda 2025-W42 2025-10-13   1.45                      deepavali                       1
+  Peliyagoda 2025-W51 2025-12-15   1.27                      christmas                       1
+  Peliyagoda 2026-W10 2026-03-02   1.41                       new_year                       6
+  Spike ISO weeks and years: {10: ['2024', '2025', '2026'], 15: ['2024', '2025'], 16: ['2025'], 32: ['2024', '2025'], 42: ['2025'], 43: ['2025'], 44: ['2024'], 51: ['2024', '2025']}
+  Style mean daily volume per operating day, by month (index vs that year's mean):
+year    2024   2025   2026
+month                     
+1      0.964  1.013  1.007
+2      1.026  0.966  0.947
+3      0.988  0.997  1.046
+4      1.137  1.067    NaN
+5      0.999  0.954    NaN
+6      0.891  0.937    NaN
+7      0.920  0.974    NaN
+8      1.097  1.108    NaN
+9      0.943  0.919    NaN
+10     1.072  1.113    NaN
+11     0.907  0.913    NaN
+12     1.056  1.040    NaN
+  Style mean volume by weekday: {'Mon': 21.26, 'Tue': 0.0, 'Wed': 19.45, 'Thu': 43.33, 'Fri': 23.82, 'Sat': 4.74}
+  Style mean volume by depot and weekday:
+  dow           Mon  Tue    Wed    Thu    Fri   Sat
+  depot                                            
+  Kandy       26.38  0.0  12.35  33.81   0.00  9.49
+  Peliyagoda  16.13  0.0  26.55  52.86  47.63  0.00
+
+10. Year-on-year growth (mean volume per operating day, same months Jan-Mar)
+year      2024     2025     2026  2025_vs_2024  2026_vs_2025
+brand                                                       
+Fresh  113.910  119.710  127.128         0.051         0.062
+Style   18.436   18.680   18.997         0.013         0.017
+Tech     4.075    3.703    4.724        -0.091         0.276
+
+Saved plots: multipliers.png, festival_aligned_fresh.png, weekly_series.png, chilled_share.png, style_seasonality.png; summary: phase2_analysis.json (all in task2a/reports/)

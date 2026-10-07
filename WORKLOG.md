@@ -159,3 +159,89 @@ copy of the datasets outside the repo and copy them back after pulling.
 **Authorship**
 - Agent wrote `task2a/prepare_labels.py` and this entry. Reference numbers were
   computed independently by the user.
+
+**Phase 1 decisions (recorded at Phase 1 approval)**
+- Daily grid extended to Sunday 2026-03-29 so the last history week is complete: kept.
+- **Known limitation:** the task1 file has no not_run orders, so 2026-W08..W13
+  may undercount demand by about 0.44% of volume. Documented only, not
+  scaled: it is an order of magnitude below the ~5% model error.
+- Phase 1 committed as `f28c936`. Not pushed (repo still public).
+
+---
+
+## Phase 2: Task 2A features and analysis (2026-10-07)
+
+**Done**
+- `task2a/prepare_features.py`: calendar-level features for every date in
+  calendar.csv, crossed with the 6 series; history rows carry the Phase 1
+  labels, forecast rows (2026-03-30 to 2026-06-07) have none. Outputs
+  `task2a/data/calendar_features.csv` (910 rows) and
+  `task2a/data/daily_features.csv` (5,334 rows: 4,914 history + 420 forecast).
+  Features: dow, is_operating, is_payday, days_to_payday, days_since_payday
+  (capped at 14), festival_ramp, festival_ramp_sq, festival_name (festival the
+  ramp leads up to, "none" when ramp = 0), is_holiday, monsoon, month,
+  trend_years (since 2024-01-01), days_since_last_operating_day,
+  is_first_day_after_closure (after 2+ consecutive closed days),
+  days_to_next_closure, days_to_next_holiday_closure (non-Sunday closures,
+  capped at 14; agent addition, see decisions), n_outlets (per depot x brand).
+- `task2a/analysis.py`: plots and numbers; console output saved to
+  `task2a/reports/phase2_analysis_output.txt`, numbers to
+  `task2a/reports/phase2_analysis.json`.
+- Added `matplotlib==3.11.1` to `requirements.txt`.
+
+**Checks (all pass)**
+- Payday rule reproduces all 59 calendar paydays.
+- festival_ramp > 0 only in the 9 days before a festival; ramp = 1 on festival days.
+- No missing feature values in history or the forecast window.
+- Forecast window = exactly 2026-W14..W23 (matches task2a_test_inputs.csv),
+  7 days per series-week, contiguous with history.
+- Operating days 2026: W16 = 4, W18 = 5, W22 = 6 (others 6).
+
+**Key numbers** (method: volume / centered 57-day mean of clean operating days;
+payday, ramp and catch-up effects are also weekday-adjusted)
+- Weekday (Fresh): Mon 0.95, Tue 0.92, Wed 0.93, Thu 1.02, Fri 1.07, Sat 1.11;
+  Saturday +19.8% vs Wednesday (plan said ~17%).
+- Style weekday schedule is **depot-specific**: Kandy delivers Mon/Wed/Thu/Sat,
+  Peliyagoda Mon/Wed/Thu/Fri (Tue zero for both). Tech: strong weekday pattern
+  (Mon 0.25, Fri 1.80 pooled).
+- Payday rule: the 25th and the last day of the month; a Sunday payday moves
+  back to Saturday (9 moved). Christmas paydays (2024-12-25, 2025-12-25) fall
+  on closed days. Effect: Fresh x1.12 on payday and also x1.12 on the next two
+  days (3-day window); Style x1.08; Tech x1.33.
+- Festival ramp (Fresh): rises roughly linearly to x1.31-1.32 at ramp 0.8-0.9
+  (x1.24 on operating festival days). Style up to x1.47; Tech noisy.
+- Festival dates: thai_pongal, new_year and christmas are almost fixed;
+  vesak (05-23, 05-12, 05-01), poson (06-21, 06-10, 05-30), esala (08-19,
+  08-08) and deepavali (10-31, 10-20) move about 11 days earlier each year.
+  2026: new_year Mon 04-13 (closed, plus Tue 04-14 closed), vesak Fri 05-01
+  (closed; in 2024/2025 vesak was operating and May 1 was a separate closure),
+  poson Sat 05-30 (operating, also a payday).
+- New Year (Fresh, both depots): last 3 days before x1.63 (2024) and x1.67
+  (2025), peak x1.82 and x1.76; days +1..+3 after x0.91-0.92 (no rebound).
+- Catch-up after a 2+ day closure: Fresh x0.96 (only 2 events, both after New
+  Year), Style x0.99, Tech x0.49 (4 series-days each; too few to model).
+  After a 1-day mid-week closure (May Day, Christmas): Fresh x1.12, Style x1.07,
+  Tech x1.06.
+- Chilled share (Fresh): seasonal, 0.355-0.36 in Oct-Jan, rising to
+  0.377-0.382 in May-Jun; Kandy 0.363, Peliyagoda 0.368 overall.
+- Style seasonality: spikes are in **fixed ISO weeks**, W10 (first full week
+  of March; 2024, 2025, 2026, no festival), W32 (first full week of August, in
+  both years even though esala moved from W34 to W32), W15 (New Year build-up),
+  W51 (Christmas); deepavali spikes follow the festival (W44 2024, W42-43 2025).
+  Vesak/Poson/Thai Pongal show no Style effect (festival-week ratio 0.92-1.04).
+  So Style peaks are mostly calendar-driven, with New Year, Deepavali and
+  Christmas effects.
+- Year-on-year growth (Jan-Mar, volume per operating day): Fresh +5.1%
+  (2025 vs 2024), +6.2% (2026 vs 2025); Style +1.3%, +1.7%; Tech -9.1%, +27.6%.
+
+**Decisions / caveats**
+- Added `days_to_next_holiday_closure` alongside `days_to_next_closure`, because
+  the latter is almost fully determined by the weekday (Saturday -> 1).
+- Thai Pongal ratios are understated: their pre-festival baseline window
+  overlaps the Christmas / year-end period.
+- Report files contain aggregates derived from the datasets; push only after
+  the repo is confirmed private.
+
+**Authorship**
+- Agent wrote `task2a/prepare_features.py`, `task2a/analysis.py` and this entry.
+  User specified the extra features and analyses and the forecast-window checks.
