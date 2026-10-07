@@ -105,3 +105,57 @@ copy of the datasets outside the repo and copy them back after pulling.
   scripts, not committed) and edited `docs/DATATHON_PLAN.md` to replace LightGBM.
 - User decided: untracking data and templates, requirements scope, path
   convention, no-push rule, dropping lightgbm, system Python.
+
+**Addendum (recorded at Phase 0 approval)**
+- `task1/reports/baseline_metrics.json` reflects the original Task 1 code run
+  under **scikit-learn 1.9.0**. The late-probability version issue disappears
+  once Task 1 is fixed and retrained (Phase 6+), because every new model is
+  trained in the pinned environment.
+- Add `matplotlib` to `requirements.txt` when plots are first created (Phase 2).
+- Phase 0 committed as `f9aeb89`. Not pushed (repo still public).
+
+---
+
+## Phase 1: Task 2A labels (2026-10-07)
+
+**Done**
+- `task2a/prepare_labels.py`: loads `Training Data/deliveries_train.csv` and
+  `Test Data/task1_test_inputs.csv`, keeps every order (attempted, deferred,
+  not_run), assigns weeks by `order_date` through `calendar.csv`
+  (`iso_year`, `iso_week`), and builds:
+  - `task2a/data/daily_volume.csv`: complete daily grid, calendar date x depot x
+    brand, zero-filled, 4,914 rows (819 days x 6 series, 2024-01-01 to 2026-03-29,
+    complete ISO weeks). Columns: total_volume, chilled_volume, n_orders,
+    is_operating.
+  - `task2a/data/weekly_volume.csv`: depot x brand x iso_year x iso_week, 702 rows
+    (117 weeks x 6 series), with operating_days per week.
+  Both are gitignored (`task2a/data/`).
+
+**Key numbers (all asserted against the user's independent reference; all pass)**
+- Orders: 92,307 train + 5,014 task1 = 97,321; 0 overlapping `delivery_id`.
+- order_date 2024-01-01 to 2026-03-28; every date found in calendar.csv; 0 orders
+  on `is_operating = 0` days.
+- dispatch_status: attempted 95,275, deferred 1,633, not_run 413
+  (task1 file: 4,924 / 90 / 0).
+- Volume (m3): Fresh 170,358.844 (ambient 107,905.754, chilled 62,453.090),
+  Style 26,044.960, Tech 5,963.394. Chilled only in Fresh.
+- 117 weeks per series (2024-W01 to 2026-W13). Mean weekly total: Kandy Fresh
+  500.26, Style 80.94, Tech 21.19; Peliyagoda Fresh 955.80, Style 141.67,
+  Tech 29.78.
+- Peliyagoda Fresh 2025-W15 = 1,351.0 (6 operating days), 2025-W16 = 623.5
+  (4 operating days).
+- daily sum = weekly sum = raw sum (202,367.198 m3 total; 62,453.090 chilled).
+- Extra check: brand and depot of every order agree with `outlets.csv`.
+
+**Caveat (for the preprocessing document)**
+- The task1 file contains only dispatched orders (no `not_run`). In the training
+  file, not_run orders are 0.44% of volume (0.45% of orders), so the last 6
+  history weeks (2026-W08 to W13) may undercount demand by about that share.
+
+**Decisions**
+- Daily grid covers whole ISO weeks (it runs to Sunday 2026-03-29, a
+  non-operating day with zero volume), so weekly sums are over complete weeks.
+
+**Authorship**
+- Agent wrote `task2a/prepare_labels.py` and this entry. Reference numbers were
+  computed independently by the user.
