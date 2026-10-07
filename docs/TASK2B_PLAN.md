@@ -35,25 +35,25 @@ The return leg is not counted.
 |---|---|---|---|
 | Reefer trucks: VEH003, VEH006, VEH007 | 79.2 m³ and 15,960 kg; at most 6 trips = 158.4 m³ and 31,920 kg | Chilled orders at normal-access outlets: 175.6 m³, 31,685 kg, in 7 districts | **Bottleneck** |
 | Reefer van: VEH036 | 7.0 m³, 1,040 kg | Chilled van_only orders: 6.0 m³, 1,096 kg | Needs 2 trips |
-| Ambient trucks (22) | 656 m³ | Fresh ambient 131 m³; Style 77 m³; Tech 18 m³ | Ample |
+| Ambient trucks (22) | 656 m³ | Fresh normal-access ambient 130.932 m³; Style 77.213 m³; Tech 18.054 m³ | Aggregate capacity ample; S1-078 cannot fit |
 | Ambient vans: VEH037, VEH038 | 17 m³ | Ambient van_only orders: 2.0 m³ | Ample |
 
 Three limits make the reefer trucks the bottleneck:
-- **Volume:** at least ~17 m³ of chilled goods can't be served even with perfect packing. Those deferrals are unavoidable.
-- **Trip count:** 7 chilled districts compete for only 6 reefer-truck trips.
+- **Volume:** all four reefers, including the van, have at most 172.400 m³ across two trips each. The Phase 1 time/packing relaxation tightens this to 169.086 m³ against 181.629 m³ demand. Exact volume-first search later tightens it to 143.772 m³.
+- **Trip count:** 7 normal-access chilled districts compete for only 6 reefer-truck trips; the van may also serve normal-access outlets, so this is a truck-only limit.
 - **Time:** depot-to-district travel takes 173 min to Puttalam, 137 to Matara and 127 to Kurunegala. Long trips sharply restrict second Fresh trips; feasible pairs must be enumerated.
 
 ## Priority policy (agreed)
 
 Allocations are ranked by these goals in strict order. A plan wins on the first goal; later goals only break ties.
 
-1. **Don't skip the same outlet twice.** Serve `deferred_yesterday = 1` orders, and orders with `days_since_last_served ≥ 3`, wherever feasible.
+1. **Protect previously deferred orders.** Maximise the number of served order rows with `deferred_yesterday = 1` OR `days_since_last_served ≥ 3`. Flags can differ between rows at one outlet; outlet coverage is audited separately.
 2. **Maximise chilled volume served.** Festival dairy, meat and produce are perishable.
 3. **Maximise orders and outlets served.**
-4. **Minimise vehicle-minutes.**
+4. **Minimise vehicle-minutes.** Exact minimum is conditional on the fixed ambient allocation; the certified search covers every chilled assignment, not globally optimal ambient packing.
 
 Two hard rules go with it:
-- Never put an ambient order on a reefer while a chilled order is waiting. Reefer space is the scarce resource, and an extra order adds a stop, so there's no time saving.
+- Allocate ambient orders to ambient vehicles while chilled demand remains unserved. This is an explicit priority restriction; the booklet itself permits ambient loads on reefers.
 - If an outlet's chilled order is deferred, still serve its ambient order.
 
 **Submission:** the optimiser's plan. The greedy plan is reported as the baseline.

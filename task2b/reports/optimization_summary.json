@@ -1,0 +1,77 @@
+{
+  "optimized": {
+    "objective_order": "protected_first",
+    "chilled_objective": [
+      3,
+      132836,
+      17,
+      -936
+    ],
+    "trip_counts": {
+      "VEH003": 93,
+      "VEH006": 120,
+      "VEH007": 58,
+      "VEH036": 17
+    },
+    "schedule_counts": {
+      "VEH003": 2865,
+      "VEH006": 4436,
+      "VEH007": 1297,
+      "VEH036": 104
+    },
+    "nodes": 29314,
+    "pruned": 665408,
+    "search_complete": true,
+    "scope": "All feasible chilled assignments under published budgets, no ambient loads on reefers; ambient assignment fixed. Outlet coverage constant because every chilled outlet has served ambient order.",
+    "full_score": [
+      10,
+      132836,
+      75,
+      58,
+      -4173
+    ],
+    "checker": "FEASIBILITY: PASSED - every rule satisfied."
+  },
+  "volume_first": {
+    "objective_order": "volume_first",
+    "chilled_objective": [
+      143772,
+      2,
+      19,
+      -864
+    ],
+    "trip_counts": {
+      "VEH003": 93,
+      "VEH006": 120,
+      "VEH007": 58,
+      "VEH036": 17
+    },
+    "schedule_counts": {
+      "VEH003": 2865,
+      "VEH006": 4436,
+      "VEH007": 1297,
+      "VEH036": 104
+    },
+    "nodes": 2274,
+    "pruned": 120454,
+    "search_complete": true,
+    "scope": "All feasible chilled assignments under published budgets, no ambient loads on reefers; ambient assignment fixed. Outlet coverage constant because every chilled outlet has served ambient order.",
+    "full_score": [
+      9,
+      143772,
+      77,
+      58,
+      -4101
+    ],
+    "checker": "FEASIBILITY: PASSED - every rule satisfied."
+  },
+  "greedy_score": [
+    10,
+    125859,
+    75,
+    58,
+    -4066
+  ],
+  "chilled_volume_gain_m3": 6.977,
+  "priority_volume_cost_m3": 10.936
+}

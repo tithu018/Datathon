@@ -863,3 +863,13 @@ teammates; this phase produces a handover package in `docs/handover/` instead.
 - Van reservation applies only to the baseline; exact search will permit every compatible normal-access van trip.
 - Independent rule reviewer confirmed formula, root/checker data equality and capacity corrections. Scope claims distinguish order protection from outlet coverage.
 - Authorship: Codex generated core/baseline, with independent Codex agent rule review requested by user.
+
+## 2B Phase 4: exact chilled optimiser (2026-10-07)
+
+- Enumerated every compatible chilled subset and every disjoint one/two-trip schedule. Reduced same served masks by minimum duration; completed solver-free lexicographic branch-and-bound using independent relaxed bounds.
+- Exact priority result: 3 protected chilled orders, 132.836 m3, 17 chilled orders, 936 chilled minutes. Full allocation: 10 protected orders, 75 orders, 58 outlets, 4,173 minutes. Greedy gain +6.977 m3. Both official checker runs passed.
+- Exact volume-first counterfactual: 143.772 m3, 19 chilled orders, 2 protected chilled orders; skips protected Puttalam chilled S1-083. Priority costs 10.936 m3 and two delivered chilled orders.
+- Reefer van may serve normal access, and does so in the optimum. Ambient assignment is fixed; no claim of globally minimum total ambient minutes.
+- Independent agent MILP with zero gap matches every objective. Production has no solver dependency. Independent exhaustive verifier passed 22 small instances,44 objectives,4 empty cases; it covers identical trucks,mixed scenarios,sparse indices and OR flags.
+- Corrected remaining plan statements; added scenario to identical-vehicle symmetry key following review.
+- Authorship: Codex generated optimiser; separate Codex agent independently solved/reviewed and wrote exhaustive verifier at user request.
