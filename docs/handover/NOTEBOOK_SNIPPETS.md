@@ -1,0 +1,75 @@
+# Final inference cell (copy-paste)
+
+The brief asks for a final notebook cell that loads the saved models, runs Task 1 and
+Task 2A inference, and prints inputs and predictions. Paste the code below as that cell.
+
+**Before running it:**
+- Run the notebook from the repository root, so the relative paths work.
+- Create the models and feature files first: `python task1/run_all.py` and
+  `python task2a/run_all.py` (see HOW_TO_RUN.md).
+- The cell trains nothing. It only loads `task1/*.joblib` and `task2a/models/task2a_model.joblib`.
+
+**Verified:** running this exact code (`docs/handover/inference_cell.py`) reproduces
+`outputs/submission_task1.csv` and `outputs/submission_task2a.csv` exactly; both
+`DataFrame.equals` checks pass. The output is in `docs/handover/smoke_test_output.txt`.
+
+**Gotcha:** `task1/` and `task2a/` both contain a module named `models.py`. The cell
+loads Task 1's feature list by file path, and only puts `task2a/` on `sys.path`. Keep that
+order if you split the cell. The Task 2A model pickle needs `task2a/models.py` to import as `models`.
+
+```python
+# ===== Final inference cell: loads the saved models and predicts Task 1 and Task 2A =====
+# Run from the repository root after `python task1/run_all.py` and `python task2a/run_all.py`
+# (they create the feature files and the .joblib models). No training happens here.
+import importlib.util
+import sys
+from pathlib import Path
+
+import joblib
+import numpy as np
+import pandas as pd
+
+ROOT = Path(".").resolve()
+pd.set_option("display.width", 200)
+pd.set_option("display.max_columns", 20)
+
+# ---------- Task 1: service time and late probability per delivery ----------
+spec = importlib.util.spec_from_file_location("task1_features", ROOT / "task1" / "features.py")
+task1_features = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(task1_features)  # loaded by path: task1 and task2a both have a models.py
+FEATURES = task1_features.FEATURES
+
+service_model = joblib.load(ROOT / "task1" / "service_model.joblib")  # HGB regressor
+late_model = joblib.load(ROOT / "task1" / "late_model.joblib")        # HGB + sigmoid calibration
+test1 = pd.read_csv(ROOT / "task1" / "test_features.csv")             # planned info for each test order
+template1 = pd.read_csv(ROOT / "Submission Templates" / "submission_task1.csv")
+
+X1 = test1.set_index("delivery_id").loc[template1["delivery_id"], FEATURES]  # template row order
+task1_pred = pd.DataFrame({
+    "delivery_id": template1["delivery_id"],
+    "pred_service_min": np.clip(service_model.predict(X1), 0, None),
+    "pred_late_prob": np.clip(late_model.predict_proba(X1)[:, 1], 0.001, 0.999),
+})
+print(f"Task 1: {len(FEATURES)} features, {len(task1_pred):,} deliveries")
+print("Sample inputs:")
+print(X1.head(3)[["brand", "district", "order_units", "planned_arrival_min", "window_close_min_feature",
+                  "festival_ramp", "disruption_index"]])
+print("Predictions:")
+print(task1_pred.head(5).to_string(index=False))
+print(f"Mean predicted service {task1_pred['pred_service_min'].mean():.2f} min, "
+      f"mean late probability {task1_pred['pred_late_prob'].mean():.4f}\n")
+
+# ---------- Task 2A: weekly total and chilled volume per depot x brand ----------
+sys.path.insert(0, str(ROOT / "task2a"))
+from predict import load_bundle, predict_task2a  # noqa: E402  (task2a/predict.py)
+
+bundle = load_bundle(ROOT / "task2a" / "models" / "task2a_model.joblib")
+inputs2a = pd.read_csv(ROOT / "Test Data" / "task2a_test_inputs.csv")
+task2a_pred = predict_task2a(inputs2a, bundle).round(3)
+print(f"Task 2A: model trained on history to {bundle['history_end']}, {len(task2a_pred)} rows")
+print("Sample inputs and predictions:")
+print(inputs2a.merge(task2a_pred, on="row_id").head(8).to_string(index=False))
+print("10-week totals by brand (m3):")
+print(inputs2a.merge(task2a_pred, on="row_id").groupby("brand")[
+    ["pred_total_volume_m3", "pred_chilled_volume_m3"]].sum().round(1))
+```

@@ -776,3 +776,28 @@ information) was measured as a labelled extra and NOT applied (user decision).
 **Authorship**
 - Agent wrote the Phase 9 code, `CHANGES_FOR_REVIEW.md` and this entry. User set the
   final configuration, the clip, the checks and the contents of the change report.
+- Phase 9 committed as `0f34b85` and pushed.
+
+---
+
+## Phase 10 (reduced scope): handover package (2026-10-07)
+
+**Scope (user decision):** the final notebook, full documents and zip are built by the
+teammates; this phase produces a handover package in `docs/handover/` instead.
+
+**Done**
+- `task1/CHANGES_FOR_REVIEW.md`: "this commit" replaced by the Phase 9 hash `0f34b85`.
+- `docs/handover/`: README.md (index + results summary), HOW_TO_RUN.md,
+  NOTEBOOK_SNIPPETS.md (final inference cell), inference_cell.py (the same code),
+  smoke_test_output.txt, PREPROCESSING_SECTIONS.md, ARCHITECTURE.md (Mermaid +
+  deployment), AI_DISCLOSURE_NOTES.md, VIDEO_TALKING_POINTS.md.
+- Smoke test: `inference_cell.py` (+ comparison) loads only the saved models and
+  reproduces `outputs/submission_task1.csv` and `outputs/submission_task2a.csv`
+  exactly (`DataFrame.equals` True for both, reading the CSVs with round-trip float
+  parsing; the default parser differs by 1e-14).
+- Note for the notebook: task1/ and task2a/ both have a `models.py`; the cell loads
+  Task 1's feature list by file path and puts only task2a/ on sys.path.
+
+**Authorship**
+- Agent wrote the handover documents and the inference cell; user defined the
+  package contents and scope.
