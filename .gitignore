@@ -2,3 +2,20 @@
 __pycache__/
 *.joblib
 *.pkl
+.ipynb_checkpoints/
+
+# Competition datasets: never commit (see data/README.md)
+General Data/
+Training Data/
+Test Data/
+Submission Templates/
+
+# Generated CSVs are untracked by default...
+*.csv
+# ...except our own small submissions and report tables
+!outputs/*.csv
+!task1/reports/*.csv
+!task2a/reports/*.csv
+
+# Generated intermediate data
+task2a/data/

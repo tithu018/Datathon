@@ -1,0 +1,57 @@
+{
+  "description": "Original Task 1 pipeline (commit eaf7297), unchanged features and models",
+  "features": [
+    "temp_requirement",
+    "order_units",
+    "order_weight_kg",
+    "order_volume_m3",
+    "distance_km",
+    "planned_travel_duration_min",
+    "planned_arrival_min",
+    "planned_depart_min",
+    "window_open_min_feature",
+    "window_close_min_feature",
+    "monsoon",
+    "dow"
+  ],
+  "random_split": {
+    "n_train": 73515,
+    "n_test": 18379,
+    "test_late_rate": 0.1958,
+    "service_mae": 5.5197,
+    "service_rmse": 8.9497,
+    "late_roc_auc": 0.9278,
+    "late_log_loss": 0.29,
+    "late_brier": 0.0916,
+    "late_share_exact_0": 0.121,
+    "late_share_exact_1": 0.0011
+  },
+  "time_based": {
+    "cutoff_order_date": "2026-01-03",
+    "n_train": 86721,
+    "n_test": 5173,
+    "test_late_rate": 0.1311,
+    "service_mae": 5.1523,
+    "service_rmse": 8.3194,
+    "late_roc_auc": 0.9315,
+    "late_log_loss": 0.232,
+    "late_brier": 0.0727,
+    "late_share_exact_0": 0.1419,
+    "late_share_exact_1": 0.0,
+    "train_order_dates": [
+      "2024-01-01",
+      "2026-01-02"
+    ],
+    "test_order_dates": [
+      "2026-01-03",
+      "2026-02-14"
+    ]
+  },
+  "notes": "log_loss computed with probabilities clipped to [1e-15, 1-1e-15]",
+  "environment": {
+    "python": "3.11.2",
+    "pandas": "3.0.3",
+    "numpy": "2.4.6",
+    "scikit-learn": "1.9.0"
+  }
+}
