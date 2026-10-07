@@ -883,3 +883,11 @@ teammates; this phase produces a handover package in `docs/handover/` instead.
 - Exact +VEH004 sensitivity:168.832m3 chilled,22 chilled orders,80 total orders; gain35.996m3. Local checker-equivalent validation uses changed availability; the official base checker must not be used for this hypothetical fleet. Independent zero-gap MILP and returned-witness audit match.
 - Accelerated exact search using urgency-category maxima, prefix dominance and direct final-vehicle completion; independent44-objective verifier still passes. No new dependency.
 - Authorship: independent Codex agents wrote/reviewed diagnostics and verification; root Codex implemented sensitivity, coordinated results and committed phase.
+
+## 2B Phase 6: policy write-up and per-order reasons (2026-10-07)
+
+- Generated docs/handover/TASK2B_POLICY.md from actual allocation/certificates, about one page, plus85 local order-decision explanations in ignored task2b/data/order_decisions.csv.
+- Explicit decomposition: at least37.857m3 unavoidable chilled shortage at the exact volume-first optimum; another10.936m3 lost under protected-first policy; total48.793m3 deferred chilled. Individual chilled rows are not labelled inherently impossible. Style40.660m3 deferral is individually unavoidable.
+- Includes worked101min example, grouped deferrals, greedy gap, proof scope, arrival-vs-unloading caveat, fuel limitation and+35.996m3 repair remedy.
+- Checks: strict submission validation,85 unique reason rows, no missing reasons, policy under600words.
+- Authorship: Codex wrote generated policy and explanations based on independently verified allocations.
