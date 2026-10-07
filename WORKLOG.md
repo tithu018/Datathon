@@ -318,3 +318,103 @@ payday, ramp and catch-up effects are also weekday-adjusted)
 - Agent wrote `task2a/models.py`, `task2a/backtest.py`, the feature changes and
   this entry. User specified the GLM feature set, test periods, payday test and
   report contents.
+
+**Phase 3 decisions (recorded at Phase 3 approval)**
+- Drop the 2+ day closure flag; keep `after_midweek_closure` only if an ablation
+  helps on the mean of the 4 periods (2026-W18: Sat May 2 follows the Vesak closure).
+- Tech: compare (a) smoothed mean, (b) GLM + smoothing blend, (c) calendar-shaped level.
+- Style: test outlet x weekday and recency weighting / shorter window.
+- Phase 3 committed as `16c843e`. Not pushed (repo still public).
+
+---
+
+## Phase 4: Task 2A model improvements and chilled share (2026-10-07)
+
+**Selection discipline**
+- Selection uses only the mean over the 4 Phase 3 periods (headline shown
+  separately). A 5th period, 2025-W02..W11, is a confirmation period: evaluated
+  once, at the end, on the recommended config and the baselines
+  (`experiments.py --confirm` refuses a second run without `--force`).
+- Every results table includes the mean signed bias per series.
+
+**Done**
+- `prepare_features.py`: dropped `is_first_day_after_closure` (analysis.py derives
+  it locally; Phase 2 numbers unchanged). New `task2a/data/style_outlet_days.csv`:
+  one row per Style outlet per date of its weekday. Asserted: every Style outlet
+  orders on exactly one weekday, has an order on every operating day of that
+  weekday, and none on closed days (2,890 orders, 25 outlets). A closed day
+  skips that week's order; it is not moved.
+- `models.py`: SeriesGLM gained `include_midweek`, `halflife_weeks` (recency
+  sample weights) and `window_weeks`; new `StyleOutletGLM` (Poisson GLM on
+  order volume per outlet-date, outlet dummies instead of weekday dummies);
+  `GlobalHGB` (HistGradientBoostingRegressor, loss="poisson", depot/brand/festival
+  as native categoricals, min_samples_leaf 40, l2 1.0, no early stopping, seed 42);
+  Tech smoothers and the calendar-shaped level (smoothed volume per unit of
+  weekday capacity x the forecast week's capacity); chilled share table
+  (depot x month).
+- `forecast.py`: `Context` + `Forecaster` turn a config (spec per brand + chilled
+  method) into weekly forecasts; enforce total >= 0, 0 <= chilled <= total,
+  chilled = 0 for Style/Tech. Shared by the backtest and the Phase 5 final fit.
+- `evaluation.py`: periods, contexts, scoring (WAPE, MAE, signed bias).
+- `experiments.py`: all experiments, improvement table, config, confirmation.
+- Outputs in `task2a/reports/`: phase4_output.txt, phase4_improvement.csv,
+  phase4_candidates.csv, phase4_config.json, phase4_confirmation.csv,
+  phase4_confirmation_output.txt.
+- Checked: the Phase 3 backtest still reproduces byte-for-byte.
+
+**Key numbers (total WAPE, mean of 4 periods / headline)**
+- after_midweek_closure ablation: with 3.377% / 3.817%, without 3.362% / 3.767%
+  -> **dropped** (consequence: no lift for Sat 2026-05-02 after the Vesak closure).
+- HGB grid (8 combos: depth 3/4, lr 0.03/0.06, 300/600 iter): best depth 4,
+  lr 0.06, 600 iter: 3.56% / 3.87% alone (Fresh 2.13%, Style 7.03%, Tech 29.5%).
+  The best combo is at the edge of the grid; not extended (one modest grid).
+- GLM+HGB blend, weight on HGB chosen per brand: Fresh 0.4 (2.04% -> 1.97%),
+  Style 0.2 (5.64% -> 5.58%), Tech 0.7 (31.6% -> 28.8%).
+- Style: outlet x weekday 5.10% / 5.17% (GLM 5.64% / 7.34%); half-life 52w
+  5.099% vs 5.102% (practical tie; the rule picked 52w); half-life 26w 5.23%;
+  52-week window much worse (outlet 9.0%, GLM 13.4%, it loses last year's
+  festivals); blending HGB into the outlet model: best weight 0.
+- Tech: (a) best smoothed mean = 26-week mean 28.75%; (b) GLM + smoothed
+  (w_smooth 0.8) 28.43%; (c) calendar-shaped, 52-week mean 28.22% (headline
+  33.6%) -> chosen. All within 0.5 pp; Tech is mostly noise.
+- Chilled: share (depot x month) x final Fresh total 2.24% / 2.30% vs GLM on
+  chilled directly 2.50% / 2.27% -> **share** chosen.
+- Final config: 3.14% / 3.47% (Phase 3 GLM 3.38% / 3.82%); per period:
+  headline 3.47%, 2026-W04..W13 2.77%, esala 3.64%, deepavali 2.69%. Per series
+  WAPE / bias: Kandy Fresh 1.93% / -0.4%, Kandy Style 7.08% / -0.6%, Kandy Tech
+  27.5% / -1.3%, Peliyagoda Fresh 2.00% / -0.5%, Peliyagoda Style 3.97% / -1.2%,
+  Peliyagoda Tech 28.8% / -7.4%.
+
+**Confirmation period 2025-W02..W11 (evaluated once)**
+| model | total WAPE | bias | Fresh | Style | Tech | chilled |
+|---|---|---|---|---|---|---|
+| recommended config | 3.47% | -1.6% | 1.79% | 8.47% | 32.1% | 2.48% |
+| Phase 3 GLM (reference) | 3.48% | -2.2% | 1.98% | 7.07% | 33.2% | 3.67% |
+| last-8-weeks mean | 5.73% | -0.4% | 4.55% | 8.18% | 31.3% | 3.99% |
+| same week last year | 5.26% | -3.0% | 4.52% | 5.27% | 29.1% | 4.72% |
+- Fresh and chilled confirm the gains; Style does not (Kandy Style bias -10.2%).
+  This period trains on only ~1 year of history (2024), unlike every selection
+  period and the final fit.
+
+**Not done**
+- Optional P50/P90 intervals (Phase 4 item 5): skipped for time.
+
+**Authorship**
+- Agent wrote `models.py` (extensions), `forecast.py`, `evaluation.py`,
+  `experiments.py`, the feature changes and this entry. User set the selection
+  discipline, the confirmation period, the candidate list and the HGB constraints.
+
+**Phase 4 decisions (user, before commit)**
+- Final config accepted with one change: Style uses the plain outlet x weekday GLM
+  (no recency weighting); it ties the 52w half-life on the selection periods
+  (5.102% vs 5.099%) and is simpler. The rule's pick is kept in
+  `phase4_config.json` under `selected_by_rule`.
+- **The confirmation period (2025-W02..W11) was evaluated once and was not used
+  for any selection.** No post-hoc blending (e.g. with "same week last year")
+  after seeing it, and it was not re-run after the Style change.
+- Tech: option (c) kept; Peliyagoda Tech bias (-7.4%, about 2 m3/week) accepted.
+- HGB grid left as is.
+- Re-scored the edited config on the 4 selection periods only
+  (`experiments.py --score-config`): total WAPE 3.14% mean / 3.47% headline
+  (Fresh 1.97%, Style 5.10%, Tech 28.22%, chilled 2.24%), within the user's
+  3.17% threshold -> Phase 4 approved.

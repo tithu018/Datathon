@@ -1,0 +1,34 @@
+brand,candidate,spec,wape_mean4,wape_headline,bias_mean4
+Fresh,GLM+HGB w=0.4,"{""model"": ""blend"", ""parts"": [[{""include_midweek"": false, ""model"": ""glm""}, 0.6], [{""include_midweek"": false, ""learning_rate"": 0.06, ""max_depth"": 4, ""max_iter"": 600, ""model"": ""hgb""}, 0.4]]}",0.019736307817512115,0.022426987743384353,-0.004512980609541446
+Fresh,GLM,"{""include_midweek"": false, ""model"": ""glm""}",0.02038731949177579,0.02160419566994328,-0.0042735967160179465
+Fresh,HGB,"{""include_midweek"": false, ""learning_rate"": 0.06, ""max_depth"": 4, ""max_iter"": 600, ""model"": ""hgb""}",0.02131445760435787,0.024391145200452432,-0.004872056449826679
+Style,GLM+HGB w=0.2,"{""model"": ""blend"", ""parts"": [[{""include_midweek"": false, ""model"": ""glm""}, 0.8], [{""include_midweek"": false, ""learning_rate"": 0.06, ""max_depth"": 4, ""max_iter"": 600, ""model"": ""hgb""}, 0.2]]}",0.05579457478403952,0.066995743432114,-0.018209460517573325
+Style,GLM,"{""include_midweek"": false, ""model"": ""glm""}",0.05638125887636575,0.07338035501297113,-0.011799960107408563
+Style,HGB,"{""include_midweek"": false, ""learning_rate"": 0.06, ""max_depth"": 4, ""max_iter"": 600, ""model"": ""hgb""}",0.07026436573982618,0.06601044524256992,-0.04384746215823264
+Tech,GLM+HGB w=0.7,"{""model"": ""blend"", ""parts"": [[{""include_midweek"": false, ""model"": ""glm""}, 0.3], [{""include_midweek"": false, ""learning_rate"": 0.06, ""max_depth"": 4, ""max_iter"": 600, ""model"": ""hgb""}, 0.7]]}",0.2881917888902169,0.34764501477548776,-0.12427597353244635
+Tech,GLM,"{""include_midweek"": false, ""model"": ""glm""}",0.3158468992124863,0.3724300848601791,-0.07256684713545261
+Tech,HGB,"{""include_midweek"": false, ""learning_rate"": 0.06, ""max_depth"": 4, ""max_iter"": 600, ""model"": ""hgb""}",0.2948261453702248,0.35576120689907437,-0.14643702770258643
+Style,"outlet, half-life 52w","{""halflife_weeks"": 52, ""include_midweek"": false, ""model"": ""style_outlet""}",0.05098603394196481,0.05161756692244952,-0.009975254725235057
+Style,outlet x weekday,"{""include_midweek"": false, ""model"": ""style_outlet""}",0.051020090730244036,0.051707166229013196,-0.01103460335414576
+Style,"outlet, half-life 26w","{""halflife_weeks"": 26, ""include_midweek"": false, ""model"": ""style_outlet""}",0.05233366187351336,0.05175740714579445,-0.009289975016040616
+Style,"GLM, half-life 52w","{""halflife_weeks"": 52, ""include_midweek"": false, ""model"": ""glm""}",0.05611499123274909,0.0751059405744349,-0.010540788415077142
+Style,"GLM, half-life 26w","{""halflife_weeks"": 26, ""include_midweek"": false, ""model"": ""glm""}",0.056797835765630716,0.07724443341349861,-0.009646698798161185
+Style,"outlet, last 52w","{""include_midweek"": false, ""model"": ""style_outlet"", ""window_weeks"": 52}",0.09041882779647813,0.20309628822976286,-0.0366070322620394
+Style,"GLM, last 52w","{""include_midweek"": false, ""model"": ""glm"", ""window_weeks"": 52}",0.13435065590277037,0.3505305836856677,0.002529986339622061
+Tech,"(c) calendar-shaped, mean 52","{""kind"": ""mean"", ""model"": ""tech_calendar"", ""param"": 52}",0.28218789867122224,0.3355187874643412,-0.05166938211935278
+Tech,"(c) calendar-shaped, ewm 26","{""kind"": ""ewm"", ""model"": ""tech_calendar"", ""param"": 26}",0.2824046263214506,0.3362576965745136,-0.05277557639802773
+Tech,"(c) calendar-shaped, mean 26","{""kind"": ""mean"", ""model"": ""tech_calendar"", ""param"": 26}",0.282606777080613,0.3393913607734716,-0.03165403090301383
+Tech,"(c) calendar-shaped, ewm 13","{""kind"": ""ewm"", ""model"": ""tech_calendar"", ""param"": 13}",0.2831002536502469,0.3354955868663529,-0.04426168636920656
+Tech,"(b) GLM + (a) best, w_smooth=0.8","{""model"": ""blend"", ""parts"": [[{""include_midweek"": false, ""model"": ""glm""}, 0.2], [{""kind"": ""mean"", ""model"": ""tech_smooth"", ""param"": 26}, 0.8]]}",0.28429361218759575,0.3490065942877325,-0.0404688085005892
+Tech,(a) mean 26,"{""kind"": ""mean"", ""model"": ""tech_smooth"", ""param"": 26}",0.28749788534813964,0.3629583028227844,-0.03244429884187343
+Tech,(a) mean 52,"{""kind"": ""mean"", ""model"": ""tech_smooth"", ""param"": 52}",0.28797973556641143,0.3588417389069198,-0.053498861144664955
+Tech,(a) ewm 26,"{""kind"": ""ewm"", ""model"": ""tech_smooth"", ""param"": 26}",0.2882692883299995,0.359525002188296,-0.054402333873421735
+Tech,(a) ewm 13,"{""kind"": ""ewm"", ""model"": ""tech_smooth"", ""param"": 13}",0.2885301849154455,0.3584843390641598,-0.04577025895288903
+Tech,"(c) calendar-shaped, ewm 8","{""kind"": ""ewm"", ""model"": ""tech_calendar"", ""param"": 8}",0.28897609429501064,0.3349668616785957,-0.0374287864970826
+Tech,(a) ewm 8,"{""kind"": ""ewm"", ""model"": ""tech_smooth"", ""param"": 8}",0.2916675576163498,0.3584843390641598,-0.03908479288938915
+Tech,"(c) calendar-shaped, mean 13","{""kind"": ""mean"", ""model"": ""tech_calendar"", ""param"": 13}",0.2950490971810313,0.34128068955996554,-0.03485069359556939
+Tech,(a) mean 13,"{""kind"": ""mean"", ""model"": ""tech_smooth"", ""param"": 13}",0.29742548056529594,0.36390158453874794,-0.03479664846533516
+Tech,"(c) calendar-shaped, ewm 4","{""kind"": ""ewm"", ""model"": ""tech_calendar"", ""param"": 4}",0.3037467402077014,0.33822392514922045,-0.028636161275817112
+Tech,(a) ewm 4,"{""kind"": ""ewm"", ""model"": ""tech_smooth"", ""param"": 4}",0.3041470286133105,0.36106145430252806,-0.03053371380093864
+Tech,(a) mean 8,"{""kind"": ""mean"", ""model"": ""tech_smooth"", ""param"": 8}",0.3183725071893481,0.3644155897732078,-0.0046340253835054634
+Tech,"(c) calendar-shaped, mean 8","{""kind"": ""mean"", ""model"": ""tech_calendar"", ""param"": 8}",0.321508177489112,0.34320189698958264,-0.0026396451485476147

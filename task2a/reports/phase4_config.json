@@ -1,0 +1,68 @@
+{
+  "config": {
+    "Fresh": {
+      "model": "blend",
+      "parts": [
+        [
+          {
+            "include_midweek": false,
+            "model": "glm"
+          },
+          0.6
+        ],
+        [
+          {
+            "include_midweek": false,
+            "learning_rate": 0.06,
+            "max_depth": 4,
+            "max_iter": 600,
+            "model": "hgb"
+          },
+          0.4
+        ]
+      ]
+    },
+    "Style": {
+      "model": "style_outlet",
+      "include_midweek": false
+    },
+    "Tech": {
+      "kind": "mean",
+      "model": "tech_calendar",
+      "param": 52
+    },
+    "chilled": {
+      "method": "share",
+      "glm": {
+        "include_midweek": false
+      }
+    }
+  },
+  "after_midweek_closure": false,
+  "hgb": {
+    "model": "hgb",
+    "max_depth": 4,
+    "learning_rate": 0.06,
+    "max_iter": 600,
+    "include_midweek": false
+  },
+  "selection_periods": [
+    "2025-W14..W23 (headline)",
+    "2026-W04..W13",
+    "2025-W30..W39 (esala)",
+    "2025-W40..W49 (deepavali)"
+  ],
+  "selected_by_rule": {
+    "Style": {
+      "halflife_weeks": 52,
+      "include_midweek": false,
+      "model": "style_outlet"
+    }
+  },
+  "user_decisions": [
+    "Style: plain outlet x weekday GLM (no recency weighting); ties the 52w half-life on the selection periods (5.102% vs 5.099%) and is simpler.",
+    "No post-hoc blending after the confirmation period; the confirmation period was evaluated once and not used for selection.",
+    "Tech: option (c), calendar-shaped level with 52-week mean; Peliyagoda Tech bias accepted.",
+    "HGB grid left as is."
+  ]
+}

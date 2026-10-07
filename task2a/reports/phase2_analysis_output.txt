@@ -1,10 +1,10 @@
-D:\Competitions\Root code\Datathon repo\Datathon\task2a\analysis.py:220: RuntimeWarning: invalid value encountered in scalar divide
+D:\Competitions\Root code\Datathon repo\Datathon\task2a\analysis.py:222: RuntimeWarning: invalid value encountered in scalar divide
   r1 = [row["norm"] / normal[(normal["dow"] == row["dow"]) & (normal["depot"] == row["depot"])]["norm"].mean()
-D:\Competitions\Root code\Datathon repo\Datathon\task2a\analysis.py:220: RuntimeWarning: invalid value encountered in scalar divide
+D:\Competitions\Root code\Datathon repo\Datathon\task2a\analysis.py:222: RuntimeWarning: invalid value encountered in scalar divide
   r1 = [row["norm"] / normal[(normal["dow"] == row["dow"]) & (normal["depot"] == row["depot"])]["norm"].mean()
-D:\Competitions\Root code\Datathon repo\Datathon\task2a\analysis.py:220: RuntimeWarning: invalid value encountered in scalar divide
+D:\Competitions\Root code\Datathon repo\Datathon\task2a\analysis.py:222: RuntimeWarning: invalid value encountered in scalar divide
   r1 = [row["norm"] / normal[(normal["dow"] == row["dow"]) & (normal["depot"] == row["depot"])]["norm"].mean()
-D:\Competitions\Root code\Datathon repo\Datathon\task2a\analysis.py:220: RuntimeWarning: invalid value encountered in scalar divide
+D:\Competitions\Root code\Datathon repo\Datathon\task2a\analysis.py:222: RuntimeWarning: invalid value encountered in scalar divide
   r1 = [row["norm"] / normal[(normal["dow"] == row["dow"]) & (normal["depot"] == row["depot"])]["norm"].mean()
 1. Weekday multipliers (clean days, volume / local level)
          Mon    Tue    Wed    Thu    Fri    Sat

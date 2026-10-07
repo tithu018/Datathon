@@ -16,6 +16,7 @@ import pandas as pd
 CALENDAR = Path("General Data") / "calendar.csv"
 OUTLETS = Path("General Data") / "outlets.csv"
 TASK2A_INPUTS = Path("Test Data") / "task2a_test_inputs.csv"
+ORDER_FILES = [Path("Training Data") / "deliveries_train.csv", Path("Test Data") / "task1_test_inputs.csv"]
 DATA = Path("task2a") / "data"
 
 TREND_ORIGIN = pd.Timestamp("2024-01-01")
@@ -78,8 +79,8 @@ cal["days_since_last_operating_day"] = np.arange(len(cal)) - prev_op_pos.values
 # 2024-01-01 (Mon): the previous operating day is Sat 2023-12-30, before the calendar
 cal.loc[0, "days_since_last_operating_day"] = 2 if cal.loc[0, "dow"] == 0 else 1
 cal["days_since_last_operating_day"] = cal["days_since_last_operating_day"].astype(int)
-# First operating day after 2+ consecutive closed days (a plain Sunday is a 1-day closure)
-cal["is_first_day_after_closure"] = ((op == 1) & (cal["days_since_last_operating_day"] >= 3)).astype(int)
+# (Phase 4: the "first operating day after 2+ closed days" flag was dropped; only 2 events,
+#  no catch-up effect. task2a/analysis.py derives it locally for the Phase 2 analysis.)
 # First operating day after a single closed mid-week day (not the Monday after a Sunday):
 # the day after May Day or Christmas (Phase 2: Fresh x1.12)
 cal["after_midweek_closure"] = ((op == 1) & (cal["days_since_last_operating_day"] == 2)
@@ -116,7 +117,7 @@ calendar_features = [
     "dow", "is_operating", "is_payday", "days_to_payday", "days_since_payday", *PAYDAY_FLAGS,
     "festival_ramp", "festival_ramp_sq", "festival_name", "is_holiday", "monsoon",
     "month", "trend_years", "days_since_last_operating_day",
-    "is_first_day_after_closure", "after_midweek_closure", "days_to_next_holiday_closure",
+    "after_midweek_closure", "days_to_next_holiday_closure",
     "style_peak_week",
 ]
 cal_out = cal[["date", "iso_year", "iso_week", "festival"] + calendar_features]
@@ -173,7 +174,37 @@ assert w23["payday_cal_d2"].sum() == 1 and w23["payday_op_d1"].sum() == 1 and w2
     "payday tail must spill into 2026-W23"
 print("n_outlets:", n_outlets.set_index(["depot", "brand"])["n_outlets"].to_dict())
 
+# ---------------------------------------------------------------- Style outlet x weekday (Phase 4)
+# Every Style outlet orders once a week on one fixed weekday; when that day is closed the
+# order is skipped (not moved). One row per outlet per date of its weekday.
+orders = pd.concat([pd.read_csv(f, usecols=["delivery_id", "order_date", "outlet_id", "brand", "depot",
+                                            "order_volume_m3"]) for f in ORDER_FILES])
+style = orders[orders["brand"] == "Style"].copy()
+style["date"] = pd.to_datetime(style["order_date"])
+style["dow"] = style["date"].dt.dayofweek
+outlet_dow = style.groupby("outlet_id")["dow"].agg(lambda x: sorted(set(x)))
+assert (outlet_dow.str.len() == 1).all(), "a Style outlet orders on more than one weekday"
+outlet_dow = outlet_dow.str[0].rename("outlet_dow")
+style_outlets = outlets[outlets["brand"] == "Style"][["outlet_id", "depot"]].merge(outlet_dow, on="outlet_id")
+assert len(style_outlets) == (outlets["brand"] == "Style").sum()
+assert not style.duplicated(["outlet_id", "date"]).any()
+so = window.merge(style_outlets, left_on="dow", right_on="outlet_dow").drop(columns="outlet_dow")
+so = so.merge(style[["outlet_id", "date", "order_volume_m3"]], on=["outlet_id", "date"], how="left")
+so["split"] = np.where(so["date"] <= hist_end, "history", "forecast")
+so_hist = so[so["split"] == "history"]
+assert so_hist.loc[so_hist["is_operating"] == 0, "order_volume_m3"].isna().all()
+missing = so_hist[(so_hist["is_operating"] == 1) & so_hist["order_volume_m3"].isna()]
+assert missing.empty, f"Style outlet without an order on an operating day of its weekday:\n{missing.head()}"
+assert so_hist["order_volume_m3"].notna().sum() == len(style)
+so["brand"] = "Style"
+so = so.sort_values(["outlet_id", "date"]).reset_index(drop=True)
+print("Style outlets: one order per operating day of the outlet's weekday, none on closed days "
+      f"({len(style)} orders, {len(style_outlets)} outlets); weekday counts:",
+      style_outlets.groupby(["depot", "outlet_dow"]).size().to_dict())
+
 DATA.mkdir(parents=True, exist_ok=True)
 cal_out.to_csv(DATA / "calendar_features.csv", index=False)
 daily.to_csv(DATA / "daily_features.csv", index=False)
-print(f"Saved: {DATA / 'calendar_features.csv'} ({len(cal_out)} rows), {DATA / 'daily_features.csv'} ({len(daily):,} rows)")
+so.to_csv(DATA / "style_outlet_days.csv", index=False)
+print(f"Saved: {DATA / 'calendar_features.csv'} ({len(cal_out)} rows), {DATA / 'daily_features.csv'} ({len(daily):,} rows), "
+      f"{DATA / 'style_outlet_days.csv'} ({len(so):,} rows)")

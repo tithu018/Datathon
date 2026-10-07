@@ -26,6 +26,8 @@ DOW = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 LEVEL_WINDOW = 57
 
 df = pd.read_csv(DATA / "daily_features.csv", parse_dates=["date"])
+# First operating day after 2+ consecutive closed days (no longer a model feature; Phase 4)
+df["is_first_day_after_closure"] = ((df["is_operating"] == 1) & (df["days_since_last_operating_day"] >= 3)).astype(int)
 cal = pd.read_csv(DATA / "calendar_features.csv", parse_dates=["date"])
 hist = df[df["split"] == "history"].copy()
 weekly = pd.read_csv(DATA / "weekly_volume.csv", parse_dates=["week_start"])

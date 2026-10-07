@@ -1,0 +1,21 @@
+Saved config: {"Fresh": {"model": "blend", "parts": [[{"include_midweek": false, "model": "glm"}, 0.6], [{"include_midweek": false, "learning_rate": 0.06, "max_depth": 4, "max_iter": 600, "model": "hgb"}, 0.4]]}, "Style": {"model": "style_outlet", "include_midweek": false}, "Tech": {"kind": "mean", "model": "tech_calendar", "param": 52}, "chilled": {"method": "share", "glm": {"include_midweek": false}}}
+wape_mean4              3.14%
+wape_headline           3.47%
+bias_mean4              -0.7%
+Fresh_wape_mean4        1.97%
+Fresh_wape_headline     2.24%
+Style_wape_mean4        5.10%
+Style_wape_headline     5.17%
+Tech_wape_mean4        28.22%
+Tech_wape_headline     33.55%
+bias Kandy Fresh        -0.4%
+bias Kandy Style        -0.7%
+bias Kandy Tech         -1.3%
+bias Peliyagoda Fresh   -0.5%
+bias Peliyagoda Style   -1.3%
+bias Peliyagoda Tech    -7.4%
+chilled_wape_mean4      2.24%
+chilled_wape_headline   2.30%
+chilled_bias_mean4      -0.4%
+Total WAPE per period: {'2025-W14..W23 (headline)': '3.47%', '2025-W30..W39 (esala)': '3.65%', '2025-W40..W49 (deepavali)': '2.69%', '2026-W04..W13': '2.77%'}
+Per-series WAPE mean4: {'Kandy Fresh': '1.93%', 'Kandy Style': '7.04%', 'Kandy Tech': '27.52%', 'Peliyagoda Fresh': '2.00%', 'Peliyagoda Style': '4.00%', 'Peliyagoda Tech': '28.79%'}
