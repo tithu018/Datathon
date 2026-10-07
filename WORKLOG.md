@@ -854,3 +854,12 @@ teammates; this phase produces a handover package in `docs/handover/` instead.
 - Exact claim is restricted to the chilled subproblem with fixed ambient allocation; outlet coverage becomes constant when each paired ambient order is served.
 - Checks passed: protected order outranks greater ordinary volume, time tie-break, empty score and protected count.
 - Authorship: Codex implemented the user-agreed policy without changing its ranking.
+
+## 2B Phase 3: feasibility core and greedy baseline (2026-10-07)
+
+- Added exhaustive chilled trip enumeration, local submission validation and official-checker wrapper. Kept the organisers checker unchanged.
+- Added deterministic scarce-first greedy allocator and separate ambient packing. All 58 individually feasible ambient orders served; Style S1-078 deferred.
+- Baseline: all 10 protected orders, 125.859 m3 chilled, 75 orders, 58 outlets, 4,066 total published minutes. Official checker PASSED.
+- Van reservation applies only to the baseline; exact search will permit every compatible normal-access van trip.
+- Independent rule reviewer confirmed formula, root/checker data equality and capacity corrections. Scope claims distinguish order protection from outlet coverage.
+- Authorship: Codex generated core/baseline, with independent Codex agent rule review requested by user.

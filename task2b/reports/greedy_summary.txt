@@ -1,0 +1,4 @@
+Greedy scarce-first baseline
+Score (protected, chilled litres, orders, outlets, -minutes): (10, 125859, 75, 58, -4066)
+Deferred orders: ['S1-005', 'S1-046', 'S1-048', 'S1-051', 'S1-056', 'S1-058', 'S1-064', 'S1-067', 'S1-073', 'S1-078']
+FEASIBILITY: PASSED - every rule satisfied.
