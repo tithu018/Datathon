@@ -74,3 +74,23 @@ def make_rf_classifier(features, class_weight="balanced"):
         ("model", RandomForestClassifier(n_estimators=300, random_state=SEED, n_jobs=-1, min_samples_leaf=2,
                                          class_weight=class_weight)),
     ])
+
+
+# ---------------------------------------------------------------- final configuration (Phase 8 decision)
+CLIP_LO, CLIP_HI = 0.001, 0.999  # fixed: guarantees finite log loss, costs almost nothing with sigmoid
+FINAL_HGB_PARAMS = dict(learning_rate=0.05, max_iter=600)
+
+
+def make_final_models(features):
+    """Service: HGB regressor (squared_error). Lateness: HGB classifier + sigmoid calibration,
+    CalibratedClassifierCV over 5 stratified, shuffled folds (every fold spans all seasons)."""
+    from sklearn.calibration import CalibratedClassifierCV
+    from sklearn.model_selection import StratifiedKFold
+    service_model = make_hgb_regressor(features, "squared_error", **FINAL_HGB_PARAMS)
+    late_model = CalibratedClassifierCV(make_hgb_classifier(features, **FINAL_HGB_PARAMS), method="sigmoid",
+                                        cv=StratifiedKFold(5, shuffle=True, random_state=SEED))
+    return service_model, late_model
+
+
+def predict_late(late_model, X):
+    return np.clip(late_model.predict_proba(X)[:, 1], CLIP_LO, CLIP_HI)

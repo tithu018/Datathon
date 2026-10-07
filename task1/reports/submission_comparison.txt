@@ -1,0 +1,79 @@
+=== pred_service_min distribution ===
+        original        new
+count  5014.0000  5014.0000
+mean     20.2981    18.3396
+std      13.0396    11.6245
+min       5.9657     4.4744
+1%        8.1738     7.0119
+10%      10.9806     9.9142
+25%      13.4560    12.0775
+50%      17.3577    15.6024
+75%      22.4185    20.4912
+90%      30.0795    27.0964
+99%      77.1841    71.3150
+max     180.4958   137.8766
+Pearson 0.9268, Spearman 0.8563
+
+=== pred_late_prob distribution ===
+        original        new
+count  5014.0000  5014.0000
+mean      0.2506     0.2126
+std       0.3057     0.3433
+min       0.0000     0.0010
+1%        0.0000     0.0010
+10%       0.0000     0.0010
+25%       0.0078     0.0010
+50%       0.1024     0.0070
+75%       0.4128     0.2994
+90%       0.7971     0.9255
+99%       0.9947     0.9990
+max       1.0000     0.9990
+Pearson 0.8061, Spearman 0.8623
+
+Share of exact 0 late probability: original 14.18%, new 0.00%
+Mean predicted late rate: original 0.2506, new 0.2126
+By month and monsoon flag (new | original):
+                 pred_late_prob_new  pred_late_prob_orig
+month   monsoon                                         
+2026-02 0                    0.1324               0.1490
+2026-03 1                    0.2530               0.3017
+By brand (new | original):
+       pred_late_prob_new  pred_late_prob_orig  pred_service_min_new  pred_service_min_orig
+brand                                                                                      
+Fresh               0.221                0.260                16.560                 18.325
+Style               0.051                0.068                50.929                 57.360
+Tech                0.022                0.039                59.380                 64.193
+By disruption_index bucket (new | original):
+           pred_late_prob_new       pred_late_prob_orig      
+                         mean  size                mean  size
+disruption                                                   
+<=60                   0.5678   382              0.2751   382
+61-80                  0.3472   534              0.2506   534
+81-99                  0.1596  2525              0.2290  2525
+100                    0.1658  1573              0.2792  1573
+
+=== 10 largest changes in pred_late_prob ===
+delivery_id order_date brand     district  monsoon  disruption_index  festival_ramp  is_payday  order_units dock_type  slack_to_close_min  pred_late_prob_orig  pred_late_prob_new  change
+ ORD0094939 2026-03-09 Fresh Nuwara Eliya        1                51            0.0          0           50 rear_dock                 159                0.009               0.945   0.936
+ ORD0096979 2026-03-26 Fresh     Kalutara        1                46            0.0          0           43 rear_dock                 115                0.056               0.980   0.924
+ ORD0095448 2026-03-13 Fresh        Galle        1                51            0.0          0          121 rear_dock                 139                0.028               0.947   0.919
+ ORD0094296 2026-03-04 Fresh      Gampaha        1                46            0.0          0           40 rear_dock                 115                0.062               0.973   0.912
+ ORD0094886 2026-03-09 Fresh        Galle        1                53            0.0          0           56    street                 134                0.055               0.956   0.901
+ ORD0092375 2026-02-16 Fresh       Matara        0                59            0.0          0           50 rear_dock                  93                0.065               0.953   0.888
+ ORD0094943 2026-03-09 Fresh Nuwara Eliya        1                51            0.0          0           57 rear_dock                 141                0.113               0.985   0.872
+ ORD0094877 2026-03-09 Fresh        Galle        1                53            0.0          0           32 rear_dock                 140                0.100               0.970   0.870
+ ORD0093476 2026-02-25 Fresh        Galle        0                58            0.0          1           24    street                  89                0.062               0.930   0.868
+ ORD0093483 2026-02-25 Fresh        Galle        0                58            0.0          1           44    street                  79                0.069               0.937   0.868
+
+=== 10 largest changes in pred_service_min ===
+delivery_id order_date brand district  monsoon  disruption_index  festival_ramp  is_payday  order_units dock_type  slack_to_close_min  pred_service_min_orig  pred_service_min_new  change
+ ORD0094613 2026-03-06 Style    Galle        1                98            0.0          0           72  mall_bay                 140                147.838                77.072 -70.765
+ ORD0097091 2026-03-27 Fresh  Colombo        1                66            0.0          0          178 rear_dock                 164                 88.773                30.159 -58.614
+ ORD0093587 2026-02-26 Style  Colombo        0                84            0.0          0           43  mall_bay                  62                133.706                76.607 -57.099
+ ORD0094678 2026-03-06  Tech  Badulla        1                97            0.0          0           18    street                 403                180.496               124.332 -56.164
+ ORD0095204 2026-03-11  Tech    Kandy        1                87            0.0          0           11  mall_bay                 131                164.357               114.217 -50.140
+ ORD0094115 2026-03-02 Style  Badulla        1               100            0.0          0          119 rear_dock                 363                142.283                95.461 -46.822
+ ORD0096952 2026-03-26 Style  Colombo        1                98            0.0          0           69    street                 474                110.634                64.960 -45.675
+ ORD0097095 2026-03-27  Tech  Colombo        1                66            0.0          0            7 rear_dock                 360                120.046                77.930 -42.116
+ ORD0092933 2026-02-20 Style    Galle        0               100            0.0          0           63    street                 347                 83.183                42.392 -40.791
+ ORD0094521 2026-03-05 Style    Kandy        1                65            0.0          0           48    street                 436                107.546                69.976 -37.570

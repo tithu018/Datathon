@@ -1,0 +1,24 @@
+validated A (2026-01-03..02-14)
+validated B (2025-02-16..03-28)
+
+Baseline (original pipeline) vs final configuration:
+               period             metric  baseline  final
+A (2026-01-03..02-14)        service_mae    5.1523 3.9211
+A (2026-01-03..02-14)       service_rmse    8.3194 6.1238
+A (2026-01-03..02-14)       late_roc_auc    0.9315 0.9720
+A (2026-01-03..02-14)      late_log_loss    0.2320 0.1399
+A (2026-01-03..02-14)         late_brier    0.0727 0.0435
+A (2026-01-03..02-14) late_share_exact_0    0.1419 0.0000
+B (2025-02-16..03-28)        service_mae    5.0576 3.8710
+B (2025-02-16..03-28)       service_rmse    7.4143 6.0004
+B (2025-02-16..03-28)       late_roc_auc    0.9234 0.9757
+B (2025-02-16..03-28)      late_log_loss    0.3139 0.1633
+B (2025-02-16..03-28)         late_brier    0.1011 0.0516
+B (2025-02-16..03-28) late_share_exact_0    0.0888 0.0000
+
+Final models fitted on all 91,894 training rows (in-sample mean late probability 0.1965 vs actual 0.1958)
+Saved: task1\reports\metrics.json
+
+Saved models:
+task1/service_model.joblib
+task1/late_model.joblib

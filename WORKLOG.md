@@ -725,3 +725,54 @@ information) was measured as a labelled extra and NOT applied (user decision).
   | A | 0.1396 | 0.1447 | **0.1399** | 0.0435 | 0.9720 | 0.1315 / 0.1311 |
   | B | 0.1630 | 0.1677 | **0.1633** | 0.0516 | 0.9757 | 0.2055 / 0.2136 |
   Mean log loss 0.1516 (0.01 clip: 0.1562).
+- Phase 8 committed as `7518d0b` and pushed.
+
+---
+
+## Phase 9: Task 1 final fit, submission and change report (2026-10-07)
+
+**Done**
+- `task1/models.py`: `make_final_models` (HGB regressor; HGB classifier + sigmoid,
+  CalibratedClassifierCV over StratifiedKFold(5, shuffle, seed 42)), `predict_late`
+  (clip [0.001, 0.999]).
+- `task1/train_model.py`: validates the original pipeline (12 features, Random
+  Forests) and the final config on tests A and B, then fits the final models on
+  ALL 91,894 training rows; saves the .joblib files (gitignored) and
+  `reports/metrics.json`. `--no-eval` skips validation.
+- `task1/make_submission.py`: selects FEATURES explicitly (test_features.csv also
+  holds rejected candidate columns); asserts 5,014 rows, delivery_id values and order
+  identical to the template, no missing values, service >= 0, probabilities within
+  [0.001, 0.999].
+- `task1/compare_submission.py` -> `reports/submission_comparison.txt`.
+- `task1/run_all.py`: labels -> features -> validation + final fit -> submission ->
+  comparison.
+- `task1/CHANGES_FOR_REVIEW.md` for the Task 1 owner (issues, fixes with commits,
+  metrics, feature groups, sklearn 1.9 note, re-run steps, merge warning, open questions).
+
+**Validation (original pipeline -> final)**
+| period | MAE | RMSE | AUC | log loss | Brier | p = 0 |
+|---|---|---|---|---|---|---|
+| A 2026-01-03..02-14 | 5.152 -> 3.921 | 8.319 -> 6.124 | 0.9315 -> 0.9720 | 0.2320 -> 0.1399 | 0.0727 -> 0.0435 | 14.2% -> 0% |
+| B 2025-02-16..03-28 | 5.058 -> 3.871 | 7.414 -> 6.000 | 0.9234 -> 0.9757 | 0.3139 -> 0.1633 | 0.1011 -> 0.0516 | 8.9% -> 0% |
+- In-sample mean late probability after the final fit 0.1965 vs actual 0.1958.
+
+**New submission vs original**
+- Mean predicted late rate 0.2126 (original 0.2506); February (monsoon 0) 0.132,
+  March (monsoon 1) 0.253, matching the seasonal history and period B (21.4%).
+  Exact zeros 0% (original 14.2%). Mean service 18.34 min (original 20.30).
+- Correlation with the original: late probability Pearson 0.81 / Spearman 0.86;
+  service Pearson 0.93 / Spearman 0.86.
+- Largest late changes: Fresh on heavily disrupted days (disruption_index 46-59),
+  original 0.01-0.11 -> new 0.93-0.99 (training late rate at index <= 60: 59%).
+  Largest service changes: large Style/Tech orders on non-festival, non-payday days,
+  -38 to -71 min (original max 180 min, new max 138).
+
+**Reproducibility**
+- Deleted the generated task1 CSVs, .joblib files and the submission, ran
+  `task1/run_all.py` twice from scratch: `outputs/submission_task1.csv`,
+  `reports/metrics.json` and the comparison report are byte-identical, and
+  `DataFrame.equals` passes.
+
+**Authorship**
+- Agent wrote the Phase 9 code, `CHANGES_FOR_REVIEW.md` and this entry. User set the
+  final configuration, the clip, the checks and the contents of the change report.

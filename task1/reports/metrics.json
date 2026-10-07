@@ -1,5 +1,5 @@
 {
-  "description": "Random Forests as the baseline, 30 explicit features (task1/features.py)",
+  "description": "Phase 9 final configuration: HGB service model; HGB + sigmoid (cv=5 stratified, shuffled) lateness model clipped to [0.001, 0.999]; final models fitted on all training data",
   "features": [
     "brand",
     "district",
@@ -32,115 +32,66 @@
     "speed_index",
     "disruption_index"
   ],
-  "random_split": {
-    "n_test": 18379,
-    "test_late_rate": 0.1958,
-    "service_mae": 4.4564,
-    "service_rmse": 7.2436,
-    "late_roc_auc": 0.97,
-    "late_log_loss": 0.1986,
-    "late_brier": 0.0616,
-    "late_share_exact_0": 0.1603,
-    "late_share_exact_1": 0.0007,
-    "n_train": 73515
-  },
-  "time_based": {
-    "cutoff_order_date": "2026-01-03",
-    "n_test": 5173,
-    "test_late_rate": 0.1311,
-    "service_mae": 4.1342,
-    "service_rmse": 6.3799,
-    "late_roc_auc": 0.9687,
-    "late_log_loss": 0.1739,
-    "late_brier": 0.0535,
-    "late_share_exact_0": 0.1829,
-    "late_share_exact_1": 0.0,
-    "n_train": 86721
-  },
-  "vs_baseline": [
-    {
-      "split": "random",
-      "metric": "service_mae",
-      "baseline": 5.5197,
-      "current": 4.4564,
-      "change": -1.0633
+  "periods": {
+    "A (2026-01-03..02-14)": {
+      "n_train": 86721,
+      "n_test": 5173
     },
-    {
-      "split": "random",
-      "metric": "service_rmse",
-      "baseline": 8.9497,
-      "current": 7.2436,
-      "change": -1.7061
-    },
-    {
-      "split": "random",
-      "metric": "late_roc_auc",
-      "baseline": 0.9278,
-      "current": 0.97,
-      "change": 0.0422
-    },
-    {
-      "split": "random",
-      "metric": "late_log_loss",
-      "baseline": 0.29,
-      "current": 0.1986,
-      "change": -0.0914
-    },
-    {
-      "split": "random",
-      "metric": "late_brier",
-      "baseline": 0.0916,
-      "current": 0.0616,
-      "change": -0.03
-    },
-    {
-      "split": "random",
-      "metric": "late_share_exact_0",
-      "baseline": 0.121,
-      "current": 0.1603,
-      "change": 0.0393
-    },
-    {
-      "split": "time-based",
-      "metric": "service_mae",
-      "baseline": 5.1523,
-      "current": 4.1342,
-      "change": -1.0181
-    },
-    {
-      "split": "time-based",
-      "metric": "service_rmse",
-      "baseline": 8.3194,
-      "current": 6.3799,
-      "change": -1.9395
-    },
-    {
-      "split": "time-based",
-      "metric": "late_roc_auc",
-      "baseline": 0.9315,
-      "current": 0.9687,
-      "change": 0.0372
-    },
-    {
-      "split": "time-based",
-      "metric": "late_log_loss",
-      "baseline": 0.232,
-      "current": 0.1739,
-      "change": -0.0581
-    },
-    {
-      "split": "time-based",
-      "metric": "late_brier",
-      "baseline": 0.0727,
-      "current": 0.0535,
-      "change": -0.0192
-    },
-    {
-      "split": "time-based",
-      "metric": "late_share_exact_0",
-      "baseline": 0.1419,
-      "current": 0.1829,
-      "change": 0.041
+    "B (2025-02-16..03-28)": {
+      "n_train": 49055,
+      "n_test": 4856
     }
-  ]
+  },
+  "results": {
+    "A (2026-01-03..02-14)": {
+      "baseline": {
+        "n_test": 5173,
+        "test_late_rate": 0.1311,
+        "service_mae": 5.1523,
+        "service_rmse": 8.3194,
+        "late_roc_auc": 0.9315,
+        "late_log_loss": 0.232,
+        "late_brier": 0.0727,
+        "late_share_exact_0": 0.1419,
+        "late_share_exact_1": 0.0
+      },
+      "final": {
+        "n_test": 5173,
+        "test_late_rate": 0.1311,
+        "service_mae": 3.9211,
+        "service_rmse": 6.1238,
+        "late_roc_auc": 0.972,
+        "late_log_loss": 0.1399,
+        "late_brier": 0.0435,
+        "late_share_exact_0": 0.0,
+        "late_share_exact_1": 0.0,
+        "late_mean_pred": 0.1315
+      }
+    },
+    "B (2025-02-16..03-28)": {
+      "baseline": {
+        "n_test": 4856,
+        "test_late_rate": 0.2136,
+        "service_mae": 5.0576,
+        "service_rmse": 7.4143,
+        "late_roc_auc": 0.9234,
+        "late_log_loss": 0.3139,
+        "late_brier": 0.1011,
+        "late_share_exact_0": 0.0888,
+        "late_share_exact_1": 0.0037
+      },
+      "final": {
+        "n_test": 4856,
+        "test_late_rate": 0.2136,
+        "service_mae": 3.871,
+        "service_rmse": 6.0004,
+        "late_roc_auc": 0.9757,
+        "late_log_loss": 0.1633,
+        "late_brier": 0.0516,
+        "late_share_exact_0": 0.0,
+        "late_share_exact_1": 0.0,
+        "late_mean_pred": 0.2055
+      }
+    }
+  }
 }
