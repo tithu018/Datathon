@@ -11,7 +11,7 @@ import time
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-STEPS = ["smoke_check.py", "analysis.py"]
+STEPS = ["smoke_check.py", "analysis.py", "policy.py"]
 
 for step in STEPS:
     t0 = time.time()

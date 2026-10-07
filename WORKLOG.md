@@ -846,3 +846,11 @@ teammates; this phase produces a handover package in `docs/handover/` instead.
 - Found additional unavoidable deferral: Style S1-078, 40.660 m3 > largest available 38 m3. Corrected earlier ambient-all-fit and truck-only shortage claims.
 - Checks: analysis assertions and Phase 0 passed; no new dependency, no dataset files staged.
 - Authorship: Codex wrote analysis and documentation; user authorised phase commits and requested independent agent reviews.
+
+## 2B Phase 2: explicit priority policy (2026-10-07)
+
+- Added protected-row OR rule, integer chilled-volume score, lexicographic plan score and deterministic greedy order key.
+- Protected flags are order-level in the supplied data and may differ for the same outlet. Report both order protection and outlet coverage. Ten protected orders; both flags never count twice.
+- Exact claim is restricted to the chilled subproblem with fixed ambient allocation; outlet coverage becomes constant when each paired ambient order is served.
+- Checks passed: protected order outranks greater ordinary volume, time tie-break, empty score and protected count.
+- Authorship: Codex implemented the user-agreed policy without changing its ranking.

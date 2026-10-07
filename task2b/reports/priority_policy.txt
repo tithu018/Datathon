@@ -1,0 +1,14 @@
+Task 2B priority policy (lexicographic, maximised)
+1. Number of served protected order rows: deferred_yesterday=1 OR days_since_last_served>=3.
+   Both flags together count once. Flags differ between ambient/chilled rows at the same outlet;
+   honour the supplied row flags, and audit outlet coverage separately.
+2. Chilled volume, in integer units of 0.001 m3 (avoids floating-point tie breaks).
+3. Number of orders served.
+4. Number of distinct outlets served.
+5. Negative published vehicle-minutes (no return or window-waiting time).
+Exact search optimises the chilled subproblem with a fixed, independently feasible ambient allocation.
+Ambient orders use ambient vehicles while chilled demand remains unserved.
+An ambient order remains eligible when its paired chilled order is deferred.
+Protected orders are prioritised wherever jointly feasible; no unsupported guarantee of serving every order.
+Stable vehicle/order identifiers break exact score ties for reproducibility.
+Checks: urgency dominates volume; time breaks otherwise-equal plans; flags count once; empty score; PASSED.
