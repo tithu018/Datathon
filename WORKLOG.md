@@ -801,3 +801,39 @@ teammates; this phase produces a handover package in `docs/handover/` instead.
 **Authorship**
 - Agent wrote the handover documents and the inference cell; user defined the
   package contents and scope.
+
+---
+
+## 2B Phase 0: Task 2B setup and checker smoke test (2026-10-07, branch `ananth`)
+
+**Done**
+- Branch `ananth` created from `main` (`2dc0e44`).
+- Datasets restored locally from history (`git archive eaf7297 ... | tar -x`), not
+  staged; a second copy of `General Data/` and `Test Data/` under `data/`, because
+  `check_allocation.py` (organisers' script, unchanged) only searches `data/`.
+  Documented in `data/README.md`. `git status` stays clean (both copies gitignored).
+- `.venv` from `requirements.txt` (pandas 3.0.3, numpy 2.4.6, scikit-learn 1.9.0;
+  Python 3.11.0 on this machine). Task 2B adds no dependency.
+- `task2b/common.py`: paths, loaders (orders, fleet joined to vehicles.csv, district
+  travel, service allowance), budgets (270 Fresh / 480 daytime / 2 trips) and
+  `trip_time()` with the checker's formula.
+- `task2b/smoke_check.py` -> `task2b/reports/phase0_smoke_output.txt`;
+  `task2b/run_all.py`; `.gitignore` adds `task2b/data/`.
+- `docs/TASK2B_PLAN.md`: data facts, agreed priority policy, phases 0-7.
+
+**Checks (all pass)**
+- 85 orders, unique `order_ref`, template rows identical and in the same order,
+  all S1 and Peliyagoda, no missing sizes, every district and (brand, dock_type) has
+  a reference row; 38 fleet vehicles join vehicles.csv, 28 available / 10 in workshop,
+  all Peliyagoda.
+- `trip_time()` reproduces both booklet examples (Gampaha 101 min, Colombo 112 min,
+  213 of 270) and equals `check_allocation.trip_time()` for every district x brand.
+- All-deferred submission: checker PASSED. Chilled S1-007 on ambient VEH008: checker
+  FAILED with "non-refrigerated", so the checker really reads our data.
+
+**Notes**
+- pandas 3 uses a strict string dtype: write `trip_id` into string columns as "1"/"2".
+
+**Authorship**
+- Agent wrote the Phase 0 code, plan and this entry; user chose the priority policy
+  (lexicographic, skip-twice first) and optimiser-as-submission.

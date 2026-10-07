@@ -1,0 +1,27 @@
+1. Inputs
+  [PASS] 85 orders, order_ref unique: 85
+  [PASS] template rows == scenario rows, same order: 85
+  [PASS] scenario is always S1
+  [PASS] all orders at Peliyagoda: {'Peliyagoda': 85}
+  [PASS] no missing order sizes
+  [PASS] every district has a district_travel row
+  [PASS] every (brand, dock_type) has an allowance
+  [PASS] fleet joins vehicles.csv: 38 vehicles
+  [PASS] 28 available, 10 in_workshop: {'available': 28, 'in_workshop': 10}
+  [PASS] all available vehicles are Peliyagoda
+
+2. Trip-time formula
+  [PASS] booklet example: Fresh Gampaha rear, rear, street = 101: 101
+  [PASS] booklet example: Fresh Colombo 4 x street = 112: 112
+  [PASS] 101 + 112 = 213 of 270 Fresh minutes: 213
+  [PASS] equals check_allocation.trip_time for every district x brand
+
+3. Official checker
+    FEASIBILITY: PASSED - every rule satisfied.
+  [PASS] all-deferred submission passes
+    FEASIBILITY: FAILED  (1 problem(s))
+    
+      - [S1 VEH008 trip 1] carries chilled orders on a non-refrigerated vehicle
+  [PASS] chilled S1-007 on ambient VEH008 is rejected
+
+Smoke check: ALL PASSED

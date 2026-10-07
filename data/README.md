@@ -29,6 +29,16 @@ the competition link and place them at the repository root, exactly like this:
     └── submission_task2b.csv
 ```
 
+**Task 2B checker:** `check_allocation.py` (the organisers' script, unchanged) searches
+only this `data/` folder. Keep a second copy of `General Data/` and `Test Data/` here:
+
+```
+<repo root>/data/General Data/...
+<repo root>/data/Test Data/...
+```
+
+These copies are ignored by git too (the folder-name patterns match at any depth).
+
 All scripts are run from the repository root and read these folders by
 relative path. The folders are listed in `.gitignore`, so they stay local.
 
