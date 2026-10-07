@@ -20,7 +20,7 @@
     FEASIBILITY: PASSED - every rule satisfied.
   [PASS] all-deferred submission passes
     FEASIBILITY: FAILED  (1 problem(s))
-    
+
       - [S1 VEH008 trip 1] carries chilled orders on a non-refrigerated vehicle
   [PASS] chilled S1-007 on ambient VEH008 is rejected
 

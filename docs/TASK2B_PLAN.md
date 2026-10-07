@@ -97,3 +97,22 @@ Two hard rules go with it:
 - Six truck trips for seven districts is a truck-only argument; the van also contributes trips.
 - Ambient aggregate capacity is ample, but Style order S1-078 is 40.660 m3 and no available vehicle exceeds 38 m3. Whole-order rules force its deferral. The statement that all Style orders fit was incorrect.
 - The user authorised completing, checking and committing each phase sequentially, then merging and pushing main when checks pass. This supersedes the older Task 1/2A approval protocol for this Task 2B work.
+
+## Completion and validation (2026-10-07)
+
+Phases 0-7 are complete, with one separate phase commit on `ananth`. The final
+submission serves 75 orders, all 10 protected order rows, and 58 of 59 outlets.
+Chilled served is 132.836 m³ versus 125.859 m³ greedy. Volume-first reaches
+143.772 m³ but skips protected Puttalam chilled; the chosen priority costs
+10.936 m³. Adding the largest workshop reefer gives 168.832 m³, a 35.996 m³ gain.
+
+Checks passed: Phase 0 smoke checks, capacity/policy assertions, the unchanged
+official checker, 44 exhaustive optimiser objectives plus four empty cases,
+30 exhaustive timeline comparisons, exact repaired-fleet sensitivity, all five
+notebook code cells, byte-identical Task 2B rerun, and three-task inference.
+Task 1 and Task 2A full pipelines were rerun; their small numerical differences
+from prior artefacts are documented in `task2b/reports/regression_review.txt`.
+
+Handover: `docs/handover/TASK2B_README.md`, `TASK2B_POLICY.md`, and
+`TASK2B_NOTEBOOK.ipynb`. No shared final notebook existed here; the Task 2B cells
+and combined final inference cell are ready for the team's notebook.

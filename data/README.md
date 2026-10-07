@@ -45,6 +45,11 @@ relative path. The folders are listed in `.gitignore`, so they stay local.
 Generated intermediate files (`task1/*.csv`, `task2a/data/`) are also
 untracked; re-create them by running the pipelines.
 
+Task 2B also keeps generated candidate/hypothetical submissions, per-order
+reasons, timelines, manifests and fuel estimates local in ignored `task2b/data/`.
+Its final six-column allocation is `outputs/submission_task2b.csv`; reproducible
+code, aggregate reports and the policy are tracked.
+
 **Note for teammates:** these files were removed from tracking on branch
 `datathon-task2a-task1-fixes`. When that branch is merged and you pull, git
 **deletes them from your working folder**. Keep a copy of the datasets

@@ -1,5 +1,27 @@
 # Preprocessing document: Task 2A and Task 1 sections (ready to paste)
 
+## Task 2B: allocation preparation
+
+- Preserve all 85 scenario/order/outlet identifiers and the template row order.
+  Join the scenario fleet to vehicle capacities with a one-to-one join, respecting
+  scenario availability, home depot, refrigeration and van access.
+- Load published district travel and brand/dock allowances without fitting a
+  model. Each order counts as one stop. The allocator and unchanged official
+  checker use identical reference-file copies, checked byte-for-byte.
+- Enumerate every feasible chilled subset within one district/brand and every
+  disjoint one/two-trip vehicle schedule. Reject weight, volume and time excess.
+  Represent order membership by bit masks and volume by integer 0.001 m³ units.
+- Define a protected order by either deferral-history flag, counted once; histories
+  may differ between paired ambient and chilled orders. Use strict lexicographic
+  priorities and keep ambient packing fixed for the chilled optimality proof.
+- Maintain all decisions, including the oversized Style order that cannot fit any
+  available vehicle. Keep per-order explanations, timelines and fuel estimates in
+  ignored local files; output exactly the template's six submission columns.
+- Verify with the official checker, an independent optimiser oracle, exhaustive
+  small-instance tests and exhaustive window-sequencing comparisons. Window
+  waiting and fuel estimates are diagnostic and are excluded from published
+  trip-time scoring. See TASK2B_POLICY.md for the allocation tradeoff.
+
 ## Task 2A: Forecast depot demand
 
 ### Data preparation and label construction

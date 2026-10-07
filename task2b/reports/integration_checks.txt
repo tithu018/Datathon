@@ -1,0 +1,53 @@
+Task 1: 30 features, 5,014 deliveries
+Sample inputs:
+             brand district  order_units  planned_arrival_min  window_close_min_feature  festival_ramp  disruption_index
+delivery_id
+ORD0092308   Fresh  Colombo           11                  321                       450            0.0                81
+ORD0092309   Fresh  Colombo           12                  370                       480            0.0                81
+ORD0092310   Fresh  Colombo           13                  346                       450            0.0                81
+Predictions:
+delivery_id  pred_service_min  pred_late_prob
+ ORD0092308          8.210416        0.001000
+ ORD0092309          8.074852        0.001000
+ ORD0092310         12.217126        0.001000
+ ORD0092311         12.013593        0.005246
+ ORD0092312         13.267924        0.006921
+Mean predicted service 18.34 min, mean late probability 0.2126
+
+Task 2A: model trained on history to 2026-03-29, 60 rows
+Sample inputs and predictions:
+row_id      depot brand  iso_year  iso_week  pred_total_volume_m3  pred_chilled_volume_m3
+ W0000      Kandy Fresh      2026        14               552.654                 204.361
+ W0001      Kandy Style      2026        14                80.224                   0.000
+ W0002      Kandy  Tech      2026        14                22.603                   0.000
+ W0003 Peliyagoda Fresh      2026        14              1048.542                 392.337
+ W0004 Peliyagoda Style      2026        14               138.456                   0.000
+ W0005 Peliyagoda  Tech      2026        14                31.803                   0.000
+ W0006      Kandy Fresh      2026        15               730.197                 270.846
+ W0007      Kandy Style      2026        15               121.128                   0.000
+10-week totals by brand (m3):
+       pred_total_volume_m3  pred_chilled_volume_m3
+brand
+Fresh               15863.3                  5970.3
+Style                2219.5                     0.0
+Tech                  516.0                     0.0
+
+Task 2B: 85 orders; 4173 published vehicle-minutes
+order_ref brand district temp_requirement  order_volume_m3 decision vehicle_id  trip_id
+   S1-000 Fresh  Colombo          ambient            0.500   served     VEH038      1.0
+   S1-001 Fresh  Colombo          chilled            2.445 deferred        NaN      NaN
+   S1-002 Fresh  Colombo          ambient            0.666   served     VEH038      1.0
+   S1-003 Fresh  Colombo          chilled            1.843 deferred        NaN      NaN
+   S1-004 Fresh  Colombo          ambient            0.870   served     VEH038      1.0
+   S1-005 Fresh  Colombo          chilled            1.725 deferred        NaN      NaN
+   S1-006 Fresh  Colombo          ambient            1.686   served     VEH034      1.0
+   S1-007 Fresh  Colombo          chilled            2.925   served     VEH007      1.0
+decision
+served      75
+deferred    10
+FEASIBILITY: PASSED - every rule satisfied.
+
+Task 1 and Task 2A: saved models reproduce current submissions exactly.
+Task 2B: final submission equals optimiser output, strict checks pass, 85 explanations present.
+FEASIBILITY: PASSED - every rule satisfied.
+Three-task integration checks PASSED

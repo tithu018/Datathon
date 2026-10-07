@@ -1,5 +1,11 @@
 # Handover: Task 2A and Task 1 changes
 
+**Task 2B is now included.** See [TASK2B_README.md](TASK2B_README.md),
+[TASK2B_POLICY.md](TASK2B_POLICY.md), and [TASK2B_NOTEBOOK.ipynb](TASK2B_NOTEBOOK.ipynb).
+The combined `inference_cell.py` displays and validates all three tasks. Task 2B
+was completed in separate phase commits on `ananth`; the older branch description
+below records the original Task 1/2A handover.
+
 For the teammates building the shared Datathon deliverables (final notebook, preprocessing
 document, architecture diagram, AI disclosure, video, zip). Everything here is on branch
 `datathon-task2a-task1-fixes`.
@@ -29,7 +35,7 @@ document, architecture diagram, AI disclosure, video, zip). Everything here is o
 | File | Use it for |
 |---|---|
 | [HOW_TO_RUN.md](HOW_TO_RUN.md) | commands, data locations, outputs, versions |
-| [NOTEBOOK_SNIPPETS.md](NOTEBOOK_SNIPPETS.md) | the final inference cell (tested: reproduces both submissions exactly) |
+| [NOTEBOOK_SNIPPETS.md](NOTEBOOK_SNIPPETS.md) | the final inference cell (tested: reproduces all three current submissions exactly) |
 | [inference_cell.py](inference_cell.py), [smoke_test_output.txt](smoke_test_output.txt) | the same cell as a script, and its verified output |
 | [PREPROCESSING_SECTIONS.md](PREPROCESSING_SECTIONS.md) | ready-to-paste text for the preprocessing document |
 | [ARCHITECTURE.md](ARCHITECTURE.md) | Mermaid pipeline diagrams and the proposed deployment |

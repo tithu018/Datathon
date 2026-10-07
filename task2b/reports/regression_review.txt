@@ -1,0 +1,11 @@
+Existing modelling regression (2026-10-07)
+Current Python: 3.11.0
+Full Task1 and Task2A pipelines passed; configurations unchanged.
+Task1 metrics.json unchanged bytewise: True
+task1 maximum absolute differences vs Phase0 committed outputs: {'pred_service_min': 0.0, 'pred_late_prob': 2.220446049250313e-16}
+task2a maximum absolute differences vs Phase0 committed outputs: {'pred_total_volume_m3': 0.0020000000000095497, 'pred_chilled_volume_m3': 0.0010000000000331966}
+Task1 service predictions identical; probabilities differ only at floating-point precision.
+Task2A rounding differences are small across the prior/current environments; no forecast configuration change.
+Current local models reproduce refreshed submission files exactly (integration_check.py).
+Regenerated outputs, forecast report and model version summary are included in Phase7.
+Regression review PASSED

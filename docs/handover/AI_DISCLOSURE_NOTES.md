@@ -1,5 +1,26 @@
 # AI tool disclosure notes (Task 2A and the Task 1 changes)
 
+## Task 2B extension (2026-10-07)
+
+OpenAI Codex generated the Task 2B analysis, priority score, greedy allocator,
+solver-free exact optimiser, window/fuel diagnostics, sensitivity analysis,
+submission, notebook cells and documentation. The user chose the priority order,
+requested separate checked commits on `ananth`, authorised the final merge/push,
+and explicitly requested multiple agents for independent reasoning and review.
+
+Independent Codex agents reviewed the booklet constraints and data-copy equality,
+solved a separate MILP as a verification oracle, reviewed the pruning proofs, and
+wrote exhaustive small-instance and timeline tests. The production allocator
+does not use the MILP solver, proprietary modelling APIs, pretrained models or
+AutoML. All calculations run locally on the supplied data.
+
+The review corrected two initial assumptions: the van can serve normal-access
+orders, and aggregate ambient capacity does not make the 40.660 m³ Style order
+feasible. Every phase was checked and committed separately under the user's
+current instruction, which superseded the older per-phase approval protocol
+described below for Task 1/2A. Scope limits and numerical regression differences
+are documented in TASK2B_README.md and WORKLOG.md.
+
 Source: `WORKLOG.md`, which has an "Authorship" note for every phase. The tool was
 **Claude Code** (an AI coding agent), working in the repository under a written plan
 (`docs/DATATHON_PLAN.md`) and an approval protocol.

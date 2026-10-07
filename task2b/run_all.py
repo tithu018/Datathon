@@ -2,8 +2,8 @@
 
     python task2b/run_all.py
 
-Run from the repo root. Stops at the first failing step. Later phases add their steps
-to STEPS (analysis, greedy allocation, optimiser, checks, submission).
+Run from the repo root. Stops at the first failing step. Reproduces all Task 2B
+phases, including independent verification, sensitivity, policy and submission.
 """
 import subprocess
 import sys
@@ -13,7 +13,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 STEPS = ["smoke_check.py", "analysis.py", "policy.py", "allocate_greedy.py",
          "verify_optimizer.py", "optimize.py", "verify_timeline.py", "audit.py",
-         "sensitivity.py", "writeup.py"]
+         "sensitivity.py", "writeup.py", "make_submission.py", "notebook.py"]
 
 for step in STEPS:
     t0 = time.time()

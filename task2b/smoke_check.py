@@ -103,7 +103,7 @@ if __name__ == "__main__":
     buf = io.StringIO()
     with redirect_stdout(buf):
         code = main()
-    text = buf.getvalue()
+    text = "\n".join(line.rstrip() for line in buf.getvalue().splitlines()) + "\n"
     print(text, end="")
     (REPORT_DIR / "phase0_smoke_output.txt").write_text(text, encoding="utf-8")
     sys.exit(code)

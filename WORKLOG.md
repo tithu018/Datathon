@@ -891,3 +891,32 @@ teammates; this phase produces a handover package in `docs/handover/` instead.
 - Includes worked101min example, grouped deferrals, greedy gap, proof scope, arrival-vs-unloading caveat, fuel limitation and+35.996m3 repair remedy.
 - Checks: strict submission validation,85 unique reason rows, no missing reasons, policy under600words.
 - Authorship: Codex wrote generated policy and explanations based on independently verified allocations.
+
+## 2B Phase 7: final submission and integration (2026-10-07, branch ananth)
+
+- Wrote outputs/submission_task2b.csv, preserving all85 template rows/identifiers,
+  exact six columns, literal integer trip IDs and blank deferred assignments.
+  Unchanged official checker PASSED.75 served,10 deferred,132.836m3 chilled,
+  all10 protected order rows,58 of59 outlets.
+- Added runnable Task2B notebook cells for the shared final notebook (none existed
+  in this checkout), three-task final inference cell, integration_check.py, and
+  updated run guide, preprocessing, architecture, AI disclosure and video points.
+- Final notebook executed all5 code cells successfully, including the full2B
+  pipeline; allocation bytes identical after rerun. Fixed a root import-path issue
+  and Windows stdout encoding during notebook validation, then reran successfully.
+- All phase checks passed, including independent44-objective optimiser checks,
+  30 timeline permutation cases, sensitivity and final CSV verification. Independent
+  agents reviewed final serialization, report consistency and proof scope.
+- Reran full Task1 and Task2A pipelines to restore missing local model artefacts.
+  Task1 validation metrics byte-identical; service predictions unchanged; probability
+  differences <=2.22e-16. Task2A differences <=0.002m3 total/0.001m3 chilled versus
+  prior outputs. Current Python3.11.0 differs from prior3.11.2 metadata; configurations
+  and validation metrics unchanged. Refreshed predictions, forecast report and model
+  summary so current local models reproduce current submissions exactly.
+- Source datasets, model binaries and per-order audit files remain ignored; only
+  reproducible code, final submissions, aggregate reports and handover files staged.
+- Authorship: Codex generated integration/documents and coordinated the user-requested
+  independent agent reviews. User authorised sequential phase commits and merge/push
+  after successful checks, and confirmed the branch name ananth.
+- Release action: fast-forward main from the verified ananth phase history and push
+  both branches after this commit; no force push and no history rewrite.

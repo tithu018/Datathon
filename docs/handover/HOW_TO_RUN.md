@@ -22,12 +22,15 @@ Run all commands from the repository root (the folder that contains `task1/` and
 python task2a/run_all.py           # Task 2A: about 30 s
 python task1/run_all.py            # Task 1: about 4 min (includes the two validation runs)
 python task1/run_all.py --no-eval  # Task 1, final fit only (skips the validation runs; faster)
+python task2b/run_all.py           # Task 2B, all phases including exact sensitivity
+python task2b/integration_check.py # saved-model inference and all three submissions
 ```
 
 | Pipeline | Steps |
 |---|---|
 | `task2a/run_all.py` | prepare_labels → prepare_features → train_model → make_submission → forecast_report |
 | `task1/run_all.py` | prepare_labels → prepare_features → train_model → make_submission → compare_submission |
+| `task2b/run_all.py` | smoke → capacity → policy → greedy → exhaustive checks → exact optimiser → window checks/audit → sensitivity → write-up → submission |
 
 - Both pipelines stop at the first failing step.
 - `task2a/run_all.py --full` also re-runs the Task 2A analysis, the Phase 3 backtest and the scoring of the final config.
@@ -46,4 +49,5 @@ python task1/run_all.py --no-eval  # Task 1, final fit only (skips the validatio
 - **Inference only** (loads saved models): `task2a/predict.py` has `predict_task2a(test_inputs_df)`. The combined notebook cell is in NOTEBOOK_SNIPPETS.md.
 - **Experiment scripts:** `task2a/backtest.py`, `task2a/experiments.py` and `task1/phase7_features.py` / `phase8_models.py` regenerate the reports.
 - **Don't re-run the confirmation:** `task2a/experiments.py --confirm` was evaluated once and refuses to run again.
+- **Task 2B:** see TASK2B_README.md for outputs, exact proof scope and local-only audit files. The current regression used Python 3.11.0; retraining can cause small numerical differences across environments despite pinned package versions.
 - **Zip layout:** the brief wants the model files next to the notebook. Copy the three `.joblib` files after running both pipelines, or point the notebook at their repo paths.

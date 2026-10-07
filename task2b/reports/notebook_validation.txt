@@ -1,0 +1,278 @@
+Task 2B Phase 1: capacity analysis (S1)
+Published rules: whole orders; max 2 trips; 270 Fresh / 480 daytime minutes.
+Each order counts as one stop; no return time in the published duration.
+
+Demand by brand and temperature (orders, m3, kg):
+                        orders      m3        kg
+brand temp_requirement
+Fresh ambient               49 132.968 24838.400
+      chilled               26 181.629 32780.400
+Style ambient                5  77.213  4878.300
+Tech  ambient                5  18.054  5642.300
+
+Available fleet by class (vehicles, one-trip m3, one-trip kg, max trips):
+               vehicles     m3      kg  max_trips
+temp    type
+ambient truck        22  656.0  121600         44
+        van           2   17.0    2300          4
+reefer  truck         3   79.2   15960          6
+        van           1    7.0    1040          2
+
+District stop limits, using the smallest allowance for each brand.
+These ignore capacity, window waiting and other trips; they are upper bounds.
+district | outbound min | Fresh single min / max stops | Style single / max | Tech single / max
+Colombo | 24 | 39 / 11 | 62 / 10 | 67 / 9
+Galle | 103 | 118 / 7 | 141 / 8 | 146 / 7
+Gampaha | 37 | 52 / 10 | 75 / 9 | 80 / 8
+Kalutara | 64 | 79 / 8 | 102 / 8 | 107 / 7
+Kurunegala | 127 | 142 / 4 | 165 / 6 | 170 / 6
+Matara | 137 | 152 / 5 | 175 / 7 | 180 / 6
+Puttalam | 173 | 188 / 3 | 211 / 5 | 216 / 4
+
+BOTTLENECK 1: reefer volume, trip count, weight and Fresh time.
+                               order_volume_m3  order_weight_kg
+district   parking_constraint
+Colombo    normal                       45.582           8217.5
+           van_only                      6.013           1095.7
+Galle      normal                       20.269           3412.5
+Gampaha    normal                       48.057           8734.4
+Kalutara   normal                       16.032           2930.2
+Kurunegala normal                       25.039           4593.3
+Matara     normal                       11.978           2208.0
+Puttalam   normal                        8.659           1588.8
+Chilled demand: 181.629 m3 / 32780.4 kg.
+All four reefers, including van: at most 172.400 m3 in 8 trips.
+Per-vehicle time/packing relaxed volume bounds: {'VEH003': 52.440000000000005, 'VEH006': 65.518, 'VEH007': 38.674, 'VEH036': 12.454}
+Safe served chilled upper bound: 169.086 m3; unavoidable aggregate shortfall >= 12.543 m3.
+The bounds may reuse the same order; they are not a feasible allocation or an optimality certificate.
+Three trucks: 158.400 m3 / 31,920 kg across at most six trips; seven normal-access chilled districts.
+The van can serve normal-access orders too, so a six-truck-trip district argument alone is not a universal proof.
+Van-only chilled demand 6.013 m3 / 1,095.7 kg exceeds the van's 1,040 kg single-trip limit; all three require two trips.
+
+BOTTLENECK 2: indivisible orders that fit no available vehicle.
+S1-078 (Style, Kurunegala): 40.660 m3 / 2561.6 kg; no compatible available vehicle.
+Largest available ambient truck: 38.000 m3. S1-078 is 40.660 m3; it cannot be split.
+Aggregate ambient capacity is ample, but this specific Style order must be deferred.
+All other orders fit some compatible vehicle individually; joint feasibility remains to be solved.
+
+Phase 1 checks PASSED
+=== smoke_check.py
+    ok (3s): Smoke check: ALL PASSED
+=== analysis.py
+    ok (1s): Phase 1 checks PASSED
+=== policy.py
+    ok (1s): Checks: urgency dominates volume; time breaks otherwise-equal plans; flags count once; empty score; PASSED.
+=== allocate_greedy.py
+    ok (11s): FEASIBILITY: PASSED - every rule satisfied.
+=== verify_optimizer.py
+    ok (7s): Exact-search independent exhaustive checks PASSED: 22 instances, 44 objectives, 4 empty cases, 6,357 oracle nodes.
+=== optimize.py
+    ok (24s): Exact optimisation and official checks PASSED
+=== verify_timeline.py
+    ok (3s): Timeline independent exhaustive checks PASSED: 30 permutation-oracle cases (7 infeasible); mall wait/intersection, closing boundary, late fallback, trip swapping and empty-window cases.
+=== audit.py
+    ok (4s): Audit checks PASSED
+=== sensitivity.py
+    ok (91s): Restore VEH004: 168.832 m3 chilled, +35.996 m3; exact changed-fleet checks PASSED
+=== writeup.py
+    ok (1s): Policy and 85 per-order reasons written; 456 words; Phase 6 checks PASSED
+=== make_submission.py
+    ok (3s): FEASIBILITY: PASSED - every rule satisfied.
+=== notebook.py
+    ok (0s): Task 2B notebook and three-task final cell synchronised
+Task 2B pipeline complete
+Orders: 85 Available vehicles: 28
+                        order_volume_m3  order_weight_kg
+brand temp_requirement
+Fresh ambient                   132.968          24838.4
+      chilled                   181.629          32780.4
+Style ambient                    77.213           4878.3
+Tech  ambient                    18.054           5642.3
+Protected orders: 10
+Greedy: [10, 125859, 75, 58, -4066]
+Exact: [10, 132836, 75, 58, -4173]
+Gain in chilled m3: 6.977
+Priority volume cost m3: 10.936
+Task 2B Phase 5: independent allocation audit
+
+All five allocator/checker input files are identical byte-for-byte.
+Strict identifiers, decisions, blank deferred assignments and published feasibility are asserted.
+Operational approximation: Fresh starts at 03:30; daytime starts at 09:00 or after Fresh completion.
+Exact subset DP searches stop order and both trip orders for on-time raw arrivals, then earliest finish.
+Wait until windows open; mall windows intersect outlet windows. Arrival after close defines lateness.
+Service finishing after close is reported separately. Windows are diagnostics, not optimizer constraints.
+No return travel or reloading duration in this timeline, following the published planning convention.
+This is not a physical execution guarantee: the booklet budgets already allow for returns.
+Fuel uses outbound + inter-stop distance + an estimated return equal to outbound distance.
+One-day fuel versus a weekly quota cannot establish weekly compliance without prior consumption.
+
+optimized: FEASIBILITY: PASSED - every rule satisfied.
+Orders served/deferred: 75 / 10; outlets covered: 58 / 59.
+Protected order rows served: 10 / 10.
+Protected outlets with at least one delivery: 10 / 10.
+Deferred chilled orders: 9; paired ambient orders served: 9 / 9.
+Chilled served: 132.836 m3.
+Published vehicle-minutes: 4173; simulated window waiting: 107 minutes.
+Vehicle/window groups with no all-arrivals-on-time ordering: 0.
+Raw early arrivals: 3; arrival after close: 0; service finish after close: 4.
+Fresh service completions after 08:00: 0.
+Estimated distance including approximate returns: 4431.0 km; estimated fuel: 716.0 L.
+Vehicles whose one-day estimate alone exceeds weekly quota: 0.
+
+volume_first: FEASIBILITY: PASSED - every rule satisfied.
+Orders served/deferred: 77 / 8; outlets covered: 58 / 59.
+Protected order rows served: 9 / 10.
+Protected outlets with at least one delivery: 10 / 10.
+Deferred chilled orders: 7; paired ambient orders served: 7 / 7.
+Chilled served: 143.772 m3.
+Published vehicle-minutes: 4101; simulated window waiting: 174 minutes.
+Vehicle/window groups with no all-arrivals-on-time ordering: 0.
+Raw early arrivals: 4; arrival after close: 0; service finish after close: 5.
+Fresh service completions after 08:00: 0.
+Estimated distance including approximate returns: 4126.0 km; estimated fuel: 685.9 L.
+Vehicles whose one-day estimate alone exceeds weekly quota: 0.
+
+Order histories can differ between chilled and ambient rows at one outlet.
+Protected order fulfillment and outlet coverage are therefore separate measures.
+Detailed timelines, trip manifests and fuel estimates are local under ignored task2b/data/.
+Audit checks PASSED
+
+{
+  "objective_order": "protected_first",
+  "chilled_objective": [
+    3,
+    168832,
+    22,
+    -1228
+  ],
+  "trip_counts": {
+    "VEH003": 93,
+    "VEH004": 120,
+    "VEH006": 120,
+    "VEH007": 58,
+    "VEH036": 17
+  },
+  "schedule_counts": {
+    "VEH003": 2865,
+    "VEH004": 4436,
+    "VEH006": 4436,
+    "VEH007": 1297,
+    "VEH036": 104
+  },
+  "nodes": 744181,
+  "pruned": 5153188,
+  "search_complete": true,
+  "scope": "All feasible chilled assignments under published budgets, no ambient loads on reefers; ambient assignment fixed. Outlet coverage constant because every chilled outlet has served ambient order.",
+  "restored_vehicle": "VEH004",
+  "full_score": [
+    10,
+    168832,
+    80,
+    58,
+    -4465
+  ],
+  "additional_chilled_m3": 35.996,
+  "validation": "Local published-rule validation with availability changed; official base checker must not validate this hypothetical fleet."
+}
+
+# Task 2B: peak-day prioritisation policy
+
+**Result:** 75 of 85 orders served at 58 of 59 outlets; all 10 protected orders served.
+Chilled delivered: **132.836 of 181.629 m³**. All 58 individually feasible ambient orders are served.
+
+**What limits service.** Three available reefer trucks carry 79.2 m³ per trip; one reefer van carries 7 m³/1,040 kg.
+Two trips each give a theoretical 172.4 m³ ceiling. Weight, whole-order packing, single-district trips and the 270-minute Fresh budget reduce the exact volume-first maximum to **143.772 m³**.
+Separately, Style order S1-078 is 40.660 m³ against a largest available vehicle of 38 m³, forcing its deferral.
+
+**Priority.** Rank allocations by protected orders (`deferred_yesterday=1` OR `days_since_last_served≥3`), chilled volume, order count, outlet count, then fewer published minutes.
+Both flags count once; histories can differ between orders at one outlet. Use ambient vehicles for ambient orders while chilled demand waits; serve an ambient order even if its chilled pair is deferred. The van may serve normal-access outlets.
+
+**Calculation.** A Gampaha Fresh trip with two rear docks and one street stop takes 37 + 2×9 + 15 + 15 + 16 = **101 minutes**.
+A four-street Colombo trip takes 112; together they use 213 of 270 minutes. Return travel is excluded by the published rule.
+Enumerating every feasible chilled trip and vehicle trip-pair proves the chilled optimum; the ambient allocation is fixed, so global minimum ambient minutes is not claimed.
+
+| Deferred group | Orders | m³ omitted | Explanation |
+|---|---:|---:|---|
+| Fresh, Colombo | 3 | 6.013 | Joint reefer constraints and priority |
+| Fresh, Kalutara | 2 | 10.957 | Joint reefer constraints and priority |
+| Fresh, Kurunegala | 3 | 25.039 | Joint reefer constraints and priority |
+| Fresh, Matara | 1 | 6.784 | Joint reefer constraints and priority |
+| Style, Kurunegala | 1 | 40.660 | Cannot fit any available vehicle |
+
+**Unavoidable versus chosen.** At least **37.857 m³** chilled must be omitted even when volume alone leads; specific chilled orders remain individually feasible.
+Protecting all flagged orders, including Puttalam S1-083, adds **10.936 m³** to that loss: total chilled deferral **48.793 m³** across nine orders.
+Volume-first delivers two more chilled orders but skips S1-083. The priority plan improves on greedy by **6.977 m³**. All nine deferred chilled orders retain their ambient delivery; S1-078 alone leaves an outlet uncovered.
+
+**Checks and remedy.** The unchanged official checker passes. A no-return window simulation finds zero late arrivals; four unloads finish after their outlet close, all before 08:00. This diagnostic does not certify physical return/reload timing or weekly fuel compliance.
+Repairing VEH004 gives **168.832 m³** chilled and 80 served orders, a **35.996 m³** gain.
+Per-order explanations and timelines remain local in `task2b/data/`; the submission contains only the required six columns.
+
+Task 1: 30 features, 5,014 deliveries
+Sample inputs:
+             brand district  order_units  planned_arrival_min  window_close_min_feature  festival_ramp  disruption_index
+delivery_id
+ORD0092308   Fresh  Colombo           11                  321                       450            0.0                81
+ORD0092309   Fresh  Colombo           12                  370                       480            0.0                81
+ORD0092310   Fresh  Colombo           13                  346                       450            0.0                81
+Predictions:
+delivery_id  pred_service_min  pred_late_prob
+ ORD0092308          8.210416        0.001000
+ ORD0092309          8.074852        0.001000
+ ORD0092310         12.217126        0.001000
+ ORD0092311         12.013593        0.005246
+ ORD0092312         13.267924        0.006921
+Mean predicted service 18.34 min, mean late probability 0.2126
+
+Task 2A: model trained on history to 2026-03-29, 60 rows
+Sample inputs and predictions:
+row_id      depot brand  iso_year  iso_week  pred_total_volume_m3  pred_chilled_volume_m3
+ W0000      Kandy Fresh      2026        14               552.654                 204.361
+ W0001      Kandy Style      2026        14                80.224                   0.000
+ W0002      Kandy  Tech      2026        14                22.603                   0.000
+ W0003 Peliyagoda Fresh      2026        14              1048.542                 392.337
+ W0004 Peliyagoda Style      2026        14               138.456                   0.000
+ W0005 Peliyagoda  Tech      2026        14                31.803                   0.000
+ W0006      Kandy Fresh      2026        15               730.197                 270.846
+ W0007      Kandy Style      2026        15               121.128                   0.000
+10-week totals by brand (m3):
+       pred_total_volume_m3  pred_chilled_volume_m3
+brand
+Fresh               15863.3                  5970.3
+Style                2219.5                     0.0
+Tech                  516.0                     0.0
+
+Task 2B: 85 orders; 4173 published vehicle-minutes
+order_ref brand district temp_requirement  order_volume_m3 decision vehicle_id  trip_id
+   S1-000 Fresh  Colombo          ambient            0.500   served     VEH038      1.0
+   S1-001 Fresh  Colombo          chilled            2.445 deferred        NaN      NaN
+   S1-002 Fresh  Colombo          ambient            0.666   served     VEH038      1.0
+   S1-003 Fresh  Colombo          chilled            1.843 deferred        NaN      NaN
+   S1-004 Fresh  Colombo          ambient            0.870   served     VEH038      1.0
+   S1-005 Fresh  Colombo          chilled            1.725 deferred        NaN      NaN
+   S1-006 Fresh  Colombo          ambient            1.686   served     VEH034      1.0
+   S1-007 Fresh  Colombo          chilled            2.925   served     VEH007      1.0
+decision
+served      75
+deferred    10
+FEASIBILITY: PASSED - every rule satisfied.
+All three submissions match the final cell: PASSED
+Notebook execution PASSED: 5 code cells; rerun Task2B submission byte-identical
+
+C:\Personal\Competitiion\Datathon\.venv\Lib\site-packages\joblib\externals\loky\backend\context.py:131: UserWarning: Could not find the number of physical cores for the following reason:
+[WinError 2] The system cannot find the file specified
+Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+  warnings.warn(
+  File "C:\Personal\Competitiion\Datathon\.venv\Lib\site-packages\joblib\externals\loky\backend\context.py", line 247, in _count_physical_cores
+    cpu_count_physical = _count_physical_cores_win32()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Personal\Competitiion\Datathon\.venv\Lib\site-packages\joblib\externals\loky\backend\context.py", line 299, in _count_physical_cores_win32
+    cpu_info = subprocess.run(
+               ^^^^^^^^^^^^^^^
+  File "C:\Users\nsaga\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 546, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nsaga\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1022, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\nsaga\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1491, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

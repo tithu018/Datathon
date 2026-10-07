@@ -1,5 +1,30 @@
 # Architecture: Task 2A and Task 1 pipelines
 
+## Task 2B: capacity and allocation
+
+```mermaid
+flowchart LR
+  S[Peak-day orders and template] --> V[Strict identifiers and reference checks]
+  F[Fleet and vehicle capacities] --> V
+  R[Published travel and service allowances] --> V
+  V --> C[Capacity analysis and protected-order policy]
+  C --> G[Greedy baseline]
+  C --> E[Enumerate all chilled trips and vehicle schedules]
+  E --> X[Exact branch-and-bound with fixed ambient allocation]
+  X --> A[Window diagnostics and repaired-reefer sensitivity]
+  X --> P[Allocation CSV and concise policy]
+  G --> B[Baseline comparison]
+  X --> B
+  P --> K[Unchanged official feasibility checker]
+  X --> T[Independent exhaustive verification]
+  A --> H[Local timelines, fuel and order explanations]
+```
+
+This is a local optimisation pipeline with no trained model or external solver
+dependency. The exact certificate covers chilled assignments under the chosen
+policy, with ambient packing fixed. Windows and one-day fuel are approximate
+diagnostics; they do not certify physical return/reload execution or weekly fuel.
+
 ## Task 2A: weekly depot demand forecast
 
 ```mermaid

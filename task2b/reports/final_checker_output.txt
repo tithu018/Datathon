@@ -1,0 +1,3 @@
+Final Task 2B submission: outputs\submission_task2b.csv
+85 template rows and identifiers preserved; served 75, deferred 10; 4173 published minutes.
+FEASIBILITY: PASSED - every rule satisfied.

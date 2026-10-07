@@ -98,7 +98,7 @@ def main():
               "Aggregate ambient capacity is ample, but this specific Style order must be deferred.",
               "All other orders fit some compatible vehicle individually; joint feasibility remains to be solved."]
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
-    output = "\n".join(lines) + "\n"
+    output = "\n".join(line.rstrip() for line in "\n".join(lines).splitlines()) + "\n"
     (REPORT_DIR / "capacity_analysis.txt").write_text(output, encoding="utf-8")
     print(output)
     print("Phase 1 checks PASSED")

@@ -1,5 +1,19 @@
 # Video talking points (Task 2A and the Task 1 changes)
 
+## Task 2B extension
+
+- Show `outputs/submission_task2b.csv`: 75 served orders, all ten protected orders,
+  58 outlets covered; nine chilled deferrals retain ambient delivery.
+- Explain two bottlenecks: limited reefer volume/trips/morning time, and one
+  indivisible 40.660 m³ Style order versus a maximum available 38 m³ vehicle.
+- Show the exact optimiser versus greedy: 132.836 versus 125.859 m³ chilled.
+- Explain the measured fairness choice: volume-first reaches 143.772 m³ but skips
+  the protected Puttalam chilled order; protecting it costs 10.936 m³ overall.
+- Show the repair opportunity: one 33.4 m³ workshop reefer increases delivery by
+  35.996 m³ to 168.832 m³. Mention independent optimality verification.
+- State limits: exact chilled search with fixed ambient packing; window/fuel
+  diagnostics are approximations, with arrival lateness separate from unloading.
+
 1. **Task 2A labels follow the brief exactly.**
    - **Labels:** every order counts (including deferred and never-dispatched ones), assigned to the week the store requested it. That gives 97,321 orders across 6 depot × brand series of 117 weeks.
    - **Show:** `task2a/reports/weekly_series.png`.
