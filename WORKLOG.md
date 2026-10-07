@@ -837,3 +837,12 @@ teammates; this phase produces a handover package in `docs/handover/` instead.
 **Authorship**
 - Agent wrote the Phase 0 code, plan and this entry; user chose the priority policy
   (lexicographic, skip-twice first) and optimiser-as-submission.
+
+## 2B Phase 1: capacity analysis (2026-10-07, branch ananth)
+
+- Reviewed Phase 0 against booklet pp.18-21 and reran all smoke checks successfully; official checker unchanged.
+- Added analysis.py: demand/capacity by class, district time/stop bounds, per-vehicle chilled packing/time relaxation, and individual feasibility.
+- 181.629 m3 chilled demand; all four reefers have 172.400 m3 theoretical two-trip capacity. Relaxed bound 169.086 m3 => at least 12.543 m3 chilled shortage. Bounds allow order reuse and are explicitly not feasible plans.
+- Found additional unavoidable deferral: Style S1-078, 40.660 m3 > largest available 38 m3. Corrected earlier ambient-all-fit and truck-only shortage claims.
+- Checks: analysis assertions and Phase 0 passed; no new dependency, no dataset files staged.
+- Authorship: Codex wrote analysis and documentation; user authorised phase commits and requested independent agent reviews.

@@ -41,7 +41,7 @@ The return leg is not counted.
 Three limits make the reefer trucks the bottleneck:
 - **Volume:** at least ~17 m³ of chilled goods can't be served even with perfect packing. Those deferrals are unavoidable.
 - **Trip count:** 7 chilled districts compete for only 6 reefer-truck trips.
-- **Time:** depot-to-district travel takes 173 min to Puttalam, 137 to Matara and 127 to Kurunegala. A reefer truck sent to one of these gets one Fresh trip in its 270-minute window.
+- **Time:** depot-to-district travel takes 173 min to Puttalam, 137 to Matara and 127 to Kurunegala. Long trips sharply restrict second Fresh trips; feasible pairs must be enumerated.
 
 ## Priority policy (agreed)
 
@@ -90,3 +90,10 @@ Two hard rules go with it:
 
   Task 2B needs pandas only, with no solver or other new dependency.
 - **Run:** `.venv/Scripts/python task2b/run_all.py` from the repo root.
+
+## Phase 1 review corrections (2026-10-07)
+
+- The earlier ~17 m3 shortage assumes the van is reserved for van-only orders. Vans can also serve normal-access outlets. Including all reefers, the safe time/packing relaxed chilled upper bound is 169.086 m3, leaving at least 12.543 m3 unserved. Exact optimisation will tighten this.
+- Six truck trips for seven districts is a truck-only argument; the van also contributes trips.
+- Ambient aggregate capacity is ample, but Style order S1-078 is 40.660 m3 and no available vehicle exceeds 38 m3. Whole-order rules force its deferral. The statement that all Style orders fit was incorrect.
+- The user authorised completing, checking and committing each phase sequentially, then merging and pushing main when checks pass. This supersedes the older Task 1/2A approval protocol for this Task 2B work.

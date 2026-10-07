@@ -1,0 +1,56 @@
+Task 2B Phase 1: capacity analysis (S1)
+Published rules: whole orders; max 2 trips; 270 Fresh / 480 daytime minutes.
+Each order counts as one stop; no return time in the published duration.
+
+Demand by brand and temperature (orders, m3, kg):
+                        orders      m3        kg
+brand temp_requirement                          
+Fresh ambient               49 132.968 24838.400
+      chilled               26 181.629 32780.400
+Style ambient                5  77.213  4878.300
+Tech  ambient                5  18.054  5642.300
+
+Available fleet by class (vehicles, one-trip m3, one-trip kg, max trips):
+               vehicles     m3      kg  max_trips
+temp    type                                     
+ambient truck        22  656.0  121600         44
+        van           2   17.0    2300          4
+reefer  truck         3   79.2   15960          6
+        van           1    7.0    1040          2
+
+District stop limits, using the smallest allowance for each brand.
+These ignore capacity, window waiting and other trips; they are upper bounds.
+district | outbound min | Fresh single min / max stops | Style single / max | Tech single / max
+Colombo | 24 | 39 / 11 | 62 / 10 | 67 / 9
+Galle | 103 | 118 / 7 | 141 / 8 | 146 / 7
+Gampaha | 37 | 52 / 10 | 75 / 9 | 80 / 8
+Kalutara | 64 | 79 / 8 | 102 / 8 | 107 / 7
+Kurunegala | 127 | 142 / 4 | 165 / 6 | 170 / 6
+Matara | 137 | 152 / 5 | 175 / 7 | 180 / 6
+Puttalam | 173 | 188 / 3 | 211 / 5 | 216 / 4
+
+BOTTLENECK 1: reefer volume, trip count, weight and Fresh time.
+                               order_volume_m3  order_weight_kg
+district   parking_constraint                                  
+Colombo    normal                       45.582           8217.5
+           van_only                      6.013           1095.7
+Galle      normal                       20.269           3412.5
+Gampaha    normal                       48.057           8734.4
+Kalutara   normal                       16.032           2930.2
+Kurunegala normal                       25.039           4593.3
+Matara     normal                       11.978           2208.0
+Puttalam   normal                        8.659           1588.8
+Chilled demand: 181.629 m3 / 32780.4 kg.
+All four reefers, including van: at most 172.400 m3 in 8 trips.
+Per-vehicle time/packing relaxed volume bounds: {'VEH003': 52.440000000000005, 'VEH006': 65.518, 'VEH007': 38.674, 'VEH036': 12.454}
+Safe served chilled upper bound: 169.086 m3; unavoidable aggregate shortfall >= 12.543 m3.
+The bounds may reuse the same order; they are not a feasible allocation or an optimality certificate.
+Three trucks: 158.400 m3 / 31,920 kg across at most six trips; seven normal-access chilled districts.
+The van can serve normal-access orders too, so a six-truck-trip district argument alone is not a universal proof.
+Van-only chilled demand 6.013 m3 / 1,095.7 kg exceeds the van's 1,040 kg single-trip limit; all three require two trips.
+
+BOTTLENECK 2: indivisible orders that fit no available vehicle.
+S1-078 (Style, Kurunegala): 40.660 m3 / 2561.6 kg; no compatible available vehicle.
+Largest available ambient truck: 38.000 m3. S1-078 is 40.660 m3; it cannot be split.
+Aggregate ambient capacity is ample, but this specific Style order must be deferred.
+All other orders fit some compatible vehicle individually; joint feasibility remains to be solved.
