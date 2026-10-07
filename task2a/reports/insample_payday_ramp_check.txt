@@ -1,0 +1,45 @@
+Fresh, operating days, in-sample (both depots): actual / fitted
+                         series_days  mean_daily_ratio  sum_actual   sum_fitted  sum_ratio
+group                                                                                     
+payday + ramp (overlap)           14            0.9993    2234.854    2230.2883     1.0020
+payday only                      250            0.9993   33344.311   33363.1150     0.9994
+ramp only                        234            1.0000   32219.052   32226.5024     0.9998
+neither                          892            0.9999  102560.627  102540.4812     1.0002
+
+Overlap days by festival:
+               series_days  mean_daily_ratio  sum_ratio
+festival_name                                          
+deepavali                6            1.0023     1.0030
+esala                    6            0.9975     1.0014
+poson                    2            0.9954     1.0006
+
+History weeks with 2 paydays (7), Fresh both depots:
+                     actual    fitted  paydays  max_ramp festivals  op_days  ratio
+iso_year iso_week                                                                 
+2024     13        1441.680  1429.843        2       0.0                  6  1.008
+         26        1477.123  1463.334        2       0.0                  6  1.009
+         48        1454.763  1450.535        2       0.0                  6  1.003
+2025     9         1535.616  1550.754        2       0.0                  6  0.990
+         35        1555.601  1567.637        2       0.0                  6  0.992
+         48        1561.563  1541.572        2       0.0                  6  1.013
+2026     9         1625.081  1620.838        2       0.0                  6  1.003
+  mean weekly ratio 1.0027, sum ratio 1.0025
+
+History weeks with a payday and festival ramp > 0 (12), Fresh both depots:
+                     actual    fitted  paydays  max_ramp    festivals  op_days  ratio
+iso_year iso_week                                                                    
+2024     21        1645.766  1620.990        1       1.0        vesak        6  1.015
+         34        1452.303  1441.464        1       1.0        esala        6  1.008
+         43        1553.217  1557.809        1       0.6    deepavali        6  0.997
+         44        1741.419  1749.489        1       1.0    deepavali        6  0.995
+         52        1458.418  1449.323        1       1.0    christmas        5  1.006
+2025     1         1461.538  1467.913        1       0.1  thai_pongal        6  0.996
+         14        1539.512  1515.449        1       0.2     new_year        6  1.016
+         18        1225.792  1246.318        1       0.2        vesak        5  0.984
+         22        1505.918  1488.080        1       0.1        poson        6  1.012
+         31        1616.120  1618.630        1       0.5        esala        6  0.998
+         43        1538.203  1540.846        1       1.0    deepavali        6  0.998
+         52        1610.737  1618.512        1       1.0    christmas        5  0.995
+  mean weekly ratio 1.0017, sum ratio 1.0019
+
+Decision rule: overlap-day mean ratio 0.9993 -> within [0.95, 1.05]: keep the forecast

@@ -1,0 +1,104 @@
+Week context (2026):
+ iso_year  iso_week week_start  op_days  paydays  payday_tail                                           notes  match_2025_week              match_rule
+     2026        14     30 Mar        6        1            2                         new_year ramp up to 0.1               14 2 weeks before new_year
+     2026        15     06 Apr        6        0            0                         new_year ramp up to 0.8               15    week before new_year
+     2026        16     13 Apr        4        0            0        closed Mon 13 Apr (new_year), Tue 14 Apr               16        week of new_year
+     2026        17     20 Apr        6        1            1                            vesak ramp up to 0.4               17     week after new_year
+     2026        18     27 Apr        5        1            3 closed Fri 01 May (vesak); vesak ramp up to 0.9               20           week of vesak
+     2026        19     04 May        6        0            0                                                               21        week after vesak
+     2026        20     11 May        6        0            0                                                               22    2 weeks before poson
+     2026        21     18 May        6        0            0                            poson ramp up to 0.3               23       week before poson
+     2026        22     25 May        6        2            3   poson ramp up to 1.0; poson Sat 30 May (open)               24           week of poson
+     2026        23     01 Jun        6        0            1                                                               25        week after poson
+
+Kandy Fresh  (last-8-weeks mean 521.5 m3)
+ iso_week  op_days  paydays  pred_total_volume_m3  pred_chilled_volume_m3 vs_last8  match_2025_week  actual_2025_match  op_days_2025_match vs_2025_match     flag
+       14        6        1                 552.7                   204.4      +6%               14              523.7                   6           +6%         
+       15        6        0                 730.2                   270.8     +40%               15              696.8                   6           +5% <-- >25%
+       16        4        0                 355.3                   131.8     -32%               16              334.3                   4           +6% <-- >25%
+       17        6        1                 562.6                   208.7      +8%               17              516.2                   6           +9%         
+       18        5        1                 557.1                   207.0      +7%               20              495.0                   6          +13%         
+       19        6        0                 510.3                   191.2      -2%               21              479.0                   6           +7%         
+       20        6        0                 510.7                   191.3      -2%               22              522.2                   6           -2%         
+       21        6        0                 520.3                   194.9      -0%               23              537.3                   6           -3%         
+       22        6        2                 651.9                   244.2     +25%               24              521.1                   6          +25%         
+       23        6        0                 526.9                   198.8      +1%               25              484.5                   6           +9%         
+
+Kandy Style  (last-8-weeks mean 81.1 m3)
+ iso_week  op_days  paydays  pred_total_volume_m3  pred_chilled_volume_m3 vs_last8  match_2025_week  actual_2025_match  op_days_2025_match vs_2025_match     flag
+       14        6        1                  80.2                     0.0      -1%               14               84.7                   6           -5%         
+       15        6        0                 121.1                     0.0     +49%               15              131.0                   6           -8% <-- >25%
+       16        4        0                  51.2                     0.0     -37%               16               39.9                   4          +28% <-- >25%
+       17        6        1                  78.5                     0.0      -3%               17               72.5                   6           +8%         
+       18        5        1                  87.3                     0.0      +8%               20               78.4                   6          +11%         
+       19        6        0                  76.8                     0.0      -5%               21               72.0                   6           +7%         
+       20        6        0                  76.8                     0.0      -5%               22               91.2                   6          -16%         
+       21        6        0                  77.1                     0.0      -5%               23               77.6                   6           -1%         
+       22        6        2                  85.1                     0.0      +5%               24               75.3                   6          +13%         
+       23        6        0                  77.4                     0.0      -5%               25               77.0                   6           +1%         
+
+Kandy Tech  (last-8-weeks mean 20.5 m3)
+ iso_week  op_days  paydays  pred_total_volume_m3  pred_chilled_volume_m3 vs_last8  match_2025_week  actual_2025_match  op_days_2025_match vs_2025_match flag
+       14        6        1                  22.6                     0.0     +10%               14               20.0                   6          +13%     
+       15        6        0                  22.6                     0.0     +10%               15               32.4                   6          -30%     
+       16        4        0                  21.4                     0.0      +4%               16               30.4                   4          -30%     
+       17        6        1                  22.6                     0.0     +10%               17               18.2                   6          +24%     
+       18        5        1                  18.4                     0.0     -10%               20                2.8                   6         +548%     
+       19        6        0                  22.6                     0.0     +10%               21               23.3                   6           -3%     
+       20        6        0                  22.6                     0.0     +10%               22               25.8                   6          -13%     
+       21        6        0                  22.6                     0.0     +10%               23               15.6                   6          +45%     
+       22        6        2                  22.6                     0.0     +10%               24               16.3                   6          +39%     
+       23        6        0                  22.6                     0.0     +10%               25                9.8                   6         +130%     
+
+Peliyagoda Fresh  (last-8-weeks mean 985.4 m3)
+ iso_week  op_days  paydays  pred_total_volume_m3  pred_chilled_volume_m3 vs_last8  match_2025_week  actual_2025_match  op_days_2025_match vs_2025_match     flag
+       14        6        1                1048.5                   392.3      +6%               14             1015.8                   6           +3%         
+       15        6        0                1399.7                   527.1     +42%               15             1351.0                   6           +4% <-- >25%
+       16        4        0                 659.7                   248.4     -33%               16              623.5                   4           +6% <-- >25%
+       17        6        1                1037.7                   390.8      +5%               17              960.8                   6           +8%         
+       18        5        1                1069.6                   403.5      +9%               20             1004.6                   6           +6%         
+       19        6        0                 976.8                   370.9      -1%               21              962.8                   6           +1%         
+       20        6        0                 977.4                   371.2      -1%               22              983.7                   6           -1%         
+       21        6        0                 994.8                   377.8      +1%               23             1023.6                   6           -3%         
+       22        6        2                1230.9                   467.4     +25%               24              991.2                   6          +24%         
+       23        6        0                 990.2                   377.8      +0%               25              911.1                   6           +9%         
+
+Peliyagoda Style  (last-8-weeks mean 145.9 m3)
+ iso_week  op_days  paydays  pred_total_volume_m3  pred_chilled_volume_m3 vs_last8  match_2025_week  actual_2025_match  op_days_2025_match vs_2025_match     flag
+       14        6        1                 138.5                     0.0      -5%               14              134.3                   6           +3%         
+       15        6        0                 234.3                     0.0     +61%               15              221.9                   6           +6% <-- >25%
+       16        4        0                 117.0                     0.0     -20%               16              114.9                   4           +2%         
+       17        6        1                 136.8                     0.0      -6%               17              141.1                   6           -3%         
+       18        5        1                 100.2                     0.0     -31%               20              134.9                   6          -26% <-- >25%
+       19        6        0                 134.1                     0.0      -8%               21              124.4                   6           +8%         
+       20        6        0                 134.1                     0.0      -8%               22              137.9                   6           -3%         
+       21        6        0                 134.9                     0.0      -8%               23              132.8                   6           +2%         
+       22        6        2                 145.5                     0.0      -0%               24              120.8                   6          +20%         
+       23        6        0                 132.5                     0.0      -9%               25              133.6                   6           -1%         
+
+Peliyagoda Tech  (last-8-weeks mean 33.8 m3)
+ iso_week  op_days  paydays  pred_total_volume_m3  pred_chilled_volume_m3 vs_last8  match_2025_week  actual_2025_match  op_days_2025_match vs_2025_match     flag
+       14        6        1                  31.8                     0.0      -6%               14               38.6                   6          -18%         
+       15        6        0                  31.8                     0.0      -6%               15               32.4                   6           -2%         
+       16        4        0                  22.2                     0.0     -34%               16                7.9                   4         +181% <-- >25%
+       17        6        1                  31.8                     0.0      -6%               17               44.1                   6          -28%         
+       18        5        1                  18.7                     0.0     -45%               20               14.0                   6          +33% <-- >25%
+       19        6        0                  31.8                     0.0      -6%               21               18.7                   6          +70%         
+       20        6        0                  31.8                     0.0      -6%               22               21.4                   6          +48%         
+       21        6        0                  31.8                     0.0      -6%               23               40.6                   6          -22%         
+       22        6        2                  31.8                     0.0      -6%               24               32.0                   6           -1%         
+       23        6        0                  31.8                     0.0      -6%               25               23.4                   6          +36%         
+
+Flagged weeks (|forecast / last-8 mean - 1| > 25%):
+  Kandy Fresh W15: 730.2 vs last-8 521.5 (+40%); 2025 match W15 696.8. festival build-up: new_year ramp up to 0.8
+  Kandy Fresh W16: 355.3 vs last-8 521.5 (-32%); 2025 match W16 334.3. closures remove 30% of a normal week's Fresh volume (4 operating days)
+  Kandy Style W15: 121.1 vs last-8 81.1 (+49%); 2025 match W15 131.0. festival build-up: new_year ramp up to 0.8
+  Kandy Style W16: 51.2 vs last-8 81.1 (-37%); 2025 match W16 39.9. closures remove 32% of a normal week's Style volume (4 operating days); 2 of 9 Style outlets skip their order (delivery day closed)
+  Peliyagoda Fresh W15: 1399.7 vs last-8 985.4 (+42%); 2025 match W15 1351.0. festival build-up: new_year ramp up to 0.8
+  Peliyagoda Fresh W16: 659.7 vs last-8 985.4 (-33%); 2025 match W16 623.5. closures remove 32% of a normal week's Fresh volume (4 operating days)
+  Peliyagoda Style W15: 234.3 vs last-8 145.9 (+61%); 2025 match W15 221.9. festival build-up: new_year ramp up to 0.8
+  Peliyagoda Style W18: 100.2 vs last-8 145.9 (-31%); 2025 match W20 134.9. closures remove 33% of a normal week's Style volume (5 operating days); 5 of 16 Style outlets skip their order (delivery day closed); festival build-up: vesak ramp up to 0.9
+  Peliyagoda Tech W16: 22.2 vs last-8 33.8 (-34%); 2025 match W16 7.9. closures remove 30% of a normal week's Tech volume (4 operating days)
+  Peliyagoda Tech W18: 18.7 vs last-8 33.8 (-45%); 2025 match W20 14.0. closures remove 41% of a normal week's Tech volume (5 operating days); festival build-up: vesak ramp up to 0.9
+
+Saved: task2a\reports\final_forecast_table.csv, task2a\reports\final_forecast.png

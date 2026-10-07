@@ -134,6 +134,9 @@ class StyleOutletGLM:
                 X[c] = 0.0
         return np.where(df["is_operating"] == 1, self.model.predict(X[self.columns]), 0.0)
 
+    def multipliers(self) -> pd.Series:
+        return pd.Series(np.exp(self.model.coef_), index=self.columns)
+
 
 # ---------------------------------------------------------------- global HGB
 HGB_NUMERIC = ["dow", "payday_cal_d0", "payday_cal_d1", "payday_cal_d2", "festival_ramp",
@@ -168,7 +171,9 @@ class GlobalHGB:
         # same structural zeros as the GLM, per series
         means = op.groupby(["depot", "brand", "dow"])[target].mean()
         series_mean = op.groupby(["depot", "brand"])[target].mean()
-        self.zero = {k for k, v in means.items() if v < STRUCTURAL_ZERO_SHARE * series_mean[k[:2]]}
+        # sorted tuple (not a set) so the pickled model is byte-identical across runs
+        self.zero = tuple(sorted((d, b, int(w)) for (d, b, w), v in means.items()
+                                 if v < STRUCTURAL_ZERO_SHARE * series_mean[(d, b)]))
         return self
 
     def predict(self, df: pd.DataFrame) -> np.ndarray:
@@ -196,18 +201,6 @@ def week_capacity(daily: pd.DataFrame, weights: pd.Series) -> pd.DataFrame:
     """Sum of weekday weights over the operating days of each ISO week."""
     w = daily["dow"].map(weights).fillna(0.0) * daily["is_operating"]
     return daily.assign(cap=w).groupby(["iso_year", "iso_week"], as_index=False)["cap"].sum()
-
-
-def calendar_level_forecast(daily_train, weekly_train, daily_future, kind, param, target="total_volume"):
-    """Tech option (c): smoothed level per unit of weekday capacity, times each forecast
-    week's capacity (so a week losing a busy weekday to a closure gets less volume)."""
-    weights = weekday_weights(daily_train, target)
-    cap_hist = week_capacity(daily_train, weights)
-    wk = weekly_train.merge(cap_hist, on=["iso_year", "iso_week"])
-    wk = wk[wk["cap"] > 0]
-    level = smooth_last((wk[target] / wk["cap"]).to_numpy(), kind, param)
-    cap_future = week_capacity(daily_future, weights)
-    return cap_future.assign(pred=level * cap_future["cap"])
 
 
 # ---------------------------------------------------------------- chilled

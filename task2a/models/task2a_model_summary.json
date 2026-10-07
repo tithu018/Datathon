@@ -1,0 +1,242 @@
+{
+  "config": {
+    "Fresh": {
+      "model": "blend",
+      "parts": [
+        [
+          {
+            "include_midweek": false,
+            "model": "glm"
+          },
+          0.6
+        ],
+        [
+          {
+            "include_midweek": false,
+            "learning_rate": 0.06,
+            "max_depth": 4,
+            "max_iter": 600,
+            "model": "hgb"
+          },
+          0.4
+        ]
+      ]
+    },
+    "Style": {
+      "model": "style_outlet",
+      "include_midweek": false
+    },
+    "Tech": {
+      "kind": "mean",
+      "model": "tech_calendar",
+      "param": 52
+    },
+    "chilled": {
+      "method": "share",
+      "glm": {
+        "include_midweek": false
+      }
+    }
+  },
+  "history_end": "2026-03-29",
+  "versions": {
+    "python": "3.11.2",
+    "pandas": "3.0.3",
+    "numpy": "2.4.6",
+    "scikit-learn": "1.9.0"
+  },
+  "fresh_blend_weights": {
+    "glm": 0.6,
+    "hgb": 0.4
+  },
+  "fresh_glm_multipliers": {
+    "Kandy Fresh": {
+      "dow_1": 0.9652,
+      "dow_2": 1.035,
+      "dow_3": 1.0694,
+      "dow_4": 1.1793,
+      "dow_5": 1.1945,
+      "payday_d0": 1.1413,
+      "payday_d1": 1.1447,
+      "payday_d2": 1.1464,
+      "ramp_thai_pongal": 1.2467,
+      "ramp2_thai_pongal": 0.9991,
+      "ramp_new_year": 2.0162,
+      "ramp2_new_year": 0.951,
+      "ramp_vesak": 1.6386,
+      "ramp2_vesak": 0.8056,
+      "ramp_poson": 1.1887,
+      "ramp2_poson": 1.0263,
+      "ramp_esala": 1.3191,
+      "ramp2_esala": 0.9356,
+      "ramp_deepavali": 1.5076,
+      "ramp2_deepavali": 0.9794,
+      "ramp_christmas": 1.7896,
+      "ramp2_christmas": 0.9466,
+      "holiday_closure_in_1": 0.9666,
+      "holiday_closure_in_2": 0.9763,
+      "holiday_closure_in_3": 0.9816,
+      "month_2": 1.0017,
+      "month_3": 0.9894,
+      "month_4": 0.9984,
+      "month_5": 0.9917,
+      "month_6": 1.0028,
+      "month_7": 1.0016,
+      "month_8": 1.0015,
+      "month_9": 0.9993,
+      "month_10": 0.9658,
+      "month_11": 0.9726,
+      "month_12": 0.9963,
+      "trend_years": 1.0626
+    },
+    "Peliyagoda Fresh": {
+      "dow_1": 0.9979,
+      "dow_2": 0.9292,
+      "dow_3": 1.0852,
+      "dow_4": 1.0791,
+      "dow_5": 1.1583,
+      "payday_d0": 1.1461,
+      "payday_d1": 1.1461,
+      "payday_d2": 1.1421,
+      "ramp_thai_pongal": 1.1862,
+      "ramp2_thai_pongal": 1.0241,
+      "ramp_new_year": 2.2515,
+      "ramp2_new_year": 0.7728,
+      "ramp_vesak": 1.1732,
+      "ramp2_vesak": 1.1753,
+      "ramp_poson": 1.1562,
+      "ramp2_poson": 1.0553,
+      "ramp_esala": 1.2579,
+      "ramp2_esala": 0.9977,
+      "ramp_deepavali": 1.5422,
+      "ramp2_deepavali": 0.9195,
+      "ramp_christmas": 2.1611,
+      "ramp2_christmas": 0.6905,
+      "holiday_closure_in_1": 1.0392,
+      "holiday_closure_in_2": 1.025,
+      "holiday_closure_in_3": 1.0236,
+      "month_2": 0.995,
+      "month_3": 0.9896,
+      "month_4": 0.9985,
+      "month_5": 1.0064,
+      "month_6": 0.9893,
+      "month_7": 1.021,
+      "month_8": 1.0,
+      "month_9": 1.0092,
+      "month_10": 0.9711,
+      "month_11": 0.9636,
+      "month_12": 0.9813,
+      "trend_years": 1.0565
+    }
+  },
+  "hgb_n_iter": 600,
+  "style_outlet_multipliers": {
+    "payday_d0": 1.0969,
+    "payday_d1": 1.0771,
+    "payday_d2": 1.1004,
+    "ramp_thai_pongal": 1.112,
+    "ramp2_thai_pongal": 1.003,
+    "ramp_new_year": 2.3935,
+    "ramp2_new_year": 1.1027,
+    "ramp_vesak": 1.2456,
+    "ramp2_vesak": 0.8966,
+    "ramp_poson": 1.0485,
+    "ramp2_poson": 1.0244,
+    "ramp_esala": 1.2099,
+    "ramp2_esala": 0.9695,
+    "ramp_deepavali": 2.0183,
+    "ramp2_deepavali": 0.8974,
+    "ramp_christmas": 0.3736,
+    "ramp2_christmas": 8.8662,
+    "holiday_closure_in_1": 0.9667,
+    "holiday_closure_in_2": 0.9088,
+    "holiday_closure_in_3": 1.0755,
+    "month_2": 1.0003,
+    "month_3": 0.9585,
+    "month_4": 0.9569,
+    "month_5": 0.973,
+    "month_6": 0.9496,
+    "month_7": 0.9902,
+    "month_8": 0.9942,
+    "month_9": 0.9759,
+    "month_10": 0.954,
+    "month_11": 0.9669,
+    "month_12": 0.9946,
+    "trend_years": 1.0167,
+    "style_peak_week": 1.4794,
+    "outlet_OUT016": 1.1173,
+    "outlet_OUT017": 1.9628,
+    "outlet_OUT018": 1.4158,
+    "outlet_OUT019": 1.0792,
+    "outlet_OUT020": 1.7306,
+    "outlet_OUT035": 1.7152,
+    "outlet_OUT036": 1.609,
+    "outlet_OUT037": 0.8299,
+    "outlet_OUT047": 1.2091,
+    "outlet_OUT048": 1.3095,
+    "outlet_OUT056": 1.2776,
+    "outlet_OUT057": 2.1184,
+    "outlet_OUT063": 1.4545,
+    "outlet_OUT070": 1.1894,
+    "outlet_OUT071": 1.4262,
+    "outlet_OUT088": 0.4178,
+    "outlet_OUT089": 1.4079,
+    "outlet_OUT090": 1.1193,
+    "outlet_OUT091": 1.2494,
+    "outlet_OUT092": 1.1175,
+    "outlet_OUT102": 2.0461,
+    "outlet_OUT109": 1.4869,
+    "outlet_OUT114": 2.0733,
+    "outlet_OUT120": 1.9318
+  },
+  "tech": {
+    "Kandy": {
+      "level_per_capacity_unit": 3.7559,
+      "weekday_weights": {
+        "0": 0.3213,
+        "1": 0.0,
+        "2": 2.7357,
+        "3": 1.4563,
+        "4": 1.1082,
+        "5": 0.3964
+      }
+    },
+    "Peliyagoda": {
+      "level_per_capacity_unit": 5.3245,
+      "weekday_weights": {
+        "0": 0.1781,
+        "1": 1.6303,
+        "2": 0.3186,
+        "3": 0.0,
+        "4": 2.4599,
+        "5": 1.3861
+      }
+    }
+  },
+  "chilled_share_depot_month": {
+    "Kandy 1": 0.3553,
+    "Kandy 2": 0.3608,
+    "Kandy 3": 0.3671,
+    "Kandy 4": 0.3709,
+    "Kandy 5": 0.3746,
+    "Kandy 6": 0.3773,
+    "Kandy 7": 0.3716,
+    "Kandy 8": 0.3673,
+    "Kandy 9": 0.3595,
+    "Kandy 10": 0.3583,
+    "Kandy 11": 0.3534,
+    "Kandy 12": 0.3496,
+    "Peliyagoda 1": 0.3603,
+    "Peliyagoda 2": 0.3665,
+    "Peliyagoda 3": 0.3689,
+    "Peliyagoda 4": 0.3766,
+    "Peliyagoda 5": 0.3798,
+    "Peliyagoda 6": 0.3815,
+    "Peliyagoda 7": 0.3783,
+    "Peliyagoda 8": 0.369,
+    "Peliyagoda 9": 0.3658,
+    "Peliyagoda 10": 0.3593,
+    "Peliyagoda 11": 0.3594,
+    "Peliyagoda 12": 0.3589
+  }
+}

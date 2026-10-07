@@ -418,3 +418,79 @@ payday, ramp and catch-up effects are also weekday-adjusted)
   (`experiments.py --score-config`): total WAPE 3.14% mean / 3.47% headline
   (Fresh 1.97%, Style 5.10%, Tech 28.22%, chilled 2.24%), within the user's
   3.17% threshold -> Phase 4 approved.
+- Phase 4 committed as `63c5b33`. Not pushed (repo still public).
+
+---
+
+## Phase 5: Task 2A final fit and submission (2026-10-07)
+
+**Done**
+- `forecast.py` refactored into `fit_spec`/`predict_spec` and `fit_config`/
+  `predict_config`; the backtest `Forecaster` and the final fit run the same
+  functions. Verified: `experiments.py --score-config` output is byte-identical
+  before and after the refactor (3.14% / 3.47%). Removed the unused
+  `calendar_level_forecast` from `models.py`.
+- `experiments.py`: selection mode no longer overwrites a config carrying
+  `user_decisions` (writes `phase4_config_rule.json` instead).
+- `train_model.py`: fits the approved config (`phase4_config.json`) on all
+  history 2024-01-01..2026-03-29 (4,914 daily rows, 2,925 Style outlet-days);
+  saves `task2a/models/task2a_model.joblib` (gitignored) and
+  `task2a_model_summary.json` (fitted multipliers, Tech levels and weekday
+  weights, chilled shares, versions). Seeds: HGB random_state 42 (the only
+  stochastic component; no early stopping), numpy seed 42.
+- `predict.py`: `predict_task2a(test_inputs_df)` loads the saved bundle only (no
+  retraining), reads the forecast-window calendar features from task2a/data, and
+  returns row_id + the 2 prediction columns in input order.
+- `make_submission.py`: fills the template, rounds to 3 decimals, writes
+  `outputs/submission_task2a.csv`. Asserts: 60 rows; row_id values and order
+  identical to the template; no missing or negative values; chilled 0 for
+  Style/Tech; 0 <= chilled <= total; chilled > 0 for Fresh.
+- `forecast_report.py`: sanity table (`task2a/reports/final_forecast_table.csv`,
+  console in `final_forecast_output.txt`) and `final_forecast.png`.
+- `run_all.py`: runs labels -> features -> final fit -> submission -> report
+  (`--full` adds analysis, Phase 3 backtest and the Phase 4 config score).
+- `GlobalHGB` stores its structural-zero weekdays as a sorted tuple instead of a
+  set: with a set, the pickled model differed between processes (string hash
+  randomization) although predictions were identical.
+
+**Reproducibility**
+- Deleted `task2a/data/` and `task2a/models/`, ran `run_all.py` from scratch twice:
+  `submission_task2a.csv`, `task2a_model.joblib`, the model summary and the
+  sanity table are byte-identical (cmp), and `pandas.DataFrame.equals` passes.
+
+**Key numbers (forecast, 10 weeks)**
+- Totals over W14..W23: Fresh 15,863 m3 (chilled 5,970, 37.6%), Style 2,220,
+  Tech 516.
+- Fitted: Fresh blend GLM 0.6 / HGB 0.4 (HGB 600 iterations); Tech level per
+  weekday-capacity unit Kandy 3.76, Peliyagoda 5.32; chilled share Apr-Jun
+  0.371-0.382.
+- 10 weeks flagged (>25% from the last-8 mean), all explained by the calendar:
+  - W15 up (New Year build-up, ramp to 0.8): Fresh +40%/+42%, Style +49%/+61%;
+    within +4% to +6% of 2025-W15 for Fresh and Peliyagoda Style, -8% Kandy Style.
+  - W16 down (Mon 13 + Tue 14 Apr closed; 4 operating days): Fresh -32%/-33%,
+    Kandy Style -37% (2 of 9 outlets skip), Peliyagoda Tech -34%. Peliyagoda
+    Style -20% (not flagged). Fresh within +6% of 2025-W16.
+  - W18 down (Fri 1 May closed for Vesak): Peliyagoda Style -31% (5 of 16 outlets
+    skip their Friday order), Peliyagoda Tech -45% (Friday is a main Tech day).
+- Not flagged but worth noting: W22 Fresh +25% vs last-8 (two paydays May 25 and
+  May 30 with their tails, Poson ramp and Poson on Sat 30 May, open), +24-25% vs
+  2025's Poson week, which had no paydays. Kandy Style W18 +8% and Kandy Tech W18
+  -10%: Kandy Style has no Friday outlets and Kandy Tech only one Friday outlet,
+  so Vesak's Friday closure barely affects them.
+
+**Authorship**
+- Agent wrote `train_model.py`, `predict.py`, `make_submission.py`,
+  `forecast_report.py`, `run_all.py`, the `forecast.py` refactor and this entry.
+  User specified the checks, the reproducibility test and the sanity table.
+
+**Phase 5 decisions (user, before commit)**
+- W22 check (in-sample only, final Fresh models, no backtest periods;
+  `task2a/insample_payday_ramp_check.py`, output in
+  `reports/insample_payday_ramp_check.txt`): actual / fitted on Fresh operating
+  days. Payday window (d0-d2) overlapping ramp > 0: mean daily ratio 0.9993
+  (sum ratio 1.0020; only 14 series-days: deepavali, esala, poson); payday only
+  0.9993; ramp only 1.0000; neither 0.9999. History weeks with 2 paydays (7):
+  weekly ratios 0.990-1.013 (mean 1.003). Weeks with a payday and ramp > 0 (12):
+  0.984-1.016 (mean 1.002). The multiplicative payday x ramp combination is not
+  biased in sample -> **W22 forecast kept** (rule: keep if 0.95-1.05).
+- Track `task2a/models/task2a_model_summary.json`; the `.joblib` stays ignored.

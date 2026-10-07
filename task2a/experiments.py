@@ -247,9 +247,13 @@ elif "--confirm" not in sys.argv:
     print("\nFinal config, total WAPE per period:", {k: f"{v:.2%}" for k, v in s_fin["per_period_overall"].items()})
     print("Final config, per-series WAPE mean4 / bias:",
           {sn: f"{s_fin['series'][sn]['mean']['wape']:.2%} / {s_fin['series'][sn]['mean']['bias']:+.2%}" for sn in SERIES_NAMES})
-    CONFIG_PATH.write_text(json.dumps({"config": final, "after_midweek_closure": keep_mid,
-                                       "hgb": H, "selection_periods": list(SELECTION_PERIODS)}, indent=2))
-    print(f"\nSaved: {REPORTS / 'phase4_improvement.csv'}, {REPORTS / 'phase4_candidates.csv'}, {CONFIG_PATH}")
+    # Never overwrite a config that carries the user's final decisions (Phase 4 approval)
+    out_cfg = CONFIG_PATH
+    if CONFIG_PATH.exists() and "user_decisions" in json.loads(CONFIG_PATH.read_text()):
+        out_cfg = REPORTS / "phase4_config_rule.json"
+    out_cfg.write_text(json.dumps({"config": final, "after_midweek_closure": keep_mid,
+                                   "hgb": H, "selection_periods": list(SELECTION_PERIODS)}, indent=2))
+    print(f"\nSaved: {REPORTS / 'phase4_improvement.csv'}, {REPORTS / 'phase4_candidates.csv'}, {out_cfg}")
 
 else:
     out_path = REPORTS / "phase4_confirmation.csv"
