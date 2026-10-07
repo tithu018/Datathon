@@ -36,7 +36,12 @@ assert (df["service_minutes"].values == labels["service_minutes"].values).all()
 assert (df["late"].values == labels["late"].values).all()
 order_date = pd.to_datetime(labels["order_date"])
 
-X = df.drop(columns=["service_minutes", "late"])
+# The 12 features that survived the original (eaf7297) merge. Selected explicitly so this
+# baseline still reproduces after Phase 6 added columns to train_features.csv.
+ORIGINAL_FEATURES = ["temp_requirement", "order_units", "order_weight_kg", "order_volume_m3", "distance_km",
+                     "planned_travel_duration_min", "planned_arrival_min", "planned_depart_min",
+                     "window_open_min_feature", "window_close_min_feature", "monsoon", "dow"]
+X = df[ORIGINAL_FEATURES]
 y_service = df["service_minutes"]
 y_late = df["late"]
 

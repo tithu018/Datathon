@@ -1,0 +1,54 @@
+1. Time parsing
+   prepare_labels.py converts HH:MM with int(h)*60 + int(m) before every comparison and subtraction;
+   prepare_features.py uses pd.to_datetime(format='%H:%M', errors='coerce') -> minutes.
+   planned_arrival_time_order   unparseable 0, all zero-padded HH:MM True, range 02:16..13:13
+   planned_arrival_time_leg     unparseable 0, all zero-padded HH:MM True, range 02:16..13:13
+   planned_depart_time          unparseable 0, all zero-padded HH:MM True, range 02:00..13:06
+   actual_depart_time           unparseable 0, all zero-padded HH:MM True, range 02:00..20:31
+   arrival_time                 unparseable 0, all zero-padded HH:MM True, range 02:30..21:55
+   leave_outlet_time            unparseable 0, all zero-padded HH:MM True, range 03:06..23:33
+   window_open_time             unparseable 0, all zero-padded HH:MM True, range 03:00..10:30
+   window_close_time            unparseable 0, all zero-padded HH:MM True, range 07:30..17:00
+   independent re-derivation: service equal True, late equal True
+   string comparison would agree on late: True (labels use minutes)
+
+2. Midnight crossing
+   actual arrival < actual departure      0
+   leave outlet < actual arrival          0
+   planned arrival < planned departure    0
+   window close <= window open            0
+   any time before 03:00                  5029
+   arrival == actual_depart + actual_travel: 74.89% of legs (max |diff| 1 min)
+   planned arrival == planned_depart + planned_travel: 100.00% of legs
+   order planned_arrival_time == leg planned_arrival_time: 100.00%
+
+3. Early arrivals (vehicle waits until the window opens; service starts at window open)
+   early arrivals: 4,023 of 91,894 (4.38%); wait median 14 min, max 132 min
+   by brand: {'Fresh': {'sum': 3855, 'mean': 0.0441}, 'Style': {'sum': 139, 'mean': 0.0509}, 'Tech': {'sum': 29, 'mean': 0.017}}
+   service if waiting were NOT removed: mean 19.88 min vs label mean 19.00 min
+   leave before window opens (impossible under the rule): 0
+
+4. Lateness (arrival strictly after window close)
+   overall late rate 0.1958; arrivals exactly at window close (not late): 279
+             orders  late_rate  service_mean  service_median
+brand_order                                                 
+Fresh         87457     0.2035       17.1438            15.0
+Style          2733     0.0549       52.5565            46.0
+Tech           1704     0.0246       60.5845            52.0
+   late rate by dispatch_status: {'attempted': 0.1956, 'deferred': 0.2067}
+
+5. Other consistency
+   order vs leg columns equal: {'brand': '100.00%', 'district': '100.00%', 'depot': '100.00%', 'vehicle_id': '100.00%', 'vehicle_type': '100.00%', 'vehicle_temp': '100.00%'}
+   leg date == dispatch_date: 100.00%
+   to_outlet == outlet_id: 100.00%
+   service_minutes: min 2, max 428, zeros 0
+
+6. Test inputs
+   planned_arrival_time_order   unparseable 0
+   planned_depart_time          unparseable 0
+   window_open_time             unparseable 0
+   window_close_time            unparseable 0
+   order vs leg columns equal: {'brand': '100.00%', 'district': '100.00%', 'depot': '100.00%', 'vehicle_type': '100.00%', 'vehicle_temp': '100.00%'}
+   test planned arrival before window open: 12.25%
+
+7. Service-time tail: quantiles {0.5: 15.0, 0.9: 32.0, 0.99: 80.0, 0.999: 149.0}; > 180 min: 45 ({'Fresh': 3, 'Style': 17, 'Tech': 25}); 99th percentile by brand {'Fresh': 54.0, 'Style': 168.0, 'Tech': 195.0}. Kept (large Style/Tech orders).

@@ -494,3 +494,71 @@ payday, ramp and catch-up effects are also weekday-adjusted)
   0.984-1.016 (mean 1.002). The multiplicative payday x ramp combination is not
   biased in sample -> **W22 forecast kept** (rule: keep if 0.95-1.05).
 - Track `task2a/models/task2a_model_summary.json`; the `.joblib` stays ignored.
+- Phase 5 committed as `1c66e4b`. Not pushed (repo still public).
+
+---
+
+## Phase 6: Task 1 fixes, part 1: dropped-column bug and time-based validation (2026-10-07)
+
+**Label audit** (`task1/label_audit.py`, read-only; output `task1/reports/label_audit.txt`)
+- No bug found; labels unchanged.
+- Times are parsed to minutes before every comparison (prepare_labels: int h*60+m;
+  prepare_features: pd.to_datetime %H:%M). All 8 time columns are zero-padded
+  HH:MM with 0 unparseable values; an independent re-derivation reproduces every
+  service_minutes and late label.
+- Midnight: no crossings (0 arrivals before departure, 0 leave-before-arrival,
+  0 planned arrival before planned departure, 0 windows closing before opening).
+  5,029 legs have times before 03:00 (departures from 02:00); all same-day.
+  Latest leave_outlet_time 23:33.
+- Early arrivals: 4,023 of 91,894 (4.38%; Fresh 4.4%, Style 5.1%, Tech 1.7%),
+  median wait 14 min (max 132); the label removes the wait (mean service 19.00
+  min vs 19.88 if the wait were counted). 0 departures before the window opens.
+- Late rate (arrival strictly after close): 19.58% overall; Fresh 20.35%,
+  Style 5.49%, Tech 2.46%; 279 arrivals exactly at close count as on time.
+- Order and route-leg copies of brand, district, depot, vehicle_id,
+  vehicle_type, vehicle_temp and planned arrival agree 100% (train and test).
+- Service-time tail: p99 80 min, max 428; 45 stops > 180 min, 42 of them
+  Style/Tech (p99 168 and 195 min). Kept.
+
+**Bug fix**
+- `task1/prepare_features.py`: the order and leg files both carry brand, district,
+  depot, vehicle_type, vehicle_temp and planned_arrival_time, so the merge renamed
+  them `_order`/`_leg` and the candidate-list filter silently dropped them. Now
+  asserts the two copies are equal and restores the plain name. Explicit
+  `FEATURES` list in the new `task1/features.py` (17 features); prepare_features
+  and train_model assert every listed column exists. `train_features.csv` now also
+  carries `delivery_id` and `order_date` (not features) for the time-based split.
+- `time_to_minutes` now asserts no unparseable times (errors="coerce" could have
+  hidden NaNs).
+- `task1/baseline_eval.py` selects the original 12 features explicitly, so it still
+  reproduces after the change: re-run, `baseline_metrics.json` byte-identical.
+
+**Training and evaluation**
+- New `task1/evaluation.py` (random split as the original, time-based split
+  order_date >= 2026-01-03, metrics). `task1/train_model.py` trains the same Random
+  Forests (300 trees, min_samples_leaf 2, balanced class weight for lateness,
+  random_state 42) on both splits; only the features changed. Writes
+  `task1/reports/metrics_phase6.json`. It still saves the random-split models as
+  before; `outputs/submission_task1.csv` is not regenerated (Phase 9).
+
+| split | metric | baseline (12 feat.) | Phase 6 (17 feat.) |
+|---|---|---|---|
+| random | service MAE / RMSE | 5.520 / 8.950 | 5.306 / 8.725 |
+| random | late AUC / log loss / Brier | 0.9278 / 0.2900 / 0.0916 | 0.9319 / 0.2845 / 0.0913 |
+| random | share p = 0 | 12.1% | 1.4% |
+| time-based | service MAE / RMSE | 5.152 / 8.319 | 4.950 / 8.032 |
+| time-based | late AUC / log loss / Brier | 0.9315 / 0.2320 / 0.0727 | 0.9387 / 0.2315 / 0.0726 |
+| time-based | share p = 0 | 14.2% | 4.3% |
+
+**Authorship**
+- Agent wrote `task1/label_audit.py`, `task1/features.py`, `task1/evaluation.py`,
+  the changes to `prepare_features.py`, `train_model.py` and `baseline_eval.py`, and
+  this entry. User specified the audit items, the same-models rule and the metrics.
+
+**Phase 6 decisions (recorded at Phase 6 approval)**
+- Phase 9: retrain the final Task 1 models on ALL training data (after validation).
+- **Push decision:** the team chose to push the branch to the public origin
+  (`https://github.com/tithu018/Datathon`), overriding the earlier "no push while
+  public" rule. From Phase 6 on, the branch `datathon-task2a-task1-fixes` is pushed
+  after each approved commit. Never main, never force-push, no other remotes.
+  Before each push, `git ls-files` is checked for dataset CSVs and .joblib files.

@@ -1,0 +1,23 @@
+Training on the random split (80/20, stratified on late)...
+Training on the time-based split (test: order_date >= 2026-01-03)...
+
+Baseline (12 features) vs Phase 6 (17 features), same Random Forests:
+     split             metric  baseline  phase6  change
+    random        service_mae    5.5197  5.3056 -0.2141
+    random       service_rmse    8.9497  8.7249 -0.2248
+    random       late_roc_auc    0.9278  0.9319  0.0041
+    random      late_log_loss    0.2900  0.2845 -0.0055
+    random         late_brier    0.0916  0.0913 -0.0003
+    random late_share_exact_0    0.1210  0.0139 -0.1071
+time-based        service_mae    5.1523  4.9504 -0.2019
+time-based       service_rmse    8.3194  8.0324 -0.2870
+time-based       late_roc_auc    0.9315  0.9387  0.0072
+time-based      late_log_loss    0.2320  0.2315 -0.0005
+time-based         late_brier    0.0727  0.0726 -0.0001
+time-based late_share_exact_0    0.1419  0.0431 -0.0988
+
+Saved: task1\reports\metrics_phase6.json
+
+Saved models:
+task1/service_model.joblib
+task1/late_model.joblib
