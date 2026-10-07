@@ -671,3 +671,57 @@ information) was measured as a labelled extra and NOT applied (user decision).
   loss 0.1986. `train_model.py` reproduces these exactly.
 - make_submission.py must select FEATURES (36 candidate columns in test_features.csv):
   fixed in Phase 9.
+- Phase 7 committed as `c425c96` and pushed. Note: staging `task1/` as a whole also
+  committed the (then unrun) Phase 8 script `task1/phase8_models.py` and the HGB
+  builders in `task1/models.py`; they do not affect any Phase 7 result. Not rewritten
+  (already pushed); Phase 8 results are committed with Phase 8.
+
+---
+
+## Phase 8: Task 1 models and calibration (2026-10-07)
+
+**Setup** (`task1/phase8_models.py`, 30 Phase 7 features; selection on the mean of two tests)
+- A: order_date >= 2026-01-03 (train 86,721 / test 5,173; late 13.1%; monsoon share 0).
+- B: 2025-02-16..03-28, season-matched to the real test (train 49,055 / test 4,856;
+  late 21.4%; monsoon share 0.68).
+- Calibration: CalibratedClassifierCV(cv=StratifiedKFold(5, shuffle=True, seed 42))
+  on the training portion, so every fold spans all seasons. HGB: max_leaf_nodes 31,
+  min_samples_leaf 40, l2 1.0, no early stopping, random_state 42.
+
+**Service time (MAE / RMSE, mean of A and B)**
+- RF (current) 4.091 / 6.278. Best: HGB squared_error lr 0.05, 600 iter 3.896 / 6.062
+  (-4.8% MAE; A 3.921, B 3.871). HGB absolute_error best 3.917 / 6.354.
+  All 8 HGB settings beat the RF on MAE.
+
+**Lateness (mean of A and B; raw -> clipped [0.01, 0.99])**
+| model | log loss | Brier | AUC | mean pred A / B (actual 0.131 / 0.214) |
+|---|---|---|---|---|
+| RF balanced (current) | 0.1894 -> 0.1926 | 0.0585 | 0.9692 | 0.183 / 0.266 |
+| RF no class weight | 0.1668 -> 0.1707 | 0.0515 | 0.9703 | 0.134 / 0.208 |
+| HGB raw (lr 0.05, 600) | 0.1530 -> 0.1581 | 0.0482 | 0.9734 | 0.131 / 0.204 |
+| HGB + isotonic | 0.1508 -> 0.1562 | 0.0476 | 0.9738 | 0.131 / 0.205 |
+| HGB + sigmoid | 0.1513 -> 0.1562 | 0.0475 | 0.9739 | 0.131 / 0.205 |
+- RF balanced over-predicts (mean 0.183 vs 0.131 in A); its reliability shows e.g.
+  bin 0.3-0.4 -> actual 0.12. Share of exact p = 0: RF balanced 16.7%, RF no weight
+  22.5%, isotonic 48.8%, HGB raw and sigmoid 0%.
+- Calibrated HGB tracks the late rate in both seasons (0.131 vs 0.131; 0.205 vs 0.214).
+- Outputs: task1/reports/phase8_service.csv, phase8_late.csv, phase8_reliability.csv,
+  calibration.png, metrics_phase8.json, phase8_output.txt.
+
+**Authorship**
+- Agent wrote `task1/phase8_models.py`, the HGB builders in `task1/models.py` and this
+  entry. User specified the test periods, candidates, calibration method and clipping.
+
+**Phase 8 decisions (user, before commit)**
+- Final config: service time = HistGradientBoostingRegressor (squared_error, lr 0.05,
+  600 iter, max_leaf_nodes 31, min_samples_leaf 40, l2 1.0, seed 42); lateness = the
+  same HGB classifier + sigmoid calibration, CalibratedClassifierCV(cv=StratifiedKFold(5,
+  shuffle=True, random_state=42)). Grid left as is.
+- **Clip [0.001, 0.999]** instead of [0.01, 0.99] (fixed choice, not tuned): sigmoid
+  produces no exact 0/1, so a tight clip only costs log loss; the looser clip still
+  guarantees finite log loss. `task1/phase8_clip.py` -> `reports/metrics_phase8_clip.json`:
+  | period | raw | clip 0.01 | clip 0.001 (final) | Brier | AUC | mean pred / actual |
+  |---|---|---|---|---|---|---|
+  | A | 0.1396 | 0.1447 | **0.1399** | 0.0435 | 0.9720 | 0.1315 / 0.1311 |
+  | B | 0.1630 | 0.1677 | **0.1633** | 0.0516 | 0.9757 | 0.2055 / 0.2136 |
+  Mean log loss 0.1516 (0.01 clip: 0.1562).

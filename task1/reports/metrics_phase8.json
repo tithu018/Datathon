@@ -1,0 +1,459 @@
+{
+  "features": [
+    "brand",
+    "district",
+    "depot",
+    "temp_requirement",
+    "order_units",
+    "order_weight_kg",
+    "order_volume_m3",
+    "vehicle_type",
+    "vehicle_temp",
+    "distance_km",
+    "planned_travel_duration_min",
+    "planned_arrival_min",
+    "planned_depart_min",
+    "window_open_min_feature",
+    "window_close_min_feature",
+    "monsoon",
+    "dow",
+    "dock_type",
+    "parking_constraint",
+    "mall_window_open_min",
+    "mall_window_close_min",
+    "seq",
+    "n_stops",
+    "cum_planned_travel_min",
+    "planned_route_start_min",
+    "is_payday",
+    "festival_ramp",
+    "is_holiday",
+    "speed_index",
+    "disruption_index"
+  ],
+  "periods": {
+    "A (2026-01-03..02-14)": {
+      "n_train": 86721,
+      "n_test": 5173,
+      "test_late_rate": 0.1311
+    },
+    "B (2025-02-16..03-28)": {
+      "n_train": 49055,
+      "n_test": 4856,
+      "test_late_rate": 0.2136
+    }
+  },
+  "calibration_cv": "StratifiedKFold(5, shuffle=True, random_state=42) on the training portion",
+  "clip": [
+    0.01,
+    0.99
+  ],
+  "service": [
+    {
+      "period": "A (2026-01-03..02-14)",
+      "model": "RF (current)",
+      "mae": 4.134206209438764,
+      "rmse": 6.379888564875112,
+      "bias": 0.21645906430847467
+    },
+    {
+      "period": "A (2026-01-03..02-14)",
+      "model": "HGB squared_error lr=0.05 it=300",
+      "mae": 3.9694603416542624,
+      "rmse": 6.218507233875818,
+      "bias": -0.1349951766859676
+    },
+    {
+      "period": "A (2026-01-03..02-14)",
+      "model": "HGB squared_error lr=0.05 it=600",
+      "mae": 3.9211147057403313,
+      "rmse": 6.123793147149123,
+      "bias": -0.09782018263523186
+    },
+    {
+      "period": "A (2026-01-03..02-14)",
+      "model": "HGB squared_error lr=0.1 it=300",
+      "mae": 3.969982437409958,
+      "rmse": 6.221907953657845,
+      "bias": -0.040691100570751655
+    },
+    {
+      "period": "A (2026-01-03..02-14)",
+      "model": "HGB squared_error lr=0.1 it=600",
+      "mae": 3.9620664768486584,
+      "rmse": 6.22932771639134,
+      "bias": -0.019454500018398938
+    },
+    {
+      "period": "A (2026-01-03..02-14)",
+      "model": "HGB absolute_error lr=0.05 it=300",
+      "mae": 4.040853985797898,
+      "rmse": 6.8937264670369585,
+      "bias": -0.7599068773818808
+    },
+    {
+      "period": "A (2026-01-03..02-14)",
+      "model": "HGB absolute_error lr=0.05 it=600",
+      "mae": 3.9603395070154632,
+      "rmse": 6.6236856884643665,
+      "bias": -0.6905557890189515
+    },
+    {
+      "period": "A (2026-01-03..02-14)",
+      "model": "HGB absolute_error lr=0.1 it=300",
+      "mae": 3.980917542730014,
+      "rmse": 6.740482661371082,
+      "bias": -0.6482802424358673
+    },
+    {
+      "period": "A (2026-01-03..02-14)",
+      "model": "HGB absolute_error lr=0.1 it=600",
+      "mae": 3.937823445177784,
+      "rmse": 6.55203058065445,
+      "bias": -0.6067490955338543
+    },
+    {
+      "period": "B (2025-02-16..03-28)",
+      "model": "RF (current)",
+      "mae": 4.048102984301759,
+      "rmse": 6.176869593221139,
+      "bias": -0.3849771516790152
+    },
+    {
+      "period": "B (2025-02-16..03-28)",
+      "model": "HGB squared_error lr=0.05 it=300",
+      "mae": 3.937652108318061,
+      "rmse": 6.048548272510101,
+      "bias": -0.4845681476193652
+    },
+    {
+      "period": "B (2025-02-16..03-28)",
+      "model": "HGB squared_error lr=0.05 it=600",
+      "mae": 3.8709635616054667,
+      "rmse": 6.000404374052361,
+      "bias": -0.47859475798986684
+    },
+    {
+      "period": "B (2025-02-16..03-28)",
+      "model": "HGB squared_error lr=0.1 it=300",
+      "mae": 3.895037994944149,
+      "rmse": 6.05686937313845,
+      "bias": -0.5054138699952758
+    },
+    {
+      "period": "B (2025-02-16..03-28)",
+      "model": "HGB squared_error lr=0.1 it=600",
+      "mae": 3.8984275241581714,
+      "rmse": 6.0807552616659075,
+      "bias": -0.4926837915158286
+    },
+    {
+      "period": "B (2025-02-16..03-28)",
+      "model": "HGB absolute_error lr=0.05 it=300",
+      "mae": 3.9594633161523842,
+      "rmse": 6.355808243419,
+      "bias": -1.0632951034864184
+    },
+    {
+      "period": "B (2025-02-16..03-28)",
+      "model": "HGB absolute_error lr=0.05 it=600",
+      "mae": 3.9046777805968507,
+      "rmse": 6.2097706429535595,
+      "bias": -1.0141198664248763
+    },
+    {
+      "period": "B (2025-02-16..03-28)",
+      "model": "HGB absolute_error lr=0.1 it=300",
+      "mae": 3.919234134893498,
+      "rmse": 6.2326205697411625,
+      "bias": -1.0355127937080277
+    },
+    {
+      "period": "B (2025-02-16..03-28)",
+      "model": "HGB absolute_error lr=0.1 it=600",
+      "mae": 3.8962368049840808,
+      "rmse": 6.156726484302803,
+      "bias": -0.9889594363694749
+    }
+  ],
+  "service_best_by_mean_mae": "HGB squared_error lr=0.05 it=600",
+  "hgb_late_grid_mean_raw_logloss": {
+    "lr=0.05 it=300": 0.1531793403465808,
+    "lr=0.05 it=600": 0.1530104419267509,
+    "lr=0.1 it=300": 0.15363682966444897,
+    "lr=0.1 it=600": 0.15681980340993354
+  },
+  "hgb_late_params": {
+    "learning_rate": 0.05,
+    "max_iter": 600
+  },
+  "late": [
+    {
+      "period": "A (2026-01-03..02-14)",
+      "model": "RF balanced (current)",
+      "clipped": false,
+      "auc": 0.968684313281555,
+      "log_loss": 0.1738662649764081,
+      "brier": 0.05354000950765467,
+      "mean_pred": 0.1828839409290248,
+      "actual_rate": 0.13106514595012564,
+      "share_p0": 0.18287260777111927,
+      "share_p1": 0.0
+    },
+    {
+      "period": "A (2026-01-03..02-14)",
+      "model": "RF balanced (current)",
+      "clipped": true,
+      "auc": 0.968684313281555,
+      "log_loss": 0.17751330774139787,
+      "brier": 0.05357978212306117,
+      "mean_pred": 0.18645756692023407,
+      "actual_rate": 0.13106514595012564,
+      "share_p0": 0.0,
+      "share_p1": 0.0
+    },
+    {
+      "period": "A (2026-01-03..02-14)",
+      "model": "RF no class weight",
+      "clipped": false,
+      "auc": 0.9690357361998418,
+      "log_loss": 0.15173211186587673,
+      "brier": 0.046544391629019174,
+      "mean_pred": 0.13437817682325412,
+      "actual_rate": 0.13106514595012564,
+      "share_p0": 0.2687028803402281,
+      "share_p1": 0.0
+    },
+    {
+      "period": "A (2026-01-03..02-14)",
+      "model": "RF no class weight",
+      "clipped": true,
+      "auc": 0.9690357361998418,
+      "log_loss": 0.15604405521070092,
+      "brier": 0.046590967403420204,
+      "mean_pred": 0.13864956014928098,
+      "actual_rate": 0.13106514595012564,
+      "share_p0": 0.0,
+      "share_p1": 0.0
+    },
+    {
+      "period": "A (2026-01-03..02-14)",
+      "model": "HGB raw (lr=0.05 it=600)",
+      "clipped": false,
+      "auc": 0.9714828997148585,
+      "log_loss": 0.1412252336741213,
+      "brier": 0.04400408117808124,
+      "mean_pred": 0.13055083577416657,
+      "actual_rate": 0.13106514595012564,
+      "share_p0": 0.0,
+      "share_p1": 0.0
+    },
+    {
+      "period": "A (2026-01-03..02-14)",
+      "model": "HGB raw (lr=0.05 it=600)",
+      "clipped": true,
+      "auc": 0.9706253424814854,
+      "log_loss": 0.14634514551819455,
+      "brier": 0.0440578370066623,
+      "mean_pred": 0.1358630954391266,
+      "actual_rate": 0.13106514595012564,
+      "share_p0": 0.0,
+      "share_p1": 0.0
+    },
+    {
+      "period": "A (2026-01-03..02-14)",
+      "model": "HGB + isotonic (cv=5)",
+      "clipped": false,
+      "auc": 0.97205351078386,
+      "log_loss": 0.13925340324693514,
+      "brier": 0.043504432123351804,
+      "mean_pred": 0.1311457378455721,
+      "actual_rate": 0.13106514595012564,
+      "share_p0": 0.5136284554417166,
+      "share_p1": 0.002126425671757201
+    },
+    {
+      "period": "A (2026-01-03..02-14)",
+      "model": "HGB + isotonic (cv=5)",
+      "clipped": true,
+      "auc": 0.9707116396126799,
+      "log_loss": 0.14452285766611164,
+      "brier": 0.04355959399873245,
+      "mean_pred": 0.13705277597757712,
+      "actual_rate": 0.13106514595012564,
+      "share_p0": 0.0,
+      "share_p1": 0.0
+    },
+    {
+      "period": "A (2026-01-03..02-14)",
+      "model": "HGB + sigmoid (cv=5)",
+      "clipped": false,
+      "auc": 0.9720479326423,
+      "log_loss": 0.13960139574709127,
+      "brier": 0.043458547122002714,
+      "mean_pred": 0.13120604830548602,
+      "actual_rate": 0.13106514595012564,
+      "share_p0": 0.0,
+      "share_p1": 0.0
+    },
+    {
+      "period": "A (2026-01-03..02-14)",
+      "model": "HGB + sigmoid (cv=5)",
+      "clipped": true,
+      "auc": 0.9712000551251636,
+      "log_loss": 0.14465397629446994,
+      "brier": 0.04351183326035117,
+      "mean_pred": 0.13642959049189882,
+      "actual_rate": 0.13106514595012564,
+      "share_p0": 0.0,
+      "share_p1": 0.0
+    },
+    {
+      "period": "B (2025-02-16..03-28)",
+      "model": "RF balanced (current)",
+      "clipped": false,
+      "auc": 0.9697490318291303,
+      "log_loss": 0.2048810278641805,
+      "brier": 0.06345307168455325,
+      "mean_pred": 0.2662351926041842,
+      "actual_rate": 0.2135502471169687,
+      "share_p0": 0.1515650741350906,
+      "share_p1": 0.001029654036243822
+    },
+    {
+      "period": "B (2025-02-16..03-28)",
+      "model": "RF balanced (current)",
+      "clipped": true,
+      "auc": 0.9697490318291303,
+      "log_loss": 0.2075922495056641,
+      "brier": 0.06348333255781116,
+      "mean_pred": 0.26868140341527436,
+      "actual_rate": 0.2135502471169687,
+      "share_p0": 0.0,
+      "share_p1": 0.0
+    },
+    {
+      "period": "B (2025-02-16..03-28)",
+      "model": "RF no class weight",
+      "clipped": false,
+      "auc": 0.9714890502065119,
+      "log_loss": 0.1819517861309281,
+      "brier": 0.056489214017976554,
+      "mean_pred": 0.20780848368014496,
+      "actual_rate": 0.2135502471169687,
+      "share_p0": 0.18142504118616146,
+      "share_p1": 0.00041186161449752884
+    },
+    {
+      "period": "B (2025-02-16..03-28)",
+      "model": "RF no class weight",
+      "clipped": true,
+      "auc": 0.9714890502065119,
+      "log_loss": 0.1853153268735918,
+      "brier": 0.05652649906049356,
+      "mean_pred": 0.21101812496950795,
+      "actual_rate": 0.2135502471169687,
+      "share_p0": 0.0,
+      "share_p1": 0.0
+    },
+    {
+      "period": "B (2025-02-16..03-28)",
+      "model": "HGB raw (lr=0.05 it=600)",
+      "clipped": false,
+      "auc": 0.9752354807195308,
+      "log_loss": 0.16479565017938053,
+      "brier": 0.05239365190966054,
+      "mean_pred": 0.20413358731736908,
+      "actual_rate": 0.2135502471169687,
+      "share_p0": 0.0,
+      "share_p1": 0.0
+    },
+    {
+      "period": "B (2025-02-16..03-28)",
+      "model": "HGB raw (lr=0.05 it=600)",
+      "clipped": true,
+      "auc": 0.9749168182333524,
+      "log_loss": 0.1697830939760928,
+      "brier": 0.052447368987651045,
+      "mean_pred": 0.20853214932058967,
+      "actual_rate": 0.2135502471169687,
+      "share_p0": 0.0,
+      "share_p1": 0.0
+    },
+    {
+      "period": "B (2025-02-16..03-28)",
+      "model": "HGB + isotonic (cv=5)",
+      "clipped": false,
+      "auc": 0.9754839465566146,
+      "log_loss": 0.1622826877970283,
+      "brier": 0.051678205418681566,
+      "mean_pred": 0.2050387407471728,
+      "actual_rate": 0.2135502471169687,
+      "share_p0": 0.4614909390444811,
+      "share_p1": 0.015238879736408566
+    },
+    {
+      "period": "B (2025-02-16..03-28)",
+      "model": "HGB + isotonic (cv=5)",
+      "clipped": true,
+      "auc": 0.9751570776276461,
+      "log_loss": 0.16792785533655638,
+      "brier": 0.05173578589306166,
+      "mean_pred": 0.20982147514179264,
+      "actual_rate": 0.2135502471169687,
+      "share_p0": 0.0,
+      "share_p1": 0.0
+    },
+    {
+      "period": "B (2025-02-16..03-28)",
+      "model": "HGB + sigmoid (cv=5)",
+      "clipped": false,
+      "auc": 0.975681911207299,
+      "log_loss": 0.16300501835954506,
+      "brier": 0.05160446736912451,
+      "mean_pred": 0.20526346753387845,
+      "actual_rate": 0.2135502471169687,
+      "share_p0": 0.0,
+      "share_p1": 0.0
+    },
+    {
+      "period": "B (2025-02-16..03-28)",
+      "model": "HGB + sigmoid (cv=5)",
+      "clipped": true,
+      "auc": 0.975681911207299,
+      "log_loss": 0.16772057051787997,
+      "brier": 0.05165611839292982,
+      "mean_pred": 0.20943976972021416,
+      "actual_rate": 0.2135502471169687,
+      "share_p0": 0.0,
+      "share_p1": 0.0
+    }
+  ],
+  "late_ranking_clipped_mean": {
+    "HGB + sigmoid (cv=5)": {
+      "log_loss": 0.15619,
+      "brier": 0.04758,
+      "auc": 0.97344
+    },
+    "HGB + isotonic (cv=5)": {
+      "log_loss": 0.15623,
+      "brier": 0.04765,
+      "auc": 0.97293
+    },
+    "HGB raw (lr=0.05 it=600)": {
+      "log_loss": 0.15806,
+      "brier": 0.04825,
+      "auc": 0.97277
+    },
+    "RF no class weight": {
+      "log_loss": 0.17068,
+      "brier": 0.05156,
+      "auc": 0.97026
+    },
+    "RF balanced (current)": {
+      "log_loss": 0.19255,
+      "brier": 0.05853,
+      "auc": 0.96922
+    }
+  }
+}
