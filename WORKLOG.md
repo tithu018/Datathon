@@ -245,3 +245,76 @@ payday, ramp and catch-up effects are also weekday-adjusted)
 **Authorship**
 - Agent wrote `task2a/prepare_features.py`, `task2a/analysis.py` and this entry.
   User specified the extra features and analyses and the forecast-window checks.
+
+**Phase 2 decisions (recorded at Phase 2 approval)**
+- Keep `days_to_next_holiday_closure`; drop `days_to_next_closure` (collinear with weekday).
+- Style: depot x weekday structure, plus `style_peak_week` (ISO weeks 10, 32, 51).
+  Festival effects vary by festival (ramp x festival_name).
+- Payday: separate d0/d1/d2 flags; test calendar-day vs operating-day counting.
+- Tech: no level shift; the backtest chooses a smoothing window (Phase 4).
+- Committing report aggregates locally is fine; push only after the repo is
+  private and the user says "PUSH" (`git push -u origin datathon-task2a-task1-fixes`).
+- Phase 2 committed as `f60c759`. Not pushed (repo still public).
+
+---
+
+## Phase 3: Backtest framework, baselines and GLM (2026-10-07)
+
+**Done**
+- `task2a/prepare_features.py`: dropped `days_to_next_closure`; added
+  `payday_cal_d0..d2` (0/1/2 calendar days after the latest payday),
+  `payday_op_d0..d2` (payday itself if operating, then the 1st/2nd operating
+  day after it), `after_midweek_closure` (first operating day after a single
+  closed non-Sunday day), `style_peak_week` (ISO weeks 10, 32, 51). Checked
+  that the 2026-W22 payday tail (May 30, moved from Sun May 31) spills into
+  W23: calendar counting gives d2 = Mon Jun 1; operating counting gives
+  d1 = Jun 1, d2 = Jun 2.
+- `task2a/models.py`: `SeriesGLM` (scikit-learn `PoissonRegressor`, log link,
+  alpha = 1e-4) per depot x brand series and target, fitted on operating days.
+  Features: weekday dummies, payday d0/d1/d2, ramp and ramp^2 per festival
+  (7 festivals), after_midweek_closure, 1/2/3 days before a holiday closure,
+  month dummies, trend in years, style_peak_week (Style only). Closed days and
+  structural-zero weekdays (< 1% of the series' mean daily volume in training:
+  Style Tue, Kandy Style Fri, Peliyagoda Style Sat) are forced to 0. Daily
+  predictions summed to ISO weeks. Also weekly baselines: last-8-weeks mean,
+  same week last year, 13- and 26-week means, EWM (half-life 8 weeks).
+- `task2a/backtest.py`: 4 rolling test periods (train on all weeks before the
+  period, forecast 10 weeks): 2025-W14..W23 (headline), 2026-W04..W13,
+  2025-W30..W39 (Esala, Style W32), 2025-W40..W49 (Deepavali). Outputs in
+  `task2a/reports/`: backtest_results.csv (every weekly prediction),
+  backtest_metrics.csv, backtest_glm_multipliers.csv, backtest_headline.png,
+  backtest_output.txt.
+
+**Key numbers (WAPE of weekly volume, mean of the 4 periods; headline in brackets)**
+- Total, overall: GLM (payday cal) 3.4% [3.8%]; last-8 mean 8.7% [15.0%];
+  same week last year 9.7% [12.9%]; 13/26-week means and EWM 8.2% [14.1-14.3%].
+- Chilled (Fresh), overall: GLM 2.5% [2.3%]; last-8 mean 7.8% [15.3%].
+- Per brand, total: Fresh GLM 2.1% vs last-8 7.4%; Style GLM 5.6% vs 12.3%;
+  **Tech GLM 31.7% vs last-8 31.8%, 26-week mean 28.7%** (GLM adds nothing for Tech).
+- Payday counting: calendar days better (total 3.38% vs 3.52%; Fresh 2.05% vs
+  2.21%; chilled 2.50% vs 2.58%), better in 3 of 4 periods. **Chosen: calendar.**
+- Plan prototype check: last-8 mean headline = 15.0% (matches the plan);
+  GLM 3.8% vs the prototype's 5.9%.
+- Peliyagoda Fresh multipliers (GLM on all history vs Phase 2): weekday vs Wed
+  Mon 1.08/1.02, Tue 1.07/0.99, Thu 1.17/1.10, Fri 1.16/1.15, Sat 1.25/1.20;
+  payday d0/d1/d2 1.146/1.146/1.142 vs 1.12/1.12/1.12; New Year ramp 1.33 at
+  0.4, 1.62 at 0.8, 1.69 at 0.9 (Phase 2 festival-aligned New Year x1.63-1.82;
+  the pooled all-festival ramp is only x1.32, so festival-specific ramps
+  matter); trend +5.7%/yr; after_midweek_closure 1.00 (Phase 2 pooled 1.12);
+  1 day before a holiday closure x1.04.
+- Headline weekly errors, Peliyagoda Fresh: -3.1% to +3.4% every week
+  (W15 1,321 vs 1,351; W16 619 vs 624). Peliyagoda Style: -14% to +4%, mostly
+  under-forecast (W18, the May Day week, -14%).
+
+**Observations for Phase 4**
+- Tech: GLM overreacts (e.g. Kandy Tech 2025-W18 predicted 2.6 vs actual 12.7);
+  smoothed means are better; choose a window in Phase 4.
+- Style: under-forecasts most headline weeks (level), and Kandy Style
+  over-forecasts the closure weeks W16/W18.
+- Peliyagoda Fresh weekday multipliers are a bit higher than the pooled Phase 2
+  values (different adjustment set and depot); same shape.
+
+**Authorship**
+- Agent wrote `task2a/models.py`, `task2a/backtest.py`, the feature changes and
+  this entry. User specified the GLM feature set, test periods, payday test and
+  report contents.

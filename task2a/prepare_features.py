@@ -80,24 +80,44 @@ cal.loc[0, "days_since_last_operating_day"] = 2 if cal.loc[0, "dow"] == 0 else 1
 cal["days_since_last_operating_day"] = cal["days_since_last_operating_day"].astype(int)
 # First operating day after 2+ consecutive closed days (a plain Sunday is a 1-day closure)
 cal["is_first_day_after_closure"] = ((op == 1) & (cal["days_since_last_operating_day"] >= 3)).astype(int)
-closed = (op == 0).astype(int)
-cal["days_to_next_closure"] = days_to_event(closed, "next")
-# Closures other than a plain Sunday (festivals and public holidays)
+# First operating day after a single closed mid-week day (not the Monday after a Sunday):
+# the day after May Day or Christmas (Phase 2: Fresh x1.12)
+cal["after_midweek_closure"] = ((op == 1) & (cal["days_since_last_operating_day"] == 2)
+                                & (cal["dow"] != 0)).astype(int)
+# Closures other than a plain Sunday (festivals and public holidays). days_to_next_closure
+# (any closure) was dropped in Phase 3: it is collinear with the weekday.
 holiday_closed = ((op == 0) & (cal["dow"] != 6)).astype(int)
 cal["days_to_next_holiday_closure"] = days_to_event(holiday_closed, "next").clip(max=PAYDAY_CAP)
-assert cal["days_to_next_closure"].notna().all()  # the calendar ends on a Sunday
 cal["days_to_next_holiday_closure"] = cal["days_to_next_holiday_closure"].fillna(PAYDAY_CAP).astype(int)
-cal["days_to_next_closure"] = cal["days_to_next_closure"].astype(int)
+
+# ---------------------------------------------------------------- payday window
+# Phase 2: the Fresh payday lift lasts three days (payday and the next two days).
+# Two ways to count the tail, compared in the Phase 3 backtest:
+#   payday_cal_dK: K calendar days after the latest payday (the tail can land on a closed day)
+#   payday_op_dK:  the K-th operating day after the latest payday (closed days are skipped)
+for k in range(3):
+    cal[f"payday_cal_d{k}"] = (cal["days_since_payday"] == k).astype(int)
+op_count = op.cumsum()  # operating days up to and including each date
+last_pay_opcount = op_count.where(cal["is_payday"] == 1).ffill()
+op_since_payday = op_count - last_pay_opcount  # operating days after the latest payday
+recent = cal["days_since_payday"] <= 7
+cal["payday_op_d0"] = ((cal["is_payday"] == 1) & (op == 1)).astype(int)
+for k in (1, 2):
+    cal[f"payday_op_d{k}"] = ((op == 1) & recent & (op_since_payday == k)).astype(int)
 
 # ---------------------------------------------------------------- other
 cal["month"] = cal["date"].dt.month
 cal["trend_years"] = (cal["date"] - TREND_ORIGIN).dt.days / 365.25
+# Style spike weeks (Phase 2): first full week of March (W10), of August (W32), and W51
+cal["style_peak_week"] = cal["iso_week"].isin([10, 32, 51]).astype(int)
 
+PAYDAY_FLAGS = [f"payday_{v}_d{k}" for v in ("cal", "op") for k in range(3)]
 calendar_features = [
-    "dow", "is_operating", "is_payday", "days_to_payday", "days_since_payday",
+    "dow", "is_operating", "is_payday", "days_to_payday", "days_since_payday", *PAYDAY_FLAGS,
     "festival_ramp", "festival_ramp_sq", "festival_name", "is_holiday", "monsoon",
     "month", "trend_years", "days_since_last_operating_day",
-    "is_first_day_after_closure", "days_to_next_closure", "days_to_next_holiday_closure",
+    "is_first_day_after_closure", "after_midweek_closure", "days_to_next_holiday_closure",
+    "style_peak_week",
 ]
 cal_out = cal[["date", "iso_year", "iso_week", "festival"] + calendar_features]
 
@@ -145,6 +165,12 @@ print("Forecast-window festival days:")
 print(cal_out[(cal_out["date"] >= FORECAST_START) & (cal_out["date"] <= FORECAST_END)
               & ((cal_out["is_holiday"] == 1) | (cal_out["is_operating"] == 0) & (cal_out["dow"] != 6))]
       [["date", "iso_week", "dow", "festival", "is_holiday", "is_operating"]].to_string(index=False))
+print("Payday flags around 2026-W22/W23 (May 25 payday, May 30 payday moved from Sun May 31, Poson May 30):")
+around = cal_out[(cal_out["date"] >= "2026-05-23") & (cal_out["date"] <= "2026-06-03")]
+print(around[["date", "iso_week", "dow", "is_operating", "festival"] + PAYDAY_FLAGS].to_string(index=False))
+w23 = around[around["iso_week"] == 23]
+assert w23["payday_cal_d2"].sum() == 1 and w23["payday_op_d1"].sum() == 1 and w23["payday_op_d2"].sum() == 1, \
+    "payday tail must spill into 2026-W23"
 print("n_outlets:", n_outlets.set_index(["depot", "brand"])["n_outlets"].to_dict())
 
 DATA.mkdir(parents=True, exist_ok=True)

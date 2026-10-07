@@ -1,0 +1,2241 @@
+period,depot,brand,target,iso_year,iso_week,model,actual,pred
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,14,glm_cal,523.712,508.5422265754376
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,15,glm_cal,696.7959999999999,693.4104274760257
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,16,glm_cal,334.31,326.8170984855848
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,17,glm_cal,516.234,496.0692434658405
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,18,glm_cal,414.939,425.9324163843471
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,19,glm_cal,580.027,591.7660277588462
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,20,glm_cal,495.012,500.9654906744188
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,21,glm_cal,479.029,491.87382355391054
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,22,glm_cal,522.2180000000001,503.49595018735477
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,23,glm_cal,537.292,543.3221171116785
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,14,glm_op,523.712,502.8119884193394
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,15,glm_op,696.7959999999999,691.8833561325442
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,16,glm_op,334.31,326.91152306218
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,17,glm_op,516.234,494.28090402151145
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,18,glm_op,414.939,439.5118868975326
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,19,glm_op,580.027,591.0609236646394
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,20,glm_op,495.012,495.18849057445357
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,21,glm_op,479.029,485.6159984599888
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,22,glm_op,522.2180000000001,503.2413787188338
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,23,glm_op,537.292,548.7393059864775
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,14,last8_mean,523.712,482.84637499999997
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,15,last8_mean,696.7959999999999,482.84637499999997
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,16,last8_mean,334.31,482.84637499999997
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,17,last8_mean,516.234,482.84637499999997
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,18,last8_mean,414.939,482.84637499999997
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,19,last8_mean,580.027,482.84637499999997
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,20,last8_mean,495.012,482.84637499999997
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,21,last8_mean,479.029,482.84637499999997
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,22,last8_mean,522.2180000000001,482.84637499999997
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,23,last8_mean,537.292,482.84637499999997
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,14,same_week_last_year,523.712,501.965
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,15,same_week_last_year,696.7959999999999,584.595
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,16,same_week_last_year,334.31,435.762
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,17,same_week_last_year,516.234,487.768
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,18,same_week_last_year,414.939,393.085
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,19,same_week_last_year,580.027,458.464
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,20,same_week_last_year,495.012,519.942
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,21,same_week_last_year,479.029,546.367
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,22,same_week_last_year,522.2180000000001,494.354
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,23,same_week_last_year,537.292,447.08
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,14,mean13,523.712,492.8195384615384
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,15,mean13,696.7959999999999,492.8195384615384
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,16,mean13,334.31,492.8195384615384
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,17,mean13,516.234,492.8195384615384
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,18,mean13,414.939,492.8195384615384
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,19,mean13,580.027,492.8195384615384
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,20,mean13,495.012,492.8195384615384
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,21,mean13,479.029,492.8195384615384
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,22,mean13,522.2180000000001,492.8195384615384
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,23,mean13,537.292,492.8195384615384
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,14,mean26,523.712,492.7836923076923
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,15,mean26,696.7959999999999,492.7836923076923
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,16,mean26,334.31,492.7836923076923
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,17,mean26,516.234,492.7836923076923
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,18,mean26,414.939,492.7836923076923
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,19,mean26,580.027,492.7836923076923
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,20,mean26,495.012,492.7836923076923
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,21,mean26,479.029,492.7836923076923
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,22,mean26,522.2180000000001,492.7836923076923
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,23,mean26,537.292,492.7836923076923
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,14,ewm_hl8,523.712,490.6497518996318
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,15,ewm_hl8,696.7959999999999,490.6497518996318
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,16,ewm_hl8,334.31,490.6497518996318
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,17,ewm_hl8,516.234,490.6497518996318
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,18,ewm_hl8,414.939,490.6497518996318
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,19,ewm_hl8,580.027,490.6497518996318
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,20,ewm_hl8,495.012,490.6497518996318
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,21,ewm_hl8,479.029,490.6497518996318
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,22,ewm_hl8,522.2180000000001,490.6497518996318
+2025-W14..W23 (headline),Kandy,Fresh,total,2025,23,ewm_hl8,537.292,490.6497518996318
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,14,glm_cal,190.332,186.6272312046213
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,15,glm_cal,260.229,255.84284994135635
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,16,glm_cal,126.526,122.00606249452052
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,17,glm_cal,193.809,181.65163920845407
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,18,glm_cal,154.893,155.8440257884861
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,19,glm_cal,215.257,224.6781932153409
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,20,glm_cal,185.125,184.33849828024864
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,21,glm_cal,179.849,182.11659434673703
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,22,glm_cal,195.448,186.16292179914365
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,23,glm_cal,201.934,207.0220188250708
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,14,glm_op,190.332,184.3852663828025
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,15,glm_op,260.229,255.23960640418812
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,16,glm_op,126.526,122.13369384633741
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,17,glm_op,193.809,181.15457035547485
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,18,glm_op,154.893,160.80914866759636
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,19,glm_op,215.257,224.36892090478685
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,20,glm_op,185.125,182.31045423036318
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,21,glm_op,179.849,179.90787287505736
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,22,glm_op,195.448,186.0406111339917
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,23,glm_op,201.934,208.91386629378547
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,14,last8_mean,190.332,175.24025
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,15,last8_mean,260.229,175.24025
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,16,last8_mean,126.526,175.24025
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,17,last8_mean,193.809,175.24025
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,18,last8_mean,154.893,175.24025
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,19,last8_mean,215.257,175.24025
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,20,last8_mean,185.125,175.24025
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,21,last8_mean,179.849,175.24025
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,22,last8_mean,195.448,175.24025
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,23,last8_mean,201.934,175.24025
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,14,same_week_last_year,190.332,182.559
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,15,same_week_last_year,260.229,214.607
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,16,same_week_last_year,126.526,162.288
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,17,same_week_last_year,193.809,182.359
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,18,same_week_last_year,154.893,142.332
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,19,same_week_last_year,215.257,173.927
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,20,same_week_last_year,185.125,198.486
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,21,same_week_last_year,179.849,203.745
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,22,same_week_last_year,195.448,186.831
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,23,same_week_last_year,201.934,168.008
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,14,mean13,190.332,177.23315384615384
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,15,mean13,260.229,177.23315384615384
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,16,mean13,126.526,177.23315384615384
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,17,mean13,193.809,177.23315384615384
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,18,mean13,154.893,177.23315384615384
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,19,mean13,215.257,177.23315384615384
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,20,mean13,185.125,177.23315384615384
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,21,mean13,179.849,177.23315384615384
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,22,mean13,195.448,177.23315384615384
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,23,mean13,201.934,177.23315384615384
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,14,mean26,190.332,175.52573076923076
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,15,mean26,260.229,175.52573076923076
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,16,mean26,126.526,175.52573076923076
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,17,mean26,193.809,175.52573076923076
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,18,mean26,154.893,175.52573076923076
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,19,mean26,215.257,175.52573076923076
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,20,mean26,185.125,175.52573076923076
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,21,mean26,179.849,175.52573076923076
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,22,mean26,195.448,175.52573076923076
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,23,mean26,201.934,175.52573076923076
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,14,ewm_hl8,190.332,176.57864455815624
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,15,ewm_hl8,260.229,176.57864455815624
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,16,ewm_hl8,126.526,176.57864455815624
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,17,ewm_hl8,193.809,176.57864455815624
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,18,ewm_hl8,154.893,176.57864455815624
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,19,ewm_hl8,215.257,176.57864455815624
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,20,ewm_hl8,185.125,176.57864455815624
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,21,ewm_hl8,179.849,176.57864455815624
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,22,ewm_hl8,195.448,176.57864455815624
+2025-W14..W23 (headline),Kandy,Fresh,chilled,2025,23,ewm_hl8,201.934,176.57864455815624
+2025-W14..W23 (headline),Kandy,Style,total,2025,14,glm_cal,84.66300000000001,79.39736706291185
+2025-W14..W23 (headline),Kandy,Style,total,2025,15,glm_cal,130.984,110.18074578093999
+2025-W14..W23 (headline),Kandy,Style,total,2025,16,glm_cal,39.885000000000005,53.84096375644957
+2025-W14..W23 (headline),Kandy,Style,total,2025,17,glm_cal,72.542,79.57860132254494
+2025-W14..W23 (headline),Kandy,Style,total,2025,18,glm_cal,41.644,48.66463756940404
+2025-W14..W23 (headline),Kandy,Style,total,2025,19,glm_cal,84.464,85.94484454935946
+2025-W14..W23 (headline),Kandy,Style,total,2025,20,glm_cal,78.438,78.73609499487551
+2025-W14..W23 (headline),Kandy,Style,total,2025,21,glm_cal,72.031,74.56571545039681
+2025-W14..W23 (headline),Kandy,Style,total,2025,22,glm_cal,91.227,75.75645135843054
+2025-W14..W23 (headline),Kandy,Style,total,2025,23,glm_cal,77.61399999999999,71.61722115970065
+2025-W14..W23 (headline),Kandy,Style,total,2025,14,glm_op,84.66300000000001,79.1005938786972
+2025-W14..W23 (headline),Kandy,Style,total,2025,15,glm_op,130.984,110.38311186726877
+2025-W14..W23 (headline),Kandy,Style,total,2025,16,glm_op,39.885000000000005,54.01751947637872
+2025-W14..W23 (headline),Kandy,Style,total,2025,17,glm_op,72.542,80.05259334942126
+2025-W14..W23 (headline),Kandy,Style,total,2025,18,glm_op,41.644,49.0928038833891
+2025-W14..W23 (headline),Kandy,Style,total,2025,19,glm_op,84.464,86.08450118815374
+2025-W14..W23 (headline),Kandy,Style,total,2025,20,glm_op,78.438,78.89571789197521
+2025-W14..W23 (headline),Kandy,Style,total,2025,21,glm_op,72.031,74.75795791431301
+2025-W14..W23 (headline),Kandy,Style,total,2025,22,glm_op,91.227,76.12893945399382
+2025-W14..W23 (headline),Kandy,Style,total,2025,23,glm_op,77.61399999999999,71.90132176005726
+2025-W14..W23 (headline),Kandy,Style,total,2025,14,last8_mean,84.66300000000001,82.02950000000001
+2025-W14..W23 (headline),Kandy,Style,total,2025,15,last8_mean,130.984,82.02950000000001
+2025-W14..W23 (headline),Kandy,Style,total,2025,16,last8_mean,39.885000000000005,82.02950000000001
+2025-W14..W23 (headline),Kandy,Style,total,2025,17,last8_mean,72.542,82.02950000000001
+2025-W14..W23 (headline),Kandy,Style,total,2025,18,last8_mean,41.644,82.02950000000001
+2025-W14..W23 (headline),Kandy,Style,total,2025,19,last8_mean,84.464,82.02950000000001
+2025-W14..W23 (headline),Kandy,Style,total,2025,20,last8_mean,78.438,82.02950000000001
+2025-W14..W23 (headline),Kandy,Style,total,2025,21,last8_mean,72.031,82.02950000000001
+2025-W14..W23 (headline),Kandy,Style,total,2025,22,last8_mean,91.227,82.02950000000001
+2025-W14..W23 (headline),Kandy,Style,total,2025,23,last8_mean,77.61399999999999,82.02950000000001
+2025-W14..W23 (headline),Kandy,Style,total,2025,14,same_week_last_year,84.66300000000001,79.254
+2025-W14..W23 (headline),Kandy,Style,total,2025,15,same_week_last_year,130.984,114.802
+2025-W14..W23 (headline),Kandy,Style,total,2025,16,same_week_last_year,39.885000000000005,76.568
+2025-W14..W23 (headline),Kandy,Style,total,2025,17,same_week_last_year,72.542,84.80199999999999
+2025-W14..W23 (headline),Kandy,Style,total,2025,18,same_week_last_year,41.644,59.467
+2025-W14..W23 (headline),Kandy,Style,total,2025,19,same_week_last_year,84.464,75.817
+2025-W14..W23 (headline),Kandy,Style,total,2025,20,same_week_last_year,78.438,78.481
+2025-W14..W23 (headline),Kandy,Style,total,2025,21,same_week_last_year,72.031,83.78999999999999
+2025-W14..W23 (headline),Kandy,Style,total,2025,22,same_week_last_year,91.227,74.58
+2025-W14..W23 (headline),Kandy,Style,total,2025,23,same_week_last_year,77.61399999999999,76.113
+2025-W14..W23 (headline),Kandy,Style,total,2025,14,mean13,84.66300000000001,82.24038461538461
+2025-W14..W23 (headline),Kandy,Style,total,2025,15,mean13,130.984,82.24038461538461
+2025-W14..W23 (headline),Kandy,Style,total,2025,16,mean13,39.885000000000005,82.24038461538461
+2025-W14..W23 (headline),Kandy,Style,total,2025,17,mean13,72.542,82.24038461538461
+2025-W14..W23 (headline),Kandy,Style,total,2025,18,mean13,41.644,82.24038461538461
+2025-W14..W23 (headline),Kandy,Style,total,2025,19,mean13,84.464,82.24038461538461
+2025-W14..W23 (headline),Kandy,Style,total,2025,20,mean13,78.438,82.24038461538461
+2025-W14..W23 (headline),Kandy,Style,total,2025,21,mean13,72.031,82.24038461538461
+2025-W14..W23 (headline),Kandy,Style,total,2025,22,mean13,91.227,82.24038461538461
+2025-W14..W23 (headline),Kandy,Style,total,2025,23,mean13,77.61399999999999,82.24038461538461
+2025-W14..W23 (headline),Kandy,Style,total,2025,14,mean26,84.66300000000001,83.06926923076922
+2025-W14..W23 (headline),Kandy,Style,total,2025,15,mean26,130.984,83.06926923076922
+2025-W14..W23 (headline),Kandy,Style,total,2025,16,mean26,39.885000000000005,83.06926923076922
+2025-W14..W23 (headline),Kandy,Style,total,2025,17,mean26,72.542,83.06926923076922
+2025-W14..W23 (headline),Kandy,Style,total,2025,18,mean26,41.644,83.06926923076922
+2025-W14..W23 (headline),Kandy,Style,total,2025,19,mean26,84.464,83.06926923076922
+2025-W14..W23 (headline),Kandy,Style,total,2025,20,mean26,78.438,83.06926923076922
+2025-W14..W23 (headline),Kandy,Style,total,2025,21,mean26,72.031,83.06926923076922
+2025-W14..W23 (headline),Kandy,Style,total,2025,22,mean26,91.227,83.06926923076922
+2025-W14..W23 (headline),Kandy,Style,total,2025,23,mean26,77.61399999999999,83.06926923076922
+2025-W14..W23 (headline),Kandy,Style,total,2025,14,ewm_hl8,84.66300000000001,82.14623689977587
+2025-W14..W23 (headline),Kandy,Style,total,2025,15,ewm_hl8,130.984,82.14623689977587
+2025-W14..W23 (headline),Kandy,Style,total,2025,16,ewm_hl8,39.885000000000005,82.14623689977587
+2025-W14..W23 (headline),Kandy,Style,total,2025,17,ewm_hl8,72.542,82.14623689977587
+2025-W14..W23 (headline),Kandy,Style,total,2025,18,ewm_hl8,41.644,82.14623689977587
+2025-W14..W23 (headline),Kandy,Style,total,2025,19,ewm_hl8,84.464,82.14623689977587
+2025-W14..W23 (headline),Kandy,Style,total,2025,20,ewm_hl8,78.438,82.14623689977587
+2025-W14..W23 (headline),Kandy,Style,total,2025,21,ewm_hl8,72.031,82.14623689977587
+2025-W14..W23 (headline),Kandy,Style,total,2025,22,ewm_hl8,91.227,82.14623689977587
+2025-W14..W23 (headline),Kandy,Style,total,2025,23,ewm_hl8,77.61399999999999,82.14623689977587
+2025-W14..W23 (headline),Kandy,Tech,total,2025,14,glm_cal,20.022,21.029616571315
+2025-W14..W23 (headline),Kandy,Tech,total,2025,15,glm_cal,32.41,24.145315075859372
+2025-W14..W23 (headline),Kandy,Tech,total,2025,16,glm_cal,30.43,17.394977035006146
+2025-W14..W23 (headline),Kandy,Tech,total,2025,17,glm_cal,18.203,19.71618507950777
+2025-W14..W23 (headline),Kandy,Tech,total,2025,18,glm_cal,12.672,2.5051293421271716
+2025-W14..W23 (headline),Kandy,Tech,total,2025,19,glm_cal,19.412,7.35155976955972
+2025-W14..W23 (headline),Kandy,Tech,total,2025,20,glm_cal,2.844,15.9349710508489
+2025-W14..W23 (headline),Kandy,Tech,total,2025,21,glm_cal,23.32,16.35239385061982
+2025-W14..W23 (headline),Kandy,Tech,total,2025,22,glm_cal,25.849,16.554758617090272
+2025-W14..W23 (headline),Kandy,Tech,total,2025,23,glm_cal,15.581,21.667838867590685
+2025-W14..W23 (headline),Kandy,Tech,total,2025,14,glm_op,20.022,20.35850889519679
+2025-W14..W23 (headline),Kandy,Tech,total,2025,15,glm_op,32.41,24.235368050841757
+2025-W14..W23 (headline),Kandy,Tech,total,2025,16,glm_op,30.43,17.422387098553028
+2025-W14..W23 (headline),Kandy,Tech,total,2025,17,glm_op,18.203,19.70600887790588
+2025-W14..W23 (headline),Kandy,Tech,total,2025,18,glm_op,12.672,2.713372280773479
+2025-W14..W23 (headline),Kandy,Tech,total,2025,19,glm_op,19.412,7.366341814718023
+2025-W14..W23 (headline),Kandy,Tech,total,2025,20,glm_op,2.844,15.677601348473898
+2025-W14..W23 (headline),Kandy,Tech,total,2025,21,glm_op,23.32,16.073718698079773
+2025-W14..W23 (headline),Kandy,Tech,total,2025,22,glm_op,25.849,16.3471482226548
+2025-W14..W23 (headline),Kandy,Tech,total,2025,23,glm_op,15.581,21.741695348935053
+2025-W14..W23 (headline),Kandy,Tech,total,2025,14,last8_mean,20.022,19.695999999999998
+2025-W14..W23 (headline),Kandy,Tech,total,2025,15,last8_mean,32.41,19.695999999999998
+2025-W14..W23 (headline),Kandy,Tech,total,2025,16,last8_mean,30.43,19.695999999999998
+2025-W14..W23 (headline),Kandy,Tech,total,2025,17,last8_mean,18.203,19.695999999999998
+2025-W14..W23 (headline),Kandy,Tech,total,2025,18,last8_mean,12.672,19.695999999999998
+2025-W14..W23 (headline),Kandy,Tech,total,2025,19,last8_mean,19.412,19.695999999999998
+2025-W14..W23 (headline),Kandy,Tech,total,2025,20,last8_mean,2.844,19.695999999999998
+2025-W14..W23 (headline),Kandy,Tech,total,2025,21,last8_mean,23.32,19.695999999999998
+2025-W14..W23 (headline),Kandy,Tech,total,2025,22,last8_mean,25.849,19.695999999999998
+2025-W14..W23 (headline),Kandy,Tech,total,2025,23,last8_mean,15.581,19.695999999999998
+2025-W14..W23 (headline),Kandy,Tech,total,2025,14,same_week_last_year,20.022,16.346
+2025-W14..W23 (headline),Kandy,Tech,total,2025,15,same_week_last_year,32.41,14.524
+2025-W14..W23 (headline),Kandy,Tech,total,2025,16,same_week_last_year,30.43,21.394
+2025-W14..W23 (headline),Kandy,Tech,total,2025,17,same_week_last_year,18.203,28.63
+2025-W14..W23 (headline),Kandy,Tech,total,2025,18,same_week_last_year,12.672,7.111
+2025-W14..W23 (headline),Kandy,Tech,total,2025,19,same_week_last_year,19.412,12.084
+2025-W14..W23 (headline),Kandy,Tech,total,2025,20,same_week_last_year,2.844,10.917
+2025-W14..W23 (headline),Kandy,Tech,total,2025,21,same_week_last_year,23.32,9.922999999999998
+2025-W14..W23 (headline),Kandy,Tech,total,2025,22,same_week_last_year,25.849,29.663
+2025-W14..W23 (headline),Kandy,Tech,total,2025,23,same_week_last_year,15.581,22.709
+2025-W14..W23 (headline),Kandy,Tech,total,2025,14,mean13,20.022,18.150923076923075
+2025-W14..W23 (headline),Kandy,Tech,total,2025,15,mean13,32.41,18.150923076923075
+2025-W14..W23 (headline),Kandy,Tech,total,2025,16,mean13,30.43,18.150923076923075
+2025-W14..W23 (headline),Kandy,Tech,total,2025,17,mean13,18.203,18.150923076923075
+2025-W14..W23 (headline),Kandy,Tech,total,2025,18,mean13,12.672,18.150923076923075
+2025-W14..W23 (headline),Kandy,Tech,total,2025,19,mean13,19.412,18.150923076923075
+2025-W14..W23 (headline),Kandy,Tech,total,2025,20,mean13,2.844,18.150923076923075
+2025-W14..W23 (headline),Kandy,Tech,total,2025,21,mean13,23.32,18.150923076923075
+2025-W14..W23 (headline),Kandy,Tech,total,2025,22,mean13,25.849,18.150923076923075
+2025-W14..W23 (headline),Kandy,Tech,total,2025,23,mean13,15.581,18.150923076923075
+2025-W14..W23 (headline),Kandy,Tech,total,2025,14,mean26,20.022,21.1065
+2025-W14..W23 (headline),Kandy,Tech,total,2025,15,mean26,32.41,21.1065
+2025-W14..W23 (headline),Kandy,Tech,total,2025,16,mean26,30.43,21.1065
+2025-W14..W23 (headline),Kandy,Tech,total,2025,17,mean26,18.203,21.1065
+2025-W14..W23 (headline),Kandy,Tech,total,2025,18,mean26,12.672,21.1065
+2025-W14..W23 (headline),Kandy,Tech,total,2025,19,mean26,19.412,21.1065
+2025-W14..W23 (headline),Kandy,Tech,total,2025,20,mean26,2.844,21.1065
+2025-W14..W23 (headline),Kandy,Tech,total,2025,21,mean26,23.32,21.1065
+2025-W14..W23 (headline),Kandy,Tech,total,2025,22,mean26,25.849,21.1065
+2025-W14..W23 (headline),Kandy,Tech,total,2025,23,mean26,15.581,21.1065
+2025-W14..W23 (headline),Kandy,Tech,total,2025,14,ewm_hl8,20.022,19.54992413938102
+2025-W14..W23 (headline),Kandy,Tech,total,2025,15,ewm_hl8,32.41,19.54992413938102
+2025-W14..W23 (headline),Kandy,Tech,total,2025,16,ewm_hl8,30.43,19.54992413938102
+2025-W14..W23 (headline),Kandy,Tech,total,2025,17,ewm_hl8,18.203,19.54992413938102
+2025-W14..W23 (headline),Kandy,Tech,total,2025,18,ewm_hl8,12.672,19.54992413938102
+2025-W14..W23 (headline),Kandy,Tech,total,2025,19,ewm_hl8,19.412,19.54992413938102
+2025-W14..W23 (headline),Kandy,Tech,total,2025,20,ewm_hl8,2.844,19.54992413938102
+2025-W14..W23 (headline),Kandy,Tech,total,2025,21,ewm_hl8,23.32,19.54992413938102
+2025-W14..W23 (headline),Kandy,Tech,total,2025,22,ewm_hl8,25.849,19.54992413938102
+2025-W14..W23 (headline),Kandy,Tech,total,2025,23,ewm_hl8,15.581,19.54992413938102
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,14,glm_cal,1015.8,984.4808419156764
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,15,glm_cal,1351.007,1320.9544784044951
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,16,glm_cal,623.49,619.386119227486
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,17,glm_cal,960.817,960.7832137874875
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,18,glm_cal,810.8530000000001,829.6622442040564
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,19,glm_cal,1054.27,1090.604660671168
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,20,glm_cal,1004.64,973.7119649904065
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,21,glm_cal,962.755,939.2135353355205
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,22,glm_cal,983.7,960.8065512676748
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,23,glm_cal,1023.616,1003.7421707157373
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,14,glm_op,1015.8,973.9490746222202
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,15,glm_op,1351.007,1318.5603015996467
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,16,glm_op,623.49,619.5441780714403
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,17,glm_op,960.817,957.677463483212
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,18,glm_op,810.8530000000001,853.5946670950689
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,19,glm_op,1054.27,1089.749235552558
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,20,glm_op,1004.64,962.8540709302813
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,21,glm_op,962.755,927.6697528242242
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,22,glm_op,983.7,961.9369232668685
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,23,glm_op,1023.616,1015.3126068102248
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,14,last8_mean,1015.8,925.8116249999999
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,15,last8_mean,1351.007,925.8116249999999
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,16,last8_mean,623.49,925.8116249999999
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,17,last8_mean,960.817,925.8116249999999
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,18,last8_mean,810.8530000000001,925.8116249999999
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,19,last8_mean,1054.27,925.8116249999999
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,20,last8_mean,1004.64,925.8116249999999
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,21,last8_mean,962.755,925.8116249999999
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,22,last8_mean,983.7,925.8116249999999
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,23,last8_mean,1023.616,925.8116249999999
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,14,same_week_last_year,1015.8,942.062
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,15,same_week_last_year,1351.007,1117.572
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,16,same_week_last_year,623.49,879.3870000000001
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,17,same_week_last_year,960.817,938.569
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,18,same_week_last_year,810.8530000000001,827.621
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,19,same_week_last_year,1054.27,844.845
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,20,same_week_last_year,1004.64,923.443
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,21,same_week_last_year,962.755,1099.399
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,22,same_week_last_year,983.7,941.301
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,23,same_week_last_year,1023.616,863.444
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,14,mean13,1015.8,941.4673846153844
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,15,mean13,1351.007,941.4673846153844
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,16,mean13,623.49,941.4673846153844
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,17,mean13,960.817,941.4673846153844
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,18,mean13,810.8530000000001,941.4673846153844
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,19,mean13,1054.27,941.4673846153844
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,20,mean13,1004.64,941.4673846153844
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,21,mean13,962.755,941.4673846153844
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,22,mean13,983.7,941.4673846153844
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,23,mean13,1023.616,941.4673846153844
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,14,mean26,1015.8,938.4572307692307
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,15,mean26,1351.007,938.4572307692307
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,16,mean26,623.49,938.4572307692307
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,17,mean26,960.817,938.4572307692307
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,18,mean26,810.8530000000001,938.4572307692307
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,19,mean26,1054.27,938.4572307692307
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,20,mean26,1004.64,938.4572307692307
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,21,mean26,962.755,938.4572307692307
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,22,mean26,983.7,938.4572307692307
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,23,mean26,1023.616,938.4572307692307
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,14,ewm_hl8,1015.8,938.9776730701034
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,15,ewm_hl8,1351.007,938.9776730701034
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,16,ewm_hl8,623.49,938.9776730701034
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,17,ewm_hl8,960.817,938.9776730701034
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,18,ewm_hl8,810.8530000000001,938.9776730701034
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,19,ewm_hl8,1054.27,938.9776730701034
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,20,ewm_hl8,1004.64,938.9776730701034
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,21,ewm_hl8,962.755,938.9776730701034
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,22,ewm_hl8,983.7,938.9776730701034
+2025-W14..W23 (headline),Peliyagoda,Fresh,total,2025,23,ewm_hl8,1023.616,938.9776730701034
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,14,glm_cal,386.037,368.8761629878859
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,15,glm_cal,500.989,502.42425724803763
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,16,glm_cal,231.204,227.30914918039076
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,17,glm_cal,365.674,358.5929804450272
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,18,glm_cal,308.58,310.08947132976476
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,19,glm_cal,399.922,416.5083325551278
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,20,glm_cal,381.185,369.5356009080192
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,21,glm_cal,361.203,359.1370016240321
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,22,glm_cal,374.607,367.5369561533535
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,23,glm_cal,392.072,384.14254894747876
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,14,glm_op,386.037,365.2267244090701
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,15,glm_op,500.989,501.590842833249
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,16,glm_op,231.204,227.69074689123772
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,17,glm_op,365.674,358.34725334824145
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,18,glm_op,308.58,318.50755992140967
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,19,glm_op,399.922,416.1875407014194
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,20,glm_op,381.185,365.96184093670365
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,21,glm_op,361.203,355.2974242527795
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,22,glm_op,374.607,368.39755530034256
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,23,glm_op,392.072,388.4555931041989
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,14,last8_mean,386.037,342.178375
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,15,last8_mean,500.989,342.178375
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,16,last8_mean,231.204,342.178375
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,17,last8_mean,365.674,342.178375
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,18,last8_mean,308.58,342.178375
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,19,last8_mean,399.922,342.178375
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,20,last8_mean,381.185,342.178375
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,21,last8_mean,361.203,342.178375
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,22,last8_mean,374.607,342.178375
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,23,last8_mean,392.072,342.178375
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,14,same_week_last_year,386.037,357.987
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,15,same_week_last_year,500.989,417.317
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,16,same_week_last_year,231.204,329.11
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,17,same_week_last_year,365.674,348.914
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,18,same_week_last_year,308.58,323.616
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,19,same_week_last_year,399.922,323.469
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,20,same_week_last_year,381.185,355.035
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,21,same_week_last_year,361.203,417.42
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,22,same_week_last_year,374.607,355.788
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,23,same_week_last_year,392.072,328.865
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,14,mean13,386.037,344.60207692307694
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,15,mean13,500.989,344.60207692307694
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,16,mean13,231.204,344.60207692307694
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,17,mean13,365.674,344.60207692307694
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,18,mean13,308.58,344.60207692307694
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,19,mean13,399.922,344.60207692307694
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,20,mean13,381.185,344.60207692307694
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,21,mean13,361.203,344.60207692307694
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,22,mean13,374.607,344.60207692307694
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,23,mean13,392.072,344.60207692307694
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,14,mean26,386.037,340.4351153846154
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,15,mean26,500.989,340.4351153846154
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,16,mean26,231.204,340.4351153846154
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,17,mean26,365.674,340.4351153846154
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,18,mean26,308.58,340.4351153846154
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,19,mean26,399.922,340.4351153846154
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,20,mean26,381.185,340.4351153846154
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,21,mean26,361.203,340.4351153846154
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,22,mean26,374.607,340.4351153846154
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,23,mean26,392.072,340.4351153846154
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,14,ewm_hl8,386.037,343.9342428941459
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,15,ewm_hl8,500.989,343.9342428941459
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,16,ewm_hl8,231.204,343.9342428941459
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,17,ewm_hl8,365.674,343.9342428941459
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,18,ewm_hl8,308.58,343.9342428941459
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,19,ewm_hl8,399.922,343.9342428941459
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,20,ewm_hl8,381.185,343.9342428941459
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,21,ewm_hl8,361.203,343.9342428941459
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,22,ewm_hl8,374.607,343.9342428941459
+2025-W14..W23 (headline),Peliyagoda,Fresh,chilled,2025,23,ewm_hl8,392.072,343.9342428941459
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,14,glm_cal,134.31799999999998,128.22375745793798
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,15,glm_cal,221.941,227.68374286073586
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,16,glm_cal,114.877,110.47975009341341
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,17,glm_cal,141.099,129.73764427842838
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,18,glm_cal,96.838,83.16107319302994
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,19,glm_cal,144.239,133.7672218549092
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,20,glm_cal,134.872,126.64552700369222
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,21,glm_cal,124.383,125.30456187860923
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,22,glm_cal,137.923,126.37656809138258
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,23,glm_cal,132.796,137.43632725865854
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,14,glm_op,134.31799999999998,128.7194111760478
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,15,glm_op,221.941,226.7296578360655
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,16,glm_op,114.877,110.48731474182652
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,17,glm_op,141.099,129.7993846038699
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,18,glm_op,96.838,84.0119235360433
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,19,glm_op,144.239,133.59343558369716
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,20,glm_op,134.872,125.03173458269765
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,21,glm_op,124.383,123.56671264680233
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,22,glm_op,137.923,124.29750149444806
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,23,glm_op,132.796,136.8694526645741
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,14,last8_mean,134.31799999999998,141.402875
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,15,last8_mean,221.941,141.402875
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,16,last8_mean,114.877,141.402875
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,17,last8_mean,141.099,141.402875
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,18,last8_mean,96.838,141.402875
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,19,last8_mean,144.239,141.402875
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,20,last8_mean,134.872,141.402875
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,21,last8_mean,124.383,141.402875
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,22,last8_mean,137.923,141.402875
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,23,last8_mean,132.796,141.402875
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,14,same_week_last_year,134.31799999999998,144.299
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,15,same_week_last_year,221.941,263.856
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,16,same_week_last_year,114.877,122.04
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,17,same_week_last_year,141.099,137.143
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,18,same_week_last_year,96.838,106.71
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,19,same_week_last_year,144.239,119.452
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,20,same_week_last_year,134.872,135.173
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,21,same_week_last_year,124.383,137.971
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,22,same_week_last_year,137.923,135.277
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,23,same_week_last_year,132.796,128.705
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,14,mean13,134.31799999999998,138.20161538461542
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,15,mean13,221.941,138.20161538461542
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,16,mean13,114.877,138.20161538461542
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,17,mean13,141.099,138.20161538461542
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,18,mean13,96.838,138.20161538461542
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,19,mean13,144.239,138.20161538461542
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,20,mean13,134.872,138.20161538461542
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,21,mean13,124.383,138.20161538461542
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,22,mean13,137.923,138.20161538461542
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,23,mean13,132.796,138.20161538461542
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,14,mean26,134.31799999999998,140.07365384615383
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,15,mean26,221.941,140.07365384615383
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,16,mean26,114.877,140.07365384615383
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,17,mean26,141.099,140.07365384615383
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,18,mean26,96.838,140.07365384615383
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,19,mean26,144.239,140.07365384615383
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,20,mean26,134.872,140.07365384615383
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,21,mean26,124.383,140.07365384615383
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,22,mean26,137.923,140.07365384615383
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,23,mean26,132.796,140.07365384615383
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,14,ewm_hl8,134.31799999999998,139.9100957101675
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,15,ewm_hl8,221.941,139.9100957101675
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,16,ewm_hl8,114.877,139.9100957101675
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,17,ewm_hl8,141.099,139.9100957101675
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,18,ewm_hl8,96.838,139.9100957101675
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,19,ewm_hl8,144.239,139.9100957101675
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,20,ewm_hl8,134.872,139.9100957101675
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,21,ewm_hl8,124.383,139.9100957101675
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,22,ewm_hl8,137.923,139.9100957101675
+2025-W14..W23 (headline),Peliyagoda,Style,total,2025,23,ewm_hl8,132.796,139.9100957101675
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,14,glm_cal,38.611,25.429106602960033
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,15,glm_cal,32.427,30.175729236343727
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,16,glm_cal,7.901,15.19822751022524
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,17,glm_cal,44.057,25.978603768781085
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,18,glm_cal,41.538,27.8256516706441
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,19,glm_cal,24.77,20.63563911147398
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,20,glm_cal,14.016,23.41549788099202
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,21,glm_cal,18.684,25.541444293193223
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,22,glm_cal,21.422,25.684573225741104
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,23,glm_cal,40.636,19.415722762933463
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,14,glm_op,38.611,25.05991506354572
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,15,glm_op,32.427,30.138994615927672
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,16,glm_op,7.901,15.187275056206872
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,17,glm_op,44.057,25.7794262006566
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,18,glm_op,41.538,29.429407843166338
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,19,glm_op,24.77,20.431101664027082
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,20,glm_op,14.016,22.763278817474728
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,21,glm_op,18.684,24.81380136008959
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,22,glm_op,21.422,25.584511612760565
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,23,glm_op,40.636,19.780343020684185
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,14,last8_mean,38.611,23.332250000000002
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,15,last8_mean,32.427,23.332250000000002
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,16,last8_mean,7.901,23.332250000000002
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,17,last8_mean,44.057,23.332250000000002
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,18,last8_mean,41.538,23.332250000000002
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,19,last8_mean,24.77,23.332250000000002
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,20,last8_mean,14.016,23.332250000000002
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,21,last8_mean,18.684,23.332250000000002
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,22,last8_mean,21.422,23.332250000000002
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,23,last8_mean,40.636,23.332250000000002
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,14,same_week_last_year,38.611,32.633
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,15,same_week_last_year,32.427,38.801
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,16,same_week_last_year,7.901,16.002
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,17,same_week_last_year,44.057,33.58
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,18,same_week_last_year,41.538,27.233
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,19,same_week_last_year,24.77,27.988
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,20,same_week_last_year,14.016,25.881
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,21,same_week_last_year,18.684,25.234
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,22,same_week_last_year,21.422,20.36
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,23,same_week_last_year,40.636,21.062
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,14,mean13,38.611,26.63884615384616
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,15,mean13,32.427,26.63884615384616
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,16,mean13,7.901,26.63884615384616
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,17,mean13,44.057,26.63884615384616
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,18,mean13,41.538,26.63884615384616
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,19,mean13,24.77,26.63884615384616
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,20,mean13,14.016,26.63884615384616
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,21,mean13,18.684,26.63884615384616
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,22,mean13,21.422,26.63884615384616
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,23,mean13,40.636,26.63884615384616
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,14,mean26,38.611,28.813576923076923
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,15,mean26,32.427,28.813576923076923
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,16,mean26,7.901,28.813576923076923
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,17,mean26,44.057,28.813576923076923
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,18,mean26,41.538,28.813576923076923
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,19,mean26,24.77,28.813576923076923
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,20,mean26,14.016,28.813576923076923
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,21,mean26,18.684,28.813576923076923
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,22,mean26,21.422,28.813576923076923
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,23,mean26,40.636,28.813576923076923
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,14,ewm_hl8,38.611,27.02619316189961
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,15,ewm_hl8,32.427,27.02619316189961
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,16,ewm_hl8,7.901,27.02619316189961
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,17,ewm_hl8,44.057,27.02619316189961
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,18,ewm_hl8,41.538,27.02619316189961
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,19,ewm_hl8,24.77,27.02619316189961
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,20,ewm_hl8,14.016,27.02619316189961
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,21,ewm_hl8,18.684,27.02619316189961
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,22,ewm_hl8,21.422,27.02619316189961
+2025-W14..W23 (headline),Peliyagoda,Tech,total,2025,23,ewm_hl8,40.636,27.02619316189961
+2026-W04..W13,Kandy,Fresh,total,2026,4,glm_cal,500.46,520.3003003731038
+2026-W04..W13,Kandy,Fresh,total,2026,5,glm_cal,531.308,532.5687831207397
+2026-W04..W13,Kandy,Fresh,total,2026,6,glm_cal,518.112,518.5130118930389
+2026-W04..W13,Kandy,Fresh,total,2026,7,glm_cal,513.852,507.45227489246037
+2026-W04..W13,Kandy,Fresh,total,2026,8,glm_cal,500.317,508.0428446398984
+2026-W04..W13,Kandy,Fresh,total,2026,9,glm_cal,559.382,559.9924153096916
+2026-W04..W13,Kandy,Fresh,total,2026,10,glm_cal,528.772,512.2630148829022
+2026-W04..W13,Kandy,Fresh,total,2026,11,glm_cal,506.724,501.3356006179117
+2026-W04..W13,Kandy,Fresh,total,2026,12,glm_cal,508.491,501.9190518185225
+2026-W04..W13,Kandy,Fresh,total,2026,13,glm_cal,536.544,539.8662042163405
+2026-W04..W13,Kandy,Fresh,total,2026,4,glm_op,500.46,521.3901950690417
+2026-W04..W13,Kandy,Fresh,total,2026,5,glm_op,531.308,539.8831455665716
+2026-W04..W13,Kandy,Fresh,total,2026,6,glm_op,518.112,524.2925823662316
+2026-W04..W13,Kandy,Fresh,total,2026,7,glm_op,513.852,507.06171543913786
+2026-W04..W13,Kandy,Fresh,total,2026,8,glm_op,500.317,507.6502308881906
+2026-W04..W13,Kandy,Fresh,total,2026,9,glm_op,559.382,553.8783215847959
+2026-W04..W13,Kandy,Fresh,total,2026,10,glm_op,528.772,519.2482972369861
+2026-W04..W13,Kandy,Fresh,total,2026,11,glm_op,506.724,502.18321065607256
+2026-W04..W13,Kandy,Fresh,total,2026,12,glm_op,508.491,502.76606392368717
+2026-W04..W13,Kandy,Fresh,total,2026,13,glm_op,536.544,535.127826724127
+2026-W04..W13,Kandy,Fresh,total,2026,4,last8_mean,500.46,542.5695000000001
+2026-W04..W13,Kandy,Fresh,total,2026,5,last8_mean,531.308,542.5695000000001
+2026-W04..W13,Kandy,Fresh,total,2026,6,last8_mean,518.112,542.5695000000001
+2026-W04..W13,Kandy,Fresh,total,2026,7,last8_mean,513.852,542.5695000000001
+2026-W04..W13,Kandy,Fresh,total,2026,8,last8_mean,500.317,542.5695000000001
+2026-W04..W13,Kandy,Fresh,total,2026,9,last8_mean,559.382,542.5695000000001
+2026-W04..W13,Kandy,Fresh,total,2026,10,last8_mean,528.772,542.5695000000001
+2026-W04..W13,Kandy,Fresh,total,2026,11,last8_mean,506.724,542.5695000000001
+2026-W04..W13,Kandy,Fresh,total,2026,12,last8_mean,508.491,542.5695000000001
+2026-W04..W13,Kandy,Fresh,total,2026,13,last8_mean,536.544,542.5695000000001
+2026-W04..W13,Kandy,Fresh,total,2026,4,same_week_last_year,500.46,486.983
+2026-W04..W13,Kandy,Fresh,total,2026,5,same_week_last_year,531.308,533.048
+2026-W04..W13,Kandy,Fresh,total,2026,6,same_week_last_year,518.112,468.754
+2026-W04..W13,Kandy,Fresh,total,2026,7,same_week_last_year,513.852,489.665
+2026-W04..W13,Kandy,Fresh,total,2026,8,same_week_last_year,500.317,460.555
+2026-W04..W13,Kandy,Fresh,total,2026,9,same_week_last_year,559.382,538.955
+2026-W04..W13,Kandy,Fresh,total,2026,10,same_week_last_year,528.772,450.794
+2026-W04..W13,Kandy,Fresh,total,2026,11,same_week_last_year,506.724,466.229
+2026-W04..W13,Kandy,Fresh,total,2026,12,same_week_last_year,508.491,469.525
+2026-W04..W13,Kandy,Fresh,total,2026,13,same_week_last_year,536.544,518.294
+2026-W04..W13,Kandy,Fresh,total,2026,4,mean13,500.46,526.6696153846153
+2026-W04..W13,Kandy,Fresh,total,2026,5,mean13,531.308,526.6696153846153
+2026-W04..W13,Kandy,Fresh,total,2026,6,mean13,518.112,526.6696153846153
+2026-W04..W13,Kandy,Fresh,total,2026,7,mean13,513.852,526.6696153846153
+2026-W04..W13,Kandy,Fresh,total,2026,8,mean13,500.317,526.6696153846153
+2026-W04..W13,Kandy,Fresh,total,2026,9,mean13,559.382,526.6696153846153
+2026-W04..W13,Kandy,Fresh,total,2026,10,mean13,528.772,526.6696153846153
+2026-W04..W13,Kandy,Fresh,total,2026,11,mean13,506.724,526.6696153846153
+2026-W04..W13,Kandy,Fresh,total,2026,12,mean13,508.491,526.6696153846153
+2026-W04..W13,Kandy,Fresh,total,2026,13,mean13,536.544,526.6696153846153
+2026-W04..W13,Kandy,Fresh,total,2026,4,mean26,500.46,524.5565384615385
+2026-W04..W13,Kandy,Fresh,total,2026,5,mean26,531.308,524.5565384615385
+2026-W04..W13,Kandy,Fresh,total,2026,6,mean26,518.112,524.5565384615385
+2026-W04..W13,Kandy,Fresh,total,2026,7,mean26,513.852,524.5565384615385
+2026-W04..W13,Kandy,Fresh,total,2026,8,mean26,500.317,524.5565384615385
+2026-W04..W13,Kandy,Fresh,total,2026,9,mean26,559.382,524.5565384615385
+2026-W04..W13,Kandy,Fresh,total,2026,10,mean26,528.772,524.5565384615385
+2026-W04..W13,Kandy,Fresh,total,2026,11,mean26,506.724,524.5565384615385
+2026-W04..W13,Kandy,Fresh,total,2026,12,mean26,508.491,524.5565384615385
+2026-W04..W13,Kandy,Fresh,total,2026,13,mean26,536.544,524.5565384615385
+2026-W04..W13,Kandy,Fresh,total,2026,4,ewm_hl8,500.46,528.1270518669851
+2026-W04..W13,Kandy,Fresh,total,2026,5,ewm_hl8,531.308,528.1270518669851
+2026-W04..W13,Kandy,Fresh,total,2026,6,ewm_hl8,518.112,528.1270518669851
+2026-W04..W13,Kandy,Fresh,total,2026,7,ewm_hl8,513.852,528.1270518669851
+2026-W04..W13,Kandy,Fresh,total,2026,8,ewm_hl8,500.317,528.1270518669851
+2026-W04..W13,Kandy,Fresh,total,2026,9,ewm_hl8,559.382,528.1270518669851
+2026-W04..W13,Kandy,Fresh,total,2026,10,ewm_hl8,528.772,528.1270518669851
+2026-W04..W13,Kandy,Fresh,total,2026,11,ewm_hl8,506.724,528.1270518669851
+2026-W04..W13,Kandy,Fresh,total,2026,12,ewm_hl8,508.491,528.1270518669851
+2026-W04..W13,Kandy,Fresh,total,2026,13,ewm_hl8,536.544,528.1270518669851
+2026-W04..W13,Kandy,Fresh,chilled,2026,4,glm_cal,176.82,185.36063774313084
+2026-W04..W13,Kandy,Fresh,chilled,2026,5,glm_cal,190.202,189.28156160544154
+2026-W04..W13,Kandy,Fresh,chilled,2026,6,glm_cal,188.995,187.01181967568675
+2026-W04..W13,Kandy,Fresh,chilled,2026,7,glm_cal,183.847,183.4556023319292
+2026-W04..W13,Kandy,Fresh,chilled,2026,8,glm_cal,179.108,183.66537109498563
+2026-W04..W13,Kandy,Fresh,chilled,2026,9,glm_cal,198.545,202.54696162060577
+2026-W04..W13,Kandy,Fresh,chilled,2026,10,glm_cal,191.534,187.92993084304152
+2026-W04..W13,Kandy,Fresh,chilled,2026,11,glm_cal,183.421,184.35625469447416
+2026-W04..W13,Kandy,Fresh,chilled,2026,12,glm_cal,187.3,184.5670532910687
+2026-W04..W13,Kandy,Fresh,chilled,2026,13,glm_cal,196.184,198.33125236734395
+2026-W04..W13,Kandy,Fresh,chilled,2026,4,glm_op,176.82,185.7201062733388
+2026-W04..W13,Kandy,Fresh,chilled,2026,5,glm_op,190.202,191.86112035795477
+2026-W04..W13,Kandy,Fresh,chilled,2026,6,glm_op,188.995,189.10929981806223
+2026-W04..W13,Kandy,Fresh,chilled,2026,7,glm_op,183.847,183.31405159804606
+2026-W04..W13,Kandy,Fresh,chilled,2026,8,glm_op,179.108,183.52302472510635
+2026-W04..W13,Kandy,Fresh,chilled,2026,9,glm_op,198.545,200.4961561267199
+2026-W04..W13,Kandy,Fresh,chilled,2026,10,glm_op,191.534,190.53976559093869
+2026-W04..W13,Kandy,Fresh,chilled,2026,11,glm_op,183.421,184.7006807947625
+2026-W04..W13,Kandy,Fresh,chilled,2026,12,glm_op,187.3,184.9112346421046
+2026-W04..W13,Kandy,Fresh,chilled,2026,13,glm_op,196.184,196.78733120881725
+2026-W04..W13,Kandy,Fresh,chilled,2026,4,last8_mean,176.82,191.129625
+2026-W04..W13,Kandy,Fresh,chilled,2026,5,last8_mean,190.202,191.129625
+2026-W04..W13,Kandy,Fresh,chilled,2026,6,last8_mean,188.995,191.129625
+2026-W04..W13,Kandy,Fresh,chilled,2026,7,last8_mean,183.847,191.129625
+2026-W04..W13,Kandy,Fresh,chilled,2026,8,last8_mean,179.108,191.129625
+2026-W04..W13,Kandy,Fresh,chilled,2026,9,last8_mean,198.545,191.129625
+2026-W04..W13,Kandy,Fresh,chilled,2026,10,last8_mean,191.534,191.129625
+2026-W04..W13,Kandy,Fresh,chilled,2026,11,last8_mean,183.421,191.129625
+2026-W04..W13,Kandy,Fresh,chilled,2026,12,last8_mean,187.3,191.129625
+2026-W04..W13,Kandy,Fresh,chilled,2026,13,last8_mean,196.184,191.129625
+2026-W04..W13,Kandy,Fresh,chilled,2026,4,same_week_last_year,176.82,172.558
+2026-W04..W13,Kandy,Fresh,chilled,2026,5,same_week_last_year,190.202,189.247
+2026-W04..W13,Kandy,Fresh,chilled,2026,6,same_week_last_year,188.995,166.923
+2026-W04..W13,Kandy,Fresh,chilled,2026,7,same_week_last_year,183.847,174.49599999999998
+2026-W04..W13,Kandy,Fresh,chilled,2026,8,same_week_last_year,179.108,165.575
+2026-W04..W13,Kandy,Fresh,chilled,2026,9,same_week_last_year,198.545,196.396
+2026-W04..W13,Kandy,Fresh,chilled,2026,10,same_week_last_year,191.534,160.55599999999998
+2026-W04..W13,Kandy,Fresh,chilled,2026,11,same_week_last_year,183.421,169.914
+2026-W04..W13,Kandy,Fresh,chilled,2026,12,same_week_last_year,187.3,175.603
+2026-W04..W13,Kandy,Fresh,chilled,2026,13,same_week_last_year,196.184,192.459
+2026-W04..W13,Kandy,Fresh,chilled,2026,4,mean13,176.82,186.15415384615386
+2026-W04..W13,Kandy,Fresh,chilled,2026,5,mean13,190.202,186.15415384615386
+2026-W04..W13,Kandy,Fresh,chilled,2026,6,mean13,188.995,186.15415384615386
+2026-W04..W13,Kandy,Fresh,chilled,2026,7,mean13,183.847,186.15415384615386
+2026-W04..W13,Kandy,Fresh,chilled,2026,8,mean13,179.108,186.15415384615386
+2026-W04..W13,Kandy,Fresh,chilled,2026,9,mean13,198.545,186.15415384615386
+2026-W04..W13,Kandy,Fresh,chilled,2026,10,mean13,191.534,186.15415384615386
+2026-W04..W13,Kandy,Fresh,chilled,2026,11,mean13,183.421,186.15415384615386
+2026-W04..W13,Kandy,Fresh,chilled,2026,12,mean13,187.3,186.15415384615386
+2026-W04..W13,Kandy,Fresh,chilled,2026,13,mean13,196.184,186.15415384615386
+2026-W04..W13,Kandy,Fresh,chilled,2026,4,mean26,176.82,188.35730769230773
+2026-W04..W13,Kandy,Fresh,chilled,2026,5,mean26,190.202,188.35730769230773
+2026-W04..W13,Kandy,Fresh,chilled,2026,6,mean26,188.995,188.35730769230773
+2026-W04..W13,Kandy,Fresh,chilled,2026,7,mean26,183.847,188.35730769230773
+2026-W04..W13,Kandy,Fresh,chilled,2026,8,mean26,179.108,188.35730769230773
+2026-W04..W13,Kandy,Fresh,chilled,2026,9,mean26,198.545,188.35730769230773
+2026-W04..W13,Kandy,Fresh,chilled,2026,10,mean26,191.534,188.35730769230773
+2026-W04..W13,Kandy,Fresh,chilled,2026,11,mean26,183.421,188.35730769230773
+2026-W04..W13,Kandy,Fresh,chilled,2026,12,mean26,187.3,188.35730769230773
+2026-W04..W13,Kandy,Fresh,chilled,2026,13,mean26,196.184,188.35730769230773
+2026-W04..W13,Kandy,Fresh,chilled,2026,4,ewm_hl8,176.82,188.50097793526132
+2026-W04..W13,Kandy,Fresh,chilled,2026,5,ewm_hl8,190.202,188.50097793526132
+2026-W04..W13,Kandy,Fresh,chilled,2026,6,ewm_hl8,188.995,188.50097793526132
+2026-W04..W13,Kandy,Fresh,chilled,2026,7,ewm_hl8,183.847,188.50097793526132
+2026-W04..W13,Kandy,Fresh,chilled,2026,8,ewm_hl8,179.108,188.50097793526132
+2026-W04..W13,Kandy,Fresh,chilled,2026,9,ewm_hl8,198.545,188.50097793526132
+2026-W04..W13,Kandy,Fresh,chilled,2026,10,ewm_hl8,191.534,188.50097793526132
+2026-W04..W13,Kandy,Fresh,chilled,2026,11,ewm_hl8,183.421,188.50097793526132
+2026-W04..W13,Kandy,Fresh,chilled,2026,12,ewm_hl8,187.3,188.50097793526132
+2026-W04..W13,Kandy,Fresh,chilled,2026,13,ewm_hl8,196.184,188.50097793526132
+2026-W04..W13,Kandy,Style,total,2026,4,glm_cal,72.49199999999999,80.40045167417532
+2026-W04..W13,Kandy,Style,total,2026,5,glm_cal,82.009,83.12852909048522
+2026-W04..W13,Kandy,Style,total,2026,6,glm_cal,72.101,84.1847882809341
+2026-W04..W13,Kandy,Style,total,2026,7,glm_cal,71.256,81.4392850740733
+2026-W04..W13,Kandy,Style,total,2026,8,glm_cal,74.383,81.46078916869845
+2026-W04..W13,Kandy,Style,total,2026,9,glm_cal,81.984,84.76970418030726
+2026-W04..W13,Kandy,Style,total,2026,10,glm_cal,120.196,110.27196686544688
+2026-W04..W13,Kandy,Style,total,2026,11,glm_cal,80.18900000000001,75.10125586208211
+2026-W04..W13,Kandy,Style,total,2026,12,glm_cal,75.376,75.12108639609352
+2026-W04..W13,Kandy,Style,total,2026,13,glm_cal,73.679,77.44237607061267
+2026-W04..W13,Kandy,Style,total,2026,4,glm_op,72.49199999999999,80.25258667928607
+2026-W04..W13,Kandy,Style,total,2026,5,glm_op,82.009,83.05558600897321
+2026-W04..W13,Kandy,Style,total,2026,6,glm_op,72.101,83.82756080466422
+2026-W04..W13,Kandy,Style,total,2026,7,glm_op,71.256,81.0127762027209
+2026-W04..W13,Kandy,Style,total,2026,8,glm_op,74.383,81.03329410714382
+2026-W04..W13,Kandy,Style,total,2026,9,glm_op,81.984,86.55045093249994
+2026-W04..W13,Kandy,Style,total,2026,10,glm_op,120.196,109.93964923467549
+2026-W04..W13,Kandy,Style,total,2026,11,glm_op,80.18900000000001,75.14345842282756
+2026-W04..W13,Kandy,Style,total,2026,12,glm_op,75.376,75.1624898197281
+2026-W04..W13,Kandy,Style,total,2026,13,glm_op,73.679,79.53853888856598
+2026-W04..W13,Kandy,Style,total,2026,4,last8_mean,72.49199999999999,80.763
+2026-W04..W13,Kandy,Style,total,2026,5,last8_mean,82.009,80.763
+2026-W04..W13,Kandy,Style,total,2026,6,last8_mean,72.101,80.763
+2026-W04..W13,Kandy,Style,total,2026,7,last8_mean,71.256,80.763
+2026-W04..W13,Kandy,Style,total,2026,8,last8_mean,74.383,80.763
+2026-W04..W13,Kandy,Style,total,2026,9,last8_mean,81.984,80.763
+2026-W04..W13,Kandy,Style,total,2026,10,last8_mean,120.196,80.763
+2026-W04..W13,Kandy,Style,total,2026,11,last8_mean,80.18900000000001,80.763
+2026-W04..W13,Kandy,Style,total,2026,12,last8_mean,75.376,80.763
+2026-W04..W13,Kandy,Style,total,2026,13,last8_mean,73.679,80.763
+2026-W04..W13,Kandy,Style,total,2026,4,same_week_last_year,72.49199999999999,79.282
+2026-W04..W13,Kandy,Style,total,2026,5,same_week_last_year,82.009,79.458
+2026-W04..W13,Kandy,Style,total,2026,6,same_week_last_year,72.101,79.749
+2026-W04..W13,Kandy,Style,total,2026,7,same_week_last_year,71.256,76.842
+2026-W04..W13,Kandy,Style,total,2026,8,same_week_last_year,74.383,80.729
+2026-W04..W13,Kandy,Style,total,2026,9,same_week_last_year,81.984,82.037
+2026-W04..W13,Kandy,Style,total,2026,10,same_week_last_year,120.196,109.995
+2026-W04..W13,Kandy,Style,total,2026,11,same_week_last_year,80.18900000000001,79.392
+2026-W04..W13,Kandy,Style,total,2026,12,same_week_last_year,75.376,73.523
+2026-W04..W13,Kandy,Style,total,2026,13,same_week_last_year,73.679,73.969
+2026-W04..W13,Kandy,Style,total,2026,4,mean13,72.49199999999999,81.73892307692307
+2026-W04..W13,Kandy,Style,total,2026,5,mean13,82.009,81.73892307692307
+2026-W04..W13,Kandy,Style,total,2026,6,mean13,72.101,81.73892307692307
+2026-W04..W13,Kandy,Style,total,2026,7,mean13,71.256,81.73892307692307
+2026-W04..W13,Kandy,Style,total,2026,8,mean13,74.383,81.73892307692307
+2026-W04..W13,Kandy,Style,total,2026,9,mean13,81.984,81.73892307692307
+2026-W04..W13,Kandy,Style,total,2026,10,mean13,120.196,81.73892307692307
+2026-W04..W13,Kandy,Style,total,2026,11,mean13,80.18900000000001,81.73892307692307
+2026-W04..W13,Kandy,Style,total,2026,12,mean13,75.376,81.73892307692307
+2026-W04..W13,Kandy,Style,total,2026,13,mean13,73.679,81.73892307692307
+2026-W04..W13,Kandy,Style,total,2026,4,mean26,72.49199999999999,83.60919230769231
+2026-W04..W13,Kandy,Style,total,2026,5,mean26,82.009,83.60919230769231
+2026-W04..W13,Kandy,Style,total,2026,6,mean26,72.101,83.60919230769231
+2026-W04..W13,Kandy,Style,total,2026,7,mean26,71.256,83.60919230769231
+2026-W04..W13,Kandy,Style,total,2026,8,mean26,74.383,83.60919230769231
+2026-W04..W13,Kandy,Style,total,2026,9,mean26,81.984,83.60919230769231
+2026-W04..W13,Kandy,Style,total,2026,10,mean26,120.196,83.60919230769231
+2026-W04..W13,Kandy,Style,total,2026,11,mean26,80.18900000000001,83.60919230769231
+2026-W04..W13,Kandy,Style,total,2026,12,mean26,75.376,83.60919230769231
+2026-W04..W13,Kandy,Style,total,2026,13,mean26,73.679,83.60919230769231
+2026-W04..W13,Kandy,Style,total,2026,4,ewm_hl8,72.49199999999999,81.27581307524805
+2026-W04..W13,Kandy,Style,total,2026,5,ewm_hl8,82.009,81.27581307524805
+2026-W04..W13,Kandy,Style,total,2026,6,ewm_hl8,72.101,81.27581307524805
+2026-W04..W13,Kandy,Style,total,2026,7,ewm_hl8,71.256,81.27581307524805
+2026-W04..W13,Kandy,Style,total,2026,8,ewm_hl8,74.383,81.27581307524805
+2026-W04..W13,Kandy,Style,total,2026,9,ewm_hl8,81.984,81.27581307524805
+2026-W04..W13,Kandy,Style,total,2026,10,ewm_hl8,120.196,81.27581307524805
+2026-W04..W13,Kandy,Style,total,2026,11,ewm_hl8,80.18900000000001,81.27581307524805
+2026-W04..W13,Kandy,Style,total,2026,12,ewm_hl8,75.376,81.27581307524805
+2026-W04..W13,Kandy,Style,total,2026,13,ewm_hl8,73.679,81.27581307524805
+2026-W04..W13,Kandy,Tech,total,2026,4,glm_cal,19.587,18.4061714849265
+2026-W04..W13,Kandy,Tech,total,2026,5,glm_cal,24.693,18.581114604462883
+2026-W04..W13,Kandy,Tech,total,2026,6,glm_cal,24.886,21.34208262500727
+2026-W04..W13,Kandy,Tech,total,2026,7,glm_cal,20.875,21.14444948093327
+2026-W04..W13,Kandy,Tech,total,2026,8,glm_cal,9.584,21.14826394854502
+2026-W04..W13,Kandy,Tech,total,2026,9,glm_cal,24.588,27.43286627713902
+2026-W04..W13,Kandy,Tech,total,2026,10,glm_cal,28.95,19.922508853314397
+2026-W04..W13,Kandy,Tech,total,2026,11,glm_cal,21.33,19.738021325470747
+2026-W04..W13,Kandy,Tech,total,2026,12,glm_cal,15.953,19.741582072849567
+2026-W04..W13,Kandy,Tech,total,2026,13,glm_cal,17.814999999999998,25.171030994073543
+2026-W04..W13,Kandy,Tech,total,2026,4,glm_op,19.587,18.477492165398033
+2026-W04..W13,Kandy,Tech,total,2026,5,glm_op,24.693,18.71202036892847
+2026-W04..W13,Kandy,Tech,total,2026,6,glm_op,24.886,21.467411241162463
+2026-W04..W13,Kandy,Tech,total,2026,7,glm_op,20.875,21.200694683902004
+2026-W04..W13,Kandy,Tech,total,2026,8,glm_op,9.584,21.20476654918956
+2026-W04..W13,Kandy,Tech,total,2026,9,glm_op,24.588,27.321293655842332
+2026-W04..W13,Kandy,Tech,total,2026,10,glm_op,28.95,20.04743830376463
+2026-W04..W13,Kandy,Tech,total,2026,11,glm_op,21.33,19.79836385011001
+2026-W04..W13,Kandy,Tech,total,2026,12,glm_op,15.953,19.802166379777724
+2026-W04..W13,Kandy,Tech,total,2026,13,glm_op,17.814999999999998,25.075374704123305
+2026-W04..W13,Kandy,Tech,total,2026,4,last8_mean,19.587,29.42425
+2026-W04..W13,Kandy,Tech,total,2026,5,last8_mean,24.693,29.42425
+2026-W04..W13,Kandy,Tech,total,2026,6,last8_mean,24.886,29.42425
+2026-W04..W13,Kandy,Tech,total,2026,7,last8_mean,20.875,29.42425
+2026-W04..W13,Kandy,Tech,total,2026,8,last8_mean,9.584,29.42425
+2026-W04..W13,Kandy,Tech,total,2026,9,last8_mean,24.588,29.42425
+2026-W04..W13,Kandy,Tech,total,2026,10,last8_mean,28.95,29.42425
+2026-W04..W13,Kandy,Tech,total,2026,11,last8_mean,21.33,29.42425
+2026-W04..W13,Kandy,Tech,total,2026,12,last8_mean,15.953,29.42425
+2026-W04..W13,Kandy,Tech,total,2026,13,last8_mean,17.814999999999998,29.42425
+2026-W04..W13,Kandy,Tech,total,2026,4,same_week_last_year,19.587,25.062
+2026-W04..W13,Kandy,Tech,total,2026,5,same_week_last_year,24.693,15.076000000000002
+2026-W04..W13,Kandy,Tech,total,2026,6,same_week_last_year,24.886,34.306
+2026-W04..W13,Kandy,Tech,total,2026,7,same_week_last_year,20.875,18.863
+2026-W04..W13,Kandy,Tech,total,2026,8,same_week_last_year,9.584,15.597
+2026-W04..W13,Kandy,Tech,total,2026,9,same_week_last_year,24.588,25.546000000000003
+2026-W04..W13,Kandy,Tech,total,2026,10,same_week_last_year,28.95,12.985
+2026-W04..W13,Kandy,Tech,total,2026,11,same_week_last_year,21.33,7.436
+2026-W04..W13,Kandy,Tech,total,2026,12,same_week_last_year,15.953,19.16
+2026-W04..W13,Kandy,Tech,total,2026,13,same_week_last_year,17.814999999999998,23.675
+2026-W04..W13,Kandy,Tech,total,2026,4,mean13,19.587,25.216846153846156
+2026-W04..W13,Kandy,Tech,total,2026,5,mean13,24.693,25.216846153846156
+2026-W04..W13,Kandy,Tech,total,2026,6,mean13,24.886,25.216846153846156
+2026-W04..W13,Kandy,Tech,total,2026,7,mean13,20.875,25.216846153846156
+2026-W04..W13,Kandy,Tech,total,2026,8,mean13,9.584,25.216846153846156
+2026-W04..W13,Kandy,Tech,total,2026,9,mean13,24.588,25.216846153846156
+2026-W04..W13,Kandy,Tech,total,2026,10,mean13,28.95,25.216846153846156
+2026-W04..W13,Kandy,Tech,total,2026,11,mean13,21.33,25.216846153846156
+2026-W04..W13,Kandy,Tech,total,2026,12,mean13,15.953,25.216846153846156
+2026-W04..W13,Kandy,Tech,total,2026,13,mean13,17.814999999999998,25.216846153846156
+2026-W04..W13,Kandy,Tech,total,2026,4,mean26,19.587,24.412384615384614
+2026-W04..W13,Kandy,Tech,total,2026,5,mean26,24.693,24.412384615384614
+2026-W04..W13,Kandy,Tech,total,2026,6,mean26,24.886,24.412384615384614
+2026-W04..W13,Kandy,Tech,total,2026,7,mean26,20.875,24.412384615384614
+2026-W04..W13,Kandy,Tech,total,2026,8,mean26,9.584,24.412384615384614
+2026-W04..W13,Kandy,Tech,total,2026,9,mean26,24.588,24.412384615384614
+2026-W04..W13,Kandy,Tech,total,2026,10,mean26,28.95,24.412384615384614
+2026-W04..W13,Kandy,Tech,total,2026,11,mean26,21.33,24.412384615384614
+2026-W04..W13,Kandy,Tech,total,2026,12,mean26,15.953,24.412384615384614
+2026-W04..W13,Kandy,Tech,total,2026,13,mean26,17.814999999999998,24.412384615384614
+2026-W04..W13,Kandy,Tech,total,2026,4,ewm_hl8,19.587,25.403742788264324
+2026-W04..W13,Kandy,Tech,total,2026,5,ewm_hl8,24.693,25.403742788264324
+2026-W04..W13,Kandy,Tech,total,2026,6,ewm_hl8,24.886,25.403742788264324
+2026-W04..W13,Kandy,Tech,total,2026,7,ewm_hl8,20.875,25.403742788264324
+2026-W04..W13,Kandy,Tech,total,2026,8,ewm_hl8,9.584,25.403742788264324
+2026-W04..W13,Kandy,Tech,total,2026,9,ewm_hl8,24.588,25.403742788264324
+2026-W04..W13,Kandy,Tech,total,2026,10,ewm_hl8,28.95,25.403742788264324
+2026-W04..W13,Kandy,Tech,total,2026,11,ewm_hl8,21.33,25.403742788264324
+2026-W04..W13,Kandy,Tech,total,2026,12,ewm_hl8,15.953,25.403742788264324
+2026-W04..W13,Kandy,Tech,total,2026,13,ewm_hl8,17.814999999999998,25.403742788264324
+2026-W04..W13,Peliyagoda,Fresh,total,2026,4,glm_cal,974.392,991.8942506888717
+2026-W04..W13,Peliyagoda,Fresh,total,2026,5,glm_cal,992.333,1014.9219749857659
+2026-W04..W13,Peliyagoda,Fresh,total,2026,6,glm_cal,1004.366,977.4246208218252
+2026-W04..W13,Peliyagoda,Fresh,total,2026,7,glm_cal,952.143,956.736794924404
+2026-W04..W13,Peliyagoda,Fresh,total,2026,8,glm_cal,958.156,957.7623864302248
+2026-W04..W13,Peliyagoda,Fresh,total,2026,9,glm_cal,1065.699,1053.1033034879654
+2026-W04..W13,Peliyagoda,Fresh,total,2026,10,glm_cal,935.179,982.250604829225
+2026-W04..W13,Peliyagoda,Fresh,total,2026,11,glm_cal,952.032,961.4606338509434
+2026-W04..W13,Peliyagoda,Fresh,total,2026,12,glm_cal,946.877,962.4912891622994
+2026-W04..W13,Peliyagoda,Fresh,total,2026,13,glm_cal,1068.488,1032.2444589287154
+2026-W04..W13,Peliyagoda,Fresh,total,2026,4,glm_op,974.392,993.7760392472637
+2026-W04..W13,Peliyagoda,Fresh,total,2026,5,glm_op,992.333,1029.6202492609996
+2026-W04..W13,Peliyagoda,Fresh,total,2026,6,glm_op,1004.366,989.135831244321
+2026-W04..W13,Peliyagoda,Fresh,total,2026,7,glm_op,952.143,955.8683976003357
+2026-W04..W13,Peliyagoda,Fresh,total,2026,8,glm_op,958.156,956.890695480006
+2026-W04..W13,Peliyagoda,Fresh,total,2026,9,glm_op,1065.699,1042.370300270048
+2026-W04..W13,Peliyagoda,Fresh,total,2026,10,glm_op,935.179,996.5625204477942
+2026-W04..W13,Peliyagoda,Fresh,total,2026,11,glm_op,952.032,963.0453062555091
+2026-W04..W13,Peliyagoda,Fresh,total,2026,12,glm_op,946.877,964.0752798136716
+2026-W04..W13,Peliyagoda,Fresh,total,2026,13,glm_op,1068.488,1024.0201383969588
+2026-W04..W13,Peliyagoda,Fresh,total,2026,4,last8_mean,974.392,1020.7863749999999
+2026-W04..W13,Peliyagoda,Fresh,total,2026,5,last8_mean,992.333,1020.7863749999999
+2026-W04..W13,Peliyagoda,Fresh,total,2026,6,last8_mean,1004.366,1020.7863749999999
+2026-W04..W13,Peliyagoda,Fresh,total,2026,7,last8_mean,952.143,1020.7863749999999
+2026-W04..W13,Peliyagoda,Fresh,total,2026,8,last8_mean,958.156,1020.7863749999999
+2026-W04..W13,Peliyagoda,Fresh,total,2026,9,last8_mean,1065.699,1020.7863749999999
+2026-W04..W13,Peliyagoda,Fresh,total,2026,10,last8_mean,935.179,1020.7863749999999
+2026-W04..W13,Peliyagoda,Fresh,total,2026,11,last8_mean,952.032,1020.7863749999999
+2026-W04..W13,Peliyagoda,Fresh,total,2026,12,last8_mean,946.877,1020.7863749999999
+2026-W04..W13,Peliyagoda,Fresh,total,2026,13,last8_mean,1068.488,1020.7863749999999
+2026-W04..W13,Peliyagoda,Fresh,total,2026,4,same_week_last_year,974.392,919.287
+2026-W04..W13,Peliyagoda,Fresh,total,2026,5,same_week_last_year,992.333,1027.049
+2026-W04..W13,Peliyagoda,Fresh,total,2026,6,same_week_last_year,1004.366,883.837
+2026-W04..W13,Peliyagoda,Fresh,total,2026,7,same_week_last_year,952.143,922.036
+2026-W04..W13,Peliyagoda,Fresh,total,2026,8,same_week_last_year,958.156,893.532
+2026-W04..W13,Peliyagoda,Fresh,total,2026,9,same_week_last_year,1065.699,996.661
+2026-W04..W13,Peliyagoda,Fresh,total,2026,10,same_week_last_year,935.179,901.454
+2026-W04..W13,Peliyagoda,Fresh,total,2026,11,same_week_last_year,952.032,895.865
+2026-W04..W13,Peliyagoda,Fresh,total,2026,12,same_week_last_year,946.877,937.63
+2026-W04..W13,Peliyagoda,Fresh,total,2026,13,same_week_last_year,1068.488,975.478
+2026-W04..W13,Peliyagoda,Fresh,total,2026,4,mean13,974.392,994.5472307692309
+2026-W04..W13,Peliyagoda,Fresh,total,2026,5,mean13,992.333,994.5472307692309
+2026-W04..W13,Peliyagoda,Fresh,total,2026,6,mean13,1004.366,994.5472307692309
+2026-W04..W13,Peliyagoda,Fresh,total,2026,7,mean13,952.143,994.5472307692309
+2026-W04..W13,Peliyagoda,Fresh,total,2026,8,mean13,958.156,994.5472307692309
+2026-W04..W13,Peliyagoda,Fresh,total,2026,9,mean13,1065.699,994.5472307692309
+2026-W04..W13,Peliyagoda,Fresh,total,2026,10,mean13,935.179,994.5472307692309
+2026-W04..W13,Peliyagoda,Fresh,total,2026,11,mean13,952.032,994.5472307692309
+2026-W04..W13,Peliyagoda,Fresh,total,2026,12,mean13,946.877,994.5472307692309
+2026-W04..W13,Peliyagoda,Fresh,total,2026,13,mean13,1068.488,994.5472307692309
+2026-W04..W13,Peliyagoda,Fresh,total,2026,4,mean26,974.392,998.7704615384616
+2026-W04..W13,Peliyagoda,Fresh,total,2026,5,mean26,992.333,998.7704615384616
+2026-W04..W13,Peliyagoda,Fresh,total,2026,6,mean26,1004.366,998.7704615384616
+2026-W04..W13,Peliyagoda,Fresh,total,2026,7,mean26,952.143,998.7704615384616
+2026-W04..W13,Peliyagoda,Fresh,total,2026,8,mean26,958.156,998.7704615384616
+2026-W04..W13,Peliyagoda,Fresh,total,2026,9,mean26,1065.699,998.7704615384616
+2026-W04..W13,Peliyagoda,Fresh,total,2026,10,mean26,935.179,998.7704615384616
+2026-W04..W13,Peliyagoda,Fresh,total,2026,11,mean26,952.032,998.7704615384616
+2026-W04..W13,Peliyagoda,Fresh,total,2026,12,mean26,946.877,998.7704615384616
+2026-W04..W13,Peliyagoda,Fresh,total,2026,13,mean26,1068.488,998.7704615384616
+2026-W04..W13,Peliyagoda,Fresh,total,2026,4,ewm_hl8,974.392,999.8308685981566
+2026-W04..W13,Peliyagoda,Fresh,total,2026,5,ewm_hl8,992.333,999.8308685981566
+2026-W04..W13,Peliyagoda,Fresh,total,2026,6,ewm_hl8,1004.366,999.8308685981566
+2026-W04..W13,Peliyagoda,Fresh,total,2026,7,ewm_hl8,952.143,999.8308685981566
+2026-W04..W13,Peliyagoda,Fresh,total,2026,8,ewm_hl8,958.156,999.8308685981566
+2026-W04..W13,Peliyagoda,Fresh,total,2026,9,ewm_hl8,1065.699,999.8308685981566
+2026-W04..W13,Peliyagoda,Fresh,total,2026,10,ewm_hl8,935.179,999.8308685981566
+2026-W04..W13,Peliyagoda,Fresh,total,2026,11,ewm_hl8,952.032,999.8308685981566
+2026-W04..W13,Peliyagoda,Fresh,total,2026,12,ewm_hl8,946.877,999.8308685981566
+2026-W04..W13,Peliyagoda,Fresh,total,2026,13,ewm_hl8,1068.488,999.8308685981566
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,4,glm_cal,350.363,360.5544208327209
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,5,glm_cal,363.095,368.81089401137285
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,6,glm_cal,365.57,358.9357275650154
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,7,glm_cal,344.882,351.4313085935303
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,8,glm_cal,349.067,351.8073953100342
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,9,glm_cal,389.643,386.0888260257424
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,10,glm_cal,331.389,365.0184358692018
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,11,glm_cal,346.032,357.3868431780493
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,12,glm_cal,349.308,357.7693032522825
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,13,glm_cal,392.887,382.10367129193617
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,4,glm_op,350.363,361.27830457560333
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,5,glm_op,363.095,373.99021304358416
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,6,glm_op,365.57,363.0338045813656
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,7,glm_op,344.882,351.1024878728775
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,8,glm_op,349.067,351.47700956786525
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,9,glm_op,389.643,382.66061630385167
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,10,glm_op,331.389,370.19792375425493
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,11,glm_op,346.032,358.03115411077727
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,12,glm_op,349.308,358.4130666272859
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,13,glm_op,392.887,379.6583205326699
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,4,last8_mean,350.363,364.92025
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,5,last8_mean,363.095,364.92025
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,6,last8_mean,365.57,364.92025
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,7,last8_mean,344.882,364.92025
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,8,last8_mean,349.067,364.92025
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,9,last8_mean,389.643,364.92025
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,10,last8_mean,331.389,364.92025
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,11,last8_mean,346.032,364.92025
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,12,last8_mean,349.308,364.92025
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,13,last8_mean,392.887,364.92025
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,4,same_week_last_year,350.363,337.607
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,5,same_week_last_year,363.095,372.755
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,6,same_week_last_year,365.57,319.153
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,7,same_week_last_year,344.882,339.89300000000003
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,8,same_week_last_year,349.067,332.3
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,9,same_week_last_year,389.643,364.294
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,10,same_week_last_year,331.389,333.368
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,11,same_week_last_year,346.032,333.749
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,12,same_week_last_year,349.308,351.276
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,13,same_week_last_year,392.887,363.394
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,4,mean13,350.363,356.55407692307693
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,5,mean13,363.095,356.55407692307693
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,6,mean13,365.57,356.55407692307693
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,7,mean13,344.882,356.55407692307693
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,8,mean13,349.067,356.55407692307693
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,9,mean13,389.643,356.55407692307693
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,10,mean13,331.389,356.55407692307693
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,11,mean13,346.032,356.55407692307693
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,12,mean13,349.308,356.55407692307693
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,13,mean13,392.887,356.55407692307693
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,4,mean26,350.363,362.6625769230769
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,5,mean26,363.095,362.6625769230769
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,6,mean26,365.57,362.6625769230769
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,7,mean26,344.882,362.6625769230769
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,8,mean26,349.067,362.6625769230769
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,9,mean26,389.643,362.6625769230769
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,10,mean26,331.389,362.6625769230769
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,11,mean26,346.032,362.6625769230769
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,12,mean26,349.308,362.6625769230769
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,13,mean26,392.887,362.6625769230769
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,4,ewm_hl8,350.363,361.8353907812781
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,5,ewm_hl8,363.095,361.8353907812781
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,6,ewm_hl8,365.57,361.8353907812781
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,7,ewm_hl8,344.882,361.8353907812781
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,8,ewm_hl8,349.067,361.8353907812781
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,9,ewm_hl8,389.643,361.8353907812781
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,10,ewm_hl8,331.389,361.8353907812781
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,11,ewm_hl8,346.032,361.8353907812781
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,12,ewm_hl8,349.308,361.8353907812781
+2026-W04..W13,Peliyagoda,Fresh,chilled,2026,13,ewm_hl8,392.887,361.8353907812781
+2026-W04..W13,Peliyagoda,Style,total,2026,4,glm_cal,139.635,137.04764620710873
+2026-W04..W13,Peliyagoda,Style,total,2026,5,glm_cal,145.466,138.58881049534446
+2026-W04..W13,Peliyagoda,Style,total,2026,6,glm_cal,132.225,139.78969761815304
+2026-W04..W13,Peliyagoda,Style,total,2026,7,glm_cal,136.861,138.3582497354509
+2026-W04..W13,Peliyagoda,Style,total,2026,8,glm_cal,135.623,138.41982619895492
+2026-W04..W13,Peliyagoda,Style,total,2026,9,glm_cal,158.866,149.4487403397784
+2026-W04..W13,Peliyagoda,Style,total,2026,10,glm_cal,195.479,203.10680482326006
+2026-W04..W13,Peliyagoda,Style,total,2026,11,glm_cal,123.215,132.54255299980474
+2026-W04..W13,Peliyagoda,Style,total,2026,12,glm_cal,140.429,132.60154118224511
+2026-W04..W13,Peliyagoda,Style,total,2026,13,glm_cal,144.697,143.16687024527852
+2026-W04..W13,Peliyagoda,Style,total,2026,4,glm_op,139.635,137.1946631137791
+2026-W04..W13,Peliyagoda,Style,total,2026,5,glm_op,145.466,138.47245347432815
+2026-W04..W13,Peliyagoda,Style,total,2026,6,glm_op,132.225,139.48456313213734
+2026-W04..W13,Peliyagoda,Style,total,2026,7,glm_op,136.861,138.32071413638323
+2026-W04..W13,Peliyagoda,Style,total,2026,8,glm_op,135.623,138.38239580478393
+2026-W04..W13,Peliyagoda,Style,total,2026,9,glm_op,158.866,148.931881294523
+2026-W04..W13,Peliyagoda,Style,total,2026,10,glm_op,195.479,202.0234639594318
+2026-W04..W13,Peliyagoda,Style,total,2026,11,glm_op,123.215,132.56843363740802
+2026-W04..W13,Peliyagoda,Style,total,2026,12,glm_op,140.429,132.6275501783764
+2026-W04..W13,Peliyagoda,Style,total,2026,13,glm_op,144.697,142.7383190229931
+2026-W04..W13,Peliyagoda,Style,total,2026,4,last8_mean,139.635,147.263375
+2026-W04..W13,Peliyagoda,Style,total,2026,5,last8_mean,145.466,147.263375
+2026-W04..W13,Peliyagoda,Style,total,2026,6,last8_mean,132.225,147.263375
+2026-W04..W13,Peliyagoda,Style,total,2026,7,last8_mean,136.861,147.263375
+2026-W04..W13,Peliyagoda,Style,total,2026,8,last8_mean,135.623,147.263375
+2026-W04..W13,Peliyagoda,Style,total,2026,9,last8_mean,158.866,147.263375
+2026-W04..W13,Peliyagoda,Style,total,2026,10,last8_mean,195.479,147.263375
+2026-W04..W13,Peliyagoda,Style,total,2026,11,last8_mean,123.215,147.263375
+2026-W04..W13,Peliyagoda,Style,total,2026,12,last8_mean,140.429,147.263375
+2026-W04..W13,Peliyagoda,Style,total,2026,13,last8_mean,144.697,147.263375
+2026-W04..W13,Peliyagoda,Style,total,2026,4,same_week_last_year,139.635,125.26
+2026-W04..W13,Peliyagoda,Style,total,2026,5,same_week_last_year,145.466,146.495
+2026-W04..W13,Peliyagoda,Style,total,2026,6,same_week_last_year,132.225,129.405
+2026-W04..W13,Peliyagoda,Style,total,2026,7,same_week_last_year,136.861,138.541
+2026-W04..W13,Peliyagoda,Style,total,2026,8,same_week_last_year,135.623,135.42000000000002
+2026-W04..W13,Peliyagoda,Style,total,2026,9,same_week_last_year,158.866,146.404
+2026-W04..W13,Peliyagoda,Style,total,2026,10,same_week_last_year,195.479,196.168
+2026-W04..W13,Peliyagoda,Style,total,2026,11,same_week_last_year,123.215,135.231
+2026-W04..W13,Peliyagoda,Style,total,2026,12,same_week_last_year,140.429,120.327
+2026-W04..W13,Peliyagoda,Style,total,2026,13,same_week_last_year,144.697,129.727
+2026-W04..W13,Peliyagoda,Style,total,2026,4,mean13,139.635,144.082
+2026-W04..W13,Peliyagoda,Style,total,2026,5,mean13,145.466,144.082
+2026-W04..W13,Peliyagoda,Style,total,2026,6,mean13,132.225,144.082
+2026-W04..W13,Peliyagoda,Style,total,2026,7,mean13,136.861,144.082
+2026-W04..W13,Peliyagoda,Style,total,2026,8,mean13,135.623,144.082
+2026-W04..W13,Peliyagoda,Style,total,2026,9,mean13,158.866,144.082
+2026-W04..W13,Peliyagoda,Style,total,2026,10,mean13,195.479,144.082
+2026-W04..W13,Peliyagoda,Style,total,2026,11,mean13,123.215,144.082
+2026-W04..W13,Peliyagoda,Style,total,2026,12,mean13,140.429,144.082
+2026-W04..W13,Peliyagoda,Style,total,2026,13,mean13,144.697,144.082
+2026-W04..W13,Peliyagoda,Style,total,2026,4,mean26,139.635,145.67434615384616
+2026-W04..W13,Peliyagoda,Style,total,2026,5,mean26,145.466,145.67434615384616
+2026-W04..W13,Peliyagoda,Style,total,2026,6,mean26,132.225,145.67434615384616
+2026-W04..W13,Peliyagoda,Style,total,2026,7,mean26,136.861,145.67434615384616
+2026-W04..W13,Peliyagoda,Style,total,2026,8,mean26,135.623,145.67434615384616
+2026-W04..W13,Peliyagoda,Style,total,2026,9,mean26,158.866,145.67434615384616
+2026-W04..W13,Peliyagoda,Style,total,2026,10,mean26,195.479,145.67434615384616
+2026-W04..W13,Peliyagoda,Style,total,2026,11,mean26,123.215,145.67434615384616
+2026-W04..W13,Peliyagoda,Style,total,2026,12,mean26,140.429,145.67434615384616
+2026-W04..W13,Peliyagoda,Style,total,2026,13,mean26,144.697,145.67434615384616
+2026-W04..W13,Peliyagoda,Style,total,2026,4,ewm_hl8,139.635,144.8944691257926
+2026-W04..W13,Peliyagoda,Style,total,2026,5,ewm_hl8,145.466,144.8944691257926
+2026-W04..W13,Peliyagoda,Style,total,2026,6,ewm_hl8,132.225,144.8944691257926
+2026-W04..W13,Peliyagoda,Style,total,2026,7,ewm_hl8,136.861,144.8944691257926
+2026-W04..W13,Peliyagoda,Style,total,2026,8,ewm_hl8,135.623,144.8944691257926
+2026-W04..W13,Peliyagoda,Style,total,2026,9,ewm_hl8,158.866,144.8944691257926
+2026-W04..W13,Peliyagoda,Style,total,2026,10,ewm_hl8,195.479,144.8944691257926
+2026-W04..W13,Peliyagoda,Style,total,2026,11,ewm_hl8,123.215,144.8944691257926
+2026-W04..W13,Peliyagoda,Style,total,2026,12,ewm_hl8,140.429,144.8944691257926
+2026-W04..W13,Peliyagoda,Style,total,2026,13,ewm_hl8,144.697,144.8944691257926
+2026-W04..W13,Peliyagoda,Tech,total,2026,4,glm_cal,36.149,30.3499957878951
+2026-W04..W13,Peliyagoda,Tech,total,2026,5,glm_cal,40.281,30.660790609593242
+2026-W04..W13,Peliyagoda,Tech,total,2026,6,glm_cal,56.524,22.84004378144084
+2026-W04..W13,Peliyagoda,Tech,total,2026,7,glm_cal,35.417,22.627495690498034
+2026-W04..W13,Peliyagoda,Tech,total,2026,8,glm_cal,23.253,22.643889137001654
+2026-W04..W13,Peliyagoda,Tech,total,2026,9,glm_cal,40.091,27.449980638908485
+2026-W04..W13,Peliyagoda,Tech,total,2026,10,glm_cal,22.986,27.867110228977907
+2026-W04..W13,Peliyagoda,Tech,total,2026,11,glm_cal,21.29,27.607780556235557
+2026-W04..W13,Peliyagoda,Tech,total,2026,12,glm_cal,33.188,27.62778218079989
+2026-W04..W13,Peliyagoda,Tech,total,2026,13,glm_cal,37.519,31.70158215261091
+2026-W04..W13,Peliyagoda,Tech,total,2026,4,glm_op,36.149,30.634416739203246
+2026-W04..W13,Peliyagoda,Tech,total,2026,5,glm_op,40.281,31.597227669603384
+2026-W04..W13,Peliyagoda,Tech,total,2026,6,glm_op,56.524,23.46005620130824
+2026-W04..W13,Peliyagoda,Tech,total,2026,7,glm_op,35.417,22.733611673726664
+2026-W04..W13,Peliyagoda,Tech,total,2026,8,glm_op,23.253,22.749436398559574
+2026-W04..W13,Peliyagoda,Tech,total,2026,9,glm_op,40.091,25.42181915554519
+2026-W04..W13,Peliyagoda,Tech,total,2026,10,glm_op,22.986,28.457299820395402
+2026-W04..W13,Peliyagoda,Tech,total,2026,11,glm_op,21.29,27.576114816110472
+2026-W04..W13,Peliyagoda,Tech,total,2026,12,glm_op,33.188,27.595310377079343
+2026-W04..W13,Peliyagoda,Tech,total,2026,13,glm_op,37.519,29.07333822181573
+2026-W04..W13,Peliyagoda,Tech,total,2026,4,last8_mean,36.149,37.981249999999996
+2026-W04..W13,Peliyagoda,Tech,total,2026,5,last8_mean,40.281,37.981249999999996
+2026-W04..W13,Peliyagoda,Tech,total,2026,6,last8_mean,56.524,37.981249999999996
+2026-W04..W13,Peliyagoda,Tech,total,2026,7,last8_mean,35.417,37.981249999999996
+2026-W04..W13,Peliyagoda,Tech,total,2026,8,last8_mean,23.253,37.981249999999996
+2026-W04..W13,Peliyagoda,Tech,total,2026,9,last8_mean,40.091,37.981249999999996
+2026-W04..W13,Peliyagoda,Tech,total,2026,10,last8_mean,22.986,37.981249999999996
+2026-W04..W13,Peliyagoda,Tech,total,2026,11,last8_mean,21.29,37.981249999999996
+2026-W04..W13,Peliyagoda,Tech,total,2026,12,last8_mean,33.188,37.981249999999996
+2026-W04..W13,Peliyagoda,Tech,total,2026,13,last8_mean,37.519,37.981249999999996
+2026-W04..W13,Peliyagoda,Tech,total,2026,4,same_week_last_year,36.149,24.636
+2026-W04..W13,Peliyagoda,Tech,total,2026,5,same_week_last_year,40.281,40.38
+2026-W04..W13,Peliyagoda,Tech,total,2026,6,same_week_last_year,56.524,26.344
+2026-W04..W13,Peliyagoda,Tech,total,2026,7,same_week_last_year,35.417,28.002
+2026-W04..W13,Peliyagoda,Tech,total,2026,8,same_week_last_year,23.253,14.969
+2026-W04..W13,Peliyagoda,Tech,total,2026,9,same_week_last_year,40.091,29.380000000000003
+2026-W04..W13,Peliyagoda,Tech,total,2026,10,same_week_last_year,22.986,20.047
+2026-W04..W13,Peliyagoda,Tech,total,2026,11,same_week_last_year,21.29,16.117
+2026-W04..W13,Peliyagoda,Tech,total,2026,12,same_week_last_year,33.188,33.656
+2026-W04..W13,Peliyagoda,Tech,total,2026,13,same_week_last_year,37.519,18.143
+2026-W04..W13,Peliyagoda,Tech,total,2026,4,mean13,36.149,34.066384615384614
+2026-W04..W13,Peliyagoda,Tech,total,2026,5,mean13,40.281,34.066384615384614
+2026-W04..W13,Peliyagoda,Tech,total,2026,6,mean13,56.524,34.066384615384614
+2026-W04..W13,Peliyagoda,Tech,total,2026,7,mean13,35.417,34.066384615384614
+2026-W04..W13,Peliyagoda,Tech,total,2026,8,mean13,23.253,34.066384615384614
+2026-W04..W13,Peliyagoda,Tech,total,2026,9,mean13,40.091,34.066384615384614
+2026-W04..W13,Peliyagoda,Tech,total,2026,10,mean13,22.986,34.066384615384614
+2026-W04..W13,Peliyagoda,Tech,total,2026,11,mean13,21.29,34.066384615384614
+2026-W04..W13,Peliyagoda,Tech,total,2026,12,mean13,33.188,34.066384615384614
+2026-W04..W13,Peliyagoda,Tech,total,2026,13,mean13,37.519,34.066384615384614
+2026-W04..W13,Peliyagoda,Tech,total,2026,4,mean26,36.149,32.70703846153846
+2026-W04..W13,Peliyagoda,Tech,total,2026,5,mean26,40.281,32.70703846153846
+2026-W04..W13,Peliyagoda,Tech,total,2026,6,mean26,56.524,32.70703846153846
+2026-W04..W13,Peliyagoda,Tech,total,2026,7,mean26,35.417,32.70703846153846
+2026-W04..W13,Peliyagoda,Tech,total,2026,8,mean26,23.253,32.70703846153846
+2026-W04..W13,Peliyagoda,Tech,total,2026,9,mean26,40.091,32.70703846153846
+2026-W04..W13,Peliyagoda,Tech,total,2026,10,mean26,22.986,32.70703846153846
+2026-W04..W13,Peliyagoda,Tech,total,2026,11,mean26,21.29,32.70703846153846
+2026-W04..W13,Peliyagoda,Tech,total,2026,12,mean26,33.188,32.70703846153846
+2026-W04..W13,Peliyagoda,Tech,total,2026,13,mean26,37.519,32.70703846153846
+2026-W04..W13,Peliyagoda,Tech,total,2026,4,ewm_hl8,36.149,33.2692694447435
+2026-W04..W13,Peliyagoda,Tech,total,2026,5,ewm_hl8,40.281,33.2692694447435
+2026-W04..W13,Peliyagoda,Tech,total,2026,6,ewm_hl8,56.524,33.2692694447435
+2026-W04..W13,Peliyagoda,Tech,total,2026,7,ewm_hl8,35.417,33.2692694447435
+2026-W04..W13,Peliyagoda,Tech,total,2026,8,ewm_hl8,23.253,33.2692694447435
+2026-W04..W13,Peliyagoda,Tech,total,2026,9,ewm_hl8,40.091,33.2692694447435
+2026-W04..W13,Peliyagoda,Tech,total,2026,10,ewm_hl8,22.986,33.2692694447435
+2026-W04..W13,Peliyagoda,Tech,total,2026,11,ewm_hl8,21.29,33.2692694447435
+2026-W04..W13,Peliyagoda,Tech,total,2026,12,ewm_hl8,33.188,33.2692694447435
+2026-W04..W13,Peliyagoda,Tech,total,2026,13,ewm_hl8,37.519,33.2692694447435
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,30,glm_cal,495.633,519.9707683098738
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,31,glm_cal,548.664,563.6259339922982
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,32,glm_cal,574.153,561.4703569192034
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,33,glm_cal,488.303,483.08589197937863
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,34,glm_cal,505.387,483.62162462476925
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,35,glm_cal,551.8340000000001,531.1491564147846
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,36,glm_cal,527.979,501.35569821674994
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,37,glm_cal,498.602,490.4797956492284
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,38,glm_cal,486.538,491.0237279867205
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,39,glm_cal,519.39,531.0090235063184
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,30,glm_op,495.633,520.263667481843
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,31,glm_op,548.664,564.1427607707213
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,32,glm_op,574.153,561.1523642330155
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,33,glm_op,488.303,482.3027514472984
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,34,glm_op,505.387,482.83145990484667
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,35,glm_op,551.8340000000001,525.2475765719379
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,36,glm_op,527.979,507.3037245318121
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,37,glm_op,498.602,490.0921074893653
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,38,glm_op,486.538,490.62935477113956
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,39,glm_op,519.39,524.7911047829091
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,30,last8_mean,495.633,515.678625
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,31,last8_mean,548.664,515.678625
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,32,last8_mean,574.153,515.678625
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,33,last8_mean,488.303,515.678625
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,34,last8_mean,505.387,515.678625
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,35,last8_mean,551.8340000000001,515.678625
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,36,last8_mean,527.979,515.678625
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,37,last8_mean,498.602,515.678625
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,38,last8_mean,486.538,515.678625
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,39,last8_mean,519.39,515.678625
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,30,same_week_last_year,495.633,487.772
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,31,same_week_last_year,548.664,508.805
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,32,same_week_last_year,574.153,454.262
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,33,same_week_last_year,488.303,533.393
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,34,same_week_last_year,505.387,475.547
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,35,same_week_last_year,551.8340000000001,483.117
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,36,same_week_last_year,527.979,479.412
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,37,same_week_last_year,498.602,453.85
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,38,same_week_last_year,486.538,480.869
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,39,same_week_last_year,519.39,486.707
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,30,mean13,495.633,508.51307692307694
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,31,mean13,548.664,508.51307692307694
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,32,mean13,574.153,508.51307692307694
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,33,mean13,488.303,508.51307692307694
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,34,mean13,505.387,508.51307692307694
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,35,mean13,551.8340000000001,508.51307692307694
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,36,mean13,527.979,508.51307692307694
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,37,mean13,498.602,508.51307692307694
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,38,mean13,486.538,508.51307692307694
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,39,mean13,519.39,508.51307692307694
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,30,mean26,495.633,501.8573076923077
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,31,mean26,548.664,501.8573076923077
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,32,mean26,574.153,501.8573076923077
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,33,mean26,488.303,501.8573076923077
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,34,mean26,505.387,501.8573076923077
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,35,mean26,551.8340000000001,501.8573076923077
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,36,mean26,527.979,501.8573076923077
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,37,mean26,498.602,501.8573076923077
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,38,mean26,486.538,501.8573076923077
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,39,mean26,519.39,501.8573076923077
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,30,ewm_hl8,495.633,504.9829008499134
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,31,ewm_hl8,548.664,504.9829008499134
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,32,ewm_hl8,574.153,504.9829008499134
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,33,ewm_hl8,488.303,504.9829008499134
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,34,ewm_hl8,505.387,504.9829008499134
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,35,ewm_hl8,551.8340000000001,504.9829008499134
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,36,ewm_hl8,527.979,504.9829008499134
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,37,ewm_hl8,498.602,504.9829008499134
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,38,ewm_hl8,486.538,504.9829008499134
+2025-W30..W39 (esala),Kandy,Fresh,total,2025,39,ewm_hl8,519.39,504.9829008499134
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,30,glm_cal,186.1,191.9326152296501
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,31,glm_cal,199.178,206.8664592494978
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,32,glm_cal,210.563,205.19566955627192
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,33,glm_cal,183.214,176.9062124760708
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,34,glm_cal,185.446,177.0856605436707
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,35,glm_cal,203.017,194.5980511594791
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,36,glm_cal,193.438,178.36474932207744
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,37,glm_cal,184.229,174.81108898928193
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,38,glm_cal,177.718,174.98841182987127
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,39,glm_cal,185.779,189.1319011856221
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,30,glm_op,186.1,192.06481536873508
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,31,glm_op,199.178,206.47071885403284
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,32,glm_op,210.563,205.06653942637828
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,33,glm_op,183.214,176.67706459663484
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,34,glm_op,185.446,176.8537010951654
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,35,glm_op,203.017,192.18590742032666
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,36,glm_op,193.438,180.37034561267959
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,37,glm_op,184.229,174.706036726557
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,38,glm_op,177.718,174.88070264977674
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,39,glm_op,185.779,186.64268868781653
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,30,last8_mean,186.1,193.383625
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,31,last8_mean,199.178,193.383625
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,32,last8_mean,210.563,193.383625
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,33,last8_mean,183.214,193.383625
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,34,last8_mean,185.446,193.383625
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,35,last8_mean,203.017,193.383625
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,36,last8_mean,193.438,193.383625
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,37,last8_mean,184.229,193.383625
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,38,last8_mean,177.718,193.383625
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,39,last8_mean,185.779,193.383625
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,30,same_week_last_year,186.1,181.022
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,31,same_week_last_year,199.178,186.28
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,32,same_week_last_year,210.563,168.376
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,33,same_week_last_year,183.214,195.671
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,34,same_week_last_year,185.446,174.59300000000002
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,35,same_week_last_year,203.017,176.147
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,36,same_week_last_year,193.438,175.308
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,37,same_week_last_year,184.229,160.111
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,38,same_week_last_year,177.718,170.821
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,39,same_week_last_year,185.779,174.449
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,30,mean13,186.1,190.46169230769232
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,31,mean13,199.178,190.46169230769232
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,32,mean13,210.563,190.46169230769232
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,33,mean13,183.214,190.46169230769232
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,34,mean13,185.446,190.46169230769232
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,35,mean13,203.017,190.46169230769232
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,36,mean13,193.438,190.46169230769232
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,37,mean13,184.229,190.46169230769232
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,38,mean13,177.718,190.46169230769232
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,39,mean13,185.779,190.46169230769232
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,30,mean26,186.1,185.26215384615386
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,31,mean26,199.178,185.26215384615386
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,32,mean26,210.563,185.26215384615386
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,33,mean26,183.214,185.26215384615386
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,34,mean26,185.446,185.26215384615386
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,35,mean26,203.017,185.26215384615386
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,36,mean26,193.438,185.26215384615386
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,37,mean26,184.229,185.26215384615386
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,38,mean26,177.718,185.26215384615386
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,39,mean26,185.779,185.26215384615386
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,30,ewm_hl8,186.1,187.19695390541867
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,31,ewm_hl8,199.178,187.19695390541867
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,32,ewm_hl8,210.563,187.19695390541867
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,33,ewm_hl8,183.214,187.19695390541867
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,34,ewm_hl8,185.446,187.19695390541867
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,35,ewm_hl8,203.017,187.19695390541867
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,36,ewm_hl8,193.438,187.19695390541867
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,37,ewm_hl8,184.229,187.19695390541867
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,38,ewm_hl8,177.718,187.19695390541867
+2025-W30..W39 (esala),Kandy,Fresh,chilled,2025,39,ewm_hl8,185.779,187.19695390541867
+2025-W30..W39 (esala),Kandy,Style,total,2025,30,glm_cal,68.18299999999999,73.44133338106174
+2025-W30..W39 (esala),Kandy,Style,total,2025,31,glm_cal,86.241,80.02434588404992
+2025-W30..W39 (esala),Kandy,Style,total,2025,32,glm_cal,143.816,139.10438043618066
+2025-W30..W39 (esala),Kandy,Style,total,2025,33,glm_cal,79.806,75.51173905777924
+2025-W30..W39 (esala),Kandy,Style,total,2025,34,glm_cal,85.409,75.55236003689171
+2025-W30..W39 (esala),Kandy,Style,total,2025,35,glm_cal,83.94800000000001,79.36665447524359
+2025-W30..W39 (esala),Kandy,Style,total,2025,36,glm_cal,84.07000000000001,80.78361088177344
+2025-W30..W39 (esala),Kandy,Style,total,2025,37,glm_cal,82.83699999999999,78.7160477855884
+2025-W30..W39 (esala),Kandy,Style,total,2025,38,glm_cal,76.473,78.75839249877886
+2025-W30..W39 (esala),Kandy,Style,total,2025,39,glm_cal,78.052,82.31555925444214
+2025-W30..W39 (esala),Kandy,Style,total,2025,30,glm_op,68.18299999999999,73.82937914185378
+2025-W30..W39 (esala),Kandy,Style,total,2025,31,glm_op,86.241,80.69787631337122
+2025-W30..W39 (esala),Kandy,Style,total,2025,32,glm_op,143.816,138.44348546880397
+2025-W30..W39 (esala),Kandy,Style,total,2025,33,glm_op,79.806,75.23143234367149
+2025-W30..W39 (esala),Kandy,Style,total,2025,34,glm_op,85.409,75.2701422300658
+2025-W30..W39 (esala),Kandy,Style,total,2025,35,glm_op,83.94800000000001,78.58869082144611
+2025-W30..W39 (esala),Kandy,Style,total,2025,36,glm_op,84.07000000000001,80.30659283214392
+2025-W30..W39 (esala),Kandy,Style,total,2025,37,glm_op,82.83699999999999,78.36788655745708
+2025-W30..W39 (esala),Kandy,Style,total,2025,38,glm_op,76.473,78.40821028772639
+2025-W30..W39 (esala),Kandy,Style,total,2025,39,glm_op,78.052,81.58624627251214
+2025-W30..W39 (esala),Kandy,Style,total,2025,30,last8_mean,68.18299999999999,77.82987499999999
+2025-W30..W39 (esala),Kandy,Style,total,2025,31,last8_mean,86.241,77.82987499999999
+2025-W30..W39 (esala),Kandy,Style,total,2025,32,last8_mean,143.816,77.82987499999999
+2025-W30..W39 (esala),Kandy,Style,total,2025,33,last8_mean,79.806,77.82987499999999
+2025-W30..W39 (esala),Kandy,Style,total,2025,34,last8_mean,85.409,77.82987499999999
+2025-W30..W39 (esala),Kandy,Style,total,2025,35,last8_mean,83.94800000000001,77.82987499999999
+2025-W30..W39 (esala),Kandy,Style,total,2025,36,last8_mean,84.07000000000001,77.82987499999999
+2025-W30..W39 (esala),Kandy,Style,total,2025,37,last8_mean,82.83699999999999,77.82987499999999
+2025-W30..W39 (esala),Kandy,Style,total,2025,38,last8_mean,76.473,77.82987499999999
+2025-W30..W39 (esala),Kandy,Style,total,2025,39,last8_mean,78.052,77.82987499999999
+2025-W30..W39 (esala),Kandy,Style,total,2025,30,same_week_last_year,68.18299999999999,65.665
+2025-W30..W39 (esala),Kandy,Style,total,2025,31,same_week_last_year,86.241,75.51
+2025-W30..W39 (esala),Kandy,Style,total,2025,32,same_week_last_year,143.816,108.218
+2025-W30..W39 (esala),Kandy,Style,total,2025,33,same_week_last_year,79.806,86.023
+2025-W30..W39 (esala),Kandy,Style,total,2025,34,same_week_last_year,85.409,77.749
+2025-W30..W39 (esala),Kandy,Style,total,2025,35,same_week_last_year,83.94800000000001,83.293
+2025-W30..W39 (esala),Kandy,Style,total,2025,36,same_week_last_year,84.07000000000001,77.631
+2025-W30..W39 (esala),Kandy,Style,total,2025,37,same_week_last_year,82.83699999999999,84.70400000000001
+2025-W30..W39 (esala),Kandy,Style,total,2025,38,same_week_last_year,76.473,67.538
+2025-W30..W39 (esala),Kandy,Style,total,2025,39,same_week_last_year,78.052,81.158
+2025-W30..W39 (esala),Kandy,Style,total,2025,30,mean13,68.18299999999999,74.75061538461539
+2025-W30..W39 (esala),Kandy,Style,total,2025,31,mean13,86.241,74.75061538461539
+2025-W30..W39 (esala),Kandy,Style,total,2025,32,mean13,143.816,74.75061538461539
+2025-W30..W39 (esala),Kandy,Style,total,2025,33,mean13,79.806,74.75061538461539
+2025-W30..W39 (esala),Kandy,Style,total,2025,34,mean13,85.409,74.75061538461539
+2025-W30..W39 (esala),Kandy,Style,total,2025,35,mean13,83.94800000000001,74.75061538461539
+2025-W30..W39 (esala),Kandy,Style,total,2025,36,mean13,84.07000000000001,74.75061538461539
+2025-W30..W39 (esala),Kandy,Style,total,2025,37,mean13,82.83699999999999,74.75061538461539
+2025-W30..W39 (esala),Kandy,Style,total,2025,38,mean13,76.473,74.75061538461539
+2025-W30..W39 (esala),Kandy,Style,total,2025,39,mean13,78.052,74.75061538461539
+2025-W30..W39 (esala),Kandy,Style,total,2025,30,mean26,68.18299999999999,78.5486923076923
+2025-W30..W39 (esala),Kandy,Style,total,2025,31,mean26,86.241,78.5486923076923
+2025-W30..W39 (esala),Kandy,Style,total,2025,32,mean26,143.816,78.5486923076923
+2025-W30..W39 (esala),Kandy,Style,total,2025,33,mean26,79.806,78.5486923076923
+2025-W30..W39 (esala),Kandy,Style,total,2025,34,mean26,85.409,78.5486923076923
+2025-W30..W39 (esala),Kandy,Style,total,2025,35,mean26,83.94800000000001,78.5486923076923
+2025-W30..W39 (esala),Kandy,Style,total,2025,36,mean26,84.07000000000001,78.5486923076923
+2025-W30..W39 (esala),Kandy,Style,total,2025,37,mean26,82.83699999999999,78.5486923076923
+2025-W30..W39 (esala),Kandy,Style,total,2025,38,mean26,76.473,78.5486923076923
+2025-W30..W39 (esala),Kandy,Style,total,2025,39,mean26,78.052,78.5486923076923
+2025-W30..W39 (esala),Kandy,Style,total,2025,30,ewm_hl8,68.18299999999999,77.68907059629578
+2025-W30..W39 (esala),Kandy,Style,total,2025,31,ewm_hl8,86.241,77.68907059629578
+2025-W30..W39 (esala),Kandy,Style,total,2025,32,ewm_hl8,143.816,77.68907059629578
+2025-W30..W39 (esala),Kandy,Style,total,2025,33,ewm_hl8,79.806,77.68907059629578
+2025-W30..W39 (esala),Kandy,Style,total,2025,34,ewm_hl8,85.409,77.68907059629578
+2025-W30..W39 (esala),Kandy,Style,total,2025,35,ewm_hl8,83.94800000000001,77.68907059629578
+2025-W30..W39 (esala),Kandy,Style,total,2025,36,ewm_hl8,84.07000000000001,77.68907059629578
+2025-W30..W39 (esala),Kandy,Style,total,2025,37,ewm_hl8,82.83699999999999,77.68907059629578
+2025-W30..W39 (esala),Kandy,Style,total,2025,38,ewm_hl8,76.473,77.68907059629578
+2025-W30..W39 (esala),Kandy,Style,total,2025,39,ewm_hl8,78.052,77.68907059629578
+2025-W30..W39 (esala),Kandy,Tech,total,2025,30,glm_cal,12.449,22.330252714338574
+2025-W30..W39 (esala),Kandy,Tech,total,2025,31,glm_cal,25.380000000000003,16.855728090126597
+2025-W30..W39 (esala),Kandy,Tech,total,2025,32,glm_cal,29.216,7.208273183032219
+2025-W30..W39 (esala),Kandy,Tech,total,2025,33,glm_cal,22.979,13.843486722415628
+2025-W30..W39 (esala),Kandy,Tech,total,2025,34,glm_cal,32.496,13.82623457272239
+2025-W30..W39 (esala),Kandy,Tech,total,2025,35,glm_cal,22.906,15.078776875113778
+2025-W30..W39 (esala),Kandy,Tech,total,2025,36,glm_cal,31.331,22.788121693941545
+2025-W30..W39 (esala),Kandy,Tech,total,2025,37,glm_cal,14.948999999999998,22.557532731725754
+2025-W30..W39 (esala),Kandy,Tech,total,2025,38,glm_cal,17.939,22.529420888286214
+2025-W30..W39 (esala),Kandy,Tech,total,2025,39,glm_cal,30.413,25.147300365848476
+2025-W30..W39 (esala),Kandy,Tech,total,2025,30,glm_op,12.449,22.340542375137186
+2025-W30..W39 (esala),Kandy,Tech,total,2025,31,glm_op,25.380000000000003,16.972863081233992
+2025-W30..W39 (esala),Kandy,Tech,total,2025,32,glm_op,29.216,7.261665584484106
+2025-W30..W39 (esala),Kandy,Tech,total,2025,33,glm_op,22.979,13.852057230103048
+2025-W30..W39 (esala),Kandy,Tech,total,2025,34,glm_op,32.496,13.83513521653144
+2025-W30..W39 (esala),Kandy,Tech,total,2025,35,glm_op,22.906,14.9419344708026
+2025-W30..W39 (esala),Kandy,Tech,total,2025,36,glm_op,31.331,23.027921890414746
+2025-W30..W39 (esala),Kandy,Tech,total,2025,37,glm_op,14.948999999999998,22.59113711348581
+2025-W30..W39 (esala),Kandy,Tech,total,2025,38,glm_op,17.939,22.56353922513738
+2025-W30..W39 (esala),Kandy,Tech,total,2025,39,glm_op,30.413,25.08386089927113
+2025-W30..W39 (esala),Kandy,Tech,total,2025,30,last8_mean,12.449,19.00575
+2025-W30..W39 (esala),Kandy,Tech,total,2025,31,last8_mean,25.380000000000003,19.00575
+2025-W30..W39 (esala),Kandy,Tech,total,2025,32,last8_mean,29.216,19.00575
+2025-W30..W39 (esala),Kandy,Tech,total,2025,33,last8_mean,22.979,19.00575
+2025-W30..W39 (esala),Kandy,Tech,total,2025,34,last8_mean,32.496,19.00575
+2025-W30..W39 (esala),Kandy,Tech,total,2025,35,last8_mean,22.906,19.00575
+2025-W30..W39 (esala),Kandy,Tech,total,2025,36,last8_mean,31.331,19.00575
+2025-W30..W39 (esala),Kandy,Tech,total,2025,37,last8_mean,14.948999999999998,19.00575
+2025-W30..W39 (esala),Kandy,Tech,total,2025,38,last8_mean,17.939,19.00575
+2025-W30..W39 (esala),Kandy,Tech,total,2025,39,last8_mean,30.413,19.00575
+2025-W30..W39 (esala),Kandy,Tech,total,2025,30,same_week_last_year,12.449,15.239
+2025-W30..W39 (esala),Kandy,Tech,total,2025,31,same_week_last_year,25.380000000000003,33.648
+2025-W30..W39 (esala),Kandy,Tech,total,2025,32,same_week_last_year,29.216,19.62
+2025-W30..W39 (esala),Kandy,Tech,total,2025,33,same_week_last_year,22.979,8.055
+2025-W30..W39 (esala),Kandy,Tech,total,2025,34,same_week_last_year,32.496,10.359
+2025-W30..W39 (esala),Kandy,Tech,total,2025,35,same_week_last_year,22.906,9.974
+2025-W30..W39 (esala),Kandy,Tech,total,2025,36,same_week_last_year,31.331,11.574
+2025-W30..W39 (esala),Kandy,Tech,total,2025,37,same_week_last_year,14.948999999999998,20.564
+2025-W30..W39 (esala),Kandy,Tech,total,2025,38,same_week_last_year,17.939,27.847
+2025-W30..W39 (esala),Kandy,Tech,total,2025,39,same_week_last_year,30.413,41.152
+2025-W30..W39 (esala),Kandy,Tech,total,2025,30,mean13,12.449,17.57669230769231
+2025-W30..W39 (esala),Kandy,Tech,total,2025,31,mean13,25.380000000000003,17.57669230769231
+2025-W30..W39 (esala),Kandy,Tech,total,2025,32,mean13,29.216,17.57669230769231
+2025-W30..W39 (esala),Kandy,Tech,total,2025,33,mean13,22.979,17.57669230769231
+2025-W30..W39 (esala),Kandy,Tech,total,2025,34,mean13,32.496,17.57669230769231
+2025-W30..W39 (esala),Kandy,Tech,total,2025,35,mean13,22.906,17.57669230769231
+2025-W30..W39 (esala),Kandy,Tech,total,2025,36,mean13,31.331,17.57669230769231
+2025-W30..W39 (esala),Kandy,Tech,total,2025,37,mean13,14.948999999999998,17.57669230769231
+2025-W30..W39 (esala),Kandy,Tech,total,2025,38,mean13,17.939,17.57669230769231
+2025-W30..W39 (esala),Kandy,Tech,total,2025,39,mean13,30.413,17.57669230769231
+2025-W30..W39 (esala),Kandy,Tech,total,2025,30,mean26,12.449,19.579423076923078
+2025-W30..W39 (esala),Kandy,Tech,total,2025,31,mean26,25.380000000000003,19.579423076923078
+2025-W30..W39 (esala),Kandy,Tech,total,2025,32,mean26,29.216,19.579423076923078
+2025-W30..W39 (esala),Kandy,Tech,total,2025,33,mean26,22.979,19.579423076923078
+2025-W30..W39 (esala),Kandy,Tech,total,2025,34,mean26,32.496,19.579423076923078
+2025-W30..W39 (esala),Kandy,Tech,total,2025,35,mean26,22.906,19.579423076923078
+2025-W30..W39 (esala),Kandy,Tech,total,2025,36,mean26,31.331,19.579423076923078
+2025-W30..W39 (esala),Kandy,Tech,total,2025,37,mean26,14.948999999999998,19.579423076923078
+2025-W30..W39 (esala),Kandy,Tech,total,2025,38,mean26,17.939,19.579423076923078
+2025-W30..W39 (esala),Kandy,Tech,total,2025,39,mean26,30.413,19.579423076923078
+2025-W30..W39 (esala),Kandy,Tech,total,2025,30,ewm_hl8,12.449,19.289676082311733
+2025-W30..W39 (esala),Kandy,Tech,total,2025,31,ewm_hl8,25.380000000000003,19.289676082311733
+2025-W30..W39 (esala),Kandy,Tech,total,2025,32,ewm_hl8,29.216,19.289676082311733
+2025-W30..W39 (esala),Kandy,Tech,total,2025,33,ewm_hl8,22.979,19.289676082311733
+2025-W30..W39 (esala),Kandy,Tech,total,2025,34,ewm_hl8,32.496,19.289676082311733
+2025-W30..W39 (esala),Kandy,Tech,total,2025,35,ewm_hl8,22.906,19.289676082311733
+2025-W30..W39 (esala),Kandy,Tech,total,2025,36,ewm_hl8,31.331,19.289676082311733
+2025-W30..W39 (esala),Kandy,Tech,total,2025,37,ewm_hl8,14.948999999999998,19.289676082311733
+2025-W30..W39 (esala),Kandy,Tech,total,2025,38,ewm_hl8,17.939,19.289676082311733
+2025-W30..W39 (esala),Kandy,Tech,total,2025,39,ewm_hl8,30.413,19.289676082311733
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,30,glm_cal,1007.589,1003.9816246563875
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,31,glm_cal,1067.456,1048.0964491392433
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,32,glm_cal,1123.94,1071.723403064295
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,33,glm_cal,942.101,945.170171412025
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,34,glm_cal,920.649,946.1435578941752
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,35,glm_cal,1003.767,1037.3671377982323
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,36,glm_cal,997.301,968.0262179646152
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,37,glm_cal,943.533,947.7698626344734
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,38,glm_cal,987.482,948.7459264168289
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,39,glm_cal,979.899,1023.2105821325829
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,30,glm_op,1007.589,1004.8046310582889
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,31,glm_op,1067.456,1048.5542430492544
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,32,glm_op,1123.94,1071.4536592970592
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,33,glm_op,942.101,943.2467103876621
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,34,glm_op,920.649,944.2066505458272
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,35,glm_op,1003.767,1026.303776176219
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,36,glm_op,997.301,979.8082037987128
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,37,glm_op,943.533,946.7642428836023
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,38,glm_op,987.482,947.7277628270595
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,39,glm_op,979.899,1011.2226180815846
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,30,last8_mean,1007.589,976.7331250000001
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,31,last8_mean,1067.456,976.7331250000001
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,32,last8_mean,1123.94,976.7331250000001
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,33,last8_mean,942.101,976.7331250000001
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,34,last8_mean,920.649,976.7331250000001
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,35,last8_mean,1003.767,976.7331250000001
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,36,last8_mean,997.301,976.7331250000001
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,37,last8_mean,943.533,976.7331250000001
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,38,last8_mean,987.482,976.7331250000001
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,39,last8_mean,979.899,976.7331250000001
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,30,same_week_last_year,1007.589,994.571
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,31,same_week_last_year,1067.456,947.851
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,32,same_week_last_year,1123.94,893.033
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,33,same_week_last_year,942.101,977.677
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,34,same_week_last_year,920.649,976.756
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,35,same_week_last_year,1003.767,940.952
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,36,same_week_last_year,997.301,909.047
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,37,same_week_last_year,943.533,905.677
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,38,same_week_last_year,987.482,896.023
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,39,same_week_last_year,979.899,979.388
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,30,mean13,1007.589,969.7846153846156
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,31,mean13,1067.456,969.7846153846156
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,32,mean13,1123.94,969.7846153846156
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,33,mean13,942.101,969.7846153846156
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,34,mean13,920.649,969.7846153846156
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,35,mean13,1003.767,969.7846153846156
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,36,mean13,997.301,969.7846153846156
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,37,mean13,943.533,969.7846153846156
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,38,mean13,987.482,969.7846153846156
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,39,mean13,979.899,969.7846153846156
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,30,mean26,1007.589,959.627923076923
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,31,mean26,1067.456,959.627923076923
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,32,mean26,1123.94,959.627923076923
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,33,mean26,942.101,959.627923076923
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,34,mean26,920.649,959.627923076923
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,35,mean26,1003.767,959.627923076923
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,36,mean26,997.301,959.627923076923
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,37,mean26,943.533,959.627923076923
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,38,mean26,987.482,959.627923076923
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,39,mean26,979.899,959.627923076923
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,30,ewm_hl8,1007.589,964.3084643904466
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,31,ewm_hl8,1067.456,964.3084643904466
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,32,ewm_hl8,1123.94,964.3084643904466
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,33,ewm_hl8,942.101,964.3084643904466
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,34,ewm_hl8,920.649,964.3084643904466
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,35,ewm_hl8,1003.767,964.3084643904466
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,36,ewm_hl8,997.301,964.3084643904466
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,37,ewm_hl8,943.533,964.3084643904466
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,38,ewm_hl8,987.482,964.3084643904466
+2025-W30..W39 (esala),Peliyagoda,Fresh,total,2025,39,ewm_hl8,979.899,964.3084643904466
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,30,glm_cal,379.026,377.97993028490015
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,31,glm_cal,396.443,390.1988435193927
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,32,glm_cal,416.667,396.5993544843802
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,33,glm_cal,347.471,349.30100338278396
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,34,glm_cal,340.632,349.65224429422585
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,35,glm_cal,371.182,384.7487866710958
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,36,glm_cal,368.473,351.15299861499307
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,37,glm_cal,349.977,343.83568149690063
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,38,glm_cal,362.241,344.18142673377554
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,39,glm_cal,356.606,371.19160532155615
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,30,glm_op,379.026,378.6803334199339
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,31,glm_op,396.443,389.52044275157095
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,32,glm_op,416.667,396.2984345132278
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,33,glm_op,347.471,348.4260297669134
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,34,glm_op,340.632,348.7706990969217
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,35,glm_op,371.182,380.47772720696094
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,36,glm_op,368.473,355.17964307205284
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,37,glm_op,349.977,343.3060208273076
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,38,glm_op,362.241,343.6456253518763
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,39,glm_op,356.606,366.086094710934
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,30,last8_mean,379.026,371.314
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,31,last8_mean,396.443,371.314
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,32,last8_mean,416.667,371.314
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,33,last8_mean,347.471,371.314
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,34,last8_mean,340.632,371.314
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,35,last8_mean,371.182,371.314
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,36,last8_mean,368.473,371.314
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,37,last8_mean,349.977,371.314
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,38,last8_mean,362.241,371.314
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,39,last8_mean,356.606,371.314
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,30,same_week_last_year,379.026,371.083
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,31,same_week_last_year,396.443,354.366
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,32,same_week_last_year,416.667,330.349
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,33,same_week_last_year,347.471,361.09
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,34,same_week_last_year,340.632,361.337
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,35,same_week_last_year,371.182,347.961
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,36,same_week_last_year,368.473,332.171
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,37,same_week_last_year,349.977,330.386
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,38,same_week_last_year,362.241,322.323
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,39,same_week_last_year,356.606,355.625
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,30,mean13,379.026,368.2366153846154
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,31,mean13,396.443,368.2366153846154
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,32,mean13,416.667,368.2366153846154
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,33,mean13,347.471,368.2366153846154
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,34,mean13,340.632,368.2366153846154
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,35,mean13,371.182,368.2366153846154
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,36,mean13,368.473,368.2366153846154
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,37,mean13,349.977,368.2366153846154
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,38,mean13,362.241,368.2366153846154
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,39,mean13,356.606,368.2366153846154
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,30,mean26,379.026,359.73442307692306
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,31,mean26,396.443,359.73442307692306
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,32,mean26,416.667,359.73442307692306
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,33,mean26,347.471,359.73442307692306
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,34,mean26,340.632,359.73442307692306
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,35,mean26,371.182,359.73442307692306
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,36,mean26,368.473,359.73442307692306
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,37,mean26,349.977,359.73442307692306
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,38,mean26,362.241,359.73442307692306
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,39,mean26,356.606,359.73442307692306
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,30,ewm_hl8,379.026,362.53135078149035
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,31,ewm_hl8,396.443,362.53135078149035
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,32,ewm_hl8,416.667,362.53135078149035
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,33,ewm_hl8,347.471,362.53135078149035
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,34,ewm_hl8,340.632,362.53135078149035
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,35,ewm_hl8,371.182,362.53135078149035
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,36,ewm_hl8,368.473,362.53135078149035
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,37,ewm_hl8,349.977,362.53135078149035
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,38,ewm_hl8,362.241,362.53135078149035
+2025-W30..W39 (esala),Peliyagoda,Fresh,chilled,2025,39,ewm_hl8,356.606,362.53135078149035
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,30,glm_cal,138.077,145.4285857712414
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,31,glm_cal,146.621,147.43691226212138
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,32,glm_cal,221.395,220.72942788202994
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,33,glm_cal,143.733,133.0997401095065
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,34,glm_cal,127.938,133.12910894629545
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,35,glm_cal,136.554,137.14771084503172
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,36,glm_cal,142.03,130.55426869626632
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,37,glm_cal,125.841,129.2496930256962
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,38,glm_cal,137.315,129.27821233862923
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,39,glm_cal,136.364,138.4312238380495
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,30,glm_op,138.077,145.60625755740946
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,31,glm_op,146.621,148.4207715626778
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,32,glm_op,221.395,220.10242137921796
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,33,glm_op,143.733,133.39475501357524
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,34,glm_op,127.938,133.42323993857474
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,35,glm_op,136.554,137.71009670463147
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,36,glm_op,142.03,130.32102925544442
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,37,glm_op,125.841,129.33129137487217
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,38,glm_op,137.315,129.35890859366407
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,39,glm_op,136.364,138.05584884585528
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,30,last8_mean,138.077,137.58125
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,31,last8_mean,146.621,137.58125
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,32,last8_mean,221.395,137.58125
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,33,last8_mean,143.733,137.58125
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,34,last8_mean,127.938,137.58125
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,35,last8_mean,136.554,137.58125
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,36,last8_mean,142.03,137.58125
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,37,last8_mean,125.841,137.58125
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,38,last8_mean,137.315,137.58125
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,39,last8_mean,136.364,137.58125
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,30,same_week_last_year,138.077,146.143
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,31,same_week_last_year,146.621,142.981
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,32,same_week_last_year,221.395,215.18
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,33,same_week_last_year,143.733,133.85
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,34,same_week_last_year,127.938,134.9
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,35,same_week_last_year,136.554,121.987
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,36,same_week_last_year,142.03,139.022
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,37,same_week_last_year,125.841,132.196
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,38,same_week_last_year,137.315,116.075
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,39,same_week_last_year,136.364,136.677
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,30,mean13,138.077,134.00623076923077
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,31,mean13,146.621,134.00623076923077
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,32,mean13,221.395,134.00623076923077
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,33,mean13,143.733,134.00623076923077
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,34,mean13,127.938,134.00623076923077
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,35,mean13,136.554,134.00623076923077
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,36,mean13,142.03,134.00623076923077
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,37,mean13,125.841,134.00623076923077
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,38,mean13,137.315,134.00623076923077
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,39,mean13,136.364,134.00623076923077
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,30,mean26,138.077,139.08442307692306
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,31,mean26,146.621,139.08442307692306
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,32,mean26,221.395,139.08442307692306
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,33,mean26,143.733,139.08442307692306
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,34,mean26,127.938,139.08442307692306
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,35,mean26,136.554,139.08442307692306
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,36,mean26,142.03,139.08442307692306
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,37,mean26,125.841,139.08442307692306
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,38,mean26,137.315,139.08442307692306
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,39,mean26,136.364,139.08442307692306
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,30,ewm_hl8,138.077,138.3894373307144
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,31,ewm_hl8,146.621,138.3894373307144
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,32,ewm_hl8,221.395,138.3894373307144
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,33,ewm_hl8,143.733,138.3894373307144
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,34,ewm_hl8,127.938,138.3894373307144
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,35,ewm_hl8,136.554,138.3894373307144
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,36,ewm_hl8,142.03,138.3894373307144
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,37,ewm_hl8,125.841,138.3894373307144
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,38,ewm_hl8,137.315,138.3894373307144
+2025-W30..W39 (esala),Peliyagoda,Style,total,2025,39,ewm_hl8,136.364,138.3894373307144
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,30,glm_cal,37.789,33.83321488847668
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,31,glm_cal,44.082,25.697618147713648
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,32,glm_cal,40.048,53.36039432768602
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,33,glm_cal,24.973000000000003,31.39753735952412
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,34,glm_cal,20.649,31.399444523241428
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,35,glm_cal,40.229,37.67495374308098
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,36,glm_cal,16.038,24.646778272045417
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,37,glm_cal,23.003,24.55587598610245
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,38,glm_cal,38.756,24.55736757046434
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,39,glm_cal,14.959,28.499327261241355
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,30,glm_op,37.789,33.893606307647374
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,31,glm_op,44.082,25.42685069652285
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,32,glm_op,40.048,53.63807645548845
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,33,glm_op,24.973000000000003,31.361160730731946
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,34,glm_op,20.649,31.362425352060736
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,35,glm_op,40.229,37.61139409471284
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,36,glm_op,16.038,25.20904985977542
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,37,glm_op,23.003,24.555583802484623
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,38,glm_op,38.756,24.556573992716558
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,39,glm_op,14.959,28.23434275462319
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,30,last8_mean,37.789,28.90325
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,31,last8_mean,44.082,28.90325
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,32,last8_mean,40.048,28.90325
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,33,last8_mean,24.973000000000003,28.90325
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,34,last8_mean,20.649,28.90325
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,35,last8_mean,40.229,28.90325
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,36,last8_mean,16.038,28.90325
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,37,last8_mean,23.003,28.90325
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,38,last8_mean,38.756,28.90325
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,39,last8_mean,14.959,28.90325
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,30,same_week_last_year,37.789,29.618
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,31,same_week_last_year,44.082,28.061
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,32,same_week_last_year,40.048,22.561
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,33,same_week_last_year,24.973000000000003,30.964
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,34,same_week_last_year,20.649,33.948
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,35,same_week_last_year,40.229,39.061
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,36,same_week_last_year,16.038,20.097
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,37,same_week_last_year,23.003,29.756
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,38,same_week_last_year,38.756,26.808
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,39,same_week_last_year,14.959,22.389000000000003
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,30,mean13,37.789,28.791615384615383
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,31,mean13,44.082,28.791615384615383
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,32,mean13,40.048,28.791615384615383
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,33,mean13,24.973000000000003,28.791615384615383
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,34,mean13,20.649,28.791615384615383
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,35,mean13,40.229,28.791615384615383
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,36,mean13,16.038,28.791615384615383
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,37,mean13,23.003,28.791615384615383
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,38,mean13,38.756,28.791615384615383
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,39,mean13,14.959,28.791615384615383
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,30,mean26,37.789,27.11169230769231
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,31,mean26,44.082,27.11169230769231
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,32,mean26,40.048,27.11169230769231
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,33,mean26,24.973000000000003,27.11169230769231
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,34,mean26,20.649,27.11169230769231
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,35,mean26,40.229,27.11169230769231
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,36,mean26,16.038,27.11169230769231
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,37,mean26,23.003,27.11169230769231
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,38,mean26,38.756,27.11169230769231
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,39,mean26,14.959,27.11169230769231
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,30,ewm_hl8,37.789,27.90777509965297
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,31,ewm_hl8,44.082,27.90777509965297
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,32,ewm_hl8,40.048,27.90777509965297
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,33,ewm_hl8,24.973000000000003,27.90777509965297
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,34,ewm_hl8,20.649,27.90777509965297
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,35,ewm_hl8,40.229,27.90777509965297
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,36,ewm_hl8,16.038,27.90777509965297
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,37,ewm_hl8,23.003,27.90777509965297
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,38,ewm_hl8,38.756,27.90777509965297
+2025-W30..W39 (esala),Peliyagoda,Tech,total,2025,39,ewm_hl8,14.959,27.90777509965297
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,40,glm_cal,515.259,517.7496842291546
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,41,glm_cal,470.876,482.81643602479403
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,42,glm_cal,609.147,594.7137838957094
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,43,glm_cal,530.712,528.9547205788602
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,44,glm_cal,515.261,518.5439233721202
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,45,glm_cal,505.273,484.031756549874
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,46,glm_cal,474.18,484.58694170787123
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,47,glm_cal,480.723,485.1427636640858
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,48,glm_cal,532.65,532.4278996049361
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,49,glm_cal,507.206,506.97999676053314
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,40,glm_op,515.259,514.1408639188797
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,41,glm_op,470.876,484.24596882073934
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,42,glm_op,609.147,586.6005504147929
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,43,glm_op,530.712,529.7841679127044
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,44,glm_op,515.261,526.7512657380515
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,45,glm_op,505.273,492.6606019012166
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,46,glm_op,474.18,486.63921396940805
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,47,glm_op,480.723,487.19496965106487
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,48,glm_op,532.65,529.7066552194849
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,49,glm_op,507.206,513.1821437129161
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,40,last8_mean,515.259,519.02325
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,41,last8_mean,470.876,519.02325
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,42,last8_mean,609.147,519.02325
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,43,last8_mean,530.712,519.02325
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,44,last8_mean,515.261,519.02325
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,45,last8_mean,505.273,519.02325
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,46,last8_mean,474.18,519.02325
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,47,last8_mean,480.723,519.02325
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,48,last8_mean,532.65,519.02325
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,49,last8_mean,507.206,519.02325
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,40,same_week_last_year,515.259,475.173
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,41,same_week_last_year,470.876,463.257
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,42,same_week_last_year,609.147,451.58
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,43,same_week_last_year,530.712,528.184
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,44,same_week_last_year,515.261,612.799
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,45,same_week_last_year,505.273,471.542
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,46,same_week_last_year,474.18,445.456
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,47,same_week_last_year,480.723,457.951
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,48,same_week_last_year,532.65,487.285
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,49,same_week_last_year,507.206,469.733
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,40,mean13,515.259,516.8483076923077
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,41,mean13,470.876,516.8483076923077
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,42,mean13,609.147,516.8483076923077
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,43,mean13,530.712,516.8483076923077
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,44,mean13,515.261,516.8483076923077
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,45,mean13,505.273,516.8483076923077
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,46,mean13,474.18,516.8483076923077
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,47,mean13,480.723,516.8483076923077
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,48,mean13,532.65,516.8483076923077
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,49,mean13,507.206,516.8483076923077
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,40,mean26,515.259,513.9219615384616
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,41,mean26,470.876,513.9219615384616
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,42,mean26,609.147,513.9219615384616
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,43,mean26,530.712,513.9219615384616
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,44,mean26,515.261,513.9219615384616
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,45,mean26,505.273,513.9219615384616
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,46,mean26,474.18,513.9219615384616
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,47,mean26,480.723,513.9219615384616
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,48,mean26,532.65,513.9219615384616
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,49,mean26,507.206,513.9219615384616
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,40,ewm_hl8,515.259,512.3392354775816
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,41,ewm_hl8,470.876,512.3392354775816
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,42,ewm_hl8,609.147,512.3392354775816
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,43,ewm_hl8,530.712,512.3392354775816
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,44,ewm_hl8,515.261,512.3392354775816
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,45,ewm_hl8,505.273,512.3392354775816
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,46,ewm_hl8,474.18,512.3392354775816
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,47,ewm_hl8,480.723,512.3392354775816
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,48,ewm_hl8,532.65,512.3392354775816
+2025-W40..W49 (deepavali),Kandy,Fresh,total,2025,49,ewm_hl8,507.206,512.3392354775816
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,40,glm_cal,183.638,185.2908523180294
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,41,glm_cal,167.716,172.15884311570625
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,42,glm_cal,217.25,211.3895112127253
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,43,glm_cal,191.273,188.5438963705386
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,44,glm_cal,184.859,183.88507514022479
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,45,glm_cal,177.902,170.12297646335614
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,46,glm_cal,169.58100000000002,170.31335864511198
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,47,glm_cal,167.352,170.50395388083547
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,48,glm_cal,189.331,187.30961015882713
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,49,glm_cal,176.407,176.71045812748537
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,40,glm_op,183.638,184.0432882318803
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,41,glm_op,167.716,172.70102494926414
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,42,glm_op,217.25,208.8690479664964
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,43,glm_op,191.273,188.9217025235106
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,44,glm_op,184.859,186.68729014566586
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,45,glm_op,177.902,172.95922568576248
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,46,glm_op,169.58100000000002,171.11317889773701
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,47,glm_op,167.352,171.30390677991682
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,48,glm_op,189.331,186.4231891522505
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,49,glm_op,176.407,178.74679439148719
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,40,last8_mean,183.638,190.4255
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,41,last8_mean,167.716,190.4255
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,42,last8_mean,217.25,190.4255
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,43,last8_mean,191.273,190.4255
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,44,last8_mean,184.859,190.4255
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,45,last8_mean,177.902,190.4255
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,46,last8_mean,169.58100000000002,190.4255
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,47,last8_mean,167.352,190.4255
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,48,last8_mean,189.331,190.4255
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,49,last8_mean,176.407,190.4255
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,40,same_week_last_year,183.638,167.383
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,41,same_week_last_year,167.716,168.321
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,42,same_week_last_year,217.25,160.622
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,43,same_week_last_year,191.273,187.333
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,44,same_week_last_year,184.859,216.812
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,45,same_week_last_year,177.902,166.292
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,46,same_week_last_year,169.58100000000002,155.951
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,47,same_week_last_year,167.352,163.445
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,48,same_week_last_year,189.331,171.30200000000002
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,49,same_week_last_year,176.407,163.693
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,40,mean13,183.638,190.41315384615382
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,41,mean13,167.716,190.41315384615382
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,42,mean13,217.25,190.41315384615382
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,43,mean13,191.273,190.41315384615382
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,44,mean13,184.859,190.41315384615382
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,45,mean13,177.902,190.41315384615382
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,46,mean13,169.58100000000002,190.41315384615382
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,47,mean13,167.352,190.41315384615382
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,48,mean13,189.331,190.41315384615382
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,49,mean13,176.407,190.41315384615382
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,40,mean26,183.638,190.83734615384617
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,41,mean26,167.716,190.83734615384617
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,42,mean26,217.25,190.83734615384617
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,43,mean26,191.273,190.83734615384617
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,44,mean26,184.859,190.83734615384617
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,45,mean26,177.902,190.83734615384617
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,46,mean26,169.58100000000002,190.83734615384617
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,47,mean26,167.352,190.83734615384617
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,48,mean26,189.331,190.83734615384617
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,49,mean26,176.407,190.83734615384617
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,40,ewm_hl8,183.638,188.7011907472019
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,41,ewm_hl8,167.716,188.7011907472019
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,42,ewm_hl8,217.25,188.7011907472019
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,43,ewm_hl8,191.273,188.7011907472019
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,44,ewm_hl8,184.859,188.7011907472019
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,45,ewm_hl8,177.902,188.7011907472019
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,46,ewm_hl8,169.58100000000002,188.7011907472019
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,47,ewm_hl8,167.352,188.7011907472019
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,48,ewm_hl8,189.331,188.7011907472019
+2025-W40..W49 (deepavali),Kandy,Fresh,chilled,2025,49,ewm_hl8,176.407,188.7011907472019
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,40,glm_cal,75.611,81.1413847350764
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,41,glm_cal,67.5,78.1082126100585
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,42,glm_cal,99.287,108.29390757751042
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,43,glm_cal,103.544,98.78750468966075
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,44,glm_cal,85.298,79.88040560137485
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,45,glm_cal,83.609,75.9391417859397
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,46,glm_cal,75.426,75.99213312014014
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,47,glm_cal,68.625,76.04516143239216
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,48,glm_cal,74.275,79.95236965906926
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,49,glm_cal,86.857,82.04997153803583
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,40,glm_op,75.611,79.97652305439325
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,41,glm_op,67.5,78.39631417549556
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,42,glm_op,99.287,106.81584359195512
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,43,glm_op,103.544,98.97415517863222
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,44,glm_op,85.298,80.69412791564095
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,45,glm_op,83.609,76.85340987453544
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,46,glm_op,75.426,76.33916471041462
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,47,glm_op,68.625,76.39353897001595
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,48,glm_op,74.275,78.94618199131072
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,49,glm_op,86.857,82.00813995467624
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,40,last8_mean,75.611,89.30137500000001
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,41,last8_mean,67.5,89.30137500000001
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,42,last8_mean,99.287,89.30137500000001
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,43,last8_mean,103.544,89.30137500000001
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,44,last8_mean,85.298,89.30137500000001
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,45,last8_mean,83.609,89.30137500000001
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,46,last8_mean,75.426,89.30137500000001
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,47,last8_mean,68.625,89.30137500000001
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,48,last8_mean,74.275,89.30137500000001
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,49,last8_mean,86.857,89.30137500000001
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,40,same_week_last_year,75.611,81.768
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,41,same_week_last_year,67.5,78.173
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,42,same_week_last_year,99.287,74.268
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,43,same_week_last_year,103.544,81.679
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,44,same_week_last_year,85.298,127.024
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,45,same_week_last_year,83.609,71.944
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,46,same_week_last_year,75.426,67.964
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,47,same_week_last_year,68.625,85.065
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,48,same_week_last_year,74.275,70.721
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,49,same_week_last_year,86.857,81.635
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,40,mean13,75.611,84.09946153846153
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,41,mean13,67.5,84.09946153846153
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,42,mean13,99.287,84.09946153846153
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,43,mean13,103.544,84.09946153846153
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,44,mean13,85.298,84.09946153846153
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,45,mean13,83.609,84.09946153846153
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,46,mean13,75.426,84.09946153846153
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,47,mean13,68.625,84.09946153846153
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,48,mean13,74.275,84.09946153846153
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,49,mean13,86.857,84.09946153846153
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,40,mean26,75.611,80.6201923076923
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,41,mean26,67.5,80.6201923076923
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,42,mean26,99.287,80.6201923076923
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,43,mean26,103.544,80.6201923076923
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,44,mean26,85.298,80.6201923076923
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,45,mean26,83.609,80.6201923076923
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,46,mean26,75.426,80.6201923076923
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,47,mean26,68.625,80.6201923076923
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,48,mean26,74.275,80.6201923076923
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,49,mean26,86.857,80.6201923076923
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,40,ewm_hl8,75.611,82.26890411468838
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,41,ewm_hl8,67.5,82.26890411468838
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,42,ewm_hl8,99.287,82.26890411468838
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,43,ewm_hl8,103.544,82.26890411468838
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,44,ewm_hl8,85.298,82.26890411468838
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,45,ewm_hl8,83.609,82.26890411468838
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,46,ewm_hl8,75.426,82.26890411468838
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,47,ewm_hl8,68.625,82.26890411468838
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,48,ewm_hl8,74.275,82.26890411468838
+2025-W40..W49 (deepavali),Kandy,Style,total,2025,49,ewm_hl8,86.857,82.26890411468838
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,40,glm_cal,32.41,32.85839269607954
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,41,glm_cal,19.755000000000003,30.281245035400303
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,42,glm_cal,14.68,32.18216004317933
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,43,glm_cal,14.385,29.79632569732805
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,44,glm_cal,23.381,31.524542154243374
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,45,glm_cal,20.288,21.13943420297308
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,46,glm_cal,15.143,21.142980371571984
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,47,glm_cal,19.228,21.146527135045453
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,48,glm_cal,39.003,23.74465769839281
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,49,glm_cal,11.042,18.995749020269734
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,40,glm_op,32.41,32.80159194427212
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,41,glm_op,19.755000000000003,30.410543151014117
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,42,glm_op,14.68,32.124116093854205
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,43,glm_op,14.385,29.942416510765145
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,44,glm_op,23.381,31.864801149610972
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,45,glm_op,20.288,21.256391874878393
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,46,glm_op,15.143,21.22497465867456
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,47,glm_op,19.228,21.22893899906499
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,48,glm_op,39.003,23.696888445394194
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,49,glm_op,11.042,19.190845465181273
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,40,last8_mean,32.41,25.278625
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,41,last8_mean,19.755000000000003,25.278625
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,42,last8_mean,14.68,25.278625
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,43,last8_mean,14.385,25.278625
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,44,last8_mean,23.381,25.278625
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,45,last8_mean,20.288,25.278625
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,46,last8_mean,15.143,25.278625
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,47,last8_mean,19.228,25.278625
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,48,last8_mean,39.003,25.278625
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,49,last8_mean,11.042,25.278625
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,40,same_week_last_year,32.41,24.209
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,41,same_week_last_year,19.755000000000003,33.548
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,42,same_week_last_year,14.68,32.837
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,43,same_week_last_year,14.385,38.684
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,44,same_week_last_year,23.381,15.678
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,45,same_week_last_year,20.288,22.901
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,46,same_week_last_year,15.143,22.632
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,47,same_week_last_year,19.228,14.145
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,48,same_week_last_year,39.003,29.131
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,49,same_week_last_year,11.042,15.065
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,40,mean13,32.41,24.098461538461542
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,41,mean13,19.755000000000003,24.098461538461542
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,42,mean13,14.68,24.098461538461542
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,43,mean13,14.385,24.098461538461542
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,44,mean13,23.381,24.098461538461542
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,45,mean13,20.288,24.098461538461542
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,46,mean13,15.143,24.098461538461542
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,47,mean13,19.228,24.098461538461542
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,48,mean13,39.003,24.098461538461542
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,49,mean13,11.042,24.098461538461542
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,40,mean26,32.41,21.20834615384615
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,41,mean26,19.755000000000003,21.20834615384615
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,42,mean26,14.68,21.20834615384615
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,43,mean26,14.385,21.20834615384615
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,44,mean26,23.381,21.20834615384615
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,45,mean26,20.288,21.20834615384615
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,46,mean26,15.143,21.20834615384615
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,47,mean26,19.228,21.20834615384615
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,48,mean26,39.003,21.20834615384615
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,49,mean26,11.042,21.20834615384615
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,40,ewm_hl8,32.41,22.125465572436294
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,41,ewm_hl8,19.755000000000003,22.125465572436294
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,42,ewm_hl8,14.68,22.125465572436294
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,43,ewm_hl8,14.385,22.125465572436294
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,44,ewm_hl8,23.381,22.125465572436294
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,45,ewm_hl8,20.288,22.125465572436294
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,46,ewm_hl8,15.143,22.125465572436294
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,47,ewm_hl8,19.228,22.125465572436294
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,48,ewm_hl8,39.003,22.125465572436294
+2025-W40..W49 (deepavali),Kandy,Tech,total,2025,49,ewm_hl8,11.042,22.125465572436294
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,40,glm_cal,994.31,988.6200826868193
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,41,glm_cal,925.154,920.2977887966931
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,42,glm_cal,1145.737,1134.7815786579345
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,43,glm_cal,1007.491,998.3250232189231
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,44,glm_cal,1005.19,981.2894623230288
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,45,glm_cal,931.77,908.3507597615892
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,46,glm_cal,929.883,909.2976443431685
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,47,glm_cal,888.489,910.2455159778231
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,48,glm_cal,1028.913,997.7228113161952
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,49,glm_cal,935.664,952.6034922743022
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,40,glm_op,994.31,981.1966105785986
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,41,glm_op,925.154,922.7266438722245
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,42,glm_op,1145.737,1119.9295633011513
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,43,glm_op,1007.491,999.7746573236622
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,44,glm_op,1005.19,997.5207963944678
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,45,glm_op,931.77,923.3175400318382
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,46,glm_op,929.883,912.8960369216827
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,47,glm_op,888.489,913.8437721493523
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,48,glm_op,1028.913,992.2223575283326
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,49,glm_op,935.664,964.6240444195612
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,40,last8_mean,994.31,987.3340000000001
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,41,last8_mean,925.154,987.3340000000001
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,42,last8_mean,1145.737,987.3340000000001
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,43,last8_mean,1007.491,987.3340000000001
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,44,last8_mean,1005.19,987.3340000000001
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,45,last8_mean,931.77,987.3340000000001
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,46,last8_mean,929.883,987.3340000000001
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,47,last8_mean,888.489,987.3340000000001
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,48,last8_mean,1028.913,987.3340000000001
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,49,last8_mean,935.664,987.3340000000001
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,40,same_week_last_year,994.31,890.943
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,41,same_week_last_year,925.154,882.054
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,42,same_week_last_year,1145.737,873.479
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,43,same_week_last_year,1007.491,1025.033
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,44,same_week_last_year,1005.19,1128.62
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,45,same_week_last_year,931.77,862.586
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,46,same_week_last_year,929.883,847.4449999999999
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,47,same_week_last_year,888.489,854.111
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,48,same_week_last_year,1028.913,967.478
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,49,same_week_last_year,935.664,885.5319999999999
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,40,mean13,994.31,991.844923076923
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,41,mean13,925.154,991.844923076923
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,42,mean13,1145.737,991.844923076923
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,43,mean13,1007.491,991.844923076923
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,44,mean13,1005.19,991.844923076923
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,45,mean13,931.77,991.844923076923
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,46,mean13,929.883,991.844923076923
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,47,mean13,888.489,991.844923076923
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,48,mean13,1028.913,991.844923076923
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,49,mean13,935.664,991.844923076923
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,40,mean26,994.31,983.5082307692307
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,41,mean26,925.154,983.5082307692307
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,42,mean26,1145.737,983.5082307692307
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,43,mean26,1007.491,983.5082307692307
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,44,mean26,1005.19,983.5082307692307
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,45,mean26,931.77,983.5082307692307
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,46,mean26,929.883,983.5082307692307
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,47,mean26,888.489,983.5082307692307
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,48,mean26,1028.913,983.5082307692307
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,49,mean26,935.664,983.5082307692307
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,40,ewm_hl8,994.31,980.0550963612975
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,41,ewm_hl8,925.154,980.0550963612975
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,42,ewm_hl8,1145.737,980.0550963612975
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,43,ewm_hl8,1007.491,980.0550963612975
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,44,ewm_hl8,1005.19,980.0550963612975
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,45,ewm_hl8,931.77,980.0550963612975
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,46,ewm_hl8,929.883,980.0550963612975
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,47,ewm_hl8,888.489,980.0550963612975
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,48,ewm_hl8,1028.913,980.0550963612975
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,total,2025,49,ewm_hl8,935.664,980.0550963612975
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,40,glm_cal,355.831,359.4375838646672
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,41,glm_cal,339.706,331.3896285819826
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,42,glm_cal,409.769,400.89992385954986
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,43,glm_cal,365.248,361.945070232887
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,44,glm_cal,356.784,352.28003114729904
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,45,glm_cal,338.238,325.43476716476687
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,46,glm_cal,337.53700000000003,325.77408285490503
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,47,glm_cal,318.034,326.1137523337257
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,48,glm_cal,370.116,359.1231991998506
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,49,glm_cal,332.135,343.4858417724862
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,40,glm_op,355.831,356.2683173667613
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,41,glm_op,339.706,332.16347763708853
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,42,glm_op,409.769,395.65243169878704
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,43,glm_op,365.248,362.51142546578876
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,44,glm_op,356.784,358.2570672067676
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,45,glm_op,338.238,330.5295130115661
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,46,glm_op,337.53700000000003,327.12110695313316
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,47,glm_op,318.034,327.4603846006385
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,48,glm_op,370.116,356.78450111040996
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,49,glm_op,332.135,347.4896687869968
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,40,last8_mean,355.831,364.156125
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,41,last8_mean,339.706,364.156125
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,42,last8_mean,409.769,364.156125
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,43,last8_mean,365.248,364.156125
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,44,last8_mean,356.784,364.156125
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,45,last8_mean,338.238,364.156125
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,46,last8_mean,337.53700000000003,364.156125
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,47,last8_mean,318.034,364.156125
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,48,last8_mean,370.116,364.156125
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,49,last8_mean,332.135,364.156125
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,40,same_week_last_year,355.831,323.995
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,41,same_week_last_year,339.706,316.136
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,42,same_week_last_year,409.769,313.29200000000003
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,43,same_week_last_year,365.248,362.65
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,44,same_week_last_year,356.784,407.382
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,45,same_week_last_year,338.238,311.494
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,46,same_week_last_year,337.53700000000003,301.939
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,47,same_week_last_year,318.034,305.11
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,48,same_week_last_year,370.116,348.15
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,49,same_week_last_year,332.135,322.649
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,40,mean13,355.831,368.8231538461538
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,41,mean13,339.706,368.8231538461538
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,42,mean13,409.769,368.8231538461538
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,43,mean13,365.248,368.8231538461538
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,44,mean13,356.784,368.8231538461538
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,45,mean13,338.238,368.8231538461538
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,46,mean13,337.53700000000003,368.8231538461538
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,47,mean13,318.034,368.8231538461538
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,48,mean13,370.116,368.8231538461538
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,49,mean13,332.135,368.8231538461538
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,40,mean26,355.831,369.0009230769231
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,41,mean26,339.706,369.0009230769231
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,42,mean26,409.769,369.0009230769231
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,43,mean26,365.248,369.0009230769231
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,44,mean26,356.784,369.0009230769231
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,45,mean26,338.238,369.0009230769231
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,46,mean26,337.53700000000003,369.0009230769231
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,47,mean26,318.034,369.0009230769231
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,48,mean26,370.116,369.0009230769231
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,49,mean26,332.135,369.0009230769231
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,40,ewm_hl8,355.831,364.5930390472681
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,41,ewm_hl8,339.706,364.5930390472681
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,42,ewm_hl8,409.769,364.5930390472681
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,43,ewm_hl8,365.248,364.5930390472681
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,44,ewm_hl8,356.784,364.5930390472681
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,45,ewm_hl8,338.238,364.5930390472681
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,46,ewm_hl8,337.53700000000003,364.5930390472681
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,47,ewm_hl8,318.034,364.5930390472681
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,48,ewm_hl8,370.116,364.5930390472681
+2025-W40..W49 (deepavali),Peliyagoda,Fresh,chilled,2025,49,ewm_hl8,332.135,364.5930390472681
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,40,glm_cal,132.78300000000002,135.3246646383373
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,41,glm_cal,126.422,128.50789733870087
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,42,glm_cal,199.394,178.796139024596
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,43,glm_cal,149.19400000000002,138.20498198826198
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,44,glm_cal,139.88,134.352462852445
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,45,glm_cal,136.379,131.5511436411948
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,46,glm_cal,144.898,131.5851428103123
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,47,glm_cal,124.608,131.61915076645715
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,48,glm_cal,139.269,138.35500347233196
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,49,glm_cal,139.535,137.88002026849372
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,40,glm_op,132.78300000000002,135.48419929588013
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,41,glm_op,126.422,128.51992523553128
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,42,glm_op,199.394,176.05872284121443
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,43,glm_op,149.19400000000002,137.9770375083752
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,44,glm_op,139.88,134.23298220127793
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,45,glm_op,136.379,133.0381569908073
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,46,glm_op,144.898,131.57045075151743
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,47,glm_op,124.608,131.60281836013573
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,48,glm_op,139.269,138.47749952027354
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,49,glm_op,139.535,137.4281379339125
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,40,last8_mean,132.78300000000002,146.39625
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,41,last8_mean,126.422,146.39625
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,42,last8_mean,199.394,146.39625
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,43,last8_mean,149.19400000000002,146.39625
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,44,last8_mean,139.88,146.39625
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,45,last8_mean,136.379,146.39625
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,46,last8_mean,144.898,146.39625
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,47,last8_mean,124.608,146.39625
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,48,last8_mean,139.269,146.39625
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,49,last8_mean,139.535,146.39625
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,40,same_week_last_year,132.78300000000002,124.864
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,41,same_week_last_year,126.422,130.317
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,42,same_week_last_year,199.394,128.32299999999998
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,43,same_week_last_year,149.19400000000002,157.165
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,44,same_week_last_year,139.88,187.342
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,45,same_week_last_year,136.379,128.86399999999998
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,46,same_week_last_year,144.898,122.821
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,47,same_week_last_year,124.608,137.92700000000002
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,48,same_week_last_year,139.269,137.10399999999998
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,49,same_week_last_year,139.535,126.853
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,40,mean13,132.78300000000002,144.81392307692306
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,41,mean13,126.422,144.81392307692306
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,42,mean13,199.394,144.81392307692306
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,43,mean13,149.19400000000002,144.81392307692306
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,44,mean13,139.88,144.81392307692306
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,45,mean13,136.379,144.81392307692306
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,46,mean13,144.898,144.81392307692306
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,47,mean13,124.608,144.81392307692306
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,48,mean13,139.269,144.81392307692306
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,49,mean13,139.535,144.81392307692306
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,40,mean26,132.78300000000002,141.11865384615385
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,41,mean26,126.422,141.11865384615385
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,42,mean26,199.394,141.11865384615385
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,43,mean26,149.19400000000002,141.11865384615385
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,44,mean26,139.88,141.11865384615385
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,45,mean26,136.379,141.11865384615385
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,46,mean26,144.898,141.11865384615385
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,47,mean26,124.608,141.11865384615385
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,48,mean26,139.269,141.11865384615385
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,49,mean26,139.535,141.11865384615385
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,40,ewm_hl8,132.78300000000002,141.17739047834485
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,41,ewm_hl8,126.422,141.17739047834485
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,42,ewm_hl8,199.394,141.17739047834485
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,43,ewm_hl8,149.19400000000002,141.17739047834485
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,44,ewm_hl8,139.88,141.17739047834485
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,45,ewm_hl8,136.379,141.17739047834485
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,46,ewm_hl8,144.898,141.17739047834485
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,47,ewm_hl8,124.608,141.17739047834485
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,48,ewm_hl8,139.269,141.17739047834485
+2025-W40..W49 (deepavali),Peliyagoda,Style,total,2025,49,ewm_hl8,139.535,141.17739047834485
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,40,glm_cal,37.007,31.069163195921845
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,41,glm_cal,34.512,30.253308221992835
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,42,glm_cal,35.474999999999994,26.86721674897398
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,43,glm_cal,33.684,32.89835915689385
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,44,glm_cal,22.358,36.492362761956954
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,45,glm_cal,22.1,28.180321676867063
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,46,glm_cal,33.643,28.18221989990467
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,47,glm_cal,27.228,28.184118250806343
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,48,glm_cal,36.29,33.9287769085428
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,49,glm_cal,38.16,27.86480272343225
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,40,glm_op,37.007,31.1092056033119
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,41,glm_op,34.512,30.259494829429777
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,42,glm_op,35.474999999999994,26.70423748738351
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,43,glm_op,33.684,32.97090001016748
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,44,glm_op,22.358,37.76547958936221
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,45,glm_op,22.1,28.370660584043506
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,46,glm_op,33.643,28.263421988710373
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,47,glm_op,27.228,28.264709563469083
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,48,glm_op,36.29,34.0454845290839
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,49,glm_op,38.16,28.938468121895937
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,40,last8_mean,37.007,27.331875
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,41,last8_mean,34.512,27.331875
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,42,last8_mean,35.474999999999994,27.331875
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,43,last8_mean,33.684,27.331875
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,44,last8_mean,22.358,27.331875
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,45,last8_mean,22.1,27.331875
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,46,last8_mean,33.643,27.331875
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,47,last8_mean,27.228,27.331875
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,48,last8_mean,36.29,27.331875
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,49,last8_mean,38.16,27.331875
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,40,same_week_last_year,37.007,32.585
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,41,same_week_last_year,34.512,38.448
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,42,same_week_last_year,35.474999999999994,21.729
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,43,same_week_last_year,33.684,34.948
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,44,same_week_last_year,22.358,39.272
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,45,same_week_last_year,22.1,29.380000000000003
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,46,same_week_last_year,33.643,19.409
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,47,same_week_last_year,27.228,31.814
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,48,same_week_last_year,36.29,30.517000000000003
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,49,same_week_last_year,38.16,20.797
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,40,mean13,37.007,29.458923076923075
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,41,mean13,34.512,29.458923076923075
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,42,mean13,35.474999999999994,29.458923076923075
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,43,mean13,33.684,29.458923076923075
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,44,mean13,22.358,29.458923076923075
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,45,mean13,22.1,29.458923076923075
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,46,mean13,33.643,29.458923076923075
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,47,mean13,27.228,29.458923076923075
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,48,mean13,36.29,29.458923076923075
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,49,mean13,38.16,29.458923076923075
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,40,mean26,37.007,28.990615384615378
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,41,mean26,34.512,28.990615384615378
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,42,mean26,35.474999999999994,28.990615384615378
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,43,mean26,33.684,28.990615384615378
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,44,mean26,22.358,28.990615384615378
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,45,mean26,22.1,28.990615384615378
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,46,mean26,33.643,28.990615384615378
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,47,mean26,27.228,28.990615384615378
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,48,mean26,36.29,28.990615384615378
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,49,mean26,38.16,28.990615384615378
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,40,ewm_hl8,37.007,28.34115016074595
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,41,ewm_hl8,34.512,28.34115016074595
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,42,ewm_hl8,35.474999999999994,28.34115016074595
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,43,ewm_hl8,33.684,28.34115016074595
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,44,ewm_hl8,22.358,28.34115016074595
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,45,ewm_hl8,22.1,28.34115016074595
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,46,ewm_hl8,33.643,28.34115016074595
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,47,ewm_hl8,27.228,28.34115016074595
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,48,ewm_hl8,36.29,28.34115016074595
+2025-W40..W49 (deepavali),Peliyagoda,Tech,total,2025,49,ewm_hl8,38.16,28.34115016074595
