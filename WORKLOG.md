@@ -562,3 +562,112 @@ payday, ramp and catch-up effects are also weekday-adjusted)
   public" rule. From Phase 6 on, the branch `datathon-task2a-task1-fixes` is pushed
   after each approved commit. Never main, never force-push, no other remotes.
   Before each push, `git ls-files` is checked for dataset CSVs and .joblib files.
+- Phase 6 committed as `44dc070` and pushed: `git push -u origin datathon-task2a-task1-fixes`
+  created the remote branch (new branch, tracking set up). Pre-push check: no dataset
+  CSVs, no Task 1 generated CSVs and no .joblib/.pkl tracked or added in any branch
+  commit; the datasets remain only in main's history (eaf7297), already on origin.
+
+---
+
+## Phase 7: Task 1 fixes, part 2: new features (2026-10-07)
+
+**Done**
+- `task1/feature_groups.py`: candidate groups from planned information only
+  (outlets.csv, service_allowance.csv, calendar.csv, traffic_speed.csv and the
+  PLANNED leg columns). Route context is computed from the route-leg tables
+  (planned departure, planned travel, planned arrival).
+- `task1/features.py`: BASE_FEATURES (Phase 6), FEATURE_GROUPS, EXTRA_CANDIDATES,
+  KEPT_GROUPS and FEATURES; `assert_no_leakage` rejects actual_*, arrival_time,
+  leave_outlet_time and the derived label columns (asserted for all candidates,
+  in prepare_features, train_model and the experiment).
+- `task1/models.py`: the original Random Forests built for a feature list (shared
+  by train_model.py and phase7_features.py). `train_model.py` now writes
+  `reports/metrics.json` (latest run); `metrics_phase6.json` stays as the Phase 6 record.
+- `task1/phase7_features.py`: cumulative groups, same Random Forests, keep rule on
+  the time-based test: lower service MAE or late log loss by >= 0.5% (relative)
+  and neither worse by > 1%; rejected groups are not carried forward.
+  Outputs `reports/phase7_feature_groups.csv`, `reports/metrics_phase7.json`,
+  `reports/phase7_output.txt`.
+
+**Finding: the specified route-context feature is identically 0.** In the route
+legs, the planned dwell (next leg's planned departure minus this planned arrival)
+equals the service allowance at every stop that has a next leg (66,696 of 66,696),
+so "cumulative allowance of earlier stops minus planned dwell" is 0 everywhere. It
+is kept in the route_context group as specified (a constant; no effect). The plan
+does NOT schedule the wait when a vehicle arrives before the window opens; the sum
+of those unscheduled waits at earlier stops (`cum_unplanned_wait_before`, planned
+information) was measured as a labelled extra and NOT applied (user decision).
+
+**Results (time-based test; cumulative)**
+| step | group | kept | MAE | log loss | AUC | Brier | share p=0 |
+|---|---|---|---|---|---|---|---|
+| 0 | Phase 6 base | - | 4.950 | 0.2315 | 0.9387 | 0.0726 | 4.3% |
+| 1 | outlet (dock, parking, mall window) | yes | 4.795 (-3.2%) | 0.2313 | 0.9406 | 0.0727 | 2.8% |
+| 2 | service_allowance | no | -0.1% | +0.6% | | | |
+| 3 | planned_slack | no | -1.0% | +1.1% | | | |
+| 4 | route_context | yes | 4.734 (-1.3%) | 0.2269 (-1.9%) | 0.9443 | 0.0710 | 5.5% |
+| 5 | calendar (payday, ramp, holiday) | yes | 4.148 (-12.4%) | 0.2185 (-3.7%) | 0.9507 | 0.0678 | 14.0% |
+| 6 | traffic (speed_index) | yes | 4.136 (-0.3%) | 0.2110 (-3.4%) | 0.9499 | 0.0657 | 17.5% |
+| extra | cum_unplanned_wait_before | not applied | +0.2% | -0.1% | | | |
+- Final: 30 features. Time-based MAE 4.136 / RMSE 6.373 / AUC 0.9499 / log loss
+  0.2110 / Brier 0.0657 (baseline 5.152 / 8.319 / 0.9315 / 0.2320 / 0.0727).
+  Random split MAE 4.482, AUC 0.9415, log loss 0.2661.
+- Calendar check: service time rises with the festival ramp (17.2 -> 31.8 min at
+  ramp > 0.5, while order units rise only 47 -> 59), on paydays (18.6 -> 24.1) and
+  holidays (36.3 min): busy days slow receiving. Known at planning time.
+- `train_model.py` with KEPT_GROUPS reproduces the Phase 7 final metrics exactly.
+- Share of p = 0 rose to 17.5%: calibration is Phase 8.
+
+**Late rate (for Phase 8 calibration)**
+- Strongly seasonal, following the monsoon flag: monsoon = 1 27.4%, monsoon = 0
+  12.8%. By month: Jan-Feb 11-14%, Mar-Jun 26-29%, Jul-Sep 11-15%, Oct-Nov 24-30%,
+  Dec 13-14%; the same in 2024 and 2025.
+- The time-based test (2026-01-03..02-14, all monsoon = 0) has 13.1% vs 20.0% in its
+  training part; Jan-Feb was 12.3% (2024), 12.5% (2025), 13.3% (2026), so the gap is
+  seasonal, not drift. The real Task 1 test (2026-02-16..03-28) spans late Feb
+  (monsoon 0) and March (monsoon 1), so its late rate should be higher than the
+  validation period: calibrating on the time-based test alone would bias low.
+
+**road_conditions.csv (reported, not used; user decision)**
+- district, date, disruption_index (100 = clear, min 40); 10,920 rows = 12 districts x
+  910 dates (2024-01-01..2026-06-28). Covers all 432 test district-dates; 66% of
+  them are below 100 (57% overall).
+- Strong relation in training: late rate 59% at index <= 60, 36% at 61-80, 17% at
+  81-99, 14% at 100; service time 22.6 / 19.9 / 18.7 / 18.7 min.
+
+**Authorship**
+- Agent wrote `task1/feature_groups.py`, `task1/models.py`, `task1/phase7_features.py`,
+  the `features.py`/`prepare_features.py`/`train_model.py` changes and this entry.
+  User specified the groups, their order, the keep rule's intent, the leakage
+  assert and the reports.
+
+**Phase 7 decisions and re-run (user, before commit)**
+- **Road conditions added** as the final group (`disruption_index`, district x
+  dispatch date). Justification: predictions are made on the dispatch morning,
+  before the delivery starts (booklet wording), when road advisories are known; the
+  organizers supplied the file covering the test dates.
+- **Dropped** the constant `cum_allowance_minus_dwell_before`. Finding: the planned
+  dwell equals the service allowance at every stop that has a next leg (66,696 of
+  66,696), so the feature was identically 0. The unscheduled-waits extra
+  (`cum_unplanned_wait_before`) is **not applied** (re-run: MAE +0.14%, log loss +0.69%).
+- **Keep rule thresholds** (user-confirmed): a group is kept if it lowers time-based
+  service MAE or late log loss by >= 0.5% (relative) and neither gets worse by > 1%;
+  rejected groups are not carried forward.
+- Re-run (the route-context group without the constant column changes the
+  classifier's feature sampling, so all steps were re-measured; same decisions):
+  | step | group | kept | MAE | log loss | AUC | Brier |
+  |---|---|---|---|---|---|---|
+  | 0 | Phase 6 base | - | 4.950 | 0.2315 | 0.9387 | 0.0726 |
+  | 1 | outlet | yes | 4.795 (-3.2%) | 0.2313 | 0.9406 | 0.0727 |
+  | 2 | service_allowance | no | -0.1% | +0.6% | | |
+  | 3 | planned_slack | no | -1.0% | +1.1% | | |
+  | 4 | route_context | yes | 4.733 (-1.3%) | 0.2270 (-1.9%) | 0.9444 | 0.0709 |
+  | 5 | calendar | yes | 4.146 (-12.4%) | 0.2175 (-4.2%) | 0.9503 | 0.0675 |
+  | 6 | traffic | yes | 4.138 (-0.2%) | 0.2105 (-3.2%) | 0.9497 | 0.0655 |
+  | 7 | road_conditions | yes | 4.134 (-0.1%) | **0.1739 (-17.4%)** | **0.9687** | 0.0535 |
+- Final Phase 7 set: 30 features (KEPT_GROUPS outlet, route_context, calendar,
+  traffic, road_conditions). Time-based: MAE 4.134, RMSE 6.380, AUC 0.9687, log loss
+  0.1739, Brier 0.0535, share p = 0 18.3%. Random split: MAE 4.456, AUC 0.9700, log
+  loss 0.1986. `train_model.py` reproduces these exactly.
+- make_submission.py must select FEATURES (36 candidate columns in test_features.csv):
+  fixed in Phase 9.

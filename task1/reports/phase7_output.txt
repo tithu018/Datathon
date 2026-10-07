@@ -1,0 +1,65 @@
+base: time MAE 4.9504, log loss 0.2315 (99s)
+outlet: time MAE -3.15%, log loss -0.09% -> KEEP (194s)
+service_allowance: time MAE -0.08%, log loss +0.56% -> reject (287s)
+planned_slack: time MAE -0.98%, log loss +1.12% -> reject (400s)
+route_context: time MAE -1.28%, log loss -1.86% -> KEEP (514s)
+calendar: time MAE -12.41%, log loss -4.19% -> KEEP (636s)
+traffic: time MAE -0.18%, log loss -3.22% -> KEEP (764s)
+road_conditions: time MAE -0.09%, log loss -17.39% -> KEEP (897s)
+extra unplanned_wait: time MAE +0.14%, log loss +0.69%
+
+=== Feature groups (cumulative; time-based test primary) ===
+ step                                 group        kept  time_mae  time_rmse  time_auc  time_logloss  time_brier  time_share_p0  random_mae  random_auc  random_logloss  d_time_mae_pct  d_time_logloss_pct
+    0            Phase 6 base (17 features)        base    4.9504     8.0324    0.9387        0.2315      0.0726         0.0431      5.3056      0.9319          0.2845             NaN                 NaN
+    1                                outlet         yes    4.7946     7.8494    0.9406        0.2313      0.0727         0.0282      5.0930      0.9330          0.2830           -3.15               -0.09
+    2                     service_allowance          no    4.7909     7.8488    0.9404        0.2326      0.0730         0.0441      5.0861      0.9328          0.2832           -0.08                0.56
+    3                         planned_slack          no    4.7477     7.8188    0.9400        0.2339      0.0735         0.1200      5.0374      0.9326          0.2827           -0.98                1.12
+    4                         route_context         yes    4.7331     7.7779    0.9444        0.2270      0.0709         0.0711      4.9868      0.9363          0.2760           -1.28               -1.86
+    5                              calendar         yes    4.1455     6.4022    0.9503        0.2175      0.0675         0.1264      4.4903      0.9415          0.2658          -12.41               -4.19
+    6                               traffic         yes    4.1381     6.3761    0.9497        0.2105      0.0655         0.1765      4.4814      0.9415          0.2641           -0.18               -3.22
+    7                       road_conditions         yes    4.1342     6.3799    0.9687        0.1739      0.0535         0.1829      4.4564      0.9700          0.1986           -0.09              -17.39
+extra unplanned_wait (EXTRA, user decision) not applied    4.1398     6.3837    0.9682        0.1751      0.0540         0.2312      4.4534      0.9702          0.1978            0.14                0.69
+
+=== Late rate by month (rows) and year ===
+year     2024    2025    2026
+month                        
+1      0.1300  0.1356  0.1410
+2      0.1157  0.1139  0.1155
+3      0.2578  0.2574     NaN
+4      0.2782  0.2853     NaN
+5      0.2870  0.2787     NaN
+6      0.2772  0.2877     NaN
+7      0.1158  0.1203     NaN
+8      0.1370  0.1472     NaN
+9      0.1279  0.1120     NaN
+10     0.2678  0.2962     NaN
+11     0.2443  0.2643     NaN
+12     0.1322  0.1409     NaN
+
+By monsoon flag: {0: {'mean': 0.128, 'size': 49092}, 1: {'mean': 0.2735, 'size': 42802}}
+Time-based train vs test: {'time test': {'mean': 0.1311, 'size': 5173}, 'time train': {'mean': 0.1996, 'size': 86721}}
+January-February by year: {2024: 0.1231, 2025: 0.1254, 2026: 0.1331}
+By brand and period:
+period  time test  time train
+brand                        
+Fresh      0.1358      0.2076
+Style      0.0397      0.0558
+Tech       0.0312      0.0243
+
+=== road_conditions.csv (reported only, NOT used) ===
+  columns: ['district', 'date', 'disruption_index']
+  rows: 10920
+  date_range: ['2024-01-01', '2026-06-28']
+  districts: 12
+  disruption_index: {'count': 10920.0, 'mean': 92.32, 'std': 13.17, 'min': 40.0, '25%': 90.0, '50%': 99.0, '75%': 100.0, 'max': 100.0}
+  share_days_below_100: 0.5682
+  test_dates: ['2026-02-16', '2026-03-28']
+  test_district_dates: 432
+  test_district_dates_covered: 432
+  test_share_below_100: 0.6644
+  train_late_rate_by_bucket: {'<=60': 0.5932, '61-80': 0.361, '81-99': 0.1676, '100': 0.1443}
+  train_service_mean_by_bucket: {'<=60': 22.59, '61-80': 19.94, '81-99': 18.73, '100': 18.68}
+  train_rows_by_bucket: {'<=60': 3972, '61-80': 9574, '81-99': 37536, '100': 40812}
+
+Kept groups: ['outlet', 'route_context', 'calendar', 'traffic', 'road_conditions']
+Saved: task1\reports\phase7_feature_groups.csv, task1\reports\metrics_phase7.json (1029s)

@@ -1,0 +1,10 @@
+step,group,added,kept,time_mae,time_rmse,time_auc,time_logloss,time_brier,time_share_p0,random_mae,random_auc,random_logloss,d_time_mae_pct,d_time_logloss_pct
+0,Phase 6 base (17 features),,base,4.9504,8.0324,0.9387,0.2315,0.0726,0.0431,5.3056,0.9319,0.2845,,
+1,outlet,"dock_type, parking_constraint, mall_window_open_min, mall_window_close_min",yes,4.7946,7.8494,0.9406,0.2313,0.0727,0.0282,5.093,0.933,0.283,-3.15,-0.09
+2,service_allowance,service_allowance_min,no,4.7909,7.8488,0.9404,0.2326,0.073,0.0441,5.0861,0.9328,0.2832,-0.08,0.56
+3,planned_slack,"slack_to_close_min, slack_from_open_min, planned_dwell_min, is_last_stop",no,4.7477,7.8188,0.94,0.2339,0.0735,0.12,5.0374,0.9326,0.2827,-0.98,1.12
+4,route_context,"seq, n_stops, cum_planned_travel_min, planned_route_start_min",yes,4.7331,7.7779,0.9444,0.227,0.0709,0.0711,4.9868,0.9363,0.276,-1.28,-1.86
+5,calendar,"is_payday, festival_ramp, is_holiday",yes,4.1455,6.4022,0.9503,0.2175,0.0675,0.1264,4.4903,0.9415,0.2658,-12.41,-4.19
+6,traffic,speed_index,yes,4.1381,6.3761,0.9497,0.2105,0.0655,0.1765,4.4814,0.9415,0.2641,-0.18,-3.22
+7,road_conditions,disruption_index,yes,4.1342,6.3799,0.9687,0.1739,0.0535,0.1829,4.4564,0.97,0.1986,-0.09,-17.39
+extra,"unplanned_wait (EXTRA, user decision)",cum_unplanned_wait_before,not applied,4.1398,6.3837,0.9682,0.1751,0.054,0.2312,4.4534,0.9702,0.1978,0.14,0.69

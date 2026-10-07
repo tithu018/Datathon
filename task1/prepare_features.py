@@ -1,10 +1,12 @@
 import pandas as pd
 
-from features import FEATURES
+from feature_groups import add_feature_groups
+from features import ALL_CANDIDATES, FEATURES, assert_no_leakage
 
 train = pd.read_csv(r"task1\task1_training_labels.csv")
 test_orders = pd.read_csv(r"Test Data\task1_test_inputs.csv")
 test_legs = pd.read_csv(r"Test Data\route_legs_test.csv")
+train_legs = pd.read_csv(r"Training Data\route_legs_train.csv")
 
 # Merge test orders with their matching planned route leg
 test = test_orders.merge(
@@ -37,25 +39,30 @@ for df in [train, test]:
     df["window_open_min_feature"] = time_to_minutes(df["window_open_time"])
     df["window_close_min_feature"] = time_to_minutes(df["window_close_time"])
 
-# Explicit feature list (task1/features.py): every column must exist in train and test
-missing = {name: [c for c in FEATURES if c not in df.columns] for name, df in [("train", train), ("test", test)]}
-assert not any(missing.values()), f"feature columns missing: {missing}"
-assert test[FEATURES].notna().all().all(), "missing feature values in test"
+# Phase 7 candidate groups (planned information only; task1/feature_groups.py)
+train = add_feature_groups(train, train_legs)
+test = add_feature_groups(test, test_legs)
 
-print("Features:")
-for c in FEATURES:
-    print("-", c)
+# Explicit feature lists (task1/features.py): every column must exist in train and test
+assert_no_leakage(ALL_CANDIDATES)
+missing = {name: [c for c in ALL_CANDIDATES if c not in df.columns] for name, df in [("train", train), ("test", test)]}
+assert not any(missing.values()), f"feature columns missing: {missing}"
+assert test[ALL_CANDIDATES].notna().all().all(), "missing feature values in test"
+assert train[ALL_CANDIDATES].notna().all().all(), "missing feature values in train"
+
+print(f"Model features ({len(FEATURES)}):", ", ".join(FEATURES))
+print(f"Candidate columns written ({len(ALL_CANDIDATES)}):", ", ".join(c for c in ALL_CANDIDATES if c not in FEATURES))
 
 print("\nTrain rows:", len(train))
 print("Test rows:", len(test))
 print("Matched test route legs:", test["distance_km"].notna().sum(), "/", len(test))
 
 # order_date and delivery_id are kept for the time-based split and traceability, not as features
-train[["delivery_id", "order_date"] + FEATURES + ["service_minutes", "late"]].to_csv(
+train[["delivery_id", "order_date"] + ALL_CANDIDATES + ["service_minutes", "late"]].to_csv(
     r"task1\train_features.csv", index=False
 )
 
-test[["delivery_id"] + FEATURES].to_csv(
+test[["delivery_id"] + ALL_CANDIDATES].to_csv(
     r"task1\test_features.csv", index=False
 )
 

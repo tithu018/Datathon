@@ -1,0 +1,345 @@
+{
+  "description": "Phase 7: Phase 6 features + kept planned-information groups; same Random Forests",
+  "keep_rule": {
+    "improve_rel": 0.005,
+    "hurt_rel": 0.01,
+    "primary": "time-based test"
+  },
+  "kept_groups": [
+    "outlet",
+    "route_context",
+    "calendar",
+    "traffic",
+    "road_conditions"
+  ],
+  "features": [
+    "brand",
+    "district",
+    "depot",
+    "temp_requirement",
+    "order_units",
+    "order_weight_kg",
+    "order_volume_m3",
+    "vehicle_type",
+    "vehicle_temp",
+    "distance_km",
+    "planned_travel_duration_min",
+    "planned_arrival_min",
+    "planned_depart_min",
+    "window_open_min_feature",
+    "window_close_min_feature",
+    "monsoon",
+    "dow",
+    "dock_type",
+    "parking_constraint",
+    "mall_window_open_min",
+    "mall_window_close_min",
+    "seq",
+    "n_stops",
+    "cum_planned_travel_min",
+    "planned_route_start_min",
+    "is_payday",
+    "festival_ramp",
+    "is_holiday",
+    "speed_index",
+    "disruption_index"
+  ],
+  "random_split": {
+    "n_test": 18379,
+    "test_late_rate": 0.1958,
+    "service_mae": 4.4564,
+    "service_rmse": 7.2436,
+    "late_roc_auc": 0.97,
+    "late_log_loss": 0.1986,
+    "late_brier": 0.0616,
+    "late_share_exact_0": 0.1603,
+    "late_share_exact_1": 0.0007
+  },
+  "time_based": {
+    "cutoff_order_date": "2026-01-03",
+    "n_test": 5173,
+    "test_late_rate": 0.1311,
+    "service_mae": 4.1342,
+    "service_rmse": 6.3799,
+    "late_roc_auc": 0.9687,
+    "late_log_loss": 0.1739,
+    "late_brier": 0.0535,
+    "late_share_exact_0": 0.1829,
+    "late_share_exact_1": 0.0
+  },
+  "groups": [
+    {
+      "step": 0,
+      "group": "Phase 6 base (17 features)",
+      "added": "",
+      "kept": "base",
+      "time_mae": 4.9504,
+      "time_rmse": 8.0324,
+      "time_auc": 0.9387,
+      "time_logloss": 0.2315,
+      "time_brier": 0.0726,
+      "time_share_p0": 0.0431,
+      "random_mae": 5.3056,
+      "random_auc": 0.9319,
+      "random_logloss": 0.2845
+    },
+    {
+      "step": 1,
+      "group": "outlet",
+      "added": "dock_type, parking_constraint, mall_window_open_min, mall_window_close_min",
+      "kept": "yes",
+      "time_mae": 4.7946,
+      "time_rmse": 7.8494,
+      "time_auc": 0.9406,
+      "time_logloss": 0.2313,
+      "time_brier": 0.0727,
+      "time_share_p0": 0.0282,
+      "random_mae": 5.093,
+      "random_auc": 0.933,
+      "random_logloss": 0.283,
+      "d_time_mae_pct": -3.15,
+      "d_time_logloss_pct": -0.09
+    },
+    {
+      "step": 2,
+      "group": "service_allowance",
+      "added": "service_allowance_min",
+      "kept": "no",
+      "time_mae": 4.7909,
+      "time_rmse": 7.8488,
+      "time_auc": 0.9404,
+      "time_logloss": 0.2326,
+      "time_brier": 0.073,
+      "time_share_p0": 0.0441,
+      "random_mae": 5.0861,
+      "random_auc": 0.9328,
+      "random_logloss": 0.2832,
+      "d_time_mae_pct": -0.08,
+      "d_time_logloss_pct": 0.56
+    },
+    {
+      "step": 3,
+      "group": "planned_slack",
+      "added": "slack_to_close_min, slack_from_open_min, planned_dwell_min, is_last_stop",
+      "kept": "no",
+      "time_mae": 4.7477,
+      "time_rmse": 7.8188,
+      "time_auc": 0.94,
+      "time_logloss": 0.2339,
+      "time_brier": 0.0735,
+      "time_share_p0": 0.12,
+      "random_mae": 5.0374,
+      "random_auc": 0.9326,
+      "random_logloss": 0.2827,
+      "d_time_mae_pct": -0.98,
+      "d_time_logloss_pct": 1.12
+    },
+    {
+      "step": 4,
+      "group": "route_context",
+      "added": "seq, n_stops, cum_planned_travel_min, planned_route_start_min",
+      "kept": "yes",
+      "time_mae": 4.7331,
+      "time_rmse": 7.7779,
+      "time_auc": 0.9444,
+      "time_logloss": 0.227,
+      "time_brier": 0.0709,
+      "time_share_p0": 0.0711,
+      "random_mae": 4.9868,
+      "random_auc": 0.9363,
+      "random_logloss": 0.276,
+      "d_time_mae_pct": -1.28,
+      "d_time_logloss_pct": -1.86
+    },
+    {
+      "step": 5,
+      "group": "calendar",
+      "added": "is_payday, festival_ramp, is_holiday",
+      "kept": "yes",
+      "time_mae": 4.1455,
+      "time_rmse": 6.4022,
+      "time_auc": 0.9503,
+      "time_logloss": 0.2175,
+      "time_brier": 0.0675,
+      "time_share_p0": 0.1264,
+      "random_mae": 4.4903,
+      "random_auc": 0.9415,
+      "random_logloss": 0.2658,
+      "d_time_mae_pct": -12.41,
+      "d_time_logloss_pct": -4.19
+    },
+    {
+      "step": 6,
+      "group": "traffic",
+      "added": "speed_index",
+      "kept": "yes",
+      "time_mae": 4.1381,
+      "time_rmse": 6.3761,
+      "time_auc": 0.9497,
+      "time_logloss": 0.2105,
+      "time_brier": 0.0655,
+      "time_share_p0": 0.1765,
+      "random_mae": 4.4814,
+      "random_auc": 0.9415,
+      "random_logloss": 0.2641,
+      "d_time_mae_pct": -0.18,
+      "d_time_logloss_pct": -3.22
+    },
+    {
+      "step": 7,
+      "group": "road_conditions",
+      "added": "disruption_index",
+      "kept": "yes",
+      "time_mae": 4.1342,
+      "time_rmse": 6.3799,
+      "time_auc": 0.9687,
+      "time_logloss": 0.1739,
+      "time_brier": 0.0535,
+      "time_share_p0": 0.1829,
+      "random_mae": 4.4564,
+      "random_auc": 0.97,
+      "random_logloss": 0.1986,
+      "d_time_mae_pct": -0.09,
+      "d_time_logloss_pct": -17.39
+    },
+    {
+      "step": "extra",
+      "group": "unplanned_wait (EXTRA, user decision)",
+      "added": "cum_unplanned_wait_before",
+      "kept": "not applied",
+      "time_mae": 4.1398,
+      "time_rmse": 6.3837,
+      "time_auc": 0.9682,
+      "time_logloss": 0.1751,
+      "time_brier": 0.054,
+      "time_share_p0": 0.2312,
+      "random_mae": 4.4534,
+      "random_auc": 0.9702,
+      "random_logloss": 0.1978,
+      "d_time_mae_pct": 0.14,
+      "d_time_logloss_pct": 0.69
+    }
+  ],
+  "late_rate": {
+    "by_month_year": {
+      "2024": {
+        "1": 0.13,
+        "2": 0.1157,
+        "3": 0.2578,
+        "4": 0.2782,
+        "5": 0.287,
+        "6": 0.2772,
+        "7": 0.1158,
+        "8": 0.137,
+        "9": 0.1279,
+        "10": 0.2678,
+        "11": 0.2443,
+        "12": 0.1322
+      },
+      "2025": {
+        "1": 0.1356,
+        "2": 0.1139,
+        "3": 0.2574,
+        "4": 0.2853,
+        "5": 0.2787,
+        "6": 0.2877,
+        "7": 0.1203,
+        "8": 0.1472,
+        "9": 0.112,
+        "10": 0.2962,
+        "11": 0.2643,
+        "12": 0.1409
+      },
+      "2026": {
+        "1": 0.141,
+        "2": 0.1155
+      }
+    },
+    "by_monsoon": {
+      "0": {
+        "mean": 0.128,
+        "size": 49092
+      },
+      "1": {
+        "mean": 0.2735,
+        "size": 42802
+      }
+    },
+    "by_period": {
+      "time test": {
+        "mean": 0.1311,
+        "size": 5173
+      },
+      "time train": {
+        "mean": 0.1996,
+        "size": 86721
+      }
+    },
+    "jan_feb_by_year": {
+      "2024": 0.1231,
+      "2025": 0.1254,
+      "2026": 0.1331
+    },
+    "by_brand_period": {
+      "time test": {
+        "Fresh": 0.1358,
+        "Style": 0.0397,
+        "Tech": 0.0312
+      },
+      "time train": {
+        "Fresh": 0.2076,
+        "Style": 0.0558,
+        "Tech": 0.0243
+      }
+    }
+  },
+  "road_conditions": {
+    "columns": [
+      "district",
+      "date",
+      "disruption_index"
+    ],
+    "rows": 10920,
+    "date_range": [
+      "2024-01-01",
+      "2026-06-28"
+    ],
+    "districts": 12,
+    "disruption_index": {
+      "count": 10920.0,
+      "mean": 92.32,
+      "std": 13.17,
+      "min": 40.0,
+      "25%": 90.0,
+      "50%": 99.0,
+      "75%": 100.0,
+      "max": 100.0
+    },
+    "share_days_below_100": 0.5682,
+    "test_dates": [
+      "2026-02-16",
+      "2026-03-28"
+    ],
+    "test_district_dates": 432,
+    "test_district_dates_covered": 432,
+    "test_share_below_100": 0.6644,
+    "train_late_rate_by_bucket": {
+      "<=60": 0.5932,
+      "61-80": 0.361,
+      "81-99": 0.1676,
+      "100": 0.1443
+    },
+    "train_service_mean_by_bucket": {
+      "<=60": 22.59,
+      "61-80": 19.94,
+      "81-99": 18.73,
+      "100": 18.68
+    },
+    "train_rows_by_bucket": {
+      "<=60": 3972,
+      "61-80": 9574,
+      "81-99": 37536,
+      "100": 40812
+    }
+  }
+}
