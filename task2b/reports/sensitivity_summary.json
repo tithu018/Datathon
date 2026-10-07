@@ -1,0 +1,37 @@
+{
+  "objective_order": "protected_first",
+  "chilled_objective": [
+    3,
+    168832,
+    22,
+    -1228
+  ],
+  "trip_counts": {
+    "VEH003": 93,
+    "VEH004": 120,
+    "VEH006": 120,
+    "VEH007": 58,
+    "VEH036": 17
+  },
+  "schedule_counts": {
+    "VEH003": 2865,
+    "VEH004": 4436,
+    "VEH006": 4436,
+    "VEH007": 1297,
+    "VEH036": 104
+  },
+  "nodes": 744181,
+  "pruned": 5153188,
+  "search_complete": true,
+  "scope": "All feasible chilled assignments under published budgets, no ambient loads on reefers; ambient assignment fixed. Outlet coverage constant because every chilled outlet has served ambient order.",
+  "restored_vehicle": "VEH004",
+  "full_score": [
+    10,
+    168832,
+    80,
+    58,
+    -4465
+  ],
+  "additional_chilled_m3": 35.996,
+  "validation": "Local published-rule validation with availability changed; official base checker must not validate this hypothetical fleet."
+}

@@ -7,6 +7,7 @@ cannot remove an improving plan. Ambient allocation is fixed and separate.
 import json
 import sys
 from dataclasses import dataclass
+from functools import lru_cache
 
 sys.path.insert(0, ".")
 from task2b.common import (DATA_DIR, REPORT_DIR, FRESH_BUDGET_MIN, load_orders,
@@ -66,6 +67,12 @@ def solve(orders, fleet, volume_first=False):
     # direct scan. Trucks with larger capacities are considered first.
     vehicles.sort(key=lambda v: (v.is_van, -v.volume_cap_m3, v.vehicle_id))
     options = [generated[v.vehicle_id] for v in vehicles]
+    categories = []
+    for opts in options:
+        grouped = {}
+        for c in opts:
+            grouped.setdefault(c.urgent, []).append(c)
+        categories.append(grouped)
     chilly = list(orders[orders.temp_requirement.eq("chilled")].itertuples())
     urgent_mask = sum(1 << r.Index for r in chilly if protected(r))
     all_mask = sum(1 << r.Index for r in chilly)
@@ -78,10 +85,16 @@ def solve(orders, fleet, volume_first=False):
     best_key = (-1, -1, -1, -10**9)
     best_chosen = ()
     nodes = pruned = 0
+    seen = {}
+
+    def interchangeable(a, b):
+        return (a.scenario, a.type, a.temp, a.depot, a.volume_cap_m3, a.weight_cap_kg) == (
+                b.scenario, b.type, b.temp, b.depot, b.volume_cap_m3, b.weight_cap_kg)
 
     def ordered_key(urgent, volume, count, minutes):
         return (volume, urgent, count, -minutes) if volume_first else (urgent, volume, count, -minutes)
 
+    @lru_cache(maxsize=100000)
     def remaining_volume(mask):
         return sum(values[i] for i in values if mask & (1 << i))
 
@@ -89,15 +102,10 @@ def solve(orders, fleet, volume_first=False):
         # Multiple-choice knapsack over protected counts, relaxing conflicts
         # between vehicles. Keep volume/count/time together for tighter bounds.
         states = {0: (0, 0, 0)}
-        for opts in sets:
-            categories = {}
-            for c in opts:
-                value = (c.volume, c.count, -c.minutes)
-                if value > categories.get(c.urgent, (-1, -1, -10**9)):
-                    categories[c.urgent] = value
+        for category_scores in sets:
             updated = {}
             for previous, value in states.items():
-                for extra, addition in categories.items():
+                for extra, addition in category_scores.items():
                     u = previous + extra
                     if u <= urgent_limit:
                         candidate = tuple(a + b for a, b in zip(value, addition))
@@ -106,26 +114,47 @@ def solve(orders, fleet, volume_first=False):
             states = updated
         return states
 
-    static_relaxed = [relaxed_best(options[d:], urgent_mask.bit_count()) for d in range(len(vehicles) + 1)]
+    def best_categories(grouped, used):
+        result = {}
+        for urgent, opts in grouped.items():
+            for c in opts:
+                if not c.mask & used:
+                    result[urgent] = (c.volume, c.count, -c.minutes)
+                    break
+        return result
+
+    static_categories = [best_categories(grouped, 0) for grouped in categories]
+    static_relaxed = [relaxed_best(static_categories[d:], urgent_mask.bit_count()) for d in range(len(vehicles) + 1)]
 
     def dfs(depth, used, urgent, volume, count, minutes, chosen):
         nonlocal best_key, best_chosen, nodes, pruned
         nodes += 1
+        previous_mask = chosen[-1].mask if depth and depth < len(vehicles) and interchangeable(vehicles[depth], vehicles[depth-1]) else 0
+        state = (depth, used, previous_mask)
+        if seen.get(state, 10**9) <= minutes:
+            pruned += 1
+            return
+        # The served mask determines urgency, volume and count. At equal mask
+        # and remaining vehicles, a faster prefix dominates a slower one.
+        seen[state] = minutes
         if depth == len(vehicles):
             candidate_key = ordered_key(urgent, volume, count, minutes)
             if candidate_key > best_key:
                 best_key, best_chosen = candidate_key, chosen
+            return
+        if depth == len(vehicles) - 1:
+            # Direct exact completion: no bound is needed at the last vehicle.
+            c = next(c for c in options[depth] if not c.mask & used)
+            dfs(depth + 1, used | c.mask, urgent + c.urgent, volume + c.volume,
+                count + c.count, minutes + c.minutes, chosen + (c,))
             return
         # Remaining mask and the per-vehicle compatible schedule maxima are
         # independent relaxations. Each component bounds its true completion.
         possible = suffix_masks[depth] & ~used & all_mask
         max_urgent = urgent + (possible & urgent_mask).bit_count()
         max_volume = volume + remaining_volume(possible)
-        compatible_sets = []
-        for opts in options[depth:]:
-            eligible = [c for c in opts if not c.mask & used]
-            compatible_sets.append(eligible)
-        relaxed = relaxed_best(compatible_sets, (possible & urgent_mask).bit_count())
+        category_scores = [best_categories(grouped, used) for grouped in categories[depth:]]
+        relaxed = relaxed_best(category_scores, (possible & urgent_mask).bit_count())
         upper = max(ordered_key(urgent + u, volume + value[0],
                                 count + value[1], minutes - value[2])
                     for u, value in relaxed.items())
@@ -133,20 +162,12 @@ def solve(orders, fleet, volume_first=False):
         if upper <= best_key:
             pruned += 1
             return
-        candidates = compatible_sets[0]
-        if depth == len(vehicles) - 1:
-            # Additive tuple objectives: first eligible candidate is optimal.
-            c = candidates[0]
-            dfs(depth + 1, used | c.mask, urgent + c.urgent, volume + c.volume,
-                count + c.count, minutes + c.minutes, chosen + (c,))
-            return
-        for c in candidates:
+        for c in options[depth]:
+            if c.mask & used:
+                continue
             # Equal-capability vehicles are interchangeable in this objective.
             # Canonical mask order removes symmetric assignments, not scores.
-            if depth and (vehicles[depth].scenario, vehicles[depth].type, vehicles[depth].temp, vehicles[depth].depot,
-                          vehicles[depth].volume_cap_m3, vehicles[depth].weight_cap_kg) == (
-                          vehicles[depth-1].scenario, vehicles[depth-1].type, vehicles[depth-1].temp, vehicles[depth-1].depot,
-                          vehicles[depth-1].volume_cap_m3, vehicles[depth-1].weight_cap_kg):
+            if depth and interchangeable(vehicles[depth], vehicles[depth-1]):
                 if c.mask > chosen[-1].mask:
                     continue
             # Cheap, safe mask-only bound before expensive next-node filtering.

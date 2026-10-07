@@ -1,0 +1,43 @@
+Task 2B Phase 5: independent allocation audit
+
+All five allocator/checker input files are identical byte-for-byte.
+Strict identifiers, decisions, blank deferred assignments and published feasibility are asserted.
+Operational approximation: Fresh starts at 03:30; daytime starts at 09:00 or after Fresh completion.
+Exact subset DP searches stop order and both trip orders for on-time raw arrivals, then earliest finish.
+Wait until windows open; mall windows intersect outlet windows. Arrival after close defines lateness.
+Service finishing after close is reported separately. Windows are diagnostics, not optimizer constraints.
+No return travel or reloading duration in this timeline, following the published planning convention.
+This is not a physical execution guarantee: the booklet budgets already allow for returns.
+Fuel uses outbound + inter-stop distance + an estimated return equal to outbound distance.
+One-day fuel versus a weekly quota cannot establish weekly compliance without prior consumption.
+
+optimized: FEASIBILITY: PASSED - every rule satisfied.
+Orders served/deferred: 75 / 10; outlets covered: 58 / 59.
+Protected order rows served: 10 / 10.
+Protected outlets with at least one delivery: 10 / 10.
+Deferred chilled orders: 9; paired ambient orders served: 9 / 9.
+Chilled served: 132.836 m3.
+Published vehicle-minutes: 4173; simulated window waiting: 107 minutes.
+Vehicle/window groups with no all-arrivals-on-time ordering: 0.
+Raw early arrivals: 3; arrival after close: 0; service finish after close: 4.
+Fresh service completions after 08:00: 0.
+Estimated distance including approximate returns: 4431.0 km; estimated fuel: 716.0 L.
+Vehicles whose one-day estimate alone exceeds weekly quota: 0.
+
+volume_first: FEASIBILITY: PASSED - every rule satisfied.
+Orders served/deferred: 77 / 8; outlets covered: 58 / 59.
+Protected order rows served: 9 / 10.
+Protected outlets with at least one delivery: 10 / 10.
+Deferred chilled orders: 7; paired ambient orders served: 7 / 7.
+Chilled served: 143.772 m3.
+Published vehicle-minutes: 4101; simulated window waiting: 174 minutes.
+Vehicle/window groups with no all-arrivals-on-time ordering: 0.
+Raw early arrivals: 4; arrival after close: 0; service finish after close: 5.
+Fresh service completions after 08:00: 0.
+Estimated distance including approximate returns: 4126.0 km; estimated fuel: 685.9 L.
+Vehicles whose one-day estimate alone exceeds weekly quota: 0.
+
+Order histories can differ between chilled and ambient rows at one outlet.
+Protected order fulfillment and outlet coverage are therefore separate measures.
+Detailed timelines, trip manifests and fuel estimates are local under ignored task2b/data/.
+Audit checks PASSED

@@ -12,7 +12,8 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 STEPS = ["smoke_check.py", "analysis.py", "policy.py", "allocate_greedy.py",
-         "verify_optimizer.py", "optimize.py"]
+         "verify_optimizer.py", "optimize.py", "verify_timeline.py", "audit.py",
+         "sensitivity.py"]
 
 for step in STEPS:
     t0 = time.time()

@@ -873,3 +873,13 @@ teammates; this phase produces a handover package in `docs/handover/` instead.
 - Independent agent MILP with zero gap matches every objective. Production has no solver dependency. Independent exhaustive verifier passed 22 small instances,44 objectives,4 empty cases; it covers identical trucks,mixed scenarios,sparse indices and OR flags.
 - Corrected remaining plan statements; added scenario to identical-vehicle symmetry key following review.
 - Authorship: Codex generated optimiser; separate Codex agent independently solved/reviewed and wrote exhaustive verifier at user request.
+
+## 2B Phase 5: operational audits and repaired-reefer sensitivity (2026-10-07)
+
+- Added window simulation with exact subset DP and trip order search, waits, mall-window intersection, strict identifiers and checker-reference equality. Independent 30 permutation-oracle cases passed, including7 infeasible and explicit mall/closing-boundary cases.
+- Priority allocation: zero late arrivals; four Fresh unloads finish after their07:30 outlet close but all before08:00. Arrival defines lateness in booklet; no physical return/reload guarantee. Timeline waiting107min is separate from published duration.
+- Approximate one-day distance4,431km/fuel716.0L, no vehicle one-day estimate exceeds its weekly quota; this does not establish weekly compliance without past usage.
+- All10 protected rows and10 protected outlets served; all9 deferred chilled orders retain ambient delivery. Histories differ by order at some outlets. Detailed timelines/manifests/fuel remain ignored.
+- Exact +VEH004 sensitivity:168.832m3 chilled,22 chilled orders,80 total orders; gain35.996m3. Local checker-equivalent validation uses changed availability; the official base checker must not be used for this hypothetical fleet. Independent zero-gap MILP and returned-witness audit match.
+- Accelerated exact search using urgency-category maxima, prefix dominance and direct final-vehicle completion; independent44-objective verifier still passes. No new dependency.
+- Authorship: independent Codex agents wrote/reviewed diagnostics and verification; root Codex implemented sensitivity, coordinated results and committed phase.

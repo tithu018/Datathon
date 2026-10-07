@@ -19,8 +19,8 @@
       "VEH007": 1297,
       "VEH036": 104
     },
-    "nodes": 29314,
-    "pruned": 665408,
+    "nodes": 29219,
+    "pruned": 654271,
     "search_complete": true,
     "scope": "All feasible chilled assignments under published budgets, no ambient loads on reefers; ambient assignment fixed. Outlet coverage constant because every chilled outlet has served ambient order.",
     "full_score": [
@@ -52,8 +52,8 @@
       "VEH007": 1297,
       "VEH036": 104
     },
-    "nodes": 2274,
-    "pruned": 120454,
+    "nodes": 2134,
+    "pruned": 101077,
     "search_complete": true,
     "scope": "All feasible chilled assignments under published budgets, no ambient loads on reefers; ambient assignment fixed. Outlet coverage constant because every chilled outlet has served ambient order.",
     "full_score": [
